@@ -1,0 +1,146 @@
+fields: 
+  - name: tripkey
+    description: >
+      Unique identifier for each trip record. Recommended practice is to use a persistent identifier
+      (i.e. one that does not change through time).
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: true
+  - name: date
+    description: >
+      Date in the format yyyy-mm-dd
+    type: date
+    format: default
+    constraints:
+      required: true
+  - name: platform_type
+    description: 
+    type: 
+    format:
+    constraints:
+      required: true
+  - name: platform_code
+    description: 
+    type: 
+    format:
+    constraints:
+      required: true
+  - name: flying_height
+    description: >
+      The flying height of the aeroplane or helicopter (m)
+    type: integer
+    format: default
+    constraints:
+      required: false
+  - name: transect_width
+    description: >
+      The width of the survey transect (m)
+    type: integer
+    format: default
+    constraints:
+      required: true
+  - name: campaign_key
+    description: 
+    type: integer
+    format: default
+    constraints:
+      required: false
+  - name: route
+    description: >
+      Short description of the area covered or route followed
+    type: string
+    format: default
+    constraints:
+      required: false
+  - name: count_method
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: species_counted
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: distance_bins
+    description: 
+    type: string
+    format: default
+    constraints:
+      required: false
+  - name: use_of_binoculars
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: behaviour_recording
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: base_side
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: false
+  - name: data_provider
+    description: >
+      Origin of data (e.g. data owner or supplier) – see lookup table
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: direction_of_travel_type
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: false
+  - name: observer_role
+    description: 
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: number_of_observers
+    description: >
+      Number of observers producing the data stream of  this specific tripkey
+    type: integer
+    format: default
+    constraints:
+      required: true
+  - name: observer1
+    description: >
+      Code for the observer name – see lookup table
+    type: 
+    format: 
+    constraints:
+      required: true
+  - name: observer2
+    description: >
+      Code for the observer name – see lookup table
+    type: 
+    format: 
+    constraints:
+      required: false
+  - name: observer_3
+    description: >
+      Code for the observer name – see lookup table
+    type: 
+    format: 
+    constraints:
+      required: false
+  - name: notes
+    description: >
+      Additional details related to the survey
+    type: string
+    format: default
+    constraints:
+      required: false
