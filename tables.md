@@ -2,9 +2,9 @@
 layout: tables
 title: Tables
 description: >
-  [Trips](#trips){: .btn .btn-outline-light }
-  [Positions](#positions){: .btn .btn-outline-light }
-  [Observations](#observations){: .btn .btn-outline-light }
+  [Trips](#trips){: .btn .btn-primary }
+  [Positions](#positions){: .btn .btn-primary }
+  [Observations](#observations){: .btn .btn-primary }
 permalink: /tables/
 ---
 
