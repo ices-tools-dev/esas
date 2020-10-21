@@ -20,10 +20,10 @@ fields:
   - name: platform_type
     description: |
       The platform used for carrying out observations:
-      1 Ship
-      2 Helicopter
-      3 Aeroplane
-      4 Aeroplane (digital survey)
+      - 1 Ship
+      - 2 Helicopter
+      - 3 Aeroplane
+      - 4 Aeroplane (digital survey)
     type: integer
     format: default
     constraints:
@@ -85,18 +85,18 @@ fields:
   - name: count_method
     description: | # TODO: add comment?
       The type of observation method being applied:
-      1 Full ship-based transect method with snapshot for flying birds
-      2 Full ship-based transect method, no snapshot for flying birds
-      3 All observations, but no transect operated
-      4 Presence / absence data
-      5 Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
-      6 Ship-based strip transect, no snapshot, no distance estimation
-      7 Ship-based strip transect, with snapshot, no distance estimation
-      8 Visual aerial survey line transect method with distance sampling
-      9 Visual aerial survey strip transect, no distance estimation
-      10 Visual aerial survey total counts
-      11 Digital aerial – video
-      12 Digital aerial – stills
+      - 1 Full ship-based transect method with snapshot for flying birds
+      - 2 Full ship-based transect method, no snapshot for flying birds
+      - 3 All observations, but no transect operated
+      - 4 Presence / absence data
+      - 5 Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
+      - 6 Ship-based strip transect, no snapshot, no distance estimation
+      - 7 Ship-based strip transect, with snapshot, no distance estimation
+      - 8 Visual aerial survey line transect method with distance sampling
+      - 9 Visual aerial survey strip transect, no distance estimation
+      - 10 Visual aerial survey total counts
+      - 11 Digital aerial – video
+      - 12 Digital aerial – stills
     type: integer
     format: default
     constraints:
@@ -118,23 +118,23 @@ fields:
   - name: species_counted
     description: |
       The species (groups) which were being counted:
-      1 All species recorded (standard)
-      2 All species except Larus gulls
-      3 All species except fulmars
-      4 All species except Larus gulls, fulmars and kittiwakes
-      5 Auks only
-      6 Auks and seaduck only
-      7 All species except eiders and gulls
-      8 All species except gannets
-      9 Auks and unusual seabirds only
-      10 All species except auks and divers
-      11 All species except small gulls (Little, Black-headed & Common Gull / Black-legged Kittiwake)
-      12 All species except Lesser Black-backed Gulls
-      13 All species except seaduck and divers
-      14 All species except gannets, fulmars and kittiwakes
-      15 All species except fulmars and gannets
-      16 Cetaceans only
-      99 Other
+      - 1 All species recorded (standard)
+      - 2 All species except Larus gulls
+      - 3 All species except fulmars
+      - 4 All species except Larus gulls, fulmars and kittiwakes
+      - 5 Auks only
+      - 6 Auks and seaduck only
+      - 7 All species except eiders and gulls
+      - 8 All species except gannets
+      - 9 Auks and unusual seabirds only
+      - 10 All species except auks and divers
+      - 11 All species except small gulls (Little, Black-headed & Common Gull / Black-legged Kittiwake)
+      - 12 All species except Lesser Black-backed Gulls
+      - 13 All species except seaduck and divers
+      - 14 All species except gannets, fulmars and kittiwakes
+      - 15 All species except fulmars and gannets
+      - 16 Cetaceans only
+      - 99 Other
     type: integer
     format: default
     constraints:
@@ -171,9 +171,9 @@ fields:
   - name: use_of_binoculars
     description: |
       The extent to which binoculars were used to detect birds / cetaceans:
-      1 No binoculars used for detection of birds / cetaceans
-      2 Binoculars used for detection of birds / cetaceans far ahead of the ship (e.g. for seaduck and diver surveys)
-      3 Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean surveys)
+      - 1 No binoculars used for detection of birds / cetaceans
+      - 2 Binoculars used for detection of birds / cetaceans far ahead of the ship (e.g. for seaduck and diver surveys)
+      - 3 Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean surveys)
     type: integer
     format: default
     constraints:
@@ -186,10 +186,10 @@ fields:
   - name: behaviour_recording
     description: |
       Indicates if and how behaviour has been recorded:
-      0 Behaviour not recorded
-      1 Typical detailed ship-based behaviour recording (see behaviour lookup table)
-      2 Typical aeroplane-based activity recording (see activity activity lookup table)
-      3 Other (only selected types of behaviour recorded, include more details in notes column)
+      - 0 Behaviour not recorded
+      - 1 Typical detailed ship-based behaviour recording (see behaviour lookup table)
+      - 2 Typical aeroplane-based activity recording (see activity activity lookup table)
+      - 3 Other (only selected types of behaviour recorded, include more details in notes column)
     type: integer
     format: default
     constraints:
@@ -203,13 +203,13 @@ fields:
   - name: base_side
     description: |
       Side of platform used for counting (ship) or seat of the observer (aeroplane):
-      1 Aerial survey: right front
-      2 Aerial survey: left back
-      3 Aerial survey: right back
-      4 Aerial survey: left front
-      5 Ship-based survey: port side
-      6 Ship-based survey: starboard side
-      9 Observers both left and right producing one collective data stream
+      - 1 Aerial survey: right front
+      - 2 Aerial survey: left back
+      - 3 Aerial survey: right back
+      - 4 Aerial survey: left front
+      - 5 Ship-based survey: port side
+      - 6 Ship-based survey: starboard side
+      - 9 Observers both left and right producing one collective data stream
     type: integer
     format: default
     constraints:
@@ -235,12 +235,12 @@ fields:
   - name: direction_of_travel_type
     description: |
       The way how direction of ships and birds is recorded:
-      U Unknown
-      A Absolute
-      R Relative (to direction of platform)
-      Z Number
-      P Arrow
-      K Not recorded
+      - U Unknown
+      - A Absolute
+      - R Relative (to direction of platform)
+      - Z Number
+      - P Arrow
+      - K Not recorded
     type: string
     format: default
     constraints:
@@ -257,9 +257,9 @@ fields:
     description: |
       Indicates the role of the observer. Important for surveys using the 
       double observer platform. Default is 1 (Primary).
-      1 Primary (the only observer(s) on the platform or if double observer approach used, the observer who’s recordings should be used in data analyses where only a single data stream can be included)
-      2 Secondary (the additional observer(s) to the primary observer in the double observer platform)
-      3 Tertiary (the additional observer(s) to the primary and secondary observers in the triple observer platform)
+      - 1 Primary (the only observer(s) on the platform or if double observer approach used, the observer who’s recordings should be used in data analyses where only a single data stream can be included)
+      - 2 Secondary (the additional observer(s) to the primary observer in the double observer platform)
+      - 3 Tertiary (the additional observer(s) to the primary and secondary observers in the triple observer platform)
     type: integer
     format: default
     constraints:
