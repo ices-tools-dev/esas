@@ -1,3 +1,7 @@
+title: Trips
+description: > # TODO: tripkey number(?)
+  Lists all surveys (identified by a unique `tripkey` number) and includes 
+  relevant survey-specific parameters.
 fields: 
   - name: tripkey
     description: > # TODO: add comments?

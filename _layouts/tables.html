@@ -11,6 +11,8 @@ layout: base
       {% assign table_schema = table_schema_file[1] %}
 
       <h2 id="{{ table_schema.title | downcase | url_encode }}">{{ table_schema.title }}</h2>
+
+      {{ table_schema.description | markdownify }}
       
       <table>
         <thead>
