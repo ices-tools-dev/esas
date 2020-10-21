@@ -88,7 +88,7 @@ fields:
       - 1 Full ship-based transect method with snapshot for flying birds
       - 2 Full ship-based transect method, no snapshot for flying birds
       - 3 All observations, but no transect operated
-      - 4 Presence / absence data
+      - 4 Presence/absence data
       - 5 Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
       - 6 Ship-based strip transect, no snapshot, no distance estimation
       - 7 Ship-based strip transect, with snapshot, no distance estimation
@@ -128,7 +128,7 @@ fields:
       - 8 All species except gannets
       - 9 Auks and unusual seabirds only
       - 10 All species except auks and divers
-      - 11 All species except small gulls (Little, Black-headed & Common Gull / Black-legged Kittiwake)
+      - 11 All species except small gulls (Little, Black-headed & Common Gull/Black-legged Kittiwake)
       - 12 All species except Lesser Black-backed Gulls
       - 13 All species except seaduck and divers
       - 14 All species except gannets, fulmars and kittiwakes
@@ -170,9 +170,9 @@ fields:
 
   - name: use_of_binoculars
     description: |
-      The extent to which binoculars were used to detect birds / cetaceans:
-      - 1 No binoculars used for detection of birds / cetaceans
-      - 2 Binoculars used for detection of birds / cetaceans far ahead of the ship (e.g. for seaduck and diver surveys)
+      The extent to which binoculars were used to detect birds/cetaceans:
+      - 1 No binoculars used for detection of birds/cetaceans
+      - 2 Binoculars used for detection of birds/cetaceans far ahead of the ship (e.g. for seaduck and diver surveys)
       - 3 Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean surveys)
     type: integer
     format: default
@@ -277,7 +277,7 @@ fields:
     constraints:
       required: true
 
-  - name: observer1
+  - name: observer1 # TODO: observer_1?
     description: >
       Code for the observer name – see lookup table
     type: # TODO
@@ -286,7 +286,7 @@ fields:
       required: true
       enum: # TODO: is there an external list?
 
-  - name: observer2
+  - name: observer2 # TODO: observer_2?
     description: >
       Code for the observer name – see lookup table
     type: # TODO
@@ -295,7 +295,7 @@ fields:
       required: false
       enum: # TODO: is there an external list?
 
-  - name: observer3
+  - name: observer3 # TODO: observer_3?
     description: >
       Code for the observer name – see lookup table
     type: # TODO
