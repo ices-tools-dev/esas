@@ -1,0 +1,194 @@
+# TODO: add primary, foreign keys
+# TODO: add period after each description
+title: Positions
+description: > # TODO: poskey number(?), Species data table(?)
+  Lists all count positions (identified by a unique `poskey` number) and 
+  includes relevant position-specific parameters; has a many-to-one 
+  relationship with the Trip data table and a one-to-many relationship with the 
+  Species data table.
+fields: 
+  - name: poskey
+    description: > # TODO: add comments?
+      Unique identifier for each position record within a trip. Recommended 
+      practice is to use a persistent identifier (i.e. one that does not change 
+      through time).
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: true
+
+  - name: tripkey
+    description: > # TODO: drop condition to have 8-9 digits?
+      The link to the trip information related to each position record 
+      (8 – 9 digits)
+    type: integer
+    format: default
+    constraints:
+      required: true
+
+  - name: time
+    description: >
+      UTC time of the observation bin in the format `hh:mm:ss`
+    type: time
+    format: default # hh:mm:ss
+    constraints:
+      required: true
+
+  - name: latitude
+    description: > # TODO: add comments?
+      The latitude of the position in decimal degrees (geographic coordinate 
+      system WGS84; EPSG code: 4326).
+    type: number
+    format: default
+    constraints:
+      required: true
+      minimum: -90
+      maximum: 90
+
+  - name: longitude
+    description: > # TODO: add comments?
+      The longitude of the position in decimal degrees (geographic coordinate 
+      system WGS84; EPSG code: 4326).
+    type: number
+    format: default
+    constraints:
+      required: true
+      minimum: -180
+      maximum: 180
+
+  - name: transect_id
+    description: > # TODO: add comment? Is YYYYYYYYYY a number?
+      Name or number of the transect with a leading 2-letter country code. 
+      Format: `XX_YYYYYYYYYY`, where `XX` is the 2-letter country code and 
+      `YYYYYYYYYY` is a transect ID according to the national classification.
+    type: string
+    format: default
+    constraints:
+      required: false
+      pattern: '[A-Z]{2}_\d{10}' # TODO: verify
+
+  - name: km_travelled
+    description: > # TODO: add comments?
+      The distance travelled during the observation bin in km
+    type: number
+    format: default
+    constraints:
+      required: true
+
+  - name: area_surveyed
+    description: > # TODO: add comments?
+      The area of sea surveyed during the observation bin in km².
+    type: number
+    format: default
+    constraints:
+      required: true
+
+  - name: beaufort
+    description: >
+      Sea state according to the Beaufort scale – see lookup table
+    type: # TODO
+    format: # TODO
+    constraints:
+      required: true
+      enum: # TODO: is there an external list?
+
+  - name: visibility
+    description: |
+      Visibility code: 
+      - A Poor (< 1 km)
+      - B Fair/moderate (1 – 5 km)
+      - C Good/very good (5 – 10 km)
+      - D Excellent/infinity (> 10 km)
+      Alternatively visibility can be indicated in km (see lookup table)
+    type: string # TODO: apparently also number
+    format: default
+    constraints:
+      required: true
+      enum: # TODO: is there an external list? do we combine A-D with numbers
+
+  - name: glare
+    description: |
+      Glare affecting the observer: 
+      - 0 no glare
+      - 1 weak glare (no major effect on the counting)
+      - 2 medium glare (a part of the viewing area is affected by glare)
+      - 3 strong glare (the whole viewing area is affected)
+    type: integer
+    format: default
+    constraints:
+      required: false
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+
+  - name: sun_angle
+    description: > # TODO: 359?
+      Angle of the sun in relation to the observer (0 – 360)
+    type: integer
+    format: default
+    constraints:
+      required: false
+      minimum: 0
+      maximum: 360
+
+  - name: cloud_cover
+    description: > # TODO: clarify
+      Cloud cover expressed as x/8 (octas) (0 – 8)
+    type: integer
+    format: default
+    constraints:
+      required: false
+      minimum: 0
+      maximum: 8
+
+  - name: precipitation
+    description: | # TODO: add intro sentence
+      - 0 none
+      - 1 rain
+      - 2 snow
+      - 3 fog
+    type: integer
+    format: default
+    constraints:
+      required: false
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+
+  - name: ice
+    description: |
+      Ice coverage within the survey transect % (0 – 100)
+    type: integer
+    format: default
+    constraints:
+      required: false
+      minimum: 0
+      maximum: 100
+
+  - name: observation_quality
+    description: |
+      General impression of the observation conditions:
+      - 1 good
+      - 2 moderate
+      - 3 bad
+    type: integer
+    format: default
+    constraints:
+      required: false
+      enum:
+        - 1
+        - 2
+        - 3
+
+  - name: notes
+    description: > # TODO: indicate < 250 bytes?
+      Additional details related to the position
+    type: string
+    format: default
+    constraints:
+      required: false
