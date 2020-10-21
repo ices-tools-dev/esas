@@ -116,7 +116,7 @@ fields:
         - 12
 
   - name: species_counted
-    description: >
+    description: |
       The species (groups) which were being counted:
       1 All species recorded (standard)
       2 All species except Larus gulls
@@ -295,7 +295,7 @@ fields:
       required: false
       enum: # TODO: is there an external list?
 
-  - name: observer_3
+  - name: observer3
     description: >
       Code for the observer name – see lookup table
     type: # TODO
