@@ -11,7 +11,7 @@ fields:
 
   - name: date
     description: >
-      Date in the format yyyy-mm-dd
+      Date in the format `yyyy-mm-dd`
     type: date
     format: default # YYYY-MM-DD
     constraints:
@@ -35,11 +35,11 @@ fields:
         - 4
 
   - name: platform_code
-    description: >
-      Code for the ship name (Base_type = 1) or the call sign (unique 
-      identifier of the aircraft; Base_type = 2 or 3). Use with precursor: 3 
+    description: > # TODO: What is the reference to base_type?
+      Code for the ship name (base_type = `1`) or the call sign (unique 
+      identifier of the aircraft; base_type = `2` or `3`). Use with precursor: 3 
       digit code for the data provider with 5 digit code for the platform 
-      (xxx_xxxx) – see lookup table
+      (`xxx_xxxx`) – see lookup table
     type: string
     format: default
     constraints:
@@ -161,7 +161,7 @@ fields:
   - name: distance_bins
     description: > # TODO: add comment? indicate < 50 bytes?
       List of the distance bin boundaries applied during counting, as input for 
-      distance analysis, according to the following format: x|x|…|x
+      distance analysis, according to the following format: `x|x|…|x`
     type: string
     format: default
     constraints:
