@@ -23,7 +23,7 @@ title: ESAS data model
 description: European Seabird At Sea (ESAS) data model
 author: ESAS
 url: "https://inbo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/esas" # the subpath of your site, e.g. /blog
+baseurl: "/esas-data-model" # the subpath of your site, e.g. /blog
 
 # SOCIAL PROFILES
 email: oscibio@inbo.be
