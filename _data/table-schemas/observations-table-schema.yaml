@@ -1,0 +1,271 @@
+# TODO: add primary, foreign keys
+# TODO: add period after each description
+title: Observations
+description: > # TODO: species_key(?) number(?), Position(?) table
+  Lists all bird or marine mammal records (identified by a unique `species_key` 
+  number) and includes relevant observation-specific parameters; has a 
+  many-to-one relationship with the Position data table; no entries should be 
+  made for positions or observation bins without observations. 
+fields: 
+  - name: obskey
+    description: > # TODO: add comments?
+      Unique identifier for each observation within a trip. Recommended 
+      practice is to use a persistent identifier (i.e. one that does not change 
+      through time)
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: true
+
+  - name: poskey
+    description: > # TODO: drop condition to have 8-9 digits?
+      The link to the position table for each species record (8 – 9 digits) 
+    type: integer
+    format: default
+    constraints:
+      required: true
+
+  - name: transect
+    description: > # TODO: why not boolean?
+      States whether the observation was in or out the transect:
+      - 1 Out of transect
+      - 2 Inside transect
+    type: integer
+    format: default
+    constraints:
+      required: true
+      enum:
+        - 1
+        - 2
+
+  - name: euring_species_code
+    description: > # TODO: add comments?
+      The species code – see relational lookup table linking the codes with the 
+      English and Latin species names.
+    type: # TODO
+    format: # TODO
+    constraints:
+      required: true
+      enum: # TODO: is there an external list?
+
+  - name: number
+    description: > # TODO: add comments?
+      The number of birds or marine mammals counted or estimated 
+    type: integer
+    format: default
+    constraints:
+      required: true
+
+  - name: distance
+    description: | # TODO: add comments? Base_type? Trips table
+      This is the distance at which the bird(s) or marine mammal(s) was/were 
+      observed. Different distance bins are used for ship-based and aerial 
+      surveys:
+
+      For ship-based surveys (base_type = `1`):
+
+      A standard 300 m transect is  assumed for marine mammals and birds in 
+      contact with the water:
+      - A In contact with the water, 0 - 50 m
+      - B In contact with the water, 50 - 100 m
+      - C In contact with the water, 100 - 200 m
+      - D In contact with the water, 200 - 300 m
+      - E In contact with the water, > 300 m, beyond strip transect
+      - F Flying, no contact with water
+      - U Unknown
+      - W In contact with the water, but distance not recorded
+
+      For any other type of distance bin classification in ship-based suryeys 
+      or aerial surveys (base_type = `3`):
+
+      Distance is indicated by the distance (m) to middle point of one the 
+      distance bins specified in the `distance_bins` column in the Trips table; 
+      observations outside this transect are indicated by a `>` sign 
+      (e.g. `>1000`); unknown distance is indicated by `U`
+    type: string # TODO: sometimes numbers too
+    format: default
+    constraints:
+      required: true
+      enum: # TODO: is there an external list? Do we combine A-W with numbers?
+
+  - name: age_class
+    description: |
+      Age class or information on primary moult:
+      - A Adult
+      - I Immature (not specified)
+      - 1 1st calendar year
+      - 2 2nd calendar year
+      - 3 3rd calendar year
+      - 4 4th calendar year
+      - 5 5th calendar year
+      - X Active primary moult
+      - Y No active primary moult
+      
+      (Primary moult codes only used for fulmar, auks, divers and seaduck)
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
+        - A
+        - I
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - X
+        - Y
+
+  - name: plumage
+    description: | # TODO: add comments? what about ‘code‘, write capital at start
+      Plumage types:
+      - B Breeding (summer) plumage
+      - T Transient plumage (moulting between winter & summer plumage or vice-versa)
+      - W Non-breeding (winter) plumage
+      - L Light morph (skuas/double light ‘LL’ fulmars)
+      - C Coloured morph (‘L’, ‘D’ & ‘DD’ fulmars)
+      - I Intermediate morph (skuas)
+      - D Dark morph (skuas)
+
+      For immature auks (Guillemot & Razorbill):
+      - A1 ½ or less than adult size
+      - A2 over ½ adult size
+      - A3 about same size as adult
+
+      For immature Northern Gannets:
+      - G1 plumage 1
+      - G2 plumage 2
+      - G3 plumage 3
+      - G4 plumage 4
+      - G5 plumage 5
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
+        - B
+        - T
+        - W
+        - L
+        - C
+        - I
+        - D
+        - A1
+        - A2
+        - A3
+        - G1
+        - G2
+        - G3
+        - G4
+        - G5
+
+  - name: sex
+    description: | # TODO: add intro sentence
+      - F Female
+      - M Male 
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
+        - F
+        - M
+
+  - name: group
+    description: >
+      Identifier of aggregations of individuals of one or several species; the 
+      number assigned to each group should be unique among all observations 
+      from the same `tripkey`.
+    type: integer
+    format: default
+    constraints:
+      required: false
+
+  - name: direction_of_travel
+    description: | # TODO: write directions in full?
+      The direction in which the bird/cetacean is travelling:
+      - N Heading N
+      - NE Heading NE
+      - E Heading E
+      - SE Heading SE
+      - S Heading S
+      - SW Heading SW
+      - W Heading W
+      - NW Heading NW
+      - U Flying, no apparent direction
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
+        - N
+        - NE
+        - E
+        - SE
+        - S
+        - SW
+        - W
+        - NW
+        - U
+
+  - name: prey
+    description: >
+      Observed prey (type) caught or carried by the bird/cetacean – see lookup 
+      table
+    type: # TODO
+    format: # TODO
+    constraints:
+      required: false
+      enum: # TODO: is there an external list?
+
+  - name: association
+    description: >
+      Code for associations between observed birds/cetaceans and 
+      vessels/structures/floating matter – see lookup table
+    type: # TODO
+    format: # TODO
+    constraints:
+      required: false
+      enum: # TODO: is there an external list?
+
+  - name: activity
+    description: | # TODO: add comments?
+      Indicates what the species was doing when observed:
+      - 1 On water/swimming
+      - 2 Diving
+      - 3 Flushing
+      - 4 Flying
+      - 5 Completely submerged (marine mammals)
+      - 6 Breaking surface (marine mammals)
+      - 7 On artificial piece of something (platform, pole…)
+    type: integer
+    format: default
+    constraints:
+      required: false
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+
+  - name: behaviour
+    description: >
+      Indicates what the species was doing when observed – see lookup table
+    type: # TODO
+    format: # TODO
+    constraints:
+      required: false
+      enum: # TODO: is there an external list?
+
+  - name: notes
+    description: > # TODO: indicate < 250 bytes?
+      Additional details related to the observation
+    type: string
+    format: default
+    constraints:
+      required: false
