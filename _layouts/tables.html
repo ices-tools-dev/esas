@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+<div class="row">
+  <div class="col">
+
+    {{ content }}
+
+    {% for table_schema_file in site.data.table-schemas reversed %}
+      {% assign table_schema = table_schema_file[1] %}
+
+      <h2 id="{{ table_schema.title | downcase | url_encode }}">{{ table_schema.title }}</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Definition</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <col width="20%">
+          <col width="60%">
+          <col width="20%">
+          {% for field in table_schema.fields %}
+            <tr>
+              <td id="{{ field.name | downcase | url_encode }}"><a href="#{{ field.name | downcase | url_encode }}"><code>{{ field.name }}</code></a></td>
+              <td>{{ field.description | markdownify }}</td>
+              <td>{{ field.type }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endfor %}
+  </div>
+</div>
