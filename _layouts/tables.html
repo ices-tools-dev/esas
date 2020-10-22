@@ -7,8 +7,8 @@ layout: base
 
     {{ content }}
 
-    {% for table_schema_file in site.data.table-schemas reversed %}
-      {% assign table_schema = table_schema_file[1] %}
+    {% for table_schema_file in site.data.table-schemas["_index"] %}
+      {% assign table_schema = site.data.table-schemas[table_schema_file] %}
 
       <h2 id="{{ table_schema.title | downcase | url_encode }}">{{ table_schema.title }}</h2>
 
