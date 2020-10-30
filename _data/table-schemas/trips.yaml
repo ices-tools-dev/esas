@@ -50,7 +50,7 @@ fields:
     format: default
     constraints:
       required: true
-      pattern: '\S{3}_\S{5}' # TODO: 4 or 5 digits, see definition
+      pattern: '\S{3}_\S{5}' # TODO: 4 or 5 digits, see definition. BE data does not have 3 digit prefix
       enum: # TODO: is there an external list?
 
   - name: flying_height
