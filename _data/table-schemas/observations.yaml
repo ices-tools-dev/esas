@@ -5,7 +5,7 @@ description: > # TODO: species_key(?) number(?), Position(?) table
   Lists all bird or marine mammal records (identified by a unique `species_key` 
   number) and includes relevant observation-specific parameters; has a 
   many-to-one relationship with the Position data table; no entries should be 
-  made for positions or observation bins without observations. 
+  made for positions or observation bins without observations.
 fields: 
   - name: obskey
     description: > # TODO: add comments?
@@ -110,11 +110,11 @@ fields:
       enum:
         - A
         - I
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
         - X
         - Y
 
