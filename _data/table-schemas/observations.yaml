@@ -21,7 +21,7 @@ fields:
   - name: poskey
     description: > # TODO: drop condition to have 8-9 digits?
       The link to the position table for each species record (8 – 9 digits) 
-    type: integer
+    type: string # TODO: not required to be an integer
     format: default
     constraints:
       required: true
