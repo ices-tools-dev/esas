@@ -195,11 +195,11 @@ fields:
       - W Heading W
       - NW Heading NW
       - U Flying, no apparent direction
-    type: string
+    type: string # TODO: a degrees from north would be better
     format: default
     constraints:
       required: false
-      enum:
+      enum: # TODO: in DE data these are written as degrees from north, which is better
         - N
         - NE
         - E
