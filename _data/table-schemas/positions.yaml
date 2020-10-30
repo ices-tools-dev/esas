@@ -90,7 +90,7 @@ fields:
     type: # TODO
     format: # TODO
     constraints:
-      required: true
+      required: true # TODO: there are empty values in BE data
       enum: # TODO: is there an external list?
 
   - name: visibility
@@ -104,7 +104,7 @@ fields:
     type: string # TODO: sometimes numbers too
     format: default
     constraints:
-      required: true
+      required: true # TODO: there are empty values in BE data
       enum: # TODO: is there an external list? Do we combine A-D with numbers?
 
   - name: glare
