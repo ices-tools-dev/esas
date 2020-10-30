@@ -269,3 +269,13 @@ fields:
     format: default
     constraints:
       required: false
+
+missingValues:
+  - ''
+  - NA
+primaryKey: obskey
+foreignKeys:
+  - fields: poskey
+    reference:
+      resource: positions
+      fields: poskey

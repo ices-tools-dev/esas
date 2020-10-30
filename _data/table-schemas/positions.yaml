@@ -192,3 +192,13 @@ fields:
     format: default
     constraints:
       required: false
+
+missingValues:
+  - ''
+  - NA
+primaryKey: poskey
+foreignKeys:
+  - fields: tripkey
+    reference:
+      resource: trips
+      fields: tripkey

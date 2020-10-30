@@ -317,3 +317,9 @@ fields:
     format: default
     constraints:
       required: false
+
+missingValues:
+  - ''
+  - NA
+primaryKey: tripkey
+
