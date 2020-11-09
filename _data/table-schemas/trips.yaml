@@ -1,12 +1,14 @@
-# TODO: add primary, foreign keys
-# TODO: add period after each description
 title: Trips
-description: > # TODO: tripkey number(?)
-  Lists all surveys (identified by a unique `tripkey` number) and includes 
-  relevant survey-specific parameters.
+description: >
+  Lists all surveys (identified by a unique `tripkey`) and includes relevant 
+  survey-specific parameters. Each record represents a single survey. If you 
+  have multiple observers producing independent data streams, use a separate 
+  `tripkey` for each of them (hence for the classical plane survey setup with 2 
+  observers on each side of plane independently recording their observations, 
+  there should be 2 unique `tripkey`s).
 fields:
   - name: tripkey
-    description: > # TODO: add comments?
+    description: >
       Unique identifier for each trip record. Recommended practice is to use a 
       persistent identifier (i.e. one that does not change through time).
     type: string
@@ -15,9 +17,20 @@ fields:
       required: true
       unique: true
 
+  - name: data_provider
+    description: > # TODO: add lookup table?
+      Origin of data (e.g. data owner or supplier) – see lookup table.
+    type: integer
+    format: integer
+    constraints:
+      required: true
+
+  - name: accessibility
+    description: 
+
   - name: date
     description: >
-      Date in the format `yyyy-mm-dd`
+      Date in the format `yyyy-mm-dd`.
     type: date
     format: default # YYYY-MM-DD
     constraints:
@@ -41,21 +54,17 @@ fields:
         - 4
 
   - name: platform_code
-    description: > # TODO: What is the reference to base_type?
-      Code for the ship name (base_type = `1`) or the call sign (unique 
-      identifier of the aircraft; base_type = `2` or `3`). Use with precursor: 3 
-      digit code for the data provider with 5 digit code for the platform 
-      (`xxx_xxxx`) – see lookup table
+    description: >
+      Code for the ship name or the call sign (unique identifier of the 
+      aircraft) – see lookup table.
     type: string
     format: default
     constraints:
       required: true
-      pattern: '\S{3}_\S{5}' # TODO: 4 or 5 digits, see definition. BE data does not have 3 digit prefix
-      enum: # TODO: is there an external list?
 
   - name: flying_height
     description: >
-      The flying height of the aeroplane or helicopter (m)
+      The flying height of the aeroplane or helicopter (m).
     type: integer
     format: default
     constraints:
@@ -63,7 +72,7 @@ fields:
 
   - name: transect_width
     description: >
-      The width of the survey transect (m)
+      The width of the survey transect (m).
     type: integer
     format: default
     constraints:
@@ -73,16 +82,16 @@ fields:
     description: >
       Aggregates parts of a campaign, i.e. different sides of the platform or 
       counts in different parts of a study area covered on different days or by 
-      different platforms. The campaign_key should equal the tripkey of the 1st 
-      entry of the particular campaign.
-    type: integer
+      different platforms. The `campaign_key` should equal the `tripkey` of the 
+      1st entry of the particular campaign.
+    type: string
     format: default
     constraints:
       required: false
 
   - name: route
     description: > # TODO: indicate < 50 bytes?
-      Short description of the area covered or route followed
+      Short description of the area covered or route followed.
     type: string
     format: default
     constraints:
@@ -103,6 +112,7 @@ fields:
       - 10 Visual aerial survey total counts
       - 11 Digital aerial – video
       - 12 Digital aerial – stills
+      - 13 Only cetaceans and rare birds
     type: integer
     format: default
     constraints:
@@ -120,6 +130,7 @@ fields:
         - 10
         - 11
         - 12
+        - 13
 
   - name: species_counted
     description: |
@@ -140,6 +151,7 @@ fields:
       - 14 All species except gannets, fulmars and kittiwakes
       - 15 All species except fulmars and gannets
       - 16 Cetaceans only
+      - 17 Auks, divers, grebes and seaduck only
       - 99 Other
     type: integer
     format: default
@@ -162,17 +174,20 @@ fields:
         - 14
         - 15
         - 16
+        - 17
         - 99
 
   - name: distance_bins
-    description: > # TODO: add comment? indicate < 50 bytes?
+    description: >
       List of the distance bin boundaries applied during counting, as input for 
-      distance analysis, according to the following format: `x|x|…|x`
+      distance analysis, according to the following format: `x|x|...|x`. For 
+      ship-based surveys applying the standard 300 m wide transect this would 
+      be: `0|50|100|200|300`.
     type: string
     format: default
     constraints:
       required: false
-      pattern: '(\d+\|)+\d+' # TODO: always integers?
+      pattern: '(\d+\|)+\d+'
 
   - name: use_of_binoculars
     description: |
@@ -229,15 +244,6 @@ fields:
         - 6
         - 9
 
-  - name: data_provider
-    description: >
-      Origin of data (e.g. data owner or supplier) – see lookup table
-    type: # TODO
-    format: # TODO
-    constraints:
-      required: true
-      enum: # TODO: is there an external list?
-
   - name: direction_of_travel_type
     description: |
       The way how direction of ships and birds is recorded:
@@ -262,7 +268,7 @@ fields:
   - name: observer_role
     description: |
       Indicates the role of the observer. Important for surveys using the 
-      double observer platform. Default is 1 (Primary).
+      double observer platform. Default is `1` (Primary).
       - 1 Primary (the only observer(s) on the platform or if double observer approach used, the observer who’s recordings should be used in data analyses where only a single data stream can be included)
       - 2 Secondary (the additional observer(s) to the primary observer in the double observer platform)
       - 3 Tertiary (the additional observer(s) to the primary and secondary observers in the triple observer platform)
@@ -276,43 +282,49 @@ fields:
         - 3
 
   - name: number_of_observers
-    description: > # TODO: add comment?
-      Number of observers producing the data stream of this specific tripkey
+    description: >
+      Number of observers producing the data stream of this specific `tripkey`. 
+      The number of observers does not include observers that record 
+      independent observations (thus producing different data streams that are 
+      included in the database under different `tripkey`s).
     type: integer
     format: default
     constraints:
       required: true
 
-  - name: observer1 # TODO: observer_1?
+  - name: observer1 # TODO: create a single field, with names?
     description: >
-      Code for the observer name – see lookup table
-    type: # TODO
-    format: # TODO
+      Code for the observer name – see lookup table. Report only the observers 
+      assisting the `observer1` in the fields `observer2` and `observer3`. Do 
+      not report the other observers producing their own data streams.
+    type: integer
+    format: default
     constraints:
       required: true
-      enum: # TODO: is there an external list?
 
-  - name: observer2 # TODO: observer_2?
+  - name: observer2
     description: >
-      Code for the observer name – see lookup table
-    type: # TODO
-    format: # TODO
+      Code for the observer name – see lookup table. Report only the observers 
+      assisting the `observer1` in the fields `observer2` and `observer3`. Do 
+      not report the other observers producing their own data streams.
+    type: integer
+    format: default
     constraints:
       required: false
-      enum: # TODO: is there an external list?
 
-  - name: observer3 # TODO: observer_3?
+  - name: observer3
     description: >
-      Code for the observer name – see lookup table
-    type: # TODO
-    format: # TODO
+      Code for the observer name – see lookup table. Report only the observers 
+      assisting the `observer1` in the fields `observer2` and `observer3`. Do 
+      not report the other observers producing their own data streams.
+    type: integer
+    format: default
     constraints:
       required: false
-      enum: # TODO: is there an external list?
 
   - name: notes
-    description: > # TODO: indicate < 250 bytes?
-      Additional details related to the survey
+    description: >
+      Additional details related to the survey.
     type: string
     format: default
     constraints:

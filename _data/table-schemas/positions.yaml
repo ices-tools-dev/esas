@@ -1,14 +1,17 @@
-# TODO: add primary, foreign keys
 # TODO: add period after each description
 title: Positions
-description: > # TODO: poskey number(?), Species data table(?)
-  Lists all count positions (identified by a unique `poskey` number) and 
-  includes relevant position-specific parameters; has a many-to-one 
-  relationship with the Trip data table and a one-to-many relationship with the 
-  Species data table.
+description: >
+  Lists all count positions (identified by a unique `poskey`) and includes 
+  relevant position-specific parameters; has a many-to-one relationship with 
+  the Trip data table and a one-to-many relationship with the Observations data 
+  table. Each record represents an observation bin, characterised by a 
+  position. Each position recorded during the survey is reported in the 
+  Position table. For plane surveys this usually means a position for each 
+  second of the survey. For ship-based surveys this usually means the 
+  (calculated) middle point of the trajectory sailed during the observation bin.
 fields: 
   - name: poskey
-    description: > # TODO: add comments?
+    description: >
       Unique identifier for each position record within a trip. Recommended 
       practice is to use a persistent identifier (i.e. one that does not change 
       through time).
@@ -19,24 +22,23 @@ fields:
       unique: true
 
   - name: tripkey
-    description: > # TODO: drop condition to have 8-9 digits?
-      The link to the trip information related to each position record 
-      (8 – 9 digits)
-    type: string # TODO: not required to be an integer
+    description: >
+      The link to the trip information related to each position record.
+    type: string
     format: default
     constraints:
       required: true
 
   - name: time
     description: >
-      UTC time of the observation bin in the format `hh:mm:ss`
+      UTC time of the observation bin in the format `hh:mm:ss`.
     type: time
     format: default # hh:mm:ss
     constraints:
       required: true
 
   - name: latitude
-    description: > # TODO: add comments?
+    description: >
       The latitude of the position in decimal degrees (geographic coordinate 
       system WGS84; EPSG code: 4326).
     type: number
@@ -47,7 +49,7 @@ fields:
       maximum: 90
 
   - name: longitude
-    description: > # TODO: add comments?
+    description: >
       The longitude of the position in decimal degrees (geographic coordinate 
       system WGS84; EPSG code: 4326).
     type: number
@@ -57,8 +59,8 @@ fields:
       minimum: -180
       maximum: 180
 
-  - name: transect_id
-    description: > # TODO: add comment? Is YYYYYYYYYY a number?
+  - name: transect_id # TODO: drop this field?
+    description: >
       Name or number of the transect with a leading 2-letter country code. 
       Format: `XX_YYYYYYYYYY`, where `XX` is the 2-letter country code and 
       `YYYYYYYYYY` is a transect ID according to the national classification.
@@ -66,46 +68,57 @@ fields:
     format: default
     constraints:
       required: false
-      pattern: '[A-Z]{2}_\d{10}' # TODO: verify
+      pattern: '[A-Z]{2}_\d{10}'
 
   - name: km_travelled
-    description: > # TODO: add comments?
-      The distance travelled during the observation bin in km
+    description: >
+      The distance travelled during the observation bin in km.
     type: number
     format: default
     constraints:
-      required: true
+      required: false
 
   - name: area_surveyed
-    description: > # TODO: add comments?
+    description: >
       The area of sea surveyed during the observation bin in km².
     type: number
     format: default
     constraints:
-      required: true
+      required: false
 
   - name: beaufort
-    description: >
-      Sea state according to the Beaufort scale – see lookup table
-    type: # TODO
-    format: # TODO
+    description: > # TODO: add lookup table?
+      Sea state according to the Beaufort scale – see lookup table.
+    type: integer
+    format: default
     constraints:
-      required: true # TODO: there are empty values in BE data
-      enum: # TODO: is there an external list?
+      required: false
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
 
   - name: visibility
-    description: |
+    description: | # TODO: add lookup table?
       Visibility code: 
       - A Poor (< 1 km)
       - B Fair/moderate (1 – 5 km)
       - C Good/very good (5 – 10 km)
       - D Excellent/infinity (> 10 km)
-      Alternatively visibility can be indicated in km (see lookup table)
-    type: string # TODO: sometimes numbers too
+      Alternatively visibility can be indicated in km (see lookup table).
+    type: string
     format: default
     constraints:
-      required: true # TODO: there are empty values in BE data
-      enum: # TODO: is there an external list? Do we combine A-D with numbers?
+      required: false
 
   - name: glare
     description: |
@@ -125,8 +138,8 @@ fields:
         - 3
 
   - name: sun_angle
-    description: > # TODO: 359?
-      Angle of the sun in relation to the observer (0 – 360)
+    description: >
+      Angle of the sun in relation to the observer (`0` – `359`).
     type: integer
     format: default
     constraints:
@@ -135,8 +148,8 @@ fields:
       maximum: 360
 
   - name: cloud_cover
-    description: > # TODO: clarify
-      Cloud cover expressed as x/8 (octas) (0 – 8)
+    description: >
+      Cloud cover expressed as x/8 (octas) (`0` – `8`).
     type: integer
     format: default
     constraints:
@@ -145,7 +158,7 @@ fields:
       maximum: 8
 
   - name: precipitation
-    description: | # TODO: add intro sentence
+    description: |
       - 0 none
       - 1 rain
       - 2 snow
@@ -162,7 +175,7 @@ fields:
 
   - name: ice
     description: |
-      Ice coverage within the survey transect % (0 – 100)
+      Ice coverage within the survey transect % (`0` – `100`).
     type: integer
     format: default
     constraints:
@@ -186,8 +199,8 @@ fields:
         - 3
 
   - name: notes
-    description: > # TODO: indicate < 250 bytes?
-      Additional details related to the position
+    description: >
+      Additional details related to the position.
     type: string
     format: default
     constraints:
