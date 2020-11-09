@@ -1,5 +1,5 @@
-# ESAS data model
+# European Seabirds at Sea (ESAS)
 
-Data model for European Seabirds At Sea (ESAS) monitoring data.
+Development area for ESAS, including the ESAS data (exchange) model.
 
-- [Tables](https://inbo.github.io/esas-data-model/tables/)
+- ESAS table schemas: [website](https://ices-tools-dev.github.io/esas/tables/) / [source files](_data/table-schemas)
