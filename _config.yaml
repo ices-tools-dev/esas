@@ -19,24 +19,24 @@
 # in the templates via {{ site.myvariable }}.
 
 # SITE SETTINGS
-title: ESAS data model
-description: European Seabird At Sea (ESAS) data model
+title: ESAS
+description: European Seabird At Sea (ESAS)
 author: ESAS
-url: "https://inbo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/esas-data-model" # the subpath of your site, e.g. /blog
+url: "https://ices-tools-dev.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/esas" # the subpath of your site, e.g. /blog
 
 # SOCIAL PROFILES
-email: oscibio@inbo.be
-twitter_username: oscibio
-github_username: inbo/esas-data-model
+email: 
+twitter_username: 
+github_username: ices-tools-dev/esas
 
 # THEME SETTINGS
 theme: minima
 remote_theme: peterdesmet/petridish
 colors:
-  links: "#356196"  # INBO blue
-  banner: "#c04384" # INBO fuchsia
-  footer: "#3c3c3c" # INBO gray
+  links: "#2b95a0"  # ICES blue
+  banner: "#f15d2a" # ICES banner orange
+  footer: "#e4e4e4" # ICES footer gray
 
 # BUILD SETTINGS
 markdown: kramdown
