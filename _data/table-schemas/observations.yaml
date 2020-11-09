@@ -202,8 +202,8 @@ fields:
       - NW Heading NW
       - U Flying, no apparent direction
 
-    Alternatively direction of travel can be indicated in degrees with 
-    increments of 10° (for example in case of relative direction recording).
+      Alternatively direction of travel can be indicated in degrees with 
+      increments of 10° (for example in case of relative direction recording).
     type: string
     format: default
     constraints:
