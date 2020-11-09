@@ -21,12 +21,18 @@ fields:
     description: > # TODO: add lookup table?
       Origin of data (e.g. data owner or supplier) – see lookup table.
     type: integer
-    format: integer
+    format: default
     constraints:
       required: true
 
-  - name: accessibility
-    description: 
+  - name: public_data
+    description: >
+      `TRUE` if data for this trip can be made publicly accessible under the 
+      conditions of the ICES data policy, `FALSE` if data should remain private.
+    type: boolean
+    format: default
+    constrains:
+      required: true
 
   - name: date
     description: >
