@@ -190,7 +190,7 @@ fields:
       required: false
 
   - name: direction_of_travel
-    description: | # TODO: write directions in full?
+    description: |
       The direction in which the bird/cetacean is travelling:
       - N Heading N
       - NE Heading NE
@@ -254,6 +254,7 @@ fields:
         - '330'
         - '340'
         - '350'
+        - '360'
 
   - name: prey
     description: > # TODO: add lookup table?
