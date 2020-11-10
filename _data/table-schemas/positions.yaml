@@ -1,4 +1,3 @@
-# TODO: add period after each description
 title: Positions
 description: >
   Lists all count positions (identified by a unique `poskey`) and includes 
@@ -123,10 +122,10 @@ fields:
   - name: glare
     description: |
       Glare affecting the observer: 
-      - 0 no glare
-      - 1 weak glare (no major effect on the counting)
-      - 2 medium glare (a part of the viewing area is affected by glare)
-      - 3 strong glare (the whole viewing area is affected)
+      - 0 No glare
+      - 1 Weak glare (no major effect on the counting)
+      - 2 Medium glare (a part of the viewing area is affected by glare)
+      - 3 Strong glare (the whole viewing area is affected)
     type: integer
     format: default
     constraints:
@@ -159,10 +158,10 @@ fields:
 
   - name: precipitation
     description: |
-      - 0 none
-      - 1 rain
-      - 2 snow
-      - 3 fog
+      - 0 None
+      - 1 Rain
+      - 2 Snow
+      - 3 Fog
     type: integer
     format: default
     constraints:
@@ -186,9 +185,9 @@ fields:
   - name: observation_quality
     description: |
       General impression of the observation conditions:
-      - 1 good
-      - 2 moderate
-      - 3 bad
+      - 1 Good
+      - 2 Moderate
+      - 3 Bad
     type: integer
     format: default
     constraints:
