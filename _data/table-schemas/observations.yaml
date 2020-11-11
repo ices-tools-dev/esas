@@ -93,6 +93,7 @@ fields:
     format: default
     constraints:
       required: true
+      pattern: '[ABCDEFUW]|\>?\d+'
 
   - name: age_class
     description: |
