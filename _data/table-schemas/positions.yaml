@@ -88,19 +88,19 @@ fields:
   - name: beaufort
     description: |
       Sea state according to the Beaufort scale:
-      - 0 Sea like mirror
-      - 1 Ripples with appearance of scales, no foam crests
-      - 2 Small wavelets, crests of glassy appearance, not breaking
-      - 3 Large wavelets, crests begin to break, scattered whitecaps
-      - 4 Small waves becoming longer, numerous whitecaps
-      - 5 Moderate waves, many whitecaps, some spray
-      - 6 Larger waves, whitecaps everywhere, more spray
-      - 7 Sea heaps up and white foam from breaking waves begins to be blown in streaks along the direction of the wind
-      - 8 Moderately high waves; edges of crests begin to break into the spindrift; foam is blown in well-marked streaks along the direction of the wind
-      - 9 High waves; dense streaks of foam along wind; crests begin to topple, tumble and roll over; spray may affect visibility
-      - 10 Very high waves with long overhanging crests; foam in great patches blown in dense white streaks along wind; sea surface takes a white appearance; tumbling becomes heavy and shock-like; visibility affected
-      - 11 Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
-      - 12 Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
+      - `0` Sea like mirror
+      - `1` Ripples with appearance of scales, no foam crests
+      - `2` Small wavelets, crests of glassy appearance, not breaking
+      - `3` Large wavelets, crests begin to break, scattered whitecaps
+      - `4` Small waves becoming longer, numerous whitecaps
+      - `5` Moderate waves, many whitecaps, some spray
+      - `6` Larger waves, whitecaps everywhere, more spray
+      - `7` Sea heaps up and white foam from breaking waves begins to be blown in streaks along the direction of the wind
+      - `8` Moderately high waves; edges of crests begin to break into the spindrift; foam is blown in well-marked streaks along the direction of the wind
+      - `9` High waves; dense streaks of foam along wind; crests begin to topple, tumble and roll over; spray may affect visibility
+      - `10` Very high waves with long overhanging crests; foam in great patches blown in dense white streaks along wind; sea surface takes a white appearance; tumbling becomes heavy and shock-like; visibility affected
+      - `11` Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
+      - `12` Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
     type: integer
     format: default
     constraints:
@@ -123,32 +123,32 @@ fields:
   - name: visibility
     description: |
       Visibility code: 
-      - A Poor (< 1 km)
-      - B Fair/moderate (1 – 5 km)
-      - C Good/very good (5 – 10 km)
-      - D Excellent/infinity (> 10 km)
-      - 0.1 Visibility in km
-      - 0.2 Visibility in km
-      - 0.3 Visibility in km
-      - 0.4 Visibility in km
-      - 0.5 Visibility in km
-      - 0.6 Visibility in km
-      - 0.7 Visibility in km
-      - 0.8 Visibility in km
-      - 0.9 Visibility in km
-      - 1 Visibility in km
-      - 1.5 Visibility in km
-      - 2 Visibility in km
-      - 2.5 Visibility in km
-      - 3 Visibility in km
-      - 3.5 Visibility in km
-      - 4 Visibility in km
-      - 5 Visibility in km
-      - 6 Visibility in km
-      - 7 Visibility in km
-      - 8 Visibility in km
-      - 9 Visibility in km
-      - 10 Visibility of >= 10 km
+      - `A` Poor (< 1 km)
+      - `B` Fair/moderate (1 – 5 km)
+      - `C` Good/very good (5 – 10 km)
+      - `D` Excellent/infinity (> 10 km)
+      - `0.1` Visibility in km
+      - `0.2` Visibility in km
+      - `0.3` Visibility in km
+      - `0.4` Visibility in km
+      - `0.5` Visibility in km
+      - `0.6` Visibility in km
+      - `0.7` Visibility in km
+      - `0.8` Visibility in km
+      - `0.9` Visibility in km
+      - `1` Visibility in km
+      - `1.5` Visibility in km
+      - `2` Visibility in km
+      - `2.5` Visibility in km
+      - `3` Visibility in km
+      - `3.5` Visibility in km
+      - `4` Visibility in km
+      - `5` Visibility in km
+      - `6` Visibility in km
+      - `7` Visibility in km
+      - `8` Visibility in km
+      - `9` Visibility in km
+      - `10` Visibility of >= 10 km
     type: string
     format: default
     constraints:
@@ -184,10 +184,10 @@ fields:
   - name: glare
     description: |
       Glare affecting the observer: 
-      - 0 No glare
-      - 1 Weak glare (no major effect on the counting)
-      - 2 Medium glare (a part of the viewing area is affected by glare)
-      - 3 Strong glare (the whole viewing area is affected)
+      - `0` No glare
+      - `1` Weak glare (no major effect on the counting)
+      - `2` Medium glare (a part of the viewing area is affected by glare)
+      - `3` Strong glare (the whole viewing area is affected)
     type: integer
     format: default
     constraints:
@@ -220,10 +220,10 @@ fields:
 
   - name: precipitation
     description: |
-      - 0 None
-      - 1 Rain
-      - 2 Snow
-      - 3 Fog
+      - `0` None
+      - `1` Rain
+      - `2` Snow
+      - `3` Fog
     type: integer
     format: default
     constraints:
@@ -247,9 +247,9 @@ fields:
   - name: observation_quality
     description: |
       General impression of the observation conditions:
-      - 1 Good
-      - 2 Moderate
-      - 3 Bad
+      - `1` Good
+      - `2` Moderate
+      - `3` Bad
     type: integer
     format: default
     constraints:

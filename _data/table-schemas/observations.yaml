@@ -30,9 +30,9 @@ fields:
   - name: transect
     description: |
       States whether the observation was in or out the transect:
-      - 1 Out of transect
-      - 2 Inside transect
-      - 3 Out of transect and of 90 deg scan
+      - `1` Out of transect
+      - `2` Inside transect
+      - `3` Out of transect and of 90 deg scan
     type: integer
     format: default
     constraints:
@@ -73,14 +73,14 @@ fields:
 
       A standard 300 m transect is  assumed for marine mammals and birds in 
       contact with the water:
-      - A In contact with the water, 0 - 50 m
-      - B In contact with the water, 50 - 100 m
-      - C In contact with the water, 100 - 200 m
-      - D In contact with the water, 200 - 300 m
-      - E In contact with the water, > 300 m, beyond strip transect
-      - F Flying, no contact with water
-      - U Unknown
-      - W In contact with the water, but distance not recorded
+      - `A` In contact with the water, 0 - 50 m
+      - `B` In contact with the water, 50 - 100 m
+      - `C` In contact with the water, 100 - 200 m
+      - `D` In contact with the water, 200 - 300 m
+      - `E` In contact with the water, > 300 m, beyond strip transect
+      - `F` Flying, no contact with water
+      - `U` Unknown
+      - `W` In contact with the water, but distance not recorded
 
       For any other type of distance bin classification in ship-based suryeys 
       or aerial surveys (`platform_type` = `3`):
@@ -97,16 +97,16 @@ fields:
 
   - name: age_class
     description: |
-      Age class or information on primary moult:
-      - A Adult
-      - I Immature (not specified)
-      - 1 1st calendar year
-      - 2 2nd calendar year
-      - 3 3rd calendar year
-      - 4 4th calendar year
-      - 5 5th calendar year
-      - X Active primary moult
-      - Y No active primary moult
+      Age class or primary moult information:
+      - `A` Adult
+      - `I` Immature (not specified)
+      - `1` 1st calendar year
+      - `2` 2nd calendar year
+      - `3` 3rd calendar year
+      - `4` 4th calendar year
+      - `5` 5th calendar year
+      - `X` Active primary moult
+      - `Y` No active primary moult
       
       (Primary moult codes only used for fulmar, auks, divers and seaduck.)
     type: string
@@ -127,26 +127,26 @@ fields:
   - name: plumage
     description: |
       Plumage types:
-      - B Breeding (summer) plumage
-      - T Transient plumage (moulting between winter & summer plumage or vice-versa)
-      - W Non-breeding (winter) plumage
-      - L Light morph (skuas/double light ‘LL’ fulmars)
-      - C Coloured morph (‘L’, ‘D’ & ‘DD’ fulmars)
-      - I Intermediate morph (skuas)
-      - D Dark morph (skuas)
-      - P Pullus
+      - `B` Breeding (summer) plumage
+      - `T` Transient plumage (moulting between winter & summer plumage or vice-versa)
+      - `W` Non-breeding (winter) plumage
+      - `L` Light morph (skuas/double light ‘LL’ fulmars)
+      - `C` Coloured morph (‘L’, ‘D’ & ‘DD’ fulmars)
+      - `I` Intermediate morph (skuas)
+      - `D` Dark morph (skuas)
+      - `P` Pullus
 
       For immature auks (Guillemot & Razorbill):
-      - A1 ½ or less than adult size
-      - A2 Over ½ adult size
-      - A3 About same size as adult
+      - `A1` ½ or less than adult size
+      - `A2` Over ½ adult size
+      - `A3` About same size as adult
 
       For immature Northern Gannets:
-      - G1 Plumage 1
-      - G2 Plumage 2
-      - G3 Plumage 3
-      - G4 Plumage 4
-      - G5 Plumage 5
+      - `G1` Plumage 1
+      - `G2` Plumage 2
+      - `G3` Plumage 3
+      - `G4` Plumage 4
+      - `G5` Plumage 5
     type: string
     format: default
     constraints:
@@ -171,8 +171,8 @@ fields:
 
   - name: sex
     description: |
-      - F Female
-      - M Male 
+      - `F` Female
+      - `M` Male 
     type: string
     format: default
     constraints:
@@ -193,15 +193,15 @@ fields:
   - name: direction_of_travel
     description: |
       The direction in which the bird/cetacean is travelling:
-      - N Heading N
-      - NE Heading NE
-      - E Heading E
-      - SE Heading SE
-      - S Heading S
-      - SW Heading SW
-      - W Heading W
-      - NW Heading NW
-      - U Flying, no apparent direction
+      - `N` Heading N
+      - `NE` Heading NE
+      - `E` Heading E
+      - `SE` Heading SE
+      - `S` Heading S
+      - `SW` Heading SW
+      - `W` Heading W
+      - `NW` Heading NW
+      - `U` Flying, no apparent direction
 
       Alternatively direction of travel can be indicated in degrees with 
       increments of 10° (for example in case of relative direction recording).
@@ -260,76 +260,76 @@ fields:
   - name: prey
     description: |
       Observed prey (type) caught or carried by the bird/cetacean:
-      - 0 Unknown
-      - 1 Unknown
-      - 2 Unknown
-      - 3 Unknown
-      - 4 Unknown
-      - 5 Unknown
-      - 6 Unknown
-      - 7 Unknown
-      - 8 Unknown
-      - 9 Other item
-      - 10 Fish, no further details
-      - 11 Small fish, unidentified (ca. bill length)
-      - 12 Medium fish, unidentified (ca. 2-5x bill length)
-      - 13 Marge fish, unidentified (difficult to handle)
-      - 14 Feeding sandeel ball at surface
-      - 15 Feeding clupeoid ball at surface
-      - 16 Feeding unidentified fish ball at surface
-      - 17 Feeding capelin ball at surface
-      - 18 Unknown
-      - 20 Gurnard
-      - 21 Herring or sprat
-      - 22 Sandeel
-      - 23 Gadoid fish
-      - 24 Flatfish
-      - 25 Regurgitated fish after aerial pursuit
-      - 26 Salmonid
-      - 27 Capelin
-      - 28 Unknown
-      - 29 Unknown
-      - 30 Small particles, unidentified
-      - 31 Large object, unidentified
-      - 32 Jellyfish
-      - 33 Squid
-      - 34 Worm (e.g. Nereis)
-      - 35 Barnacles (Balanidae zeepokken)
-      - 36 Oil from oil slick
-      - 39 Unknown
-      - 40 Crustacean, unidentified
-      - 41 Swimming crab
-      - 42 Starfish
-      - 43 Sea urchin
-      - 44 Unknown
-      - 45 Bivalve, unidentified
-      - 46 Mussel
-      - 47 Whelk eggs capsule
-      - 49 Unknown
-      - 50 Carrion or big unidentified corpse
-      - 51 Seal carcass
-      - 52 Whale carcass
-      - 53 Bird carcass
-      - 54 Litter, rubbish
-      - 55 Regurgitated unidentified prey after aerial pursuit
-      - 56 Bird kill (e.g. bonxie)
-      - 57 Excrements (e.g. from whale)
-      - 58 Kitchen scraps
-      - 59 Bread
-      - 60 Fishery waste, unidentified
-      - 61 Discarded roundfish
-      - 62 Discarded flatfish
-      - 63 Discarded offal
-      - 64 Discarded benthic invertebrate,unidentified
-      - 65 Discarded starfish
-      - 66 Discarded crustacean
-      - 68 Unknown
-      - 70 Seaweed as nest material
-      - 71 Insects
-      - 72 Unknown
-      - 90 Unknown
-      - 92 Unknown
-      - 99 Unknown
+      - `0` Unknown
+      - `1` Unknown
+      - `2` Unknown
+      - `3` Unknown
+      - `4` Unknown
+      - `5` Unknown
+      - `6` Unknown
+      - `7` Unknown
+      - `8` Unknown
+      - `9` Other item
+      - `10` Fish, no further details
+      - `11` Small fish, unidentified (ca. bill length)
+      - `12` Medium fish, unidentified (ca. 2-5x bill length)
+      - `13` Marge fish, unidentified (difficult to handle)
+      - `14` Feeding sandeel ball at surface
+      - `15` Feeding clupeoid ball at surface
+      - `16` Feeding unidentified fish ball at surface
+      - `17` Feeding capelin ball at surface
+      - `18` Unknown
+      - `20` Gurnard
+      - `21` Herring or sprat
+      - `22` Sandeel
+      - `23` Gadoid fish
+      - `24` Flatfish
+      - `25` Regurgitated fish after aerial pursuit
+      - `26` Salmonid
+      - `27` Capelin
+      - `28` Unknown
+      - `29` Unknown
+      - `30` Small particles, unidentified
+      - `31` Large object, unidentified
+      - `32` Jellyfish
+      - `33` Squid
+      - `34` Worm (e.g. Nereis)
+      - `35` Barnacles (Balanidae zeepokken)
+      - `36` Oil from oil slick
+      - `39` Unknown
+      - `40` Crustacean, unidentified
+      - `41` Swimming crab
+      - `42` Starfish
+      - `43` Sea urchin
+      - `44` Unknown
+      - `45` Bivalve, unidentified
+      - `46` Mussel
+      - `47` Whelk eggs capsule
+      - `49` Unknown
+      - `50` Carrion or big unidentified corpse
+      - `51` Seal carcass
+      - `52` Whale carcass
+      - `53` Bird carcass
+      - `54` Litter, rubbish
+      - `55` Regurgitated unidentified prey after aerial pursuit
+      - `56` Bird kill (e.g. bonxie)
+      - `57` Excrements (e.g. from whale)
+      - `58` Kitchen scraps
+      - `59` Bread
+      - `60` Fishery waste, unidentified
+      - `61` Discarded roundfish
+      - `62` Discarded flatfish
+      - `63` Discarded offal
+      - `64` Discarded benthic invertebrate,unidentified
+      - `65` Discarded starfish
+      - `66` Discarded crustacean
+      - `68` Unknown
+      - `70` Seaweed as nest material
+      - `71` Insects
+      - `72` Unknown
+      - `90` Unknown
+      - `92` Unknown
+      - `99` Unknown
     type: integer
     format: default
     constraints:
@@ -410,61 +410,61 @@ fields:
     description: |
       Code for associations between observed birds/cetaceans and 
       vessels/structures/floating matter:
-      - 10 Associated with fish shoal
-      - 11 Associated with cetaceans
-      - 12 Associated with front
-      - 13 Associated with line in sea
-      - 14 Sitting on or near floating wood
-      - 15 Associated with floating litter
-      - 16 Associated with oil slick
-      - 17 Associated with floating seaweed
-      - 18 Associated with observation base
-      - 19 Sitting on observation base
-      - 20 Deliberately approaching observ. base
-      - 21 Associated with other vessel
-      - 22 Associated with or on buoy
-      - 23 Associated with offshore platform
-      - 24 Sitting on offshore platform
-      - 25 Sitting on marking pole or stick
-      - 26 Associated with fishing vessel
-      - 27 Associated with or on sea ice
-      - 28 Associated with land (e.g. colony)
-      - 29 Associated with sand banks
-      - 42 Unknown
-      - 45 Unknown
-      - 47 Unknown
-      - 50 MSFA participant, no further details
-      - 51 MSFA participant, joined by others
-      - 52 MSFA participant, joining flock
-      - 53 MSFA participant, scrounger type
-      - 54 MSFA participant, solitary diver
-      - 55 MSFA participant, beater
-      - 56 MSFA participant, social feeder
-      - 57 Type II MSFA participant
-      - 58 Type III MSFA participant
-      - 59 Unknown
-      - 60 Unknown
-      - 61 Unknown
-      - 63 Unknown
-      - 67 Unknown
-      - 68 Unknown
-      - 69 Unknown
-      - 71 Unknown
-      - 81 Unknown
-      - 90 Unknown
-      - 100 Unknown
-      - 101 Unknown
-      - 102 On sandbank
-      - 103 Unknown
-      - 110 Inside wind farm
-      - 111 Inside wind farm, associated with floating litter
-      - 112 Inside wind farm, associated with observation base
-      - 113 Inside wind farm, associated with floating wood
-      - 114 Inside wind farm, associated with floating sea weed
-      - 115 Inside wind farm, associated with platform
-      - 116 Sitting on wind turbine (foundation)
-      - 117 Flying or swimming near wind turbine (foundation)
-      - 200 Zwischen fundamenten fliegend
+      - `10` Associated with fish shoal
+      - `11` Associated with cetaceans
+      - `12` Associated with front
+      - `13` Associated with line in sea
+      - `14` Sitting on or near floating wood
+      - `15` Associated with floating litter
+      - `16` Associated with oil slick
+      - `17` Associated with floating seaweed
+      - `18` Associated with observation base
+      - `19` Sitting on observation base
+      - `20` Deliberately approaching observ. base
+      - `21` Associated with other vessel
+      - `22` Associated with or on buoy
+      - `23` Associated with offshore platform
+      - `24` Sitting on offshore platform
+      - `25` Sitting on marking pole or stick
+      - `26` Associated with fishing vessel
+      - `27` Associated with or on sea ice
+      - `28` Associated with land (e.g. colony)
+      - `29` Associated with sand banks
+      - `42` Unknown
+      - `45` Unknown
+      - `47` Unknown
+      - `50` MSFA participant, no further details
+      - `51` MSFA participant, joined by others
+      - `52` MSFA participant, joining flock
+      - `53` MSFA participant, scrounger type
+      - `54` MSFA participant, solitary diver
+      - `55` MSFA participant, beater
+      - `56` MSFA participant, social feeder
+      - `57` Type II MSFA participant
+      - `58` Type III MSFA participant
+      - `59` Unknown
+      - `60` Unknown
+      - `61` Unknown
+      - `63` Unknown
+      - `67` Unknown
+      - `68` Unknown
+      - `69` Unknown
+      - `71` Unknown
+      - `81` Unknown
+      - `90` Unknown
+      - `100` Unknown
+      - `101` Unknown
+      - `102` On sandbank
+      - `103` Unknown
+      - `110` Inside wind farm
+      - `111` Inside wind farm, associated with floating litter
+      - `112` Inside wind farm, associated with observation base
+      - `113` Inside wind farm, associated with floating wood
+      - `114` Inside wind farm, associated with floating sea weed
+      - `115` Inside wind farm, associated with platform
+      - `116` Sitting on wind turbine (foundation)
+      - `117` Flying or swimming near wind turbine (foundation)
+      - `200` Zwischen fundamenten fliegend
     type: integer
     format: default
     constraints:
@@ -529,13 +529,13 @@ fields:
   - name: activity
     description: |
       Indicates what the species was doing when observed:
-      - 1 On water/swimming
-      - 2 Diving
-      - 3 Flushing
-      - 4 Flying
-      - 5 Completely submerged (marine mammals)
-      - 6 Breaking surface (marine mammals)
-      - 7 On artificial piece of something (platform, pole…)
+      - `1` On water/swimming
+      - `2` Diving
+      - `3` Flushing
+      - `4` Flying
+      - `5` Completely submerged (marine mammals)
+      - `6` Breaking surface (marine mammals)
+      - `7` On artificial piece of something (platform, pole…)
     type: integer
     format: default
     constraints:
@@ -552,86 +552,86 @@ fields:
   - name: behaviour
     description: |
       Indicates what the species was doing when observed:
-      - 0 Unknown
-      - 4 Unknown
-      - 8 Unknown
-      - 10 Unknown
-      - 15 Unknown
-      - 20 Unknown
-      - 29 Unknown
-      - 30 Holding fish
-      - 31 Without fish
-      - 32 Feeding young at sea
-      - 33 Feeding, method unspecified
-      - 34 Wading, filtering or probing
-      - 35 Scooping prey from surface
-      - 36 Aerial pursuit
-      - 37 Skimming
-      - 38 Hydroplaning
-      - 39 Pattering
-      - 40 Scavenging
-      - 41 Scavenging at fishing vessel
-      - 42 Dipping
-      - 43 Surface seizing
-      - 44 Surface pecking
-      - 45 Deep plunging
-      - 46 Shallow plunging
-      - 47 Pursuit plunging
-      - 48 Pursuit diving, or bottom feeding
-      - 49 Actively searching
-      - 55 Unknown
-      - 60 Resting or apparently asleep
-      - 61 Courtship display
-      - 62 Courtship feeding
-      - 63 Copulating
-      - 64 Carrying nest material
-      - 65 Guarding chick
-      - 66 Preening or bathing
-      - 67 Colony rafts
-      - 68 Kleptoparasitising
-      - 69 Circling high
-      - 70 Wheeling or swimming slowly
-      - 71 Escape from ship (rooster tail)
-      - 72 Swimming fast, not avoiding ship
-      - 73 Breaching clear out of the water
-      - 74 At the bow of the ship
-      - 75 Apparently feeding: herding behaviour
-      - 76 Apparently feeding: other behaviour
-      - 77 Calf at the tail of adult
-      - 78 Calf swimming freely in herd
-      - 79 Basking, afloat
-      - 80 Spy-hopping
-      - 81 Lob-tailing
-      - 82 Tail/flipper slapping
-      - 83 Approaching ship
-      - 84 Only blow visible (whales)
-      - 85 Only splashes visible (dolphins)
-      - 86 Acrobatic leaps
-      - 87 Sexual behaviour
-      - 88 Play
-      - 89 Haul-out
-      - 90 Under attack by kleptoparasite
-      - 91 Under attack (as prey) by bird
-      - 92 Under attack (as prey) by mar. mammal
-      - 93 Escape diving
-      - 94 Flushed (disturbance)
-      - 95 Injured
-      - 96 Entangled in fishing gear or rope
-      - 97 Oiled
-      - 98 Sick, unwell
-      - 99 Dead
-      - 100 Carousel feeding (orca)
-      - 101 Pod splitting
-      - 102 Pod formation
-      - 103 Source avoiding behaviour
-      - 111 Not foraging
-      - 112 Diving (no specification)
-      - 113 Active migration
-      - 114 Flying off (no specification)
-      - 116 Distraction behaviour
-      - 121 Milling (ungerichtetes Verhalten mit Richtungswechsel)
-      - 122 Tauchend (marine Säuger)
-      - 123 Kopf aus dem Wasser steckend (Robben)
+      - `0` Unknown
+      - `4` Unknown
+      - `8` Unknown
+      - `10` Unknown
+      - `15` Unknown
+      - `20` Unknown
+      - `29` Unknown
+      - `30` Holding fish
+      - `31` Without fish
+      - `32` Feeding young at sea
+      - `33` Feeding, method unspecified
+      - `34` Wading, filtering or probing
+      - `35` Scooping prey from surface
+      - `36` Aerial pursuit
+      - `37` Skimming
+      - `38` Hydroplaning
+      - `39` Pattering
+      - `40` Scavenging
+      - `41` Scavenging at fishing vessel
+      - `42` Dipping
+      - `43` Surface seizing
+      - `44` Surface pecking
+      - `45` Deep plunging
+      - `46` Shallow plunging
+      - `47` Pursuit plunging
+      - `48` Pursuit diving, or bottom feeding
+      - `49` Actively searching
+      - `55` Unknown
+      - `60` Resting or apparently asleep
+      - `61` Courtship display
+      - `62` Courtship feeding
+      - `63` Copulating
+      - `64` Carrying nest material
+      - `65` Guarding chick
+      - `66` Preening or bathing
+      - `67` Colony rafts
+      - `68` Kleptoparasitising
+      - `69` Circling high
+      - `70` Wheeling or swimming slowly
+      - `71` Escape from ship (rooster tail)
+      - `72` Swimming fast, not avoiding ship
+      - `73` Breaching clear out of the water
+      - `74` At the bow of the ship
+      - `75` Apparently feeding: herding behaviour
+      - `76` Apparently feeding: other behaviour
+      - `77` Calf at the tail of adult
+      - `78` Calf swimming freely in herd
+      - `79` Basking, afloat
+      - `80` Spy-hopping
+      - `81` Lob-tailing
+      - `82` Tail/flipper slapping
+      - `83` Approaching ship
+      - `84` Only blow visible (whales)
+      - `85` Only splashes visible (dolphins)
+      - `86` Acrobatic leaps
+      - `87` Sexual behaviour
+      - `88` Play
+      - `89` Haul-out
+      - `90` Under attack by kleptoparasite
+      - `91` Under attack (as prey) by bird
+      - `92` Under attack (as prey) by mar. mammal
+      - `93` Escape diving
+      - `94` Flushed (disturbance)
+      - `95` Injured
+      - `96` Entangled in fishing gear or rope
+      - `97` Oiled
+      - `98` Sick, unwell
+      - `99` Dead
+      - `100` Carousel feeding (orca)
+      - `101` Pod splitting
+      - `102` Pod formation
+      - `103` Source avoiding behaviour
+      - `111` Not foraging
+      - `112` Diving (no specification)
+      - `113` Active migration
+      - `114` Flying off (no specification)
+      - `116` Distraction behaviour
+      - `121` Milling (ungerichtetes Verhalten mit Richtungswechsel)
+      - `122` Tauchend (marine Säuger)
+      - `123` Kopf aus dem Wasser steckend (Robben)
     type: integer
     format: default
     constraints:
