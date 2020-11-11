@@ -86,13 +86,27 @@ fields:
       required: false
 
   - name: beaufort
-    description: > # TODO: add lookup table?
-      Sea state according to the Beaufort scale – see lookup table.
+    description: >
+      Sea state according to the Beaufort scale:
+      - 0 Sea like mirror
+      - 1 Ripples with appearance of scales, no foam crests
+      - 2 Small wavelets, crests of glassy appearance, not breaking
+      - 3 Large wavelets, crests begin to break, scattered whitecaps
+      - 4 Small waves becoming longer, numerous whitecaps
+      - 5 Moderate waves, many whitecaps, some spray
+      - 6 Larger waves, whitecaps everywhere, more spray
+      - 7 Sea heaps up and white foam from breaking waves begins to be blown in streaks along the direction of the wind
+      - 8 Moderately high waves; edges of crests begin to break into the spindrift; foam is blown in well-marked streaks along the direction of the wind
+      - 9 High waves; dense streaks of foam along wind; crests begin to topple, tumble and roll over; spray may affect visibility
+      - 10 Very high waves with long overhanging crests; foam in great patches blown in dense white streaks along wind; sea surface takes a white appearance; tumbling becomes heavy and shock-like; visibility affected
+      - 11 Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
+      - 12 Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
     type: integer
     format: default
     constraints:
       required: false
       enum:
+        - 0
         - 1
         - 2
         - 3
