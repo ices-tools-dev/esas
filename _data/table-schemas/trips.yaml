@@ -153,7 +153,7 @@ fields:
       required: false
 
   - name: route
-    description: > # TODO: indicate < 50 bytes?
+    description: >
       Short description of the area covered or route followed.
     type: string
     format: default
@@ -161,7 +161,7 @@ fields:
       required: false
 
   - name: count_method
-    description: | # TODO: add comment?
+    description: |
       The type of observation method being applied:
       - 1 Full ship-based transect method with snapshot for flying birds
       - 2 Full ship-based transect method, no snapshot for flying birds
