@@ -97,7 +97,7 @@ fields:
 
   - name: age_class
     description: |
-      Age class or primary moult information:
+      Age class:
       - `A` Adult
       - `I` Immature (not specified)
       - `1` 1st calendar year
@@ -105,10 +105,10 @@ fields:
       - `3` 3rd calendar year
       - `4` 4th calendar year
       - `5` 5th calendar year
+
+      Or primary moult information (only used for fulmar, auks, divers and seaduck):
       - `X` Active primary moult
       - `Y` No active primary moult
-      
-      (Primary moult codes only used for fulmar, auks, divers and seaduck.)
     type: string
     format: default
     constraints:
