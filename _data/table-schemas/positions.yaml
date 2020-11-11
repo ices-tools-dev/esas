@@ -58,7 +58,7 @@ fields:
       minimum: -180
       maximum: 180
 
-  - name: transect_id # TODO: drop this field?
+  - name: transect_id
     description: >
       Name or number of the transect with a leading 2-letter country code. 
       Format: `XX_YYYYYYYYYY`, where `XX` is the 2-letter country code and 
