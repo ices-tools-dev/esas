@@ -409,12 +409,173 @@ fields:
         - 7
 
   - name: behaviour
-    description: > # TODO: add lookup table?
-      Indicates what the species was doing when observed – see lookup table.
+    description: |
+      Indicates what the species was doing when observed:
+      - 0 Unknown
+      - 4 Unknown
+      - 8 Unknown
+      - 10 Unknown
+      - 15 Unknown
+      - 20 Unknown
+      - 29 Unknown
+      - 30 Holding fish
+      - 31 Without fish
+      - 32 Feeding young at sea
+      - 33 Feeding, method unspecified
+      - 34 Wading, filtering or probing
+      - 35 Scooping prey from surface
+      - 36 Aerial pursuit
+      - 37 Skimming
+      - 38 Hydroplaning
+      - 39 Pattering
+      - 40 Scavenging
+      - 41 Scavenging at fishing vessel
+      - 42 Dipping
+      - 43 Surface seizing
+      - 44 Surface pecking
+      - 45 Deep plunging
+      - 46 Shallow plunging
+      - 47 Pursuit plunging
+      - 48 Pursuit diving, or bottom feeding
+      - 49 Actively searching
+      - 55 Unknown
+      - 60 Resting or apparently asleep
+      - 61 Coursthip display
+      - 62 Courtship feeding
+      - 63 Copulating
+      - 64 Carrying nest material
+      - 65 Guarding chick
+      - 66 Preening or bathing
+      - 67 Colony rafts
+      - 68 Kleptoparasitising
+      - 69 Circling high
+      - 70 Wheeling or swimming slowly
+      - 71 Escape from ship (rooster tail)
+      - 72 Swimming fast, not avoiding ship
+      - 73 Breaching clear out of the water
+      - 74 At the bow of the ship
+      - 75 Apparently feeding: herding behaviour
+      - 76 Apparently feeding: other behaviour
+      - 77 Calf at the tail of adult
+      - 78 Calf swimming freely in herd
+      - 79 Basking, afloat
+      - 80 Spy-hopping
+      - 81 Lob-tailing
+      - 82 Tail/flipper slapping
+      - 83 Approaching ship
+      - 84 Only blow visible (whales)
+      - 85 Only splashes visible (dolphins)
+      - 86 Acrobatic leaps
+      - 87 Sexual behaviour
+      - 88 Play
+      - 89 Haul-out
+      - 90 Under attack by kleptoparasite
+      - 91 Under attack (as prey) by bird
+      - 92 Under attack (as prey) by mar. mammal
+      - 93 Escape diving
+      - 94 Flushed (disturbance)
+      - 95 Injured
+      - 96 Entangled in fishing gear or rope
+      - 97 Oiled
+      - 98 Sick, unwell
+      - 99 Dead
+      - 100 Carousel feeding (orca)
+      - 101 Pod splitting
+      - 102 Pod formation
+      - 103 Source avoiding behaviour
+      - 111 Not foraging
+      - 112 Diving (no specification)
+      - 113 Active migration
+      - 114 Flying off (no specification)
+      - 116 Distraction behaviour
+      - 121 Milling (ungerichtetes Verhalten mit Richtungswechsel)
+      - 122 Tauchend (marine Säuger)
+      - 123 Kopf aus dem Wasser steckend (Robben)
     type: integer
     format: default
     constraints:
       required: false
+      enum:
+        - 0
+        - 4
+        - 8
+        - 10
+        - 15
+        - 20
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 55
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 111
+        - 112
+        - 113
+        - 114
+        - 116
+        - 121
+        - 122
+        - 123
 
   - name: notes
     description: >
