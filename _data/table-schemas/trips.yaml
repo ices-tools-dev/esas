@@ -66,7 +66,7 @@ fields:
     type: string
     format: default
     constraints:
-      required: true
+      required: false
 
   - name: flying_height
     description: >
@@ -204,7 +204,7 @@ fields:
     type: integer
     format: default
     constraints:
-      required: true
+      required: false
       enum:
         - 1
         - 2
@@ -220,7 +220,7 @@ fields:
     type: integer
     format: default
     constraints:
-      required: true
+      required: false
       enum:
         - 0
         - 1
@@ -281,7 +281,7 @@ fields:
     type: integer
     format: default
     constraints:
-      required: true
+      required: false
       enum:
         - 1
         - 2
@@ -296,9 +296,9 @@ fields:
     type: integer
     format: default
     constraints:
-      required: true
+      required: false
 
-  - name: observer1 # TODO: create a single field, with names?
+  - name: observer1
     description: >
       Code for the observer name – see lookup table. Report only the observers 
       assisting the `observer1` in the fields `observer2` and `observer3`. Do 
@@ -306,7 +306,7 @@ fields:
     type: integer
     format: default
     constraints:
-      required: true
+      required: false
 
   - name: observer2
     description: >
