@@ -32,7 +32,7 @@ fields:
     description: >
       UTC time of the observation bin in the format `hh:mm:ss`.
     type: time
-    format: default # hh:mm:ss
+    format: default
     constraints:
       required: true
 
@@ -86,7 +86,7 @@ fields:
       required: false
 
   - name: beaufort
-    description: >
+    description: |
       Sea state according to the Beaufort scale:
       - 0 Sea like mirror
       - 1 Ripples with appearance of scales, no foam crests
@@ -235,7 +235,7 @@ fields:
         - 3
 
   - name: ice
-    description: |
+    description: >
       Ice coverage within the survey transect % (`0` – `100`).
     type: integer
     format: default

@@ -95,7 +95,7 @@ fields:
     description: >
       Date in the format `yyyy-mm-dd`.
     type: date
-    format: default # YYYY-MM-DD
+    format: default
     constraints:
       required: true
 

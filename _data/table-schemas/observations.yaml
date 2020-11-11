@@ -28,7 +28,7 @@ fields:
       required: true
 
   - name: transect
-    description: >
+    description: |
       States whether the observation was in or out the transect:
       - 1 Out of transect
       - 2 Inside transect
