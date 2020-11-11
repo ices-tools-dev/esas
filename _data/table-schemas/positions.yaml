@@ -107,17 +107,65 @@ fields:
         - 12
 
   - name: visibility
-    description: | # TODO: add lookup table?
+    description: |
       Visibility code: 
       - A Poor (< 1 km)
       - B Fair/moderate (1 – 5 km)
       - C Good/very good (5 – 10 km)
       - D Excellent/infinity (> 10 km)
-      Alternatively visibility can be indicated in km (see lookup table).
+      - 0.1 Visibility in km
+      - 0.2 Visibility in km
+      - 0.3 Visibility in km
+      - 0.4 Visibility in km
+      - 0.5 Visibility in km
+      - 0.6 Visibility in km
+      - 0.7 Visibility in km
+      - 0.8 Visibility in km
+      - 0.9 Visibility in km
+      - 1 Visibility in km
+      - 1.5 Visibility in km
+      - 2 Visibility in km
+      - 2.5 Visibility in km
+      - 3 Visibility in km
+      - 3.5 Visibility in km
+      - 4 Visibility in km
+      - 5 Visibility in km
+      - 6 Visibility in km
+      - 7 Visibility in km
+      - 8 Visibility in km
+      - 9 Visibility in km
+      - 10 Visibility of >= 10 km
     type: string
     format: default
     constraints:
       required: false
+      enum:
+        - A
+        - B
+        - C
+        - D
+        - '0.1'
+        - '0.2'
+        - '0.3'
+        - '0.4'
+        - '0.5'
+        - '0.6'
+        - '0.7'
+        - '0.8'
+        - '0.9'
+        - '1'
+        - '1.5'
+        - '2'
+        - '2.5'
+        - '3'
+        - '3.5'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
 
   - name: glare
     description: |
