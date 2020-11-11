@@ -269,62 +269,62 @@ fields:
       - 7 Unknown
       - 8 Unknown
       - 9 Other item
-      - 10 fish, no further details
-      - 11 small fish, unidentified (ca. bill length)
-      - 12 medium fish, unidentified (ca. 2-5x bill length)
-      - 13 large fish, unidentified (difficult to handle)
-      - 14 feeding sandeel ball at surface
-      - 15 feeding clupeoid ball at surface
-      - 16 feeding unidentified fish ball at surface
-      - 17 feeding capelin ball at surface
+      - 10 Fish, no further details
+      - 11 Small fish, unidentified (ca. bill length)
+      - 12 Medium fish, unidentified (ca. 2-5x bill length)
+      - 13 Marge fish, unidentified (difficult to handle)
+      - 14 Feeding sandeel ball at surface
+      - 15 Feeding clupeoid ball at surface
+      - 16 Feeding unidentified fish ball at surface
+      - 17 Feeding capelin ball at surface
       - 18 Unknown
-      - 20 gurnard
-      - 21 herring or sprat
-      - 22 sandeel
-      - 23 gadoid fish
-      - 24 flatfish
-      - 25 regurgitated fish after aerial pursuit
-      - 26 salmonid
-      - 27 capelin
+      - 20 Gurnard
+      - 21 Herring or sprat
+      - 22 Sandeel
+      - 23 Gadoid fish
+      - 24 Flatfish
+      - 25 Regurgitated fish after aerial pursuit
+      - 26 Salmonid
+      - 27 Capelin
       - 28 Unknown
       - 29 Unknown
-      - 30 small particles, unidentified
-      - 31 large object, unidentified
-      - 32 jellyfish
-      - 33 squid
-      - 34 worm (e.g. Nereis)
-      - 35 barnacles (Balanidae zeepokken)
-      - 36 oil from oil slick
+      - 30 Small particles, unidentified
+      - 31 Large object, unidentified
+      - 32 Jellyfish
+      - 33 Squid
+      - 34 Worm (e.g. Nereis)
+      - 35 Barnacles (Balanidae zeepokken)
+      - 36 Oil from oil slick
       - 39 Unknown
-      - 40 crustacean, unidentified
-      - 41 swimming crab
-      - 42 starfish
-      - 43 sea urchin
+      - 40 Crustacean, unidentified
+      - 41 Swimming crab
+      - 42 Starfish
+      - 43 Sea urchin
       - 44 Unknown
-      - 45 bivalve, unidentified
-      - 46 mussel
-      - 47 whelk eggs capsule
+      - 45 Bivalve, unidentified
+      - 46 Mussel
+      - 47 Whelk eggs capsule
       - 49 Unknown
-      - 50 carrion or big unidentified corpse
-      - 51 seal carcass
-      - 52 whale carcass
-      - 53 bird carcass
-      - 54 litter, rubbish
-      - 55 regurgitated unidentified prey after aerial pursuit
-      - 56 bird kill (e.g. bonxie)
-      - 57 excrements (e.g. from whale)
-      - 58 kitchen scraps
-      - 59 bread
-      - 60 fishery waste, unidentified
-      - 61 discarded roundfish
-      - 62 discarded flatfish
-      - 63 discarded offal
-      - 64 discarded benthic invertebrate,unidentified
-      - 65 discarded starfish
-      - 66 discarded crustacean
+      - 50 Carrion or big unidentified corpse
+      - 51 Seal carcass
+      - 52 Whale carcass
+      - 53 Bird carcass
+      - 54 Litter, rubbish
+      - 55 Regurgitated unidentified prey after aerial pursuit
+      - 56 Bird kill (e.g. bonxie)
+      - 57 Excrements (e.g. from whale)
+      - 58 Kitchen scraps
+      - 59 Bread
+      - 60 Fishery waste, unidentified
+      - 61 Discarded roundfish
+      - 62 Discarded flatfish
+      - 63 Discarded offal
+      - 64 Discarded benthic invertebrate,unidentified
+      - 65 Discarded starfish
+      - 66 Discarded crustacean
       - 68 Unknown
-      - 70 seaweed as nest material
-      - 71 insects
+      - 70 Seaweed as nest material
+      - 71 Insects
       - 72 Unknown
       - 90 Unknown
       - 92 Unknown
