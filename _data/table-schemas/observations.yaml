@@ -266,13 +266,124 @@ fields:
       required: false
 
   - name: association
-    description: > # TODO: add lookup table?
+    description: |
       Code for associations between observed birds/cetaceans and 
-      vessels/structures/floating matter – see lookup table.
+      vessels/structures/floating matter:
+      - 10 Associated with fish shoal
+      - 11 Associated with cetaceans
+      - 12 Associated with front
+      - 13 Associated with line in sea
+      - 14 Sitting on or near floating wood
+      - 15 Associated with floating litter
+      - 16 Associated with oil slick
+      - 17 Associated with floating seaweed
+      - 18 Associated with observation base
+      - 19 Sitting on observation base
+      - 20 Deliberately approaching observ. base
+      - 21 Associated with other vessel
+      - 22 Associated with or on buoy
+      - 23 Associated with offshore platform
+      - 24 Sitting on offshore platform
+      - 25 Sitting on marking pole or stick
+      - 26 Associated with fishing vessel
+      - 27 Associated with or on sea ice
+      - 28 Associated with land (e.g. colony)
+      - 29 Associated with sand banks
+      - 42 Unknown
+      - 45 Unknown
+      - 47 Unknown
+      - 50 MSFA participant, no further details
+      - 51 MSFA participant, joined by others
+      - 52 MSFA participant, joining flock
+      - 53 MSFA participant, scrounger type
+      - 54 MSFA participant, solitary diver
+      - 55 MSFA participant, beater
+      - 56 MSFA participant, social feeder
+      - 57 Type II MSFA participant
+      - 58 Type III MSFA participant
+      - 59 Unknown
+      - 60 Unknown
+      - 61 Unknown
+      - 63 Unknown
+      - 67 Unknown
+      - 68 Unknown
+      - 69 Unknown
+      - 71 Unknown
+      - 81 Unknown
+      - 90 Unknown
+      - 100 Unknown
+      - 101 Unknown
+      - 102 On sandbank
+      - 103 Unknown
+      - 110 Inside wind farm
+      - 111 Inside wind farm, associated with floating litter
+      - 112 Inside wind farm, associated with observation base
+      - 113 Inside wind farm, associated with floating wood
+      - 114 Inside wind farm, associated with floating sea weed
+      - 115 Inside wind farm, associated with platform
+      - 116 Sitting on wind turbine (foundation)
+      - 117 Flying or swimming near wind turbine (foundation)
+      - 200 Zwischen fundamenten fliegend
     type: integer
     format: default
     constraints:
       required: false
+      enum:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 42
+        - 45
+        - 47
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 63
+        - 67
+        - 68
+        - 69
+        - 71
+        - 81
+        - 90
+        - 100
+        - 101
+        - 102
+        - 103
+        - 110
+        - 111
+        - 112
+        - 113
+        - 114
+        - 115
+        - 116
+        - 117
+        - 200
 
   - name: activity
     description: |
