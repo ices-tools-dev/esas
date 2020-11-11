@@ -257,13 +257,153 @@ fields:
         - '360'
 
   - name: prey
-    description: > # TODO: add lookup table?
-      Observed prey (type) caught or carried by the bird/cetacean – see lookup 
-      table.
+    description: |
+      Observed prey (type) caught or carried by the bird/cetacean:
+      - 0 Unknown
+      - 1 Unknown
+      - 2 Unknown
+      - 3 Unknown
+      - 4 Unknown
+      - 5 Unknown
+      - 6 Unknown
+      - 7 Unknown
+      - 8 Unknown
+      - 9 Other item
+      - 10 fish, no further details
+      - 11 small fish, unidentified (ca. bill length)
+      - 12 medium fish, unidentified (ca. 2-5x bill length)
+      - 13 large fish, unidentified (difficult to handle)
+      - 14 feeding sandeel ball at surface
+      - 15 feeding clupeoid ball at surface
+      - 16 feeding unidentified fish ball at surface
+      - 17 feeding capelin ball at surface
+      - 18 Unknown
+      - 20 gurnard
+      - 21 herring or sprat
+      - 22 sandeel
+      - 23 gadoid fish
+      - 24 flatfish
+      - 25 regurgitated fish after aerial pursuit
+      - 26 salmonid
+      - 27 capelin
+      - 28 Unknown
+      - 29 Unknown
+      - 30 small particles, unidentified
+      - 31 large object, unidentified
+      - 32 jellyfish
+      - 33 squid
+      - 34 worm (e.g. Nereis)
+      - 35 barnacles (Balanidae zeepokken)
+      - 36 oil from oil slick
+      - 39 Unknown
+      - 40 crustacean, unidentified
+      - 41 swimming crab
+      - 42 starfish
+      - 43 sea urchin
+      - 44 Unknown
+      - 45 bivalve, unidentified
+      - 46 mussel
+      - 47 whelk eggs capsule
+      - 49 Unknown
+      - 50 carrion or big unidentified corpse
+      - 51 seal carcass
+      - 52 whale carcass
+      - 53 bird carcass
+      - 54 litter, rubbish
+      - 55 regurgitated unidentified prey after aerial pursuit
+      - 56 bird kill (e.g. bonxie)
+      - 57 excrements (e.g. from whale)
+      - 58 kitchen scraps
+      - 59 bread
+      - 60 fishery waste, unidentified
+      - 61 discarded roundfish
+      - 62 discarded flatfish
+      - 63 discarded offal
+      - 64 discarded benthic invertebrate,unidentified
+      - 65 discarded starfish
+      - 66 discarded crustacean
+      - 68 Unknown
+      - 70 seaweed as nest material
+      - 71 insects
+      - 72 Unknown
+      - 90 Unknown
+      - 92 Unknown
+      - 99 Unknown
     type: integer
     format: default
     constraints:
       required: false
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
+        - 65
+        - 66
+        - 68
+        - 70
+        - 71
+        - 72
+        - 90
+        - 92
+        - 99
 
   - name: association
     description: |
