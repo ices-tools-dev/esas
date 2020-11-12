@@ -5,3 +5,4 @@
 Development area for ESAS, including the ESAS data (exchange) model.
 
 - [ESAS table schemas](https://ices-tools-dev.github.io/esas/tables/)
+- [ESAS species codes](https://ices-tools-dev.github.io/esas/species/)
