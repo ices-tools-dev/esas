@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<div class="row">
+  <div class="col">
+
+    {{ content }}
+
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>ESAS name</th>
+          <th>EURING name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <col width="20%">
+        <col width="40%">
+        <col width="40%">
+        {% for species in site.data.vocabularies.euring_species_code %}
+          <tr>
+            <td id="{{ species.code }}">
+              <a href="#{{ species.code }}"><code>{{ species.code }}</code></a>
+            </td>
+            <td>
+              <em>{{ species.scientific_name }}</em>
+              <br>{{ species.english_name }}
+            </td>
+            <td>
+              <em>{{ species.euring_scientific_name }}</em>
+              <br>{{ species.euring_english_name }}
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
