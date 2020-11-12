@@ -28,7 +28,10 @@ layout: base
           <col width="20%">
           {% for field in table_schema.fields %}
             <tr>
-              <td id="{{ field.name | downcase | url_encode }}"><a href="#{{ field.name | downcase | url_encode }}"><code>{{ field.name }}</code></a></td>
+              <td id="{{ field.name | downcase | url_encode }}">
+                <a href="#{{ field.name | downcase | url_encode }}"><code>{{ field.name }}</code></a>
+                {% if field.constraints.required %}*{% endif %}
+              </td>
               <td>{{ field.description | markdownify }}</td>
               <td>{{ field.type }}</td>
             </tr>
