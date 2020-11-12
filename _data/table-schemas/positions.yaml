@@ -71,7 +71,8 @@ fields:
 
   - name: km_travelled
     description: >
-      The distance travelled during the observation bin in km.
+      The distance travelled during the observation bin in km. Can only remain 
+      empty if `area_surveyed` is used.
     type: number
     format: default
     constraints:
@@ -79,7 +80,8 @@ fields:
 
   - name: area_surveyed
     description: >
-      The area of sea surveyed during the observation bin in km².
+      The area of sea surveyed during the observation bin in km². Can only 
+      remain empty if `km_travelled` is used.
     type: number
     format: default
     constraints:
