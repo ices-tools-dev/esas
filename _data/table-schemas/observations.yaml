@@ -136,7 +136,7 @@ fields:
     format: default
     constraints:
       required: true
-      pattern: '[ABCDEFUW]|\>?\d+'
+      pattern: '[ABCDEFUW]|\>?\d+(\.\d+)?' # Specific letter or number (with optional > and decimals)
 
   - name: age_class
     description: |
