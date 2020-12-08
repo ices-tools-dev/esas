@@ -11,14 +11,16 @@ layout: base
       <thead>
         <tr>
           <th>Code</th>
-          <th>ESAS name</th>
-          <th>EURING name</th>
+          <th>ESAS</th>
+          <th>EURING</th>
+          <th>WoRMS</th>
         </tr>
       </thead>
       <tbody>
-        <col width="20%">
-        <col width="40%">
-        <col width="40%">
+        <col width="10%">
+        <col width="30%">
+        <col width="30%">
+        <col width="30%">
         {% for species in site.data.vocabularies.euring_species_code %}
           <tr>
             <td id="{{ species.code }}">
@@ -31,6 +33,11 @@ layout: base
             <td>
               <em>{{ species.euring_scientific_name }}</em>
               <br>{{ species.euring_english_name }}
+            </td>
+            <td>
+              {% if species.aphia_id %}
+              <em><a href="https://www.marinespecies.org/aphia.php?p=taxdetails&id={{ species.aphia_id }}">{{ species.aphia_scientific_name }}</a></em>
+              {% endif %}
             </td>
           </tr>
         {% endfor %}
