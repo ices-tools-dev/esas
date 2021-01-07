@@ -161,6 +161,29 @@ fields:
         5147, 5148, 5149, 5150, 5151, 5152, 5153
       ]
 
+  - name: platform_side
+    description: |
+      Side and optionally seat of platform used by observer(s) for counting:
+      - `right` Starboard
+      - `right front`
+      - `right back`
+      - `left` Port
+      - `left front`
+      - `left back`
+      - `both sides` Observers on both sides producing one collective data stream
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
+        - right       # Previously: 6
+        - right front # Previously: 1
+        - right back  # Previously: 3
+        - left        # Previously: 5
+        - left front  # Previously: 4
+        - left back   # Previously: 2
+        - both sides  # Previously: 9
+
   - name: flying_height
     description: >
       The flying height of the aeroplane or helicopter (m).
@@ -319,29 +342,6 @@ fields:
         - 1
         - 2
         - 3
-
-  - name: base_side
-    description: |
-      Side of platform used for counting (ship) or seat of the observer (aeroplane):
-      - `1` Aerial survey: right front
-      - `2` Aerial survey: left back
-      - `3` Aerial survey: right back
-      - `4` Aerial survey: left front
-      - `5` Ship-based survey: port side
-      - `6` Ship-based survey: starboard side
-      - `9` Observers both left and right producing one collective data stream
-    type: integer
-    format: default
-    constraints:
-      required: false
-      enum:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 9
 
   - name: direction_of_travel_type
     description: |
