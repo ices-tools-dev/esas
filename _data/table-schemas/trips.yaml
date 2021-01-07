@@ -100,13 +100,13 @@ fields:
       required: true
 
   - name: platform_type
-    description: >
-      The platform used for carrying out observations. Uses 
+    description: |
+      The platform used for carrying out observations. Uses the 
       [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
       - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
       - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
       - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
-    type: integer
+    type: string
     format: default
     constraints:
       required: true

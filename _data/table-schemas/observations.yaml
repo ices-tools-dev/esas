@@ -117,7 +117,7 @@ fields:
       observed. Different distance bins are used for ship-based and aerial 
       surveys:
 
-      For ship-based surveys (`platform_type` = `1`):
+      For ship-based surveys (`platform_type` = `ship`):
 
       A standard 300 m transect is  assumed for marine mammals and birds in 
       contact with the water:
@@ -131,7 +131,7 @@ fields:
       - `W` In contact with the water, but distance not recorded
 
       For any other type of distance bin classification in ship-based suryeys 
-      or aerial surveys (`platform_type` = `3`):
+      or aerial surveys (`platform_type` = `aeroplane` or `helicopter`):
 
       Distance is indicated by the distance (m) to middle point of one the 
       distance bins specified in the `distance_bins` column in the Trips table; 
