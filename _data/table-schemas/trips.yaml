@@ -100,21 +100,20 @@ fields:
       required: true
 
   - name: platform_type
-    description: |
-      The platform used for carrying out observations:
-      - `1` Ship
-      - `2` Helicopter
-      - `3` Aeroplane
-      - `4` Aeroplane (digital survey)
+    description: >
+      The platform used for carrying out observations. Uses 
+      [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
+      - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
+      - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
+      - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
     type: integer
     format: default
     constraints:
       required: true
       enum:
-        - 1
-        - 2
-        - 3
-        - 4
+        - ship        # Previously: 1
+        - aeroplane   # Previously: 3 and 4
+        - helicopter  # Previously: 2
 
   - name: platform_code
     description: >
