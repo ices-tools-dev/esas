@@ -345,24 +345,16 @@ fields:
 
   - name: direction_of_travel_type
     description: |
-      The way how direction of ships and birds is recorded:
-      - `U` Unknown
-      - `A` Absolute
-      - `R` Relative (to direction of platform)
-      - `Z` Number
-      - `P` Arrow
-      - `K` Not recorded
+      The way `direction_of_travel` for birds/cetaceans is recorded:
+      - `absolute` Direction relative to magnetic north
+      - `relative` Direction relative to the direction of the platform
     type: string
     format: default
     constraints:
       required: false
       enum:
-        - U
-        - A
-        - R
-        - Z
-        - P
-        - K
+        - absolute
+        - relative
 
   - name: observer_role
     description: |
