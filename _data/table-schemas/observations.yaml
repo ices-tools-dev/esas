@@ -246,13 +246,6 @@ fields:
 
       Alternatively direction of travel can be indicated in degrees with 
       increments of 10° (for example in case of relative direction recording).
-
-      (Inter)cardinal direction in which the bird/cetacean is travelling:
-...
-Direction relative to the movement of the platform (plane/ship) in which
-the bird/cetacean is travelling as degrees in increments of 10°:
-
-
     type: string
     format: default
     constraints:
