@@ -29,18 +29,11 @@ fields:
 
   - name: transect
     description: |
-      States whether the observation was in or out the transect:
-      - `1` Out of transect
-      - `2` Inside transect
-      - `3` Out of transect and of 90 deg scan
-    type: integer
+      States whether the observation was in (`TRUE`) or out (`FALSE`) of the transect.
+    type: boolean
     format: default
     constraints:
       required: true
-      enum:
-        - 1
-        - 2
-        - 3
 
   - name: euring_species_code
     description: >
@@ -253,6 +246,13 @@ fields:
 
       Alternatively direction of travel can be indicated in degrees with 
       increments of 10° (for example in case of relative direction recording).
+
+      (Inter)cardinal direction in which the bird/cetacean is travelling:
+...
+Direction relative to the movement of the platform (plane/ship) in which
+the bird/cetacean is travelling as degrees in increments of 10°:
+
+
     type: string
     format: default
     constraints:
