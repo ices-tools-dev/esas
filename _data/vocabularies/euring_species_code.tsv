@@ -21,13 +21,15 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 340	Bulweria bulwerii	Bulwer's Petrel	Bulweria bulwerii		137193	Bulweria bulwerii	
 350	Bulweria fallax	Jouanin's Petrel	Bulweria fallax		212650	Bulweria fallax	
 359		unidentified petrel			136998	Procellariidae	no corresponding Euring code
-360	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater	Calonectris diomedea		137062	Calonectris	
-365	Calonectris borealis	Cory's Shearwater			1348497	Calonectris borealis	no corresponding Euring code (addition 30/09)
+360	Calonectris diomedea	Scopoli's Shearwater	Calonectris diomedea		137194	Calonectris diomedea	replaced Calonectris diomedea / borealis
+361	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater			137062	Calonectris	previously coded as 360
+362	Calonectris edwardsii	Cape Verde Shearwater	Calonectris edwardsii	Cape Verde Shearwater	759340	Calonectris edwardsii	
 400	Ardenna gravis	Great Shearwater	Puffinus gravis		882958	Ardenna gravis	
 409	Ardenna gravis / Calonectris sp.	Great / Calonectris Shearwater			136998	Procellariidae	no corresponding Euring code
 410	Puffinus pacificus	Wedge-tailed Shearwater	Puffinus pacificus		212634	Puffinus pacificus	
 430	Ardenna grisea	Sooty Shearwater	Puffinus griseus		707542	Ardenna grisea	
 460	Puffinus puffinus	Manx Shearwater	Puffinus puffinus		137203	Puffinus puffinus	
+462	Puffinus yelkouan	Yelkouan Shearwater	Puffinus puffinus yelkouan		137204	Puffinus yelkouan	
 463	Puffinus mauretanicus	Balearic Shearwater	Puffinus puffinus mauretanicus		445503	Puffinus mauretanicus	code 462 in ESAS v5
 469	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Procellariidae	no corresponding Euring code
 480	Puffinus baroli / boydi	Barolo / Boyd's Shearwater	Puffinus assimilis		137065	Puffinus	slight conflict with Euring code meaning
@@ -36,11 +38,14 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 510	Pelagodroma marina	White-faced Storm Petrel	Pelagodroma marina		212700	Pelagodroma marina	
 520	Hydrobates pelagicus	European Storm Petrel	Hydrobates pelagicus		137189	Hydrobates pelagicus	
 550	Oceanodroma leucorhoa	Leach's Storm Petrel	Oceanodroma leucorhoa		137192	Oceanodroma leucorhoa	
+560	Oceanodroma monorhis	Swinhoe's Storm Petrel	Oceanodroma monorhis		212699	Oceanodroma monorhis	
 558	Oceanodroma leucorhoa / Hydrobates pelagicus	Leach’s / European Storm Petrel			148794	Hydrobatidae	no corresponding Euring code
 559		unidentified Storm Petrel			148794	Hydrobatidae	no corresponding Euring code
 580	Oceanodroma castro	Band-rumped Storm Petrel	Oceanodroma castro		137191	Oceanodroma castro	
+581	Oceanodroma monteiroi	Monteiro's Storm Petrel	Oceanodroma monteiroi	Monteiro's Storm Petrel	759342	Oceanodroma monteiroi	
 640	Phaethon aethereus	Red-billed Tropicbird	Phaethon aethereus		137177	Phaethon aethereus	
 660	Phaethon lepturus	White-tailed Tropicbird	Phaethon lepturus		212594	Phaethon lepturus	
+670	Sula sula	Red-footed Booby	Sula sula		212596	Sula sula	
 700	Sula leucogaster	Brown Booby	Sula leucogaster		212597	Sula leucogaster	
 710	Morus bassanus	Northern Gannet	Sula bassana		148776	Morus bassanus	
 720	Phalacrocorax carbo	Great Cormorant	Phalacrocorax carbo		137179	Phalacrocorax carbo	
@@ -211,6 +216,7 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 6150	Sterna hirundo	Common Tern	Sterna hirundo		137162	Sterna hirundo	
 6160	Sterna paradisaea	Arctic Tern	Sterna paradisaea		137165	Sterna paradisaea	
 6169	Sterna hirundo / paradisaea	Common / Arctic Tern			137047	Sterna	no corresponding Euring code
+6230	Onychoprion fuscatus	Sooty Tern	Sterna fuscata		567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	Sterna albifrons		567480	Sternula albifrons	
 6250	Sternula saundersi	Saunders's Tern	Sterna saundersi		567839	Sternula saundersi	
 6259	Sterna sp.	unidentified Sterna tern	Sterna sp.		137047	Sterna	added during German update (edit 26/10/2020)
@@ -363,6 +369,8 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 19999	Passeriformes	unidentified passerine			159384	Passeriformes	no corresponding Euring code
 20800	Cygnus atratus	Black Swan	Cygnus atratus		225915	Cygnus atratus	code 1545 in ESAS v5 (edit 07/09/2020)
 29999		air balloon					no corresponding Euring code, added during German update (edit 26/10/2020)
+35970	Calonectris borealis	Cory's shearwater	Calonectris borealis		1348497	Calonectris borealis	previously coded as 365
+35990	Pterodroma deserta	Desertas Petrel	Pterodroma deserta		759338	Pterodroma deserta	
 51000		unidentified bat		unidentified bat			added during update with Belgian data (edit 18/08/2020)
 60000		unidentified marine mammal					no corresponding Euring code, added during German & Dutch update (edit 26/10/2020)
 61000		unidentified whale or dolphin		unidentified whale or dolphin	2688	Cetacea	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
