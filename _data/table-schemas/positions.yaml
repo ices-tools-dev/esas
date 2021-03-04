@@ -177,19 +177,19 @@ fields:
   - name: glare
     description: |
       Glare affecting the observer: 
-      - `0` No glare
-      - `1` Weak glare (no major effect on the counting)
-      - `2` Medium glare (a part of the viewing area is affected by glare)
-      - `3` Strong glare (the whole viewing area is affected)
-    type: integer
+      - `none` No glare
+      - `weak` Weak glare (no major effect on the counting)
+      - `medium` Medium glare (a part of the viewing area is affected by glare)
+      - `strong` Strong glare (the whole viewing area is affected)
+    type: string
     format: default
     constraints:
       required: false
       enum:
-        - 0
-        - 1
-        - 2
-        - 3
+        - none
+        - weak
+        - medium
+        - strong
 
   - name: sun_angle
     description: >
