@@ -213,19 +213,19 @@ fields:
 
   - name: precipitation
     description: |
-      - `0` None
-      - `1` Rain
-      - `2` Snow
-      - `3` Fog
-    type: integer
+      - `none`
+      - `rain`
+      - `snow`
+      - `fog`
+    type: string
     format: default
     constraints:
       required: false
       enum:
-        - 0
-        - 1
-        - 2
-        - 3
+        - none
+        - rain
+        - snow
+        - fog
 
   - name: ice
     description: >
