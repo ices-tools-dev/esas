@@ -343,22 +343,6 @@ fields:
         - 2
         - 3
 
-  - name: observer_role
-    description: |
-      Indicates the role of the observer. Important for surveys using the 
-      double observer platform. Default is `1` (Primary).
-      - `1` Primary (the only observer(s) on the platform or if double observer approach used, the observer who’s recordings should be used in data analyses where only a single data stream can be included)
-      - `2` Secondary (the additional observer(s) to the primary observer in the double observer platform)
-      - `3` Tertiary (the additional observer(s) to the primary and secondary observers in the triple observer platform)
-    type: integer
-    format: default
-    constraints:
-      required: false
-      enum:
-        - 1
-        - 2
-        - 3
-
   - name: number_of_observers
     description: >
       Number of observers producing the data stream of this specific `tripkey`. 
