@@ -368,7 +368,6 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 19998	Aves	unidentified bird			1836	Aves	no corresponding Euring code
 19999	Passeriformes	unidentified passerine			159384	Passeriformes	no corresponding Euring code
 20800	Cygnus atratus	Black Swan	Cygnus atratus		225915	Cygnus atratus	code 1545 in ESAS v5 (edit 07/09/2020)
-29999		air balloon					no corresponding Euring code, added during German update (edit 26/10/2020)
 35970	Calonectris borealis	Cory's shearwater	Calonectris borealis		1348497	Calonectris borealis	previously coded as 365
 35990	Pterodroma deserta	Desertas Petrel	Pterodroma deserta		759338	Pterodroma deserta	
 51000		unidentified bat		unidentified bat			added during update with Belgian data (edit 18/08/2020)
@@ -451,8 +450,5 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 68002		unidentified fish school					no corresponding Euring code
 68100		unidentified fish ball					no corresponding Euring code; code 28100 in ESAS v5 (addition 2/10/2020)
 68500	Velella velella	Velella			117832	Velella velella	no corresponding Euring code; code 28500 in ESAS v5 (addition 2/10/2020)
-69000		set net or long-line flag					no corresponding Euring code
 70024	Ovis domesticus						no corresponding Euring code
 70025	Lama huanacos						no corresponding Euring code
-71000		fisheries buoy					no corresponding Euring code; code 31000 in ESAS v5 (addition 2/10/2020)
-99999		boat					no corresponding Euring code; code 9999 in ESAS v5 (edit 16/09/2020)
