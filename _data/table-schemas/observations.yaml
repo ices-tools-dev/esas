@@ -233,7 +233,10 @@ fields:
 
   - name: direction_of_travel
     description: |
-      The direction in which the bird/cetacean is travelling:
+      The direction in which the bird/cetacean is travelling.
+      
+      Either absolute, indicated as (inter)cardinal directions:
+
       - `N` Heading N
       - `NE` Heading NE
       - `E` Heading E
@@ -244,8 +247,8 @@ fields:
       - `NW` Heading NW
       - `U` Flying, no apparent direction
 
-      Alternatively direction of travel can be indicated in degrees with 
-      increments of 10° (for example in case of relative direction recording).
+      Or relative to the front of the platform, indicated in degrees with 
+      10° increments.
     type: string
     format: default
     constraints:

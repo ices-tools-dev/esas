@@ -343,19 +343,6 @@ fields:
         - 2
         - 3
 
-  - name: direction_of_travel_type
-    description: |
-      The way `direction_of_travel` for birds/cetaceans is recorded:
-      - `absolute` Direction relative to magnetic north
-      - `relative` Direction relative to the direction of the platform
-    type: string
-    format: default
-    constraints:
-      required: false
-      enum:
-        - absolute
-        - relative
-
   - name: observer_role
     description: |
       Indicates the role of the observer. Important for surveys using the 
