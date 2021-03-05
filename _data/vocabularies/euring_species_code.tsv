@@ -15,7 +15,7 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 129	Podiceps sp.	unidentified grebe	Podiceps sp.		137056	Podiceps	
 140	Thalassarche melanophris	Black-browed Albatross	Diomedea melanophris		343995	Thalassarche melanophris	
 220	Fulmarus glacialis	Northern Fulmar	Fulmarus glacialis		137195	Fulmarus glacialis	
-260	Pterodroma sp.	unidentified (Pterodroma) petrel	Pterodroma mollis / feae / madeira		137064	Pterodroma	code 261 in ESAS v5
+262~263~35990	Pterodroma feae / madeira / deserta	unidentified (Pterodroma) petrel			137064	Pterodroma	previously 260
 263	Pterodroma madeira	Zino's Petrel	Pterodroma madeira		137198	Pterodroma madeira	addition 2/10/2020
 263~35990	Pterodroma madeira / deserta	Zino's / Desertas Petrel			137064	Pterodroma	previously 269
 340	Bulweria bulwerii	Bulwer's Petrel	Bulweria bulwerii		137193	Bulweria bulwerii	
@@ -32,7 +32,7 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 462	Puffinus yelkouan	Yelkouan Shearwater	Puffinus puffinus yelkouan		137204	Puffinus yelkouan	
 463	Puffinus mauretanicus	Balearic Shearwater	Puffinus puffinus mauretanicus		445503	Puffinus mauretanicus	code 462 in ESAS v5
 x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Procellariidae	no corresponding Euring code, previously 469
-480	Puffinus baroli / boydi	Barolo / Boyd's Shearwater	Puffinus assimilis		137065	Puffinus	slight conflict with Euring code meaning
+482~483	Puffinus baroli / boydi	Barolo / Boyd's Shearwater			137065	Puffinus	previously 480
 482	Puffinus baroli	Barolo Shearwater	Puffinus assimilis baroli		514084	Puffinus baroli	addition 30/09/2020
 500	Oceanites oceanicus	Wilson's Storm Petrel	Oceanites oceanicus		137190	Oceanites oceanicus	
 510	Pelagodroma marina	White-faced Storm Petrel	Pelagodroma marina		212700	Pelagodroma marina	
@@ -333,7 +333,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 15280	Cyanocorax dickeyi	Dickey's Jay	Cyanocorax dickeyi				
 15600	Coloeus monedula	Western Jackdaw	Corvus monedula		1461962	Coloeus monedula	
 15630	Corvus frugilegus	Rook	Corvus frugilegus		558547	Corvus frugilegus	
-15670	Corvus corone / cornix	Carrion / Hooded Crow	Corvus corone		159387	Corvus	
+15671~15673	Corvus corone / cornix	Carrion / Hooded Crow			159387	Corvus	previously 15670
 15671	Corvus corone	Carrion Crow	Corvus corone corone		232057	Corvus corone	
 15673	Corvus cornix	Hooded Crow	Corvus corone cornix		567860	Corvus cornix	
 15720	Corvus corax	Northern Raven	Corvus corax		159389	Corvus corax	
@@ -377,7 +377,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 61020		unidentified large whale		unidentified large whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
 61040		unidentified large whale with distinct dorsal fin		unidentified large whale with distinct dorsal fin			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
 61050		unidentified medium whale		unidentified medium whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-61060		Sei / Minke / Bottlenosed Whale		Sei / Minke / Bottlenosed Whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
+62240~62260~x		Sei / Minke / Bottlenosed Whale		Sei / Minke / Bottlenosed Whale			previously 61060
 61070		unidentified small whale		unidentified small whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
 62040	Balaena glacialis	Northern Right Whale	Balaena glacialis	Northern Right Whale	380473	Balaena glacialis	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
 62210		Blue / Fin / Sei Whale		Blue / Fin / Sei Whale	137013	Balaenoptera	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
