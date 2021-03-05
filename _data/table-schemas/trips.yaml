@@ -82,7 +82,7 @@ fields:
       conditions of the ICES data policy, `FALSE` if data should remain private.
     type: boolean
     format: default
-    constrains:
+    constraints:
       required: true
 
   - name: date
