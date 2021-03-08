@@ -11,9 +11,9 @@ description: >
 fields: 
   - name: poskey
     description: >
-      Unique identifier for each position record within a trip. Recommended 
-      practice is to use a persistent identifier (i.e. one that does not change 
-      through time).
+      Unique identifier for this position within a trip. It is strongly 
+      recommended to use a persistent identifier (i.e. one that does not 
+      change through time).
     type: string
     format: default
     constraints:
@@ -22,7 +22,7 @@ fields:
 
   - name: tripkey
     description: >
-      The link to the trip information related to each position record.
+      Unique identifier of the trip this position belongs to.
     type: string
     format: default
     constraints:

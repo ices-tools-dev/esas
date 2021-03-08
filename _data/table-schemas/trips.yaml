@@ -9,8 +9,9 @@ description: >
 fields:
   - name: tripkey
     description: >
-      Unique identifier for each trip record. Recommended practice is to use a 
-      persistent identifier (i.e. one that does not change through time).
+      Unique identifier for this trip. Made globally unique in combination 
+      with `data_provider`. It is strongly recommended to use a persistent 
+      identifier (i.e. one that does not change through time).
     type: string
     format: default
     constraints:

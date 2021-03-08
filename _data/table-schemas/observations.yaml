@@ -10,18 +10,26 @@ description: >
 fields: 
   - name: obskey
     description: >
-      Unique identifier for each observation within a trip. Recommended 
-      practice is to use a persistent identifier (i.e. one that does not change 
-      through time).
+      Unique identifier for this observation within a trip and position. It is 
+      strongly recommended to use a persistent identifier (i.e. one that does 
+      not change through time).
     type: string
     format: default
     constraints:
       required: true
       unique: true
 
+  - name: tripkey
+    description: >
+      Unique identifier of the trip this observation belongs to.
+    type: string
+    format: default
+    constraints:
+      required: true
+
   - name: poskey
     description: >
-      The link to the position table for each species record.
+      Unique identifier of the position this observation belongs to.
     type: string
     format: default
     constraints:
