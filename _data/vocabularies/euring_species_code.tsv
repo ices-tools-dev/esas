@@ -16,12 +16,12 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 140	Thalassarche melanophris	Black-browed Albatross	Diomedea melanophris		343995	Thalassarche melanophris	
 220	Fulmarus glacialis	Northern Fulmar	Fulmarus glacialis		137195	Fulmarus glacialis	
 262~263~35990	Pterodroma feae / madeira / deserta	unidentified (Pterodroma) petrel			137064	Pterodroma	previously 260
-263	Pterodroma madeira	Zino's Petrel	Pterodroma madeira		137198	Pterodroma madeira	addition 2/10/2020
+263	Pterodroma madeira	Zino's Petrel	Pterodroma madeira		137198	Pterodroma madeira	
 263~35990	Pterodroma madeira / deserta	Zino's / Desertas Petrel			137064	Pterodroma	previously 269
 340	Bulweria bulwerii	Bulwer's Petrel	Bulweria bulwerii		137193	Bulweria bulwerii	
 350	Bulweria fallax	Jouanin's Petrel	Bulweria fallax		212650	Bulweria fallax	
 359		unidentified petrel			136998	Procellariidae	no corresponding Euring code
-360	Calonectris diomedea	Scopoli's Shearwater	Calonectris diomedea		137194	Calonectris diomedea	replaced Calonectris diomedea / borealis
+360	Calonectris diomedea	Scopoli's Shearwater	Calonectris diomedea		137194	Calonectris diomedea	
 360~35970	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater			137062	Calonectris	previously 361
 362	Calonectris edwardsii	Cape Verde Shearwater	Calonectris edwardsii	Cape Verde Shearwater	759340	Calonectris edwardsii	
 400	Ardenna gravis	Great Shearwater	Puffinus gravis		882958	Ardenna gravis	
@@ -30,10 +30,10 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 430	Ardenna grisea	Sooty Shearwater	Puffinus griseus		707542	Ardenna grisea	
 460	Puffinus puffinus	Manx Shearwater	Puffinus puffinus		137203	Puffinus puffinus	
 462	Puffinus yelkouan	Yelkouan Shearwater	Puffinus puffinus yelkouan		137204	Puffinus yelkouan	
-463	Puffinus mauretanicus	Balearic Shearwater	Puffinus puffinus mauretanicus		445503	Puffinus mauretanicus	code 462 in ESAS v5
+463	Puffinus mauretanicus	Balearic Shearwater	Puffinus puffinus mauretanicus		445503	Puffinus mauretanicus	previously 462 (v5)
 x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Procellariidae	no corresponding Euring code, previously 469
 482~483	Puffinus baroli / boydi	Barolo / Boyd's Shearwater			137065	Puffinus	previously 480
-482	Puffinus baroli	Barolo Shearwater	Puffinus assimilis baroli		514084	Puffinus baroli	addition 30/09/2020
+482	Puffinus baroli	Barolo Shearwater	Puffinus assimilis baroli		514084	Puffinus baroli	
 500	Oceanites oceanicus	Wilson's Storm Petrel	Oceanites oceanicus		137190	Oceanites oceanicus	
 510	Pelagodroma marina	White-faced Storm Petrel	Pelagodroma marina		212700	Pelagodroma marina	
 520	Hydrobates pelagicus	European Storm Petrel	Hydrobates pelagicus		137189	Hydrobates pelagicus	
@@ -51,7 +51,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 720	Phalacrocorax carbo	Great Cormorant	Phalacrocorax carbo		137179	Phalacrocorax carbo	
 721	Phalacrocorax carbo carbo	Great Cormorant (carbo)	Phalacrocorax carbo carbo		137179	Phalacrocorax carbo	
 800	Phalacrocorax aristotelis	European Shag	Phalacrocorax aristotelis		137178	Phalacrocorax aristotelis	
-849	Phalacrocorax sp.	unidentified cormorant	Phalacrocorax sp.		137054	Phalacrocorax	code 809 in ESAS v5 (edit 07/09/2020)
+849	Phalacrocorax sp.	unidentified cormorant	Phalacrocorax sp.		137054	Phalacrocorax	previously 809 (v5)
 920	Fregata minor	Great Frigatebird	Fregata minor		212654	Fregata minor	
 930	Fregata magnificens	Magnificent Frigatebird	Fregata magnificens		343999	Fregata magnificens	
 1010	Ixobrychus cinnamomeus	Cinnamon Bittern	Ixobrychus cinnamomeus		1034714	Ixobrychus cinnamomeus	
@@ -65,20 +65,20 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 1520	Cygnus olor	Mute Swan	Cygnus olor		159090	Cygnus olor	
 1530	Cygnus columbianus	Tundra Swan	Cygnus columbianus		159088	Cygnus columbianus	
 1540	Cygnus cygnus	Whooper Swan	Cygnus cygnus		159089	Cygnus cygnus	
-1559	Cygnus sp.	unidentified swan	Cygnus sp.		159087	Cygnus	code 1549 in ESAS v5 (edit 07/09/2020)
-1569	Anser / Branta sp.	unidentified goose	Anser sp. / Branta sp.		136973	Anatidae	code 1699 in ESAS v5
+1559	Cygnus sp.	unidentified swan	Cygnus sp.		159087	Cygnus	previously 1549 (v5)
+1569	Anser / Branta sp.	unidentified goose	Anser sp. / Branta sp.		136973	Anatidae	previously 1699 (v5)
 1570	Anser fabalis / serrirostris	Taiga / Tundra Bean Goose	Anser fabalis		416685	Anser fabalis	slight conflict with Euring code meaning
-1574	Anser serrirostris rossicus	Tundra Bean Goose (rossicus)	Anser fabalis rossicus		416685	Anser fabalis	added during update Dutch data (04/11/2020)
+1574	Anser serrirostris rossicus	Tundra Bean Goose (rossicus)	Anser fabalis rossicus		416685	Anser fabalis	
 1580	Anser brachyrhynchus	Pink-footed Goose	Anser brachyrhynchus		416683	Anser brachyrhynchus	
 1590	Anser albifrons	Greater White-fronted Goose	Anser albifrons		159159	Anser albifrons	
 1610	Anser anser	Greylag Goose	Anser anser		416682	Anser anser	
-1620	Anser indicus	Bar-headed goose	Anser indicus		1037301	Anser indicus	added during update with Belgian data (edit 08/09/2020)
-1659	Anser sp.	unidentified (Anser) goose	Anser sp.		159158	Anser	code 1639 in ESAS v5 (edit 07/09/2020)
+1620	Anser indicus	Bar-headed goose	Anser indicus		1037301	Anser indicus	
+1659	Anser sp.	unidentified (Anser) goose	Anser sp.		159158	Anser	previously 1639 (v5)
 1660	Branta canadensis	Canada Goose	Branta canadensis		159176	Branta canadensis	
 1670	Branta leucopsis	Barnacle Goose	Branta leucopsis		159177	Branta leucopsis	
 1680	Branta bernicla	Brent Goose	Branta bernicla		159175	Branta bernicla	
 1681	Branta bernicla bernicla	Dark-bellied Brent Goose	Branta bernicla bernicla		159175	Branta bernicla	
-1682	Branta bernicla hrota	Pale-bellied Brent Goose	Branta bernicla hrota		159175	Branta bernicla	added during update with Belgian data (edit 08/09/2020)
+1682	Branta bernicla hrota	Pale-bellied Brent Goose	Branta bernicla hrota		159175	Branta bernicla	
 1700	Alopochen aegyptiacus	Egyptian Goose	Alopochen aegyptiacus		416680	Alopochen aegyptiaca	
 1730	Tadorna tadorna	Shelduck	Tadorna tadorna		232042	Tadorna tadorna	
 1790	Mareca penelope	Eurasian Wigeon	Anas penelope		1464521	Mareca penelope	
@@ -86,7 +86,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 1840	Anas crecca	Eurasian Teal	Anas crecca		158943	Anas crecca	
 1840~1910	Anas crecca / Spatula querquedula	Eurasian Teal / Garganey			136973	Anatidae	previously 1845
 1860	Anas platyrhynchos	Mallard	Anas platyrhynchos		148791	Anas platyrhynchos	
-1863	Anas platyrhynchos domestica	Mallard (domestica)	Anas platyrhynchos domestica		148791	Anas platyrhynchos	code 1865 in ESAS v5 (edit 07/09/2020)
+1863	Anas platyrhynchos domestica	Mallard (domestica)	Anas platyrhynchos domestica		148791	Anas platyrhynchos	previously 1865 (v5)
 1890	Anas acuta	Northern Pintail	Anas acuta		158939	Anas acuta	
 1910	Spatula querquedula	Garganey	Anas querquedula		1459928	Spatula querquedula	
 1940	Spatula clypeata	Northern Shoveler	Anas clypeata		1461476	Spatula clypeata	
@@ -94,7 +94,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 1980	Aythya ferina	Common Pochard	Aythya ferina		232037	Aythya ferina	
 2030	Aythya fuligula	Tufted Duck	Aythya fuligula		159164	Aythya fuligula	
 2040	Aythya marila	Greater Scaup	Aythya marila		159172	Aythya marila	
-2059	Aythya sp.	unidentified (Aythya) diving duck	Aythya sp.		159160	Aythya	code 2189 in ESAS v5 (edit 07/09/2020)
+2059	Aythya sp.	unidentified (Aythya) diving duck	Aythya sp.		159160	Aythya	previously 2189 (v5)
 2060	Somateria mollissima	Common Eider	Somateria mollissima		137074	Somateria mollissima	
 2070	Somateria spectabilis	King Eider	Somateria spectabilis		137075	Somateria spectabilis	
 2110	Histrionicus histrionicus	Harlequin Duck	Histrionicus histrionicus		159092	Histrionicus histrionicus	
@@ -119,7 +119,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 2690	Accipiter nisus	Eurasian Sparrowhawk	Accipiter nisus		558525	Accipiter nisus	
 2870	Buteo buteo	Common Buzzard	Buteo buteo		558534	Buteo buteo	
 2900	Buteo lagopus	Rough-legged Buzzard	Buteo lagopus		159110	Buteo lagopus	
-3009	Falconiformes sp.	unidentified raptor	Falconiformes sp.		225849	Falconiformes	code 3219 in ESAS v5
+3009	Falconiformes sp.	unidentified raptor	Falconiformes sp.		225849	Falconiformes	previously 3219 (v5)
 3010	Pandion haliaetus	Western Osprey	Pandion haliaetus		159377	Pandion haliaetus	
 3040	Falco tinnunculus	Common Kestrel	Falco tinnunculus		345751	Falco tinnunculus	
 3070	Falco vespertinus	Red-footed Falcon	Falco vespertinus		558554	Falco vespertinus	
@@ -128,7 +128,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 3110	Falco eleonorae	Eleonora's Falcon	Falco eleonorae		212680	Falco eleonorae	
 3180	Falco rusticolus	Gyrfalcon	Falco rusticolus		159154	Falco rusticolus	
 3200	Falco peregrinus	Pergrine Falcon	Falco peregrinus		159153	Falco peregrinus	
-3219	Falco sp.	unidentified falcon	Falco sp.		159071	Falco	code 3049 in ESAS v5 (edit 07/09/2020)
+3219	Falco sp.	unidentified falcon	Falco sp.		159071	Falco	previously 3049 (v5)
 4070	Rallus aquaticus	Water Rail	Rallus aquaticus		416695	Rallus aquaticus	
 4080	Porzana porzana	Spotted Crake	Porzana porzana		416693	Porzana porzana	
 4240	Gallinula chloropus	Common Moorhen	Gallinula chloropus		159009	Gallinula chloropus	
@@ -141,7 +141,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 4700	Charadrius hiaticula	Common Ringed Plover	Charadrius hiaticula		212619	Charadrius hiaticula	
 4710	Charadrius semipalmatus	Semipalmated plover	Charadrius semipalmatus		159126	Charadrius semipalmatus	
 4770	Charadrius alexandrinus	Kentish Plover	Charadrius alexandrinus		212611	Charadrius alexandrinus	
-4820	Charadrius morinellus	Eurasian Dotterel	Charadrius morinellus		232043	Charadrius morinellus	added during update Dutch data (04/11/2020)
+4820	Charadrius morinellus	Eurasian Dotterel	Charadrius morinellus		232043	Charadrius morinellus	
 4850	Pluvialis apricaria	European Golden Plover	Pluvialis apricaria		159135	Pluvialis apricaria	
 4860	Pluvialis squatarola	Grey Plover	Pluvialis squatarola		159137	Pluvialis squatarola	
 4930	Vanellus vanellus	Northern Lapwing	Vanellus vanellus		159142	Vanellus vanellus	
@@ -151,7 +151,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 5090	Calidris ferruginea	Curlew Sandpiper	Calidris ferruginea		159049	Calidris ferruginea	
 5100	Calidris maritima	Purple Sandpiper	Calidris maritima		159052	Calidris maritima	
 5120	Calidris alpina	Dunlin	Calidris alpina		159047	Calidris alpina	
-5129	Calidris sp.	unidentified (Calidris) sandpiper	Calidris sp.		147432	Calidris	code 5149 in ESAS v5 (edit 07/09/2020)
+5129	Calidris sp.	unidentified (Calidris) sandpiper	Calidris sp.		147432	Calidris	previously 5149 (v5)
 5170	Calidris pugnax	Ruff	Philomachus pugnax		882950	Calidris pugnax	
 5180	Lymnocryptes minimus	Jack Snipe	Lymnocryptes minimus		558755	Lymnocryptes minimus	
 5190	Gallinago gallinago	Common Snipe	Gallinago gallinago		158949	Gallinago gallinago	
@@ -176,7 +176,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 5670	Stercorarius parasiticus	Arctic Skua	Stercorarius parasiticus		137172	Stercorarius parasiticus	
 5680	Stercorarius longicaudus	Long-tailed Skua	Stercorarius longicaudus		137171	Stercorarius longicaudus	
 5690	Stercorarius skua	Great Skua	Stercorarius skua		137174	Stercorarius skua	
-5709	Stercorarius sp.	unidentified skua	Stercorarius sp.		137051	Stercorarius	code 5699 in ESAS v5 (edit 07/09/2020)
+5709	Stercorarius sp.	unidentified skua	Stercorarius sp.		137051	Stercorarius	previously 5699 (v5)
 5750	Ichthyaetus melanocephalus	Mediterranean Gull	Larus melanocephalus		137147	Larus melanocephalus	
 5780	Hydrocoloeus minutus	Little Gull	Larus minutus		567449	Hydrocoloeus minutus	
 5790	Xema sabini	Sabine's Gull	Larus sabini		137167	Xema sabini	
@@ -193,7 +193,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 5920	Larus argentatus	European Herring Gull	Larus argentatus		137138	Larus argentatus	
 5921	Larus argentatus argentatus	European Herring Gull (argentatus)	Larus argentatus argentatus		232047	Larus argentatus argentatus	
 5922	Larus heuglini	Siberian Gull	Larus argentatus heuglini		423477	Larus heuglini	
-5926	Larus michahellis	Yellow-legged Gull	Larus argentatus michahellis		232052	Larus michahellis	code 5928 in ESAS v5
+5926	Larus michahellis	Yellow-legged Gull	Larus argentatus michahellis		232052	Larus michahellis	previously 5928 (v5)
 5927	Larus cachinnans	Caspian Gull	Larus argentatus cachinnans		137140	Larus cachinnans	
 5980	Larus glaucoides	Iceland Gull	Larus glaucoides		137144	Larus glaucoides	
 5982	Larus glaucoides kumlieni	Iceland Gull (kumlieni)	Larus glaucoides kumlieni		232051	Larus glaucoides kumlieni	
@@ -201,7 +201,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 5990	Larus hyperboreus	Glaucous Gull	Larus hyperboreus		137145	Larus hyperboreus	
 5991	Larus hyperboreus x argentatus	Glaucous x Herring Gull (hybrid)			137043	Larus	no corresponding Euring code
 6000	Larus marinus	Great Black-backed Gull	Larus marinus		137146	Larus marinus	
-6009	Larus sp.	unidentified Larus gull	Larus sp.		137043	Larus	groups former ESAS v5 codes 5929, 6005, 6008 & 6009
+6009	Larus sp.	unidentified Larus gull	Larus sp.		137043	Larus	previously 5929, 6005, 6008 & 6009 (v5)
 6010	Rhodostethia rosea	Ross's Gull	Rhodostethia rosea		137155	Rhodostethia rosea	
 6020	Rissa tridactyla	Black-legged Kittiwake	Rissa tridactyla		137156	Rissa tridactyla	
 6040	Pagophila eburnea	Ivory Gull	Pagophila eburnea		137154	Pagophila eburnea	
@@ -219,11 +219,11 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 6230	Onychoprion fuscatus	Sooty Tern	Sterna fuscata		567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	Sterna albifrons		567480	Sternula albifrons	
 6250	Sternula saundersi	Saunders's Tern	Sterna saundersi		567839	Sternula saundersi	
-6259	Sterna sp.	unidentified Sterna tern	Sterna sp.		137047	Sterna	added during German update (edit 26/10/2020)
+6259	Sterna sp.	unidentified Sterna tern	Sterna sp.		137047	Sterna	
 6260	Chlidonias hybrida	Whiskered Tern	Chlidonias hybridus		137135	Chlidonias hybrida	
 6270	Chlidonias niger	Black Tern	Chlidonias niger		137137	Chlidonias niger	
 6280	Chlidonias leucopterus	White-winged Tern	Chlidonias leucopterus		137136	Chlidonias leucopterus	
-6285		unidentified tern			136988	Laridae	no corresponding Euring code; code 6289 in ESAS v5
+6285		unidentified tern			136988	Laridae	no corresponding Euring code; previously 6289 (v5)
 6300	Anous stolidus	Brown Noddy	Anous stolidus		212629	Anous stolidus	
 6340	Uria aalge	Common Guillemot	Uria aalge		137133	Uria aalge	
 6340~6360	Uria aalge / Alca torda	Common Guillemot / Razorbill			136987	Alcidae	previously 6345
@@ -235,7 +235,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 6470~6540	Alle alle / Fratercula arctica	unidentified small auk			136987	Alcidae	previously 6545
 6549	Alcidae	unidentified auk			136987	Alcidae	no corresponding Euring code
 6650	Columba livia	Rock Dove	Columba livia		1464527	Columba livia	
-6657	Columba livia domestica	Feral Dove	Columba livia domestica		1464527	Columba livia	code 6655 in ESAS v5
+6657	Columba livia domestica	Feral Dove	Columba livia domestica		1464527	Columba livia	previously 6655 (v5)
 6680	Columba oenas	Stock Dove	Columba oenas		558545	Columba oenas	
 6700	Columba palumbus	Common Wood Pigeon	Columba palumbus		558546	Columba palumbus	
 6829	Columba sp.	unidentified (Columba) dove	Columba sp.		558544	Columba	
@@ -253,7 +253,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 8060	Hylocharis leucotis	White-eared Hummingbird	Hylocharis leucotis				
 8460	Upupa epops	Eurasian Hoopoe	Upupa epops		1451644	Upupa epops	
 8480	Jynx torquilla	Eurasian Wryneck	Jynx torquilla				
-8760	Dendrocopos major	Great Spotted Woodpecker	Dendrocopos major		1459903	Dendrocopos major	added during update Dutch data (04/11/2020)
+8760	Dendrocopos major	Great Spotted Woodpecker	Dendrocopos major		1459903	Dendrocopos major	
 9720	Galerida cristata	Crested Lark	Galerida cristata		426235	Galerida cristata	
 9740	Lullula arborea	Woodlark	Lullula arborea				
 9760	Alauda arvensis	Eurasian skylark	Alauda arvensis		558531	Alauda arvensis	
@@ -269,16 +269,16 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 10110	Anthus pratensis	Meadow Pipit	Anthus pratensis		426233	Anthus pratensis	
 10140	Anthus petrosus / spinoletta	Eurasian Rock Pipit / Water Pipit	Anthus spinoletta		206833	Anthus	
 10142	Anthus petrosus petrosus	Eurasian Rock Pipit (petrosus)	Anthus spinoletta petrosus		232064	Anthus petrosus petrosus	
-10159	Anthus sp.	unidentified pipit	Anthus sp.		206833	Anthus	code 10119 in ESAS v5 (edit 07/09/2020)
+10159	Anthus sp.	unidentified pipit	Anthus sp.		206833	Anthus	previously 10119 (v5)
 10170	Motacilla flava	Western Yellow Wagtail	Motacilla flava		212754	Motacilla flava	
-10171	Motacilla flava flava	Western Yellow Wagtail (flava)	Motacilla flava flava		212754	Motacilla flava	added during German update (edit 26/10/2020)
+10171	Motacilla flava flava	Western Yellow Wagtail (flava)	Motacilla flava flava		212754	Motacilla flava	
 10180	Motacilla citreola	Citrine Wagtail	Motacilla citreola				
 10190	Motacilla cinerea	Grey Wagtail	Motacilla cinerea		558560	Motacilla cinerea	
 10200	Motacilla alba	White Wagtail	Motacilla alba		232066	Motacilla alba	
 10201	Motacilla alba alba	White Wagtail (alba)	Motacilla alba alba		232066	Motacilla alba	
 10202	Motacilla alba yarrellii	White Wagtail (yarrellii)	Motacilla alba yarrellii		558561	Motacilla alba yarrellii	
-10239	Motacilla sp.	unidentified wagtail	Motacilla sp.		206855	Motacilla	code 10209 in ESAS v5 (edit 07/09/2020)
-10480	Bombycilla garrulus	Bohemian Waxwing	Bombycilla garrulus				added during update Dutch data (04/11/2020)
+10239	Motacilla sp.	unidentified wagtail	Motacilla sp.		206855	Motacilla	previously 10209 (v5)
+10480	Bombycilla garrulus	Bohemian Waxwing	Bombycilla garrulus				
 10490	Hypocolius ampelinus	Grey Hypocolius	Hypocolius ampelinus				
 10660	Troglodytes troglodytes	Winter Wren	Troglodytes troglodytes		558598	Troglodytes troglodytes	
 10840	Prunella modularis	Dunnock	Prunella modularis				
@@ -300,7 +300,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 12000~12010	Turdus philomelos / iliacus	Song Thrush / Redwing			558599	Turdus	previously 12005
 12010	Turdus iliacus	Redwing	Turdus iliacus		558600	Turdus iliacus	
 12020	Turdus viscivorus	Mistle Thrush	Turdus viscivorus		558606	Turdus viscivorus	
-12069	Turdus sp.	unidentified thrush	Turdus sp.		558599	Turdus	code 12009 in ESAS v5 (edit 07/09/2020)
+12069	Turdus sp.	unidentified thrush	Turdus sp.		558599	Turdus	previously 12009 (v5)
 12200	Cettia cetti	Cetti's Warbler	Cettia cetti				
 12360	Locustella naevia	Common Grasshopper  Warbler	Locustella naevia				
 12430	Acrocephalus schoenobaenus	Sedge Warbler	Acrocephalus schoenobaenus		1037298	Acrocephalus schoenobaenus	
@@ -320,7 +320,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 13080	Phylloscopus sibilatrix	Wood Warbler	Phylloscopus sibilatrix				
 13110	Phylloscopus collybita	Common Chiffchaff	Phylloscopus collybita		558578	Phylloscopus collybita	
 13120	Phylloscopus trochilus	Willow Warbler	Phylloscopus trochilus		558579	Phylloscopus trochilus	
-13129	Phylloscopus sp.	unidentified (Phylloscopus) warbler	Phylloscopus sp.		558577	Phylloscopus	code 13115 in ESAS v5
+13129	Phylloscopus sp.	unidentified (Phylloscopus) warbler	Phylloscopus sp.		558577	Phylloscopus	previously 13115 (v5)
 13140	Regulus regulus	Goldcrest	Regulus regulus		558583	Regulus regulus	
 13150	Regulus ignicapillus	Common Firecrest	Regulus ignicapillus		558582	Regulus ignicapilla	
 13350	Muscicapa striata	Spotted Flycatcher	Muscicapa striata		558563	Muscicapa striata	
@@ -337,14 +337,14 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 15671	Corvus corone	Carrion Crow	Corvus corone corone		232057	Corvus corone	
 15673	Corvus cornix	Hooded Crow	Corvus corone cornix		567860	Corvus cornix	
 15720	Corvus corax	Northern Raven	Corvus corax		159389	Corvus corax	
-15749	Corvus sp.	unidentified crow	Corvus sp.		159387	Corvus	code 15675 in ESAS v5 (edit 07/09/2020)
+15749	Corvus sp.	unidentified crow	Corvus sp.		159387	Corvus	previously 15675 (v5)
 15820	Sturnus vulgaris	Common Starling	Sturnus vulgaris		558591	Sturnus vulgaris	
 15910	Passer domesticus	House Sparrow	Passer domesticus		1451658	Passer domesticus	
 15980	Passer montanus	Eurasian Tree Sparrow	Passer montanus		558571	Passer montanus	
 16350	Vireo gilvus	Eastern Warbling Vireo	Vireo gilvus				
 16360	Fringilla coelebs	Common chaffinch	Fringilla coelebs		558558	Fringilla coelebs	
 16380	Fringilla montifringilla	Brambling	Fringilla montifringilla		558559	Fringilla montifringilla	
-16389	Fringilla sp.	unidentified finch	Fringilla sp.		558557	Fringilla	code 16365 in ESAS v5
+16389	Fringilla sp.	unidentified finch	Fringilla sp.		558557	Fringilla	previously 16365 (v5)
 16400	Serinus serinus	European Serin	Serinus serinus				
 16490	Carduelis chloris	European Greenfinch	Carduelis chloris				
 16520	Carduelis spinoides	Yellow-breasted Greenfinch	Carduelis spinoides				
@@ -356,7 +356,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 16660	Loxia curvirostra	Red Crossbill	Loxia curvirostra				
 16790	Carpodacus erythrinus	Common Rosefinch	Carpodacus erythrinus				
 17100	Pyrrhula pyrrhula	Eurasian Bullfinch	Pyrrhula pyrrhula		1461958	Pyrrhula pyrrhula	
-17170	Coccothraustes coccothraustes	Hawfinch	Coccothraustes coccothraustes		558543	Coccothraustes coccothraustes	added during update with Belgian data (edit 08/09/2020)
+17170	Coccothraustes coccothraustes	Hawfinch	Coccothraustes coccothraustes		558543	Coccothraustes coccothraustes	
 17450	Dendroica virens	Black-throated Green Warbler	Dendroica virens		422640	Dendroica virens	
 18470	Calcarius lapponicus	Lapland Longspur	Calcarius lapponicus		383230	Calcarius lapponicus	
 18500	Plectrophenax nivalis	Snow Bunting	Plectrophenax nivalis		383228	Plectrophenax nivalis	
@@ -367,64 +367,64 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 18829		unidentified bunting					no corresponding Euring code
 19998	Aves	unidentified bird			1836	Aves	no corresponding Euring code
 19999	Passeriformes	unidentified passerine			159384	Passeriformes	no corresponding Euring code
-20800	Cygnus atratus	Black Swan	Cygnus atratus		225915	Cygnus atratus	code 1545 in ESAS v5 (edit 07/09/2020)
-35970	Calonectris borealis	Cory's shearwater	Calonectris borealis		1348497	Calonectris borealis	previously coded as 365
+20800	Cygnus atratus	Black Swan	Cygnus atratus		225915	Cygnus atratus	previously 1545 (v5)
+35970	Calonectris borealis	Cory's shearwater	Calonectris borealis		1348497	Calonectris borealis	previously 365
 35990	Pterodroma deserta	Desertas Petrel	Pterodroma deserta		759338	Pterodroma deserta	
-51000		unidentified bat		unidentified bat			added during update with Belgian data (edit 18/08/2020)
-60000		unidentified marine mammal					no corresponding Euring code, added during German & Dutch update (edit 26/10/2020)
-61000		unidentified whale or dolphin		unidentified whale or dolphin	2688	Cetacea	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-61010		unidentified whale		unidentified whale	2688	Cetacea	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-61020		unidentified large whale		unidentified large whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-61040		unidentified large whale with distinct dorsal fin		unidentified large whale with distinct dorsal fin			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-61050		unidentified medium whale		unidentified medium whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62240~62260~x		Sei / Minke / Bottlenosed Whale		Sei / Minke / Bottlenosed Whale			previously 61060
-61070		unidentified small whale		unidentified small whale			all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62040	Balaena glacialis	Northern Right Whale	Balaena glacialis	Northern Right Whale	380473	Balaena glacialis	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62210		Blue / Fin / Sei Whale		Blue / Fin / Sei Whale	137013	Balaenoptera	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62220	Balaenoptera musculus	Blue Whale	Balaenoptera musculus	Blue Whale	137090	Balaenoptera musculus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62230	Balaenoptera physalus	Fin Whale	Balaenoptera physalus	Fin Whale	137091	Balaenoptera physalus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62240	Balaenoptera borealis	Sei Whale	Balaenoptera borealis	Sei Whale	137088	Balaenoptera borealis	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62250	Balaenoptera edeni	Bryde's Whale	Balaenoptera edeni	Bryde's Whale	137089	Balaenoptera edeni	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62260	Balaenoptera acutorostrata	Minke Whale	Balaenoptera acutorostrata	Minke Whale	137087	Balaenoptera acutorostrata	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62270	Megaptera novaeangliae	Humpback Whale	Megaptera novaeangliae	Humpback Whale	137092	Megaptera novaeangliae	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62520	Physeter macrocephalus	Sperm Whale	Physeter macrocephalus	Sperm Whale	137119	Physeter macrocephalus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62620	Delphinapterus leucas	Beluga	Delphinapterus leucas	Beluga	137115	Delphinapterus leucas	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62740	Ziphius cavirostris	Cuvier's Beaked Whale	Ziphius cavirostris	Cuvier's Beaked Whale	137127	Ziphius cavirostris	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62750	Hyperoodon ampullatus	Northern Bottlenose Whale	Hyperoodon ampullatus	Northern Bottlenose Whale	343899	Hyperoodon ampullatus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62770	Mesoplodon sp.	unidentified beaked whale	Mesoplodon sp.	unidentified beaked whale	137034	Mesoplodon	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62800	Mesoplodon mirus	True's Beaked Whale	Mesoplodon mirus	True's Beaked Whale	137126	Mesoplodon mirus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62880	Mesoplodon bidens	Sowerby's Beaked Whale	Mesoplodon bidens	Sowerby's Beaked Whale	137121	Mesoplodon bidens	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-62890	Mesoplodon densirostris	Blainville's Beaked Whale	Mesoplodon densirostris	Blainville's Beaked Whale	137122	Mesoplodon densirostris	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63010		unidentified medium whale with large fin		unidentified medium whale with large fin	2688	Cetacea	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63020	Orcinus orca	Killer Whale	Orcinus orca	Killer Whale	137102	Orcinus orca	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63030	Globicephala sp. / Pseudorca sp.	Pilot / False Killer Whale	Globicephala sp. / Pseudorca sp.	Pilot / False Killer Whale	136980	Delphinidae	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63040	Pseudorca crassidens	False Killer Whale	Pseudorca crassidens	False Killer Whale	137104	Pseudorca crassidens	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63070	Globicephala melaena	Long-finned Pilot Whale	Globicephala melaena	Long-finned Pilot Whale	148727	Globicephala melaena	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63080	Globicephala macrorhynchus	Short-finned Pilot Whale	Globicephala macrorhynchus	Short-finned Pilot Whale	137096	Globicephala macrorhynchus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
+51000		unidentified bat		unidentified bat			
+60000		unidentified marine mammal					no corresponding Euring code
+61000		unidentified whale or dolphin		unidentified whale or dolphin	2688	Cetacea	
+61010		unidentified whale		unidentified whale	2688	Cetacea	
+61020		unidentified large whale		unidentified large whale			
+61040		unidentified large whale with distinct dorsal fin		unidentified large whale with distinct dorsal fin			
+61050		unidentified medium whale		unidentified medium whale			
+61060		Sei / Minke / Bottlenosed Whale		Sei / Minke / Bottlenosed Whale			
+61070		unidentified small whale		unidentified small whale			
+62040	Balaena glacialis	Northern Right Whale	Balaena glacialis	Northern Right Whale	380473	Balaena glacialis	
+62210		Blue / Fin / Sei Whale		large Balaenoptera spec. 	137013	Balaenoptera	
+62220	Balaenoptera musculus	Blue Whale	Balaenoptera musculus	Blue Whale	137090	Balaenoptera musculus	
+62230	Balaenoptera physalus	Fin Whale	Balaenoptera physalus	Fin Whale	137091	Balaenoptera physalus	
+62240	Balaenoptera borealis	Sei Whale	Balaenoptera borealis	Sei Whale	137088	Balaenoptera borealis	
+62250	Balaenoptera edeni	Bryde's Whale	Balaenoptera edeni	Bryde's Whale	137089	Balaenoptera edeni	
+62260	Balaenoptera acutorostrata	Minke Whale	Balaenoptera acutorostrata	Minke Whale	137087	Balaenoptera acutorostrata	
+62270	Megaptera novaeangliae	Humpback Whale	Megaptera novaeangliae	Humpback Whale	137092	Megaptera novaeangliae	
+62520	Physeter macrocephalus	Sperm Whale	Physeter macrocephalus	Sperm Whale	137119	Physeter macrocephalus	
+62620	Delphinapterus leucas	Beluga	Delphinapterus leucas	Beluga	137115	Delphinapterus leucas	
+62740	Ziphius cavirostris	Cuvier's Beaked Whale	Ziphius cavirostris	Cuvier's Beaked Whale	137127	Ziphius cavirostris	
+62750	Hyperoodon ampullatus	Northern Bottlenose Whale	Hyperoodon ampullatus	Northern Bottlenose Whale	343899	Hyperoodon ampullatus	
+62770	Mesoplodon sp.	unidentified beaked whale	Mesoplodon sp.	unidentified beaked whale	137034	Mesoplodon	
+62800	Mesoplodon mirus	True's Beaked Whale	Mesoplodon mirus	True's Beaked Whale	137126	Mesoplodon mirus	
+62880	Mesoplodon bidens	Sowerby's Beaked Whale	Mesoplodon bidens	Sowerby's Beaked Whale	137121	Mesoplodon bidens	
+62890	Mesoplodon densirostris	Blainville's Beaked Whale	Mesoplodon densirostris	Blainville's Beaked Whale	137122	Mesoplodon densirostris	
+63010		unidentified medium whale with large fin		unidentified medium whale with large fin	2688	Cetacea	
+63020	Orcinus orca	Killer Whale	Orcinus orca	Killer Whale	137102	Orcinus orca	
+63030	Globicephala sp. / Pseudorca sp.	Pilot / False Killer Whale	Globicephala sp. / Pseudorca sp.	Pilot / False Killer Whale	136980	Delphinidae	
+63040	Pseudorca crassidens	False Killer Whale	Pseudorca crassidens	False Killer Whale 	137104	Pseudorca crassidens	
+63070	Globicephala melaena	Long-finned Pilot Whale	Globicephala melaena	Long-finned Pilot Whale 	148727	Globicephala melaena	
+63080	Globicephala macrorhynchus	Short-finned Pilot Whale	Globicephala macrorhynchus	Short-finned Pilot Whale 	137096	Globicephala macrorhynchus	
 63089	Globicephala sp.	unidentified pilot whale			137017	Globicephala	no corresponding Euring code
-63110		unidentified dolphin		unidentified dolphin	136980	Delphinidae	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63120		patterned dolphin		patterned dolphin	136980	Delphinidae	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63130		unpatterned dolphin		unpatterned dolphin	136980	Delphinidae	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63150	Souza teuszii	Atlantic Hump-backed Dolphin	Souza teuszii	Atlantic Hump-backed Dolphin	254970	Sousa teuszii	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63190	Tursiops truncatus	Bottlenose Dolphin	Tursiops truncatus	Bottlenose Dolphin	137111	Tursiops truncatus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63200	Stenella coeruleoalba	Striped Dolphin	Stenella coeruleoalba	Striped Dolphin	137107	Stenella coeruleoalba	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63240	Stenella frontalis	Atlantic Spotted Dolphin	Stenella frontalis	Atlantic Spotted Dolphin	137108	Stenella frontalis	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63250	Delphinus delphis	Common Dolphin	Delphinus delphis	Common Dolphin	137094	Delphinus delphis	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
+63110		unidentified dolphin		unidentified dolphin	136980	Delphinidae	
+63120		patterned dolphin		patterned dolphin	136980	Delphinidae	
+63130		unpatterned dolphin		unpatterned dolphin	136980	Delphinidae	
+63150	Souza teuszii	Atlantic Hump-backed Dolphin	Souza teuszii	Atlantic Hump-backed Dolphin	254970	Sousa teuszii	
+63190	Tursiops truncatus	Bottlenose Dolphin	Tursiops truncatus	Bottlenose Dolphin	137111	Tursiops truncatus	
+63200	Stenella coeruleoalba	Striped Dolphin	Stenella coeruleoalba	Striped Dolphin	137107	Stenella coeruleoalba	
+63240	Stenella frontalis	Atlantic Spotted Dolphin	Stenella frontalis	Atlantic Spotted Dolphin	137108	Stenella frontalis	
+63250	Delphinus delphis	Common Dolphin	Delphinus delphis	Common Dolphin	137094	Delphinus delphis	
 63250~63200	Delphinus delphis / Stenella coeruleoalba	Common / Striped Dolphin			136980	Delphinidae	previously 63255
-63260	Lagenorhynchus sp.		Lagenorhynchus sp.		142369	Lagenorhynchus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63270	Lagenorhynchus albirostris	White-beaked Dolphin	Lagenorhynchus albirostris	White-beaked Dolphin	137101	Lagenorhynchus albirostris	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63280	Lagenorhynchus acutus	Atlantic White-sided Dolphin	Lagenorhynchus acutus	Atlantic White-sided Dolphin	137100	Lagenorhynchus acutus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63400	Grampus griseus	Risso's Dolphin	Grampus griseus	Risso's Dolphin	137098	Grampus griseus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-63510	Phocoena phocoena	Harbour Porpoise	Phocoena phocoena	Harbour Porpoise	137117	Phocoena phocoena	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64210	Odobenus rosmarus	Walrus	Odobenus rosmarus	Walrus	137077	Odobenus rosmarus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64310		unidentified seal		unidentified seal	148736	Pinnipedia	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64320	Halichoerus grypus	Grey Seal	Halichoerus grypus	Grey Seal	137080	Halichoerus grypus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64330	Phoca vitulina	Common Seal	Phoca vitulina	Common Seal	137084	Phoca vitulina	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64350	Phoca hispida	Ringed Seal	Phoca hispida	Ringed Seal	137083	Phoca hispida	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64380	Phoca groenlandica	Harp Seal	Phoca groenlandica	Harp Seal	137082	Phoca groenlandica	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64400	Cystophora cristata	Hooded Seal	Cystophora cristata	Hooded Seal	137078	Cystophora cristata	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64410	Erignathus barbatus	Bearded Seal	Erignathus barbatus	Bearded Seal	137079	Erignathus barbatus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
-64420	Monachus monachus	Mediterranean Monk Seal	Monachus monachus	Mediterranean Monk Seal	137081	Monachus monachus	all marine mammal codes were added with 40000 compared to ESAS v5 to align with EURING
+63260	Lagenorhynchus sp.		Lagenorhynchus sp.		142369	Lagenorhynchus	
+63270	Lagenorhynchus albirostris	White-beaked Dolphin	Lagenorhynchus albirostris	White-beaked Dolphin	137101	Lagenorhynchus albirostris	
+63280	Lagenorhynchus acutus	Atlantic White-sided Dolphin	Lagenorhynchus acutus	Atlantic White-sided Dolphin	137100	Lagenorhynchus acutus	
+63400	Grampus griseus	Risso's Dolphin	Grampus griseus	Risso's Dolphin	137098	Grampus griseus	
+63510	Phocoena phocoena	Harbour Porpoise	Phocoena phocoena	Harbour Porpoise	137117	Phocoena phocoena	
+64210	Odobenus rosmarus	Walrus	Odobenus rosmarus	Walrus	137077	Odobenus rosmarus	
+64310		unidentified seal		unidentified seal	148736	Pinnipedia	
+64320	Halichoerus grypus	Grey Seal	Halichoerus grypus	Grey Seal	137080	Halichoerus grypus	
+64330	Phoca vitulina	Common Seal	Phoca vitulina	Common Seal	137084	Phoca vitulina	
+64350	Phoca hispida	Ringed Seal	Phoca hispida	Ringed Seal	137083	Phoca hispida	
+64380	Phoca groenlandica	Harp Seal	Phoca groenlandica	Harp Seal	137082	Phoca groenlandica	
+64400	Cystophora cristata	Hooded Seal	Cystophora cristata	Hooded Seal	137078	Cystophora cristata	
+64410	Erignathus barbatus	Bearded Seal	Erignathus barbatus	Bearded Seal	137079	Erignathus barbatus	
+64420	Monachus monachus	Mediterranean Monk Seal	Monachus monachus	Mediterranean Monk Seal	137081	Monachus monachus	
 65000		unidentified sea turtle					no corresponding Euring code
 65010	Dermochelys coriacea	Leathery Turtle			137209	Dermochelys coriacea	no corresponding Euring code
 65020	Caretta caretta	Loggerhead Turtle			137205	Caretta caretta	no corresponding Euring code
@@ -439,7 +439,7 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 67600		unidentified tuna					no corresponding Euring code
 67810	Xiphias gladius	Swordfish			127094	Xiphias gladius	no corresponding Euring code
 67815	Makaira sp.	unidentified marlin			126013	Makaira	no corresponding Euring code
-67820	Mobula mobular	Devil Ray			105858	Mobula mobular	no corresponding Euring code; code 27820 in ESAS v5 (addition 2/10/2020)
+67820	Mobula mobular	Devil Ray			105858	Mobula mobular	no corresponding Euring code; previously 27820 (v5)
 67900	Mola mola	Sun-fish			127405	Mola mola	no corresponding Euring code
 67902	Loligo sp.	unidentified myopsid squid			138139	Loligo	no corresponding Euring code
 67905		unidentified fish					no corresponding Euring code
@@ -448,5 +448,5 @@ x~499~y	Calonectris / Puffinus / Ardenna sp.	unidentified shearwater			136998	Pr
 68000	Ammodytes sp.	sandeel ball			125909	Ammodytes	no corresponding Euring code
 68001	Mallotus villosus	Capelin ball			126735	Mallotus villosus	no corresponding Euring code
 68002		unidentified fish school					no corresponding Euring code
-68100		unidentified fish ball					no corresponding Euring code; code 28100 in ESAS v5 (addition 2/10/2020)
-68500	Velella velella	Velella			117832	Velella velella	no corresponding Euring code; code 28500 in ESAS v5 (addition 2/10/2020)
+68100		unidentified fish ball					no corresponding Euring code; previously 28100 (v5)
+68500	Velella velella	Velella			117832	Velella velella	no corresponding Euring code; previoulsy 28500 (v5)
