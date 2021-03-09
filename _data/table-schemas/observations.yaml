@@ -114,35 +114,27 @@ fields:
 
   - name: distance
     description: |
-      This is the distance at which the bird(s) or marine mammal(s) was/were 
-      observed. Different distance bins are used for ship-based and aerial 
-      surveys:
+      The distance at which the birds or marine mammals were observed.
 
-      For ship-based surveys (`platform_type` = `ship`):
-
-      A standard 300 m transect is  assumed for marine mammals and birds in 
-      contact with the water:
+      In case of the standard 300 m transect used for ship-based surveys of 
+      marine mammals and birds in contact with the water:
       - `A` In contact with the water, 0 - 50 m
       - `B` In contact with the water, 50 - 100 m
       - `C` In contact with the water, 100 - 200 m
       - `D` In contact with the water, 200 - 300 m
-      - `E` In contact with the water, > 300 m, beyond strip transect
+      - `E` In contact with the water, >300 m, beyond transect
       - `F` Flying, no contact with water
-      - `U` Unknown
       - `W` In contact with the water, but distance not recorded
 
-      For any other type of distance bin classification in ship-based suryeys 
-      or aerial surveys (`platform_type` = `aeroplane` or `helicopter`):
-
-      Distance is indicated by the distance (m) to middle point of one the 
-      distance bins specified in the `distance_bins` column in the Trips table; 
-      observations outside this transect are indicated by a `>` sign 
-      (e.g. `>1000`); unknown distance is indicated by `U`
+      For any other type of distance bin classification, the distance is an 
+      integer indicating the distance (m) to middle point of one the distance 
+      bins specified in the `distance_bins`. Observations outside this transect 
+      are indicated by a `>` sign (e.g. `>1000`).
     type: string
     format: default
     constraints:
-      required: true
-      pattern: '[ABCDEFUW]|\>?\d+(\.\d+)?' # Specific letter or number (with optional > and decimals)
+      required: false
+      pattern: '[ABCDEFW]|\>?\d+(\.\d+)?' # Specific letter or number (with optional > and decimals)
 
   - name: age_class
     description: |
