@@ -190,7 +190,6 @@ fields:
       - `10` Visual aerial survey total counts
       - `11` Digital aerial – video
       - `12` Digital aerial – stills
-      - `13` Only cetaceans and rare birds
     type: integer
     format: default
     constraints:
@@ -208,7 +207,6 @@ fields:
         - 10
         - 11
         - 12
-        - 13
 
   - name: species_counted
     description: |
@@ -230,6 +228,7 @@ fields:
       - `15` All species except fulmars and gannets
       - `16` Cetaceans only
       - `17` Auks, divers, grebes and seaduck only
+      - `18` Cetaceans and rare birds only
       - `99` Other
     type: integer
     format: default
@@ -253,6 +252,7 @@ fields:
         - 15
         - 16
         - 17
+        - 18
         - 99
 
   - name: distance_bins
