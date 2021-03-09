@@ -237,20 +237,20 @@ fields:
       minimum: 0
       maximum: 100
 
-  - name: observation_quality
+  - name: observation_conditions
     description: |
       General impression of the observation conditions:
-      - `1` Good
-      - `2` Moderate
-      - `3` Bad
-    type: integer
+      - `good`
+      - `moderate`
+      - `bad`
+    type: string
     format: default
     constraints:
       required: false
       enum:
-        - 1
-        - 2
-        - 3
+        - good
+        - moderate
+        - bad
 
   - name: notes
     description: >
