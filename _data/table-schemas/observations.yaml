@@ -43,9 +43,9 @@ fields:
     constraints:
       required: true
 
-  - name: euring_species_code
+  - name: species_code
     description: >
-      The species code – see relational 
+      The code of the observed species – see relational 
       [lookup table](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/euring_species_code.tsv) 
       linking the codes with the English and Latin species names. The species 
       codes are largely based on the EURING list but supplemented with 
@@ -102,6 +102,17 @@ fields:
         23420, 31100, 31200, 31300, 61005, 95005, 95010, 95020, 95043, 95045, 
         95051, 95060, 95070, 95075, 95086, 95090, 95094, 95096, 95099
       ]
+
+  - name: species_name
+    description: >
+      The (originally used) scientific name of the observed species or the 
+      vernacular name if a scientific name cannot be provided. E.g. 
+      `Larus fuscus`, `Larus fuscus / argentatus`, `Larus sp.` or 
+      `unidentified small gull`.
+    type: string
+    format: default
+    constraints:
+      required: false
 
   - name: count
     description: >
