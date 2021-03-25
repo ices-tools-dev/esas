@@ -786,6 +786,10 @@ missingValues:
   - NA
 primaryKey: ObsKey
 foreignKeys:
+  - fields: TripKey
+    reference:
+      resource: trips
+      fields: TripKey
   - fields: PosKey
     reference:
       resource: positions
