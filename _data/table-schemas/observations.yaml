@@ -1,6 +1,6 @@
 title: Observations
 description: >
-  Lists all bird or marine mammal records (identified by a unique `obskey`) and 
+  Lists all bird or marine mammal records (identified by a unique `ObsKey`) and 
   includes relevant observation-specific parameters; has a many-to-one 
   relationship with the Position data table; no entries should be made for 
   positions or observation bins without observations. Each record represents a 
@@ -8,7 +8,7 @@ description: >
   Observations are generally of individuals with the same characteristics 
   (distance, species, age, ...).
 fields: 
-  - name: obskey
+  - name: ObsKey
     description: >
       Unique identifier for this observation within a trip and position. It is 
       strongly recommended to use a persistent identifier (i.e. one that does 
@@ -19,7 +19,7 @@ fields:
       required: true
       unique: true
 
-  - name: tripkey
+  - name: TripKey
     description: >
       Unique identifier of the trip this observation belongs to.
     type: string
@@ -27,7 +27,7 @@ fields:
     constraints:
       required: true
 
-  - name: poskey
+  - name: PosKey
     description: >
       Unique identifier of the position this observation belongs to.
     type: string
@@ -35,7 +35,7 @@ fields:
     constraints:
       required: true
 
-  - name: transect
+  - name: Transect
     description: |
       States whether the observation was in (`TRUE`) or out (`FALSE`) of the transect.
     type: boolean
@@ -43,7 +43,7 @@ fields:
     constraints:
       required: true
 
-  - name: species_code
+  - name: SpeciesCode
     description: >
       The code of the observed species – see relational 
       [lookup table](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/euring_species_code.tsv) 
@@ -103,7 +103,7 @@ fields:
         95051, 95060, 95070, 95075, 95086, 95090, 95094, 95096, 95099
       ]
 
-  - name: species_name
+  - name: SpeciesName
     description: >
       The (originally used) scientific name of the observed species or the 
       vernacular name if a scientific name cannot be provided. E.g. 
@@ -114,7 +114,7 @@ fields:
     constraints:
       required: false
 
-  - name: count
+  - name: Count
     description: >
       The number of birds or marine mammals counted or estimated. This should 
       equal the number without distance correction.
@@ -123,7 +123,7 @@ fields:
     constraints:
       required: true
 
-  - name: distance
+  - name: Distance
     description: |
       The distance at which the birds or marine mammals were observed.
 
@@ -139,7 +139,7 @@ fields:
 
       For any other type of distance bin classification, the distance is an 
       integer indicating the distance (m) to middle point of one the distance 
-      bins specified in the `distance_bins`. Observations outside this transect 
+      bins specified in the `DistanceBins`. Observations outside this transect 
       are indicated by a `>` sign (e.g. `>1000`).
     type: string
     format: default
@@ -147,7 +147,7 @@ fields:
       required: false
       pattern: '[ABCDEFW]|\>?\d+(\.\d+)?' # Specific letter or number (with optional > and decimals)
 
-  - name: age_class
+  - name: AgeClass
     description: |
       Age class:
       - `A` Adult
@@ -176,7 +176,7 @@ fields:
         - X
         - Y
 
-  - name: plumage
+  - name: Plumage
     description: |
       Plumage types:
       - `B` Breeding (summer) plumage
@@ -221,7 +221,7 @@ fields:
         - G4
         - G5
 
-  - name: sex
+  - name: Sex
     description: |
       - `F` Female
       - `M` Male 
@@ -233,16 +233,16 @@ fields:
         - F
         - M
 
-  - name: group
+  - name: Group
     description: >
       Identifier of aggregations of individuals of one or several species; 
-      should be unique among all observations from the same `tripkey`.
+      should be unique among all observations from the same `TripKey`.
     type: string
     format: default
     constraints:
       required: false
 
-  - name: direction_of_travel
+  - name: DirectionOfTravel
     description: |
       The direction in which the bird/cetacean is travelling.
       
@@ -312,7 +312,7 @@ fields:
         - '350'
         - '360'
 
-  - name: prey
+  - name: Prey
     description: |
       Observed prey (type) caught or carried by the bird/cetacean:
       - `0` Unknown
@@ -461,7 +461,7 @@ fields:
         - 92
         - 99
 
-  - name: association
+  - name: Association
     description: |
       Code for associations between observed birds/cetaceans and 
       vessels/structures/floating matter:
@@ -581,7 +581,7 @@ fields:
         - 117
         - 200
 
-  - name: activity
+  - name: Activity
     description: |
       Indicates what the species was doing when observed:
       - `1` On water/swimming
@@ -604,7 +604,7 @@ fields:
         - 6
         - 7
 
-  - name: behaviour
+  - name: Behaviour
     description: |
       Indicates what the species was doing when observed:
       - `0` Unknown
@@ -773,7 +773,7 @@ fields:
         - 122
         - 123
 
-  - name: notes
+  - name: Notes
     description: >
       Additional details related to the observation.
     type: string
@@ -784,9 +784,9 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: obskey
+primaryKey: ObsKey
 foreignKeys:
-  - fields: poskey
+  - fields: PosKey
     reference:
       resource: positions
-      fields: poskey
+      fields: PosKey

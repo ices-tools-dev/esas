@@ -1,6 +1,6 @@
 title: Positions
 description: >
-  Lists all count positions (identified by a unique `poskey`) and includes 
+  Lists all count positions (identified by a unique `PosKey`) and includes 
   relevant position-specific parameters; has a many-to-one relationship with 
   the Trip data table and a one-to-many relationship with the Observations data 
   table. Each record represents an observation bin, characterised by a 
@@ -9,7 +9,7 @@ description: >
   second of the survey. For ship-based surveys this usually means the 
   (calculated) middle point of the trajectory sailed during the observation bin.
 fields: 
-  - name: poskey
+  - name: PosKey
     description: >
       Unique identifier for this position within a trip. It is strongly 
       recommended to use a persistent identifier (i.e. one that does not 
@@ -20,7 +20,7 @@ fields:
       required: true
       unique: true
 
-  - name: tripkey
+  - name: TripKey
     description: >
       Unique identifier of the trip this position belongs to.
     type: string
@@ -28,7 +28,7 @@ fields:
     constraints:
       required: true
 
-  - name: time
+  - name: Time
     description: >
       UTC time of the observation bin in the format `hh:mm:ss`.
     type: time
@@ -36,7 +36,7 @@ fields:
     constraints:
       required: true
 
-  - name: latitude
+  - name: Latitude
     description: >
       The latitude of the position in decimal degrees (geographic coordinate 
       system WGS84; EPSG code: 4326).
@@ -47,7 +47,7 @@ fields:
       minimum: -90
       maximum: 90
 
-  - name: longitude
+  - name: Longitude
     description: >
       The longitude of the position in decimal degrees (geographic coordinate 
       system WGS84; EPSG code: 4326).
@@ -58,25 +58,25 @@ fields:
       minimum: -180
       maximum: 180
 
-  - name: km_travelled
+  - name: KmTravelled
     description: >
       The distance travelled during the observation bin in km. Can only remain 
-      empty if `area_surveyed` is used.
+      empty if `AreaSurveyed` is used.
     type: number
     format: default
     constraints:
       required: false
 
-  - name: area_surveyed
+  - name: AreaSurveyed
     description: >
       The area of sea surveyed during the observation bin in km². Can only 
-      remain empty if `km_travelled` is used.
+      remain empty if `KmTravelled` is used.
     type: number
     format: default
     constraints:
       required: false
 
-  - name: beaufort
+  - name: Beaufort
     description: |
       Sea state according to the Beaufort scale:
       - `0` Sea like mirror
@@ -111,7 +111,7 @@ fields:
         - 11
         - 12
 
-  - name: visibility
+  - name: Visibility
     description: |
       Visibility in kilometer:
       - `0.1`
@@ -174,7 +174,7 @@ fields:
         - C
         - D
 
-  - name: glare
+  - name: Glare
     description: |
       Glare affecting the observer: 
       - `none` No glare
@@ -191,7 +191,7 @@ fields:
         - medium
         - strong
 
-  - name: sun_angle
+  - name: SunAngle
     description: >
       Angle of the sun in relation to the observer (`0` – `359`).
     type: integer
@@ -201,7 +201,7 @@ fields:
       minimum: 0
       maximum: 360
 
-  - name: cloud_cover
+  - name: CloudCover
     description: >
       Cloud cover expressed as x/8 (octas) (`0` – `8`).
     type: integer
@@ -211,7 +211,7 @@ fields:
       minimum: 0
       maximum: 8
 
-  - name: precipitation
+  - name: Precipitation
     description: |
       - `none`
       - `rain`
@@ -227,7 +227,7 @@ fields:
         - snow
         - fog
 
-  - name: ice
+  - name: Ice
     description: >
       Ice coverage within the survey transect % (`0` – `100`).
     type: integer
@@ -237,7 +237,7 @@ fields:
       minimum: 0
       maximum: 100
 
-  - name: observation_conditions
+  - name: ObservationConditions
     description: |
       General impression of the observation conditions:
       - `good`
@@ -252,7 +252,7 @@ fields:
         - moderate
         - bad
 
-  - name: notes
+  - name: Notes
     description: >
       Additional details related to the position.
     type: string
@@ -263,9 +263,9 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: poskey
+primaryKey: PosKey
 foreignKeys:
-  - fields: tripkey
+  - fields: TripKey
     reference:
       resource: trips
-      fields: tripkey
+      fields: TripKey

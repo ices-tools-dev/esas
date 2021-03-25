@@ -1,16 +1,16 @@
 title: Trips
 description: >
-  Lists all surveys (identified by a unique `tripkey`) and includes relevant 
+  Lists all surveys (identified by a unique `TripKey`) and includes relevant 
   survey-specific parameters. Each record represents a single survey. If you 
   have multiple observers producing independent data streams, use a separate 
-  `tripkey` for each of them (hence for the classical plane survey setup with 2 
+  `TripKey` for each of them (hence for the classical plane survey setup with 2 
   observers on each side of plane independently recording their observations, 
-  there should be 2 unique `tripkey`s).
+  there should be 2 unique `TripKey`s).
 fields:
-  - name: tripkey
+  - name: TripKey
     description: >
       Unique identifier for this trip. Made globally unique in combination 
-      with `data_provider`. It is strongly recommended to use a persistent 
+      with `DataProvider`. It is strongly recommended to use a persistent 
       identifier (i.e. one that does not change through time).
     type: string
     format: default
@@ -18,7 +18,7 @@ fields:
       required: true
       unique: true
 
-  - name: data_provider
+  - name: DataProvider
     description: |
       Origin of data (e.g. data owner or supplier):
       - `10` Joint Nature Conservation Committee (SAST)
@@ -77,7 +77,7 @@ fields:
         - 210
         - 220
 
-  - name: public_data
+  - name: PublicData
     description: >
       `TRUE` if data for this trip can be made publicly accessible under the 
       conditions of the ICES data policy, `FALSE` if data should remain private.
@@ -86,7 +86,7 @@ fields:
     constraints:
       required: true
 
-  - name: date
+  - name: Date
     description: >
       Date in the format `yyyy-mm-dd`.
     type: date
@@ -94,7 +94,7 @@ fields:
     constraints:
       required: true
 
-  - name: platform_type
+  - name: PlatformType
     description: |
       The platform used for carrying out observations. Uses the 
       [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
@@ -110,7 +110,7 @@ fields:
         - aeroplane   # Previously: 3 and 4
         - helicopter  # Previously: 2
 
-  - name: platform_side
+  - name: PlatformSide
     description: |
       Side and optionally seat of platform used by observer(s) for counting:
       - `right` Starboard
@@ -133,14 +133,14 @@ fields:
         - left back   # Previously: 2
         - both sides  # Previously: 9
 
-  - name: platform_name
+  - name: PlatformName
     description: Name of the platform, e.g. ship name or aviation call sign.
     type: string
     format: default
     constraints:
       required: false
 
-  - name: flying_height
+  - name: FlyingHeight
     description: >
       The flying height of the aeroplane or helicopter (m).
     type: integer
@@ -148,7 +148,7 @@ fields:
     constraints:
       required: false
 
-  - name: transect_width
+  - name: TransectWidth
     description: >
       The width of the survey transect (m).
     type: integer
@@ -156,18 +156,18 @@ fields:
     constraints:
       required: true
  
-  - name: campaign_key
+  - name: CampaignKey
     description: >
       Aggregates parts of a campaign, i.e. different sides of the platform or 
       counts in different parts of a study area covered on different days or by 
-      different platforms. The `campaign_key` should equal the `tripkey` of the 
+      different platforms. The `CampaignKey` should equal the `TripKey` of the 
       1st entry of the particular campaign.
     type: string
     format: default
     constraints:
       required: false
 
-  - name: route
+  - name: Route
     description: >
       Short description of the area covered or route followed.
     type: string
@@ -175,7 +175,7 @@ fields:
     constraints:
       required: false
 
-  - name: count_method
+  - name: CountMethod
     description: |
       The type of observation method being applied:
       - `1` Full ship-based transect method with snapshot for flying birds
@@ -208,7 +208,7 @@ fields:
         - 11
         - 12
 
-  - name: species_counted
+  - name: SpeciesCounted
     description: |
       The species (groups) which were being counted:
       - `1` All species recorded (standard)
@@ -255,7 +255,7 @@ fields:
         - 18
         - 99
 
-  - name: distance_bins
+  - name: DistanceBins
     description: >
       List of the distance bin boundaries applied during counting, as input for 
       distance analysis, according to the following format: `x|x|...|x`. For 
@@ -267,7 +267,7 @@ fields:
       required: false
       pattern: '(\d+\|)+\d+'
 
-  - name: use_of_binoculars
+  - name: UseOfBinoculars
     description: |
       The extent to which binoculars were used to detect birds/cetaceans:
       - `1` No binoculars used for detection of birds/cetaceans
@@ -282,7 +282,7 @@ fields:
         - 2
         - 3
 
-  - name: behaviour_recording
+  - name: BehaviourRecording
     description: |
       Indicates if and how behaviour has been recorded:
       - `0` Behaviour not recorded
@@ -299,18 +299,18 @@ fields:
         - 2
         - 3
 
-  - name: number_of_observers
+  - name: NumberOfObservers
     description: >
-      Number of observers producing the data stream of this specific `tripkey`. 
+      Number of observers producing the data stream of this specific `TripKey`. 
       The number of observers does not include observers that record 
       independent observations (thus producing different data streams that are 
-      included in the database under different `tripkey`s).
+      included in the database under different `TripKey`s).
     type: integer
     format: default
     constraints:
       required: false
 
-  - name: notes
+  - name: Notes
     description: >
       Additional details related to the survey.
     type: string
@@ -321,5 +321,4 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: tripkey
-
+primaryKey: TripKey
