@@ -167,14 +167,6 @@ fields:
     constraints:
       required: false
 
-  - name: Route
-    description: >
-      Short description of the area covered or route followed.
-    type: string
-    format: default
-    constraints:
-      required: false
-
   - name: CountMethod
     description: |
       The type of observation method being applied:
@@ -312,7 +304,8 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the survey.
+      Additional details related to the survey, such as details regarding the 
+      area covered or route followed.
     type: string
     format: default
     constraints:
