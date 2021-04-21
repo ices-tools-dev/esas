@@ -25,7 +25,7 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 360~35970	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater			137062	Calonectris	previously 361
 362	Calonectris edwardsii	Cape Verde Shearwater	Calonectris edwardsii	Cape Verde Shearwater	759340	Calonectris edwardsii	
 400	Ardenna gravis	Great Shearwater	Puffinus gravis		882958	Ardenna gravis	
-400~!	Ardenna gravis / Calonectris sp.	Great / Calonectris Shearwater			136998	Procellariidae  previously 409
+400~!	Ardenna gravis / Calonectris sp.	Great / Calonectris Shearwater			136998	Procellariidae  previously 409 
 410	Puffinus pacificus	Wedge-tailed Shearwater	Puffinus pacificus		212634	Puffinus pacificus	
 430	Ardenna grisea	Sooty Shearwater	Puffinus griseus		707542	Ardenna grisea	
 460	Puffinus puffinus	Manx Shearwater	Puffinus puffinus		137203	Puffinus puffinus	
@@ -223,7 +223,7 @@ code	scientific_name	english_name	euring_scientific_name	euring_english_name	aph
 6260	Chlidonias hybrida	Whiskered Tern	Chlidonias hybridus		137135	Chlidonias hybrida	
 6270	Chlidonias niger	Black Tern	Chlidonias niger		137137	Chlidonias niger	
 6280	Chlidonias leucopterus	White-winged Tern	Chlidonias leucopterus		137136	Chlidonias leucopterus	
-!6285		unidentified tern			136988	Laridae previously 6289 (v5)
+!6285		unidentified tern			136988	Laridae previously 6289 (v5) 
 6300	Anous stolidus	Brown Noddy	Anous stolidus		212629	Anous stolidus	
 6340	Uria aalge	Common Guillemot	Uria aalge		137133	Uria aalge	
 6340~6360	Uria aalge / Alca torda	Common Guillemot / Razorbill			136987	Alcidae	previously 6345
