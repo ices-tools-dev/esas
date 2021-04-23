@@ -19,14 +19,6 @@ fields:
       required: true
       unique: true
 
-  - name: TripKey
-    description: >
-      Unique identifier of the trip this observation belongs to.
-    type: string
-    format: default
-    constraints:
-      required: true
-
   - name: PosKey
     description: >
       Unique identifier of the position this observation belongs to.
@@ -786,10 +778,6 @@ missingValues:
   - NA
 primaryKey: ObsKey
 foreignKeys:
-  - fields: TripKey
-    reference:
-      resource: trips
-      fields: TripKey
   - fields: PosKey
     reference:
       resource: positions
