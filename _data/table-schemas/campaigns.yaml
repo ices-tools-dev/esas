@@ -1,0 +1,129 @@
+title: Campaigns
+description: >
+  A sampling campaign. Uniquely identified by `DataProvider`, `Platform` and 
+  `StartDate`.
+fields:
+  - name: CampaignKey
+    description: >
+      Unique identifier for this campaign, used to link records.
+    type: string
+    format: default
+    constraints:
+      required: true
+      unique: true
+
+  - name: DataProvider
+    description: |
+      Origin of data (e.g. data owner or supplier):
+      - `10` Joint Nature Conservation Committee (SAST)
+      - `11` Royal Society for the Protection of Birds (RSPB)
+      - `15` Coastal Seabird Research Group (CSRG)
+      - `20` Netherlands Institute for Sea Research (NIOZ)
+      - `21` Rijkswaterstaat Centrale Informatievoorziening (RWS CIV)
+      - `30` Ornis Consult (ORNCON)
+      - `40` Norwegian Institute for Nature Research (NINA)
+      - `50` FTZ & Vogelwarte Helgoland (VWH)
+      - `55` BfN/FTZ Biodiversity Monitoring Germany
+      - `90` National Environmental Research Institute (NERI)
+      - `100` Netherlands Seabird Group (NZG)
+      - `110` Research Institute for Nature and Forest (INBO)
+      - `120` Alterra
+      - `130` Theo Postma
+      - `140` Bureau Waardenburg (BUWA)
+      - `150` CSR CSR
+      - `160` EC Discard Projects
+      - `170` NIOZ/CSR
+      - `180` CSR Wildlife Cruises
+      - `200` University College Cork
+      - `210` Sociedade Portuguesa Para O Estudo Das Aves (SPEA)
+      - `220` Cork Ecology (CE)
+    type: integer
+    format: default
+    constraints:
+      required: true
+      enum:
+        - 10
+        - 11
+        - 15
+        - 20
+        - 21
+        - 30
+        - 40
+        - 50 
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 80
+        - 90
+        - 100
+        - 110
+        - 120
+        - 130
+        - 140
+        - 150
+        - 160
+        - 170
+        - 180
+        - 190
+        - 200
+        - 210
+        - 220
+
+  - name: PublicData
+    description: >
+      `TRUE` if data for this trip can be made publicly accessible under the 
+      conditions of the ICES data policy, `FALSE` if data should remain private.
+    type: boolean
+    format: default
+    constraints:
+      required: true
+
+  - name: PlatformType
+    description: |
+      The platform used for carrying out observations. Uses the 
+      [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
+      - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
+      - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
+      - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
+    type: string
+    format: default
+    constraints:
+      required: true
+      enum:
+        - ship        # Previously: 1
+        - aeroplane   # Previously: 3 and 4
+        - helicopter  # Previously: 2
+
+  - name: PlatformName
+    description: Name of the platform, e.g. ship name or aviation call sign.
+    type: string
+    format: default
+    constraints:
+      required: false
+
+  - name: CampaignKey
+    description: >
+      Aggregates parts of a campaign, i.e. different sides of the platform or 
+      counts in different parts of a study area covered on different days or by 
+      different platforms. The `CampaignKey` should equal the `TripKey` of the 
+      1st entry of the particular campaign.
+    type: string
+    format: default
+    constraints:
+      required: false
+
+  - name: Notes
+    description: >
+      Additional details related to the survey, such as details regarding the 
+      area covered or route followed.
+    type: string
+    format: default
+    constraints:
+      required: false
+
+missingValues:
+  - ''
+  - NA
+primaryKey: CampaignKey

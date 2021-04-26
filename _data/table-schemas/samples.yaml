@@ -1,114 +1,27 @@
-title: Trips
+title: Samples
 description: >
-  Lists all surveys (identified by a unique `TripKey`) and includes relevant 
-  survey-specific parameters. Each record represents a single survey. If you 
-  have multiple observers producing independent data streams, use a separate 
-  `TripKey` for each of them (hence for the classical plane survey setup with 2 
-  observers on each side of plane independently recording their observations, 
-  there should be 2 unique `TripKey`s).
+  A sample during a campaign, with a specific methodology. If you have multiple 
+  observers producing independent data streams, use a separate `SampleKey` for 
+  each of them: hence for the classical plane survey setup with 2 observers on 
+  each side of plane independently recording their observations, there should 
+  be 2 unique `SampleKey`s.
 fields:
-  - name: TripKey
+  - name: SampleKey
     description: >
-      Unique identifier for this trip. Made globally unique in combination 
-      with `DataProvider`. It is strongly recommended to use a persistent 
-      identifier (i.e. one that does not change through time).
+      Unique identifier for this sample, used to link records.
     type: string
     format: default
     constraints:
       required: true
       unique: true
 
-  - name: DataProvider
-    description: |
-      Origin of data (e.g. data owner or supplier):
-      - `10` Joint Nature Conservation Committee (SAST)
-      - `11` Royal Society for the Protection of Birds (RSPB)
-      - `15` Coastal Seabird Research Group (CSRG)
-      - `20` Netherlands Institute for Sea Research (NIOZ)
-      - `21` Rijkswaterstaat Centrale Informatievoorziening (RWS CIV)
-      - `30` Ornis Consult (ORNCON)
-      - `40` Norwegian Institute for Nature Research (NINA)
-      - `50` FTZ & Vogelwarte Helgoland (VWH)
-      - `55` BfN/FTZ Biodiversity Monitoring Germany
-      - `90` National Environmental Research Institute (NERI)
-      - `100` Netherlands Seabird Group (NZG)
-      - `110` Research Institute for Nature and Forest (INBO)
-      - `120` Alterra
-      - `130` Theo Postma
-      - `140` Bureau Waardenburg (BUWA)
-      - `150` CSR CSR
-      - `160` EC Discard Projects
-      - `170` NIOZ/CSR
-      - `180` CSR Wildlife Cruises
-      - `200` University College Cork
-      - `210` Sociedade Portuguesa Para O Estudo Das Aves (SPEA)
-      - `220` Cork Ecology (CE)
-    type: integer
-    format: default
-    constraints:
-      required: true
-      enum:
-        - 10
-        - 11
-        - 15
-        - 20
-        - 21
-        - 30
-        - 40
-        - 50 
-        - 51
-        - 52
-        - 53
-        - 54
-        - 55
-        - 80
-        - 90
-        - 100
-        - 110
-        - 120
-        - 130
-        - 140
-        - 150
-        - 160
-        - 170
-        - 180
-        - 190
-        - 200
-        - 210
-        - 220
-
-  - name: PublicData
+  - name: CampaignKey
     description: >
-      `TRUE` if data for this trip can be made publicly accessible under the 
-      conditions of the ICES data policy, `FALSE` if data should remain private.
-    type: boolean
-    format: default
-    constraints:
-      required: true
-
-  - name: Date
-    description: >
-      Date in the format `yyyy-mm-dd`.
-    type: date
-    format: default
-    constraints:
-      required: true
-
-  - name: PlatformType
-    description: |
-      The platform used for carrying out observations. Uses the 
-      [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
-      - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
-      - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
-      - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
+      Unique identifier of the campaign this sample belongs to.
     type: string
     format: default
     constraints:
       required: true
-      enum:
-        - ship        # Previously: 1
-        - aeroplane   # Previously: 3 and 4
-        - helicopter  # Previously: 2
 
   - name: PlatformSide
     description: |
@@ -132,13 +45,6 @@ fields:
         - left front  # Previously: 4
         - left back   # Previously: 2
         - both sides  # Previously: 9
-
-  - name: PlatformName
-    description: Name of the platform, e.g. ship name or aviation call sign.
-    type: string
-    format: default
-    constraints:
-      required: false
 
   - name: FlyingHeight
     description: >
@@ -314,4 +220,10 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: TripKey
+primaryKey: SampleKey
+foreignKeys:
+  - fields: CampaignKey
+    reference:
+      resource: campaigns
+      fields: CampaignKey
+

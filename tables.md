@@ -2,7 +2,8 @@
 layout: tables
 title: Tables
 description: >
-  [Trips](#trips){: .btn .btn-primary }
+  [Campaigns](#campaigns){: .btn .btn-primary }
+  [Samples](#samples){: .btn .btn-primary }
   [Positions](#positions){: .btn .btn-primary }
   [Observations](#observations){: .btn .btn-primary }
 permalink: /tables/
