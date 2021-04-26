@@ -71,14 +71,20 @@ fields:
         - 210
         - 220
 
-  - name: PublicData
-    description: >
-      `TRUE` if data for this trip can be made publicly accessible under the 
-      conditions of the ICES data policy, `FALSE` if data should remain private.
-    type: boolean
+  - name: DataAccess
+    description: |
+      Whether data for the campaign can be made publicly accessible under the 
+      conditions of the ICES data policy. Uses the 
+      [Data_access](https://vocab.ices.dk/?ref=1435) vocabulary:
+      - `public`
+      - `restricted`
+    type: string
     format: default
     constraints:
       required: true
+      enum:
+        - public
+        - restricted
 
   - name: PlatformType
     description: |
