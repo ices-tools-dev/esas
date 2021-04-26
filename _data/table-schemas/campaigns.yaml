@@ -102,12 +102,14 @@ fields:
         - aeroplane   # Previously: 3 and 4
         - helicopter  # Previously: 2
 
-  - name: PlatformName
-    description: Name of the platform, e.g. ship name or aviation call sign.
+  - name: Platform
+    description: >
+      Platform used for the campaign. Uses the 
+      [SHIPC](https://vocab.ices.dk/?ref=315) vocabulary.
     type: string
     format: default
     constraints:
-      required: false
+      required: true
 
   - name: StartDate
     description: >
