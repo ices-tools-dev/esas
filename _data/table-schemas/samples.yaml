@@ -70,17 +70,6 @@ fields:
     constraints:
       required: true
  
-  - name: CampaignKey
-    description: >
-      Aggregates parts of a campaign, i.e. different sides of the platform or 
-      counts in different parts of a study area covered on different days or by 
-      different platforms. The `CampaignKey` should equal the `TripKey` of the 
-      1st entry of the particular campaign.
-    type: string
-    format: default
-    constraints:
-      required: false
-
   - name: CountMethod
     description: |
       The type of observation method being applied:
@@ -212,15 +201,6 @@ fields:
       independent observations (thus producing different data streams that are 
       included in the database under different `TripKey`s).
     type: integer
-    format: default
-    constraints:
-      required: false
-
-  - name: Notes
-    description: >
-      Additional details related to the survey, such as details regarding the 
-      area covered or route followed.
-    type: string
     format: default
     constraints:
       required: false
