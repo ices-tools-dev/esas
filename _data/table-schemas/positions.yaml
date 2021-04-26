@@ -1,28 +1,21 @@
 title: Positions
 description: >
-  Lists all count positions (identified by a unique `PosKey`) and includes 
-  relevant position-specific parameters; has a many-to-one relationship with 
-  the Trip data table and a one-to-many relationship with the Observations data 
-  table. Each record represents an observation bin, characterised by a 
-  position. Each position recorded during the survey is reported in the 
-  Position table. For plane surveys this usually means a position for each 
-  second of the survey. For ship-based surveys this usually means the 
-  (calculated) middle point of the trajectory sailed during the observation bin.
+  Distinct positions during sampling. For plane sampling this is usually one 
+  position per second, while ship-based sampling generally use a (calculated) 
+  middle point of the trajectory sailed during an observation bin.
 fields: 
   - name: PosKey
     description: >
-      Unique identifier for this position within a trip. It is strongly 
-      recommended to use a persistent identifier (i.e. one that does not 
-      change through time).
+      Unique identifier for the position, used to link records.
     type: string
     format: default
     constraints:
       required: true
       unique: true
 
-  - name: TripKey
+  - name: SampleKey
     description: >
-      Unique identifier of the trip this position belongs to.
+      Unique identifier of the sample this position belongs to.
     type: string
     format: default
     constraints:
@@ -257,7 +250,7 @@ missingValues:
   - NA
 primaryKey: PosKey
 foreignKeys:
-  - fields: TripKey
+  - fields: SampleKey
     reference:
-      resource: trips
-      fields: TripKey
+      resource: samples
+      fields: SampleKey

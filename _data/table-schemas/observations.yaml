@@ -1,18 +1,11 @@
 title: Observations
 description: >
-  Lists all bird or marine mammal records (identified by a unique `ObsKey`) and 
-  includes relevant observation-specific parameters; has a many-to-one 
-  relationship with the Position data table; no entries should be made for 
-  positions or observation bins without observations. Each record represents a 
-  single observation of (a group of) birds or (a pack of) marine mammals. 
-  Observations are generally of individuals with the same characteristics 
-  (distance, species, age, ...).
+  Observation of a group of birds or marine mammals of a certain species. Use 
+  separate observations to distinguish between species, ages, etc.
 fields: 
   - name: ObsKey
     description: >
-      Unique identifier for this observation within a trip and position. It is 
-      strongly recommended to use a persistent identifier (i.e. one that does 
-      not change through time).
+      Unique identifier for the observation.
     type: string
     format: default
     constraints:

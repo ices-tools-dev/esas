@@ -1,11 +1,11 @@
 title: Campaigns
 description: >
-  A sampling campaign. Uniquely identified by `DataProvider`, `Platform` and 
-  `StartDate`.
+  Campaigns that generated the data. Uniquely identified by `DataProvider`, 
+  `Platform` and `StartDate`.
 fields:
   - name: CampaignKey
     description: >
-      Unique identifier for this campaign, used to link records.
+      Unique identifier for the campaign, used to link records.
     type: string
     format: default
     constraints:

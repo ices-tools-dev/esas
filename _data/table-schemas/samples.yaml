@@ -1,14 +1,12 @@
 title: Samples
 description: >
-  A sample during a campaign, with a specific methodology. If you have multiple 
-  observers producing independent data streams, use a separate `SampleKey` for 
-  each of them: hence for the classical plane survey setup with 2 observers on 
-  each side of plane independently recording their observations, there should 
-  be 2 unique `SampleKey`s.
+  Sampling events during a campaign, with a specific methodology. Use separate 
+  sample records if sampling was interrupted or when multiple observers are 
+  producing independent data streams on (each side) of the same platform.
 fields:
   - name: SampleKey
     description: >
-      Unique identifier for this sample, used to link records.
+      Unique identifier for the sample, used to link records.
     type: string
     format: default
     constraints:
