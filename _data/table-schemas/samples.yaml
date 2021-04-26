@@ -23,6 +23,14 @@ fields:
     constraints:
       required: true
 
+  - name: Date
+    description: >
+      Sample date. Format: `yyyy-mm-dd`.
+    type: date
+    format: default
+    constraints:
+      required: true
+
   - name: PlatformSide
     description: |
       Side and optionally seat of platform used by observer(s) for counting:
