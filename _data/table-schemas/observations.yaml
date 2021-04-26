@@ -241,7 +241,7 @@ fields:
         - F
         - M
 
-  - name: DirectionOfTravel
+  - name: TravelDirection
     description: |
       The direction in which the bird/cetacean is travelling.
       
