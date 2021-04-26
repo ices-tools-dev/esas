@@ -109,13 +109,8 @@ fields:
     constraints:
       required: false
 
-  - name: CampaignKey
+  - name: StartDate
     description: >
-      Aggregates parts of a campaign, i.e. different sides of the platform or 
-      counts in different parts of a study area covered on different days or by 
-      different platforms. The `CampaignKey` should equal the `TripKey` of the 
-      1st entry of the particular campaign.
-    type: string
     format: default
     constraints:
       required: false
