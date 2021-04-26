@@ -54,7 +54,7 @@ fields:
         - left back   # Previously: 2
         - both sides  # Previously: 9
 
-  - name: FlyingHeight
+  - name: PlatformHeight
     description: >
       The flying height of the aeroplane or helicopter (m).
     type: integer
