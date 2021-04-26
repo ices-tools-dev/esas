@@ -113,6 +113,16 @@ fields:
 
   - name: StartDate
     description: >
+      Start date of the campaign. Format: `yyyy-mm-dd`.
+    type: date
+    format: default
+    constraints:
+      required: true
+
+  - name: EndDate
+    description: >
+      End date of the campaign. Format: `yyyy-mm-dd`.
+    type: date
     format: default
     constraints:
       required: false
