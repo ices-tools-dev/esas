@@ -27,6 +27,15 @@ fields:
     constraints:
       required: true
 
+  - name: Group
+    description: >
+      Identifier of aggregations of individuals of one or several species; 
+      should be unique among all observations from the same `TripKey`.
+    type: string
+    format: default
+    constraints:
+      required: false
+
   - name: Transect
     description: |
       States whether the observation was in (`TRUE`) or out (`FALSE`) of the transect.
@@ -224,15 +233,6 @@ fields:
       enum:
         - F
         - M
-
-  - name: Group
-    description: >
-      Identifier of aggregations of individuals of one or several species; 
-      should be unique among all observations from the same `TripKey`.
-    type: string
-    format: default
-    constraints:
-      required: false
 
   - name: DirectionOfTravel
     description: |
