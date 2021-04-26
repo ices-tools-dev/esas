@@ -252,14 +252,6 @@ fields:
         - moderate
         - bad
 
-  - name: Notes
-    description: >
-      Additional details related to the position.
-    type: string
-    format: default
-    constraints:
-      required: false
-
 missingValues:
   - ''
   - NA
