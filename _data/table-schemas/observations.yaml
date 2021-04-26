@@ -148,7 +148,7 @@ fields:
       required: false
       pattern: '[ABCDEFW]|\>?\d+(\.\d+)?' # Specific letter or number (with optional > and decimals)
 
-  - name: AgeClass
+  - name: LifeStage
     description: |
       Age class:
       - `A` Adult
@@ -158,10 +158,6 @@ fields:
       - `3` 3rd calendar year
       - `4` 4th calendar year
       - `5` 5th calendar year
-
-      Or primary moult information (only used for fulmar, auks, divers and seaduck):
-      - `X` Active primary moult
-      - `Y` No active primary moult
     type: string
     format: default
     constraints:
@@ -174,6 +170,17 @@ fields:
         - '3'
         - '4'
         - '5'
+
+  - name: Moult
+    description: |
+      Primary moult information, only used for fulmar, auks, divers and seaduck:
+      - `X` Active primary moult
+      - `Y` No active primary moult
+    type: string
+    format: default
+    constraints:
+      required: false
+      enum:
         - X
         - Y
 
