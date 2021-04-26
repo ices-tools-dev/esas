@@ -14,7 +14,8 @@ fields:
 
   - name: DataProvider
     description: |
-      Origin of data (e.g. data owner or supplier):
+      Organization that provided the data and likely managed the campaign.
+      Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - `10` Joint Nature Conservation Committee (SAST)
       - `11` Royal Society for the Protection of Birds (RSPB)
       - `15` Coastal Seabird Research Group (CSRG)
@@ -88,7 +89,7 @@ fields:
 
   - name: PlatformType
     description: |
-      The platform used for carrying out observations. Uses the 
+      Type of the platform used for the campaign. Uses the 
       [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
       - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
       - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
@@ -129,7 +130,7 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the survey, such as details regarding the 
+      Additional details related to the campaign, such as research purpose, 
       area covered or route followed.
     type: string
     format: default

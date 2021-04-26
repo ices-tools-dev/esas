@@ -31,7 +31,7 @@ fields:
 
   - name: PlatformSide
     description: |
-      Side and optionally seat of platform used by observer(s) for counting:
+      Side of the platform used for sampling:
       - `right` Starboard
       - `right front`
       - `right back`
@@ -54,7 +54,8 @@ fields:
 
   - name: PlatformHeight
     description: >
-      The flying height of the aeroplane or helicopter (m).
+      Height (m) of the platform during sampling, e.g. average flying height 
+      of aeroplane.
     type: integer
     format: default
     constraints:
@@ -62,7 +63,7 @@ fields:
 
   - name: TransectWidth
     description: >
-      The width of the survey transect (m).
+      Width of the sampling transect (m).
     type: integer
     format: default
     constraints:
@@ -70,7 +71,7 @@ fields:
  
   - name: CountMethod
     description: |
-      The type of observation method being applied:
+      Sampling method:
       - `1` Full ship-based transect method with snapshot for flying birds
       - `2` Full ship-based transect method, no snapshot for flying birds
       - `3` All observations, but no transect operated
@@ -103,7 +104,7 @@ fields:
 
   - name: SpeciesCounted
     description: |
-      The species (groups) which were being counted:
+      Species (groups) that were counted during sampling:
       - `1` All species recorded (standard)
       - `2` All species except Larus gulls
       - `3` All species except fulmars
@@ -150,10 +151,9 @@ fields:
 
   - name: DistanceBins
     description: >
-      List of the distance bin boundaries applied during counting, as input for 
-      distance analysis, according to the following format: `x|x|...|x`. For 
-      ship-based surveys applying the standard 300 m wide transect this would 
-      be: `0|50|100|200|300`.
+      List of distance bin boundaries applied during sampling and to be used 
+      for distance analyses. Format: `x|x|...|x`. For typical ship-based 
+      sampling using a 300 m wide transect this would be `0|50|100|200|300`.
     type: string
     format: default
     constraints:
@@ -162,9 +162,9 @@ fields:
 
   - name: UseOfBinoculars
     description: |
-      The extent to which binoculars were used to detect birds/cetaceans:
-      - `1` No binoculars used for detection of birds/cetaceans
-      - `2` Binoculars used for detection of birds/cetaceans far ahead of the ship (e.g. for seaduck and diver surveys)
+      Extent to which binoculars were used during sampling:
+      - `1` No binoculars used
+      - `2` Binoculars used far ahead of the platform (e.g. for seaduck and diver surveys)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean surveys)
     type: integer
     format: default
@@ -177,10 +177,10 @@ fields:
 
   - name: BehaviourRecording
     description: |
-      Indicates if and how behaviour has been recorded:
+      Whether and how behaviour was recorded:
       - `0` Behaviour not recorded
-      - `1` Typical detailed ship-based behaviour recording (see behaviour lookup table)
-      - `2` Typical aeroplane-based activity recording (see activity activity lookup table)
+      - `1` Typical detailed ship-based behaviour recording (see `behaviour` field)
+      - `2` Typical aeroplane-based activity recording (see `activity` field)
       - `3` Other (only selected types of behaviour recorded, include more details in notes column)
     type: integer
     format: default
@@ -194,10 +194,7 @@ fields:
 
   - name: NumberOfObservers
     description: >
-      Number of observers producing the data stream of this specific `TripKey`. 
-      The number of observers does not include observers that record 
-      independent observations (thus producing different data streams that are 
-      included in the database under different `TripKey`s).
+      Number of observers that contributed to the sample.
     type: integer
     format: default
     constraints:
