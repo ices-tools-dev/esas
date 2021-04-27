@@ -69,7 +69,7 @@ fields:
     constraints:
       required: true
  
-  - name: CountMethod
+  - name: SamplingMethod
     description: |
       Sampling method:
       - `1` Full ship-based transect method with snapshot for flying birds
