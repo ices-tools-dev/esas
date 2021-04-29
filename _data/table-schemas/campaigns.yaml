@@ -87,31 +87,6 @@ fields:
         - public
         - restricted
 
-  - name: PlatformType
-    description: |
-      Type of the platform used for the campaign. Uses the 
-      [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
-      - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
-      - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
-      - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
-    type: string
-    format: default
-    constraints:
-      required: true
-      enum:
-        - ship        # Previously: 1
-        - aeroplane   # Previously: 3 and 4
-        - helicopter  # Previously: 2
-
-  - name: Platform
-    description: >
-      Platform used for the campaign. Uses the 
-      [SHIPC](https://vocab.ices.dk/?ref=315) vocabulary.
-    type: string
-    format: default
-    constraints:
-      required: true
-
   - name: StartDate
     description: >
       Start date of the campaign. Format: `yyyy-mm-dd`.
