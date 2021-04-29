@@ -225,6 +225,15 @@ fields:
     constraints:
       required: false
 
+  - name: Notes
+    description: >
+      Additional details related to the sampling, such name of the ship if no 
+      `SHIPC` code exists.
+    type: string
+    format: default
+    constraints:
+      required: false
+
 missingValues:
   - ''
   - NA
