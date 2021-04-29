@@ -121,7 +121,7 @@ fields:
     description: |
       Distance at which the birds or marine mammals were observed.
 
-      In case of the standard 300 m transect used for ship-based surveys of 
+      In case of the standard 300 m transect used for ship-based sampling of 
       marine mammals and birds in contact with the water:
       - `A` In contact with the water, 0 - 50 m
       - `B` In contact with the water, 50 - 100 m

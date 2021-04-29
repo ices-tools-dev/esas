@@ -104,9 +104,9 @@ fields:
       - `5` Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
       - `6` Ship-based strip transect, no snapshot, no distance estimation
       - `7` Ship-based strip transect, with snapshot, no distance estimation
-      - `8` Visual aerial survey line transect method with distance sampling
-      - `9` Visual aerial survey strip transect, no distance estimation
-      - `10` Visual aerial survey total counts
+      - `8` Visual aerial line transect method with distance sampling
+      - `9` Visual aerial strip transect, no distance estimation
+      - `10` Visual aerial total counts
       - `11` Digital aerial – video
       - `12` Digital aerial – stills
     type: integer
@@ -189,8 +189,8 @@ fields:
     description: |
       Extent to which binoculars were used during sampling:
       - `1` No binoculars used
-      - `2` Binoculars used far ahead of the platform (e.g. for seaduck and diver surveys)
-      - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean surveys)
+      - `2` Binoculars used far ahead of the platform (e.g. for seaduck and diver monitoring)
+      - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
     type: integer
     format: default
     constraints:

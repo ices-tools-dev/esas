@@ -221,7 +221,7 @@ fields:
 
   - name: Ice
     description: >
-      Ice coverage within the survey transect % (`0` – `100`).
+      Ice coverage within the transect % (`0` – `100`).
     type: integer
     format: default
     constraints:
