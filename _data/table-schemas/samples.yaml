@@ -215,7 +215,7 @@ fields:
       - `0` Behaviour not recorded
       - `1` Typical detailed ship-based behaviour recording (see `behaviour` field)
       - `2` Typical aeroplane-based activity recording (see `activity` field)
-      - `3` Other (only selected types of behaviour recorded, include more details in notes column)
+      - `3` Other (only selected types of behaviour recorded, include more details in `Notes`)
     type: integer
     format: default
     constraints:
