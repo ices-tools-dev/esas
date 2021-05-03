@@ -225,6 +225,7 @@ fields:
 
   - name: Sex
     description: |
+      Sex. Uses the [SEXCO](https://vocab.ices.dk/?CodeID=54287) vocabulary:
       - `F` Female
       - `M` Male 
     type: string
