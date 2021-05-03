@@ -127,6 +127,15 @@ fields:
         - 11
         - 12
 
+  - name: PrimarySampling
+    description: >
+      Whether the sample should be considered primary (`true`) or anxillary 
+      (`false`).
+    type: boolean
+    format: default
+    constraints:
+      required: false
+
   - name: SpeciesCounted
     description: |
       Species (groups) that were counted during sampling:
