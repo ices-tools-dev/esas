@@ -50,19 +50,19 @@ fields:
       minimum: -180
       maximum: 180
 
-  - name: DistanceTravelled
+  - name: Distance
     description: >
       Distance travelled during the observation bin in km. Can only remain 
-      empty if `AreaSurveyed` is used.
+      empty if `Area` is used.
     type: number
     format: default
     constraints:
       required: false
 
-  - name: AreaSurveyed
+  - name: Area
     description: >
       Area of sea surveyed during the observation bin in km². Can only remain 
-      empty if `KmTravelled` is used.
+      empty if `Distance` is used.
     type: number
     format: default
     constraints:
