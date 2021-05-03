@@ -73,7 +73,7 @@ fields:
         - 220
 
   - name: Country
-    Description: >
+    description: >
       Country or region that should be associated with this campaign.
       Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
