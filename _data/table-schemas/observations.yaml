@@ -118,7 +118,7 @@ fields:
     constraints:
       required: true
 
-  - name: Distance
+  - name: ObservationDistance
     description: |
       Distance at which the birds or marine mammals were observed.
 
