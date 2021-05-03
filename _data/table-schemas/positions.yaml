@@ -5,7 +5,7 @@ description: >
   trajectories (called "observation bins") typically have predefined durations 
   (e.g. 2 minutes).
 fields: 
-  - name: PosKey
+  - name: PositionID
     description: >
       Unique identifier for the position, used to link records.
     type: string
@@ -14,7 +14,7 @@ fields:
       required: true
       unique: true
 
-  - name: SampleKey
+  - name: SampleID
     description: >
       Unique identifier of the sample this position belongs to.
     type: string
@@ -247,9 +247,9 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: PosKey
+primaryKey: PositionID
 foreignKeys:
-  - fields: SampleKey
+  - fields: SampleID
     reference:
       resource: samples
-      fields: SampleKey
+      fields: SampleID

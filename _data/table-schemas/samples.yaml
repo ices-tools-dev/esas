@@ -4,7 +4,7 @@ description: >
   sample records if sampling was interrupted or when multiple observers are 
   producing independent data streams on (each side) of the same platform.
 fields:
-  - name: SampleKey
+  - name: SampleID
     description: >
       Unique identifier for the sample, used to link records.
     type: string
@@ -13,7 +13,7 @@ fields:
       required: true
       unique: true
 
-  - name: CampaignKey
+  - name: CampaignID
     description: >
       Unique identifier of the campaign this sample belongs to.
     type: string
@@ -237,10 +237,10 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: SampleKey
+primaryKey: SampleID
 foreignKeys:
-  - fields: CampaignKey
+  - fields: CampaignID
     reference:
       resource: campaigns
-      fields: CampaignKey
+      fields: CampaignID
 

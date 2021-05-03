@@ -3,7 +3,7 @@ description: >
   Campaigns that generated the data. Uniquely identified by `DataProvider`, 
   `Platform` and `StartDate`.
 fields:
-  - name: CampaignKey
+  - name: CampaignID
     description: >
       Unique identifier for the campaign, used to link records.
     type: string
@@ -115,4 +115,4 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: CampaignKey
+primaryKey: CampaignID

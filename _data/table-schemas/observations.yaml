@@ -2,8 +2,8 @@ title: Observations
 description: >
   Observation of a group of birds or marine mammals of a certain species. Use 
   separate observations to distinguish between species, ages, etc.
-fields: 
-  - name: ObsKey
+fields:
+  - name: ObservationID
     description: >
       Unique identifier for the observation.
     type: string
@@ -12,7 +12,7 @@ fields:
       required: true
       unique: true
 
-  - name: PosKey
+  - name: PositionID
     description: >
       Unique identifier of the position this observation belongs to.
     type: string
@@ -23,7 +23,7 @@ fields:
   - name: Group
     description: >
       Identifier of aggregations of individuals of one or several species; 
-      should be unique among all observations from the same `TripKey`.
+      should be unique among all observations from the same `SampleID`.
     type: string
     format: default
     constraints:
@@ -775,9 +775,9 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: ObsKey
+primaryKey: ObsID
 foreignKeys:
-  - fields: PosKey
+  - fields: PositionID
     reference:
       resource: positions
-      fields: PosKey
+      fields: PositionID
