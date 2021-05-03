@@ -12,9 +12,9 @@ fields:
       required: true
       unique: true
 
-  - name: DataProvider
+  - name: ResponsibleOrganisation
     description: |
-      Organization that provided the data and likely managed the campaign.
+      Organization managing the data for this campaign.
       Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - `10` Joint Nature Conservation Committee (SAST)
       - `11` Royal Society for the Protection of Birds (RSPB)
@@ -71,6 +71,15 @@ fields:
         - 200
         - 210
         - 220
+
+  - name: Country
+    Description: >
+      Country or region that should be associated with this campaign.
+      Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+    type: string
+    format: default
+    constraints:
+      required: true
 
   - name: DataAccess
     description: |
