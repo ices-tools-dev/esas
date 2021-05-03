@@ -22,8 +22,8 @@ fields:
 
   - name: Group
     description: >
-      Identifier of aggregations of individuals of one or several species; 
-      should be unique among all observations from the same `SampleID`.
+      Identifier of aggregations of individuals of one or several species. 
+      Should be unique among all observations from the same `SampleID`.
     type: string
     format: default
     constraints:
