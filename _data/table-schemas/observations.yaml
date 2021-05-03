@@ -3,6 +3,14 @@ description: >
   Observation of a group of birds or marine mammals of a certain species. Use 
   separate observations to distinguish between species, ages, etc.
 fields:
+  - name: PositionID
+    description: >
+      Unique identifier of the position this observation belongs to.
+    type: string
+    format: default
+    constraints:
+      required: true
+
   - name: ObservationID
     description: >
       Unique identifier for the observation.
@@ -11,14 +19,6 @@ fields:
     constraints:
       required: true
       unique: true
-
-  - name: PositionID
-    description: >
-      Unique identifier of the position this observation belongs to.
-    type: string
-    format: default
-    constraints:
-      required: true
 
   - name: Group
     description: >

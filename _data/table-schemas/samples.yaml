@@ -4,6 +4,14 @@ description: >
   sample records if sampling was interrupted or when multiple observers are 
   producing independent data streams on (each side) of the same platform.
 fields:
+  - name: CampaignID
+    description: >
+      Unique identifier of the campaign this sample belongs to.
+    type: string
+    format: default
+    constraints:
+      required: true
+
   - name: SampleID
     description: >
       Unique identifier for the sample, used to link records.
@@ -12,14 +20,6 @@ fields:
     constraints:
       required: true
       unique: true
-
-  - name: CampaignID
-    description: >
-      Unique identifier of the campaign this sample belongs to.
-    type: string
-    format: default
-    constraints:
-      required: true
 
   - name: Date
     description: >

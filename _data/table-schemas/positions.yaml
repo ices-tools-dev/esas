@@ -4,7 +4,15 @@ description: >
   positions often represent the calculated middle point of a trajectory. These 
   trajectories (called "observation bins") typically have predefined durations 
   (e.g. 2 minutes).
-fields: 
+fields:
+  - name: SampleID
+    description: >
+      Unique identifier of the sample this position belongs to.
+    type: string
+    format: default
+    constraints:
+      required: true
+
   - name: PositionID
     description: >
       Unique identifier for the position, used to link records.
@@ -13,14 +21,6 @@ fields:
     constraints:
       required: true
       unique: true
-
-  - name: SampleID
-    description: >
-      Unique identifier of the sample this position belongs to.
-    type: string
-    format: default
-    constraints:
-      required: true
 
   - name: Time
     description: >
