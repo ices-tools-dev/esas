@@ -1,11 +1,11 @@
 title: Campaigns
 description: >
-  Campaigns that generated the data. Uniquely identified by `DataProvider`, 
-  `Platform` and `StartDate`.
+  Campaigns that generated the data.
 fields:
   - name: CampaignID
     description: >
-      Unique identifier for the campaign, used to link records.
+      Unique identifier for the campaign, used to link records. Should be a 
+      globally unique and permanent identifier to allow reuploads.
     type: string
     format: default
     constraints:
@@ -93,7 +93,7 @@ fields:
     type: date
     format: default
     constraints:
-      required: true
+      required: false
 
   - name: EndDate
     description: >
