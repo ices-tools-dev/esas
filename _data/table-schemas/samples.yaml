@@ -22,7 +22,7 @@ fields:
 
   - name: Date
     description: >
-      Sample date. Format: `yyyy-mm-dd`.
+      Sampling date. Format: `yyyy-mm-dd`.
     type: date
     format: default
     constraints:
@@ -235,7 +235,7 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the sampling, such as the name of the ship 
+      Additional details related to the sample, such as the name of the ship 
       if no `SHIPC` code exists.
     type: string
     format: default
