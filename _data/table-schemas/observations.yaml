@@ -251,7 +251,7 @@ fields:
       - `NW` Heading NW
       - `U` Flying, no apparent direction
 
-      Or relative to the front of the platform, indicated in degrees with 
+      Or relative to the direction of the platform, indicated in degrees with 
       10° increments.
     type: string
     format: default

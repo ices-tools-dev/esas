@@ -4,8 +4,8 @@ description: >
 fields:
   - name: CampaignID
     description: >
-      Unique identifier for the campaign, used to link records. Should be a 
-      globally unique and permanent identifier to allow reuploads.
+      Unique identifier for the campaign. Should be a globally unique and 
+      permanent identifier to allow reuploads.
     type: string
     format: default
     constraints:
@@ -74,7 +74,7 @@ fields:
 
   - name: Country
     description: >
-      Country or region that should be associated with this campaign.
+      Country that is associated with the responsible organisation.
       Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
     format: default

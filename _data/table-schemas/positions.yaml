@@ -15,7 +15,7 @@ fields:
 
   - name: PositionID
     description: >
-      Unique identifier for the position, used to link records.
+      Unique identifier for the position.
     type: string
     format: default
     constraints:
@@ -42,7 +42,7 @@ fields:
 
   - name: Longitude
     description: >
-      The longitude of the position in decimal degrees, using the WGS84 datum.
+      Longitude of the position in decimal degrees, using the WGS84 datum.
     type: number
     format: default
     constraints:
@@ -168,7 +168,7 @@ fields:
 
   - name: Glare
     description: |
-      Glare that could be affecting the observer: 
+      Glare that could be affecting the observation quality: 
       - `none` No glare
       - `weak` Weak glare (no major effect on the counting)
       - `medium` Medium glare (a part of the viewing area is affected by glare)

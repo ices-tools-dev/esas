@@ -1,8 +1,7 @@
 title: Samples
 description: >
   Sampling events during a campaign, with a specific methodology. Use separate 
-  sample records if sampling was interrupted or when multiple observers are 
-  producing independent data streams on (each side) of the same platform.
+  sample records when multiple observers are producing independent data streams.
 fields:
   - name: CampaignID
     description: >
@@ -14,7 +13,7 @@ fields:
 
   - name: SampleID
     description: >
-      Unique identifier for the sample, used to link records.
+      Unique identifier for the sample.
     type: string
     format: default
     constraints:
@@ -130,7 +129,7 @@ fields:
   - name: PrimarySampling
     description: >
       Whether the sample should be considered primary (`true`) or anxillary 
-      (`false`).
+      (`false`) in case of double or triple observer sampling.
     type: boolean
     format: default
     constraints:
@@ -236,8 +235,8 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the sampling, such name of the ship if no 
-      `SHIPC` code exists.
+      Additional details related to the sampling, such as the name of the ship 
+      if no `SHIPC` code exists.
     type: string
     format: default
     constraints:
