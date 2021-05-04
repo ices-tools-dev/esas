@@ -24,7 +24,8 @@ fields:
 
   - name: Time
     description: >
-      Sampling (start) time at the position, in UTC. Format: `hh:mm:ss`.
+      UTC time of the observation bin, defined as the start time of the 
+      trajectory. Format: `hh:mm:ss`.
     type: time
     format: default
     constraints:
