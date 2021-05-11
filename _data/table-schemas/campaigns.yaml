@@ -16,61 +16,44 @@ fields:
     description: |
       Organization managing the data for this campaign.
       Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
-      - `10` Joint Nature Conservation Committee (SAST)
-      - `11` Royal Society for the Protection of Birds (RSPB)
-      - `15` Coastal Seabird Research Group (CSRG)
-      - `20` Netherlands Institute for Sea Research (NIOZ)
-      - `21` Rijkswaterstaat Centrale Informatievoorziening (RWS CIV)
-      - `30` Ornis Consult (ORNCON)
-      - `40` Norwegian Institute for Nature Research (NINA)
-      - `50` FTZ & Vogelwarte Helgoland (VWH)
-      - `55` BfN/FTZ Biodiversity Monitoring Germany
-      - `90` National Environmental Research Institute (NERI)
-      - `100` Netherlands Seabird Group (NZG)
-      - `110` Research Institute for Nature and Forest (INBO)
-      - `120` Alterra
-      - `130` Theo Postma
-      - `140` Bureau Waardenburg (BUWA)
-      - `150` CSR CSR
-      - `160` EC Discard Projects
-      - `170` NIOZ/CSR
-      - `180` CSR Wildlife Cruises
-      - `200` University College Cork
-      - `210` Sociedade Portuguesa Para O Estudo Das Aves (SPEA)
-      - `220` Cork Ecology (CE)
+      - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
+      - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
+      - [`1103`](https://edmo.seadatanet.org/report/1103) Aarhus University, Department of Bioscience, Wildlife Ecology and Biodiversity
+      - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
+      - [`1416`](https://edmo.seadatanet.org/report/1416) Norwegian Institute for Nature Research (NINA)
+      - [`1527`](https://edmo.seadatanet.org/report/1527) Rijkswaterstaat Central Information Services
+      - [`2125`](https://edmo.seadatanet.org/report/2125) University College Cork (UCC)
+      - [`2299`](https://edmo.seadatanet.org/report/2299) Research and Technology Centre , Buesum (FTZ)
+      - [`2589`](https://edmo.seadatanet.org/report/2589) Wageningen Environmental Research (WEnR)
+      - [`2827`](https://edmo.seadatanet.org/report/2827) Royal Society for the Protection of Birds (HQ) (RSPB)
+      - [`3393`](https://edmo.seadatanet.org/report/3393) SOVON Dutch Centre for Field Ornithology (SOVON)
+      - [`3269`](https://edmo.seadatanet.org/report/3269) Federal Agency for Nature Conservation (BfN)
+      - [`5045`](https://edmo.seadatanet.org/report/5045) Bureau Waardenburg BV (BUWA)
     type: integer
     format: default
     constraints:
       required: true
       enum:
-        - 10
-        - 11
-        - 15
-        - 20
-        - 21
-        - 30
-        - 40
-        - 50 
-        - 51
-        - 52
-        - 53
-        - 54
-        - 55
-        - 80
-        - 90
-        - 100
-        - 110
-        - 120
-        - 130
-        - 140
-        - 150
-        - 160
-        - 170
-        - 180
-        - 190
-        - 200
-        - 210
-        - 220
+        - 202 # 110
+        - 630 # 20, 130, 150, 160, 170, 180
+        - 1103 # 90
+        - 1375 # 10
+        - 1416 # 40
+        - 1527 # 230 (split)
+        - 2125 # 200
+        - 2299 # 50 (split), 55 (split)
+        - 2589 # 120
+        - 2827 # 11
+        - 3393 # 230 (split)
+        - 3269 # 55 (split)
+        - 5045 # 140
+        # 15  Coastal Seabird Research Group (CSRG)
+        # 30  Ornis Consult (ORNCON)
+        # 50  FTZ & Vogelwarte Helgoland (VWH)
+        #     Vogelwarte Helgoland (VWH)
+        # 100 Netherlands Seabird Group (NZG)
+        # 210 Sociedade Portuguesa Para O Estudo Das Aves (SPEA)
+        # 220 Cork Ecology (CE)
 
   - name: Country
     description: >
