@@ -37,7 +37,7 @@ fields:
         - 202 # 110
         - 630 # 20, 130, 150, 160, 170, 180
         - 1103 # 90
-        - 1375 # 10
+        - 1375 # 10, 15
         - 1416 # 40
         - 1527 # 230 (split)
         - 2125 # 200
@@ -47,7 +47,6 @@ fields:
         - 3393 # 230 (split)
         - 3269 # 55 (split)
         - 5045 # 140
-        # 15  Coastal Seabird Research Group (CSRG)
         # 30  Ornis Consult (ORNCON)
         # 50  FTZ & Vogelwarte Helgoland (VWH)
         #     Vogelwarte Helgoland (VWH)
