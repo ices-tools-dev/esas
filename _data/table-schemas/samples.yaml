@@ -197,7 +197,7 @@ fields:
     description: |
       Extent to which binoculars were used during sampling:
       - `1` No binoculars used
-      - `2` Binoculars used far ahead of the platform (e.g. for seaduck and diver monitoring)
+      - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
     type: integer
     format: default
