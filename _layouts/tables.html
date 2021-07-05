@@ -34,13 +34,6 @@ layout: base
               </td>
               <td>
                 {{ field.description | markdownify }}
-                {% if field.constraints.enum %}
-                  <ul>
-                  {% for item in field.constraints.enum %}
-                    <li><code>{{ item }}</code></li>
-                  {% endfor %}
-                  </ul>
-                {% endif %}
                 {% if field.constraints %}
                   <ul>
                     {% for constraint in field.constraints %}
