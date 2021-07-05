@@ -32,7 +32,25 @@ layout: base
                 <a href="#{{ field.name | downcase | url_encode }}"><code>{{ field.name }}</code></a>
                 {% if field.constraints.required %}*{% endif %}
               </td>
-              <td>{{ field.description | markdownify }}</td>
+              <td>
+                {{ field.description | markdownify }}
+                {% if field.constraints.enum %}
+                  <ul>
+                  {% for item in field.constraints.enum %}
+                    <li><code>{{ item }}</code></li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+                {% if field.constraints %}
+                  <ul>
+                    {% for constraint in field.constraints %}
+                      {% if constraint[0] != 'required' and constraint[0] != 'enum' %}
+                        <li>{{ constraint[0] }}: <code>{{ constraint[1] }}</code></li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </td>
               <td>{{ field.type }}</td>
             </tr>
           {% endfor %}
