@@ -308,15 +308,6 @@ fields:
   - name: Prey
     description: |
       Observed prey (type) caught or carried by the bird/cetacean:
-      - `0` Unknown
-      - `1` Unknown
-      - `2` Unknown
-      - `3` Unknown
-      - `4` Unknown
-      - `5` Unknown
-      - `6` Unknown
-      - `7` Unknown
-      - `8` Unknown
       - `9` Other item
       - `10` Fish, no further details
       - `11` Small fish, unidentified (ca. bill length)
@@ -326,7 +317,6 @@ fields:
       - `15` Feeding clupeoid ball at surface
       - `16` Feeding unidentified fish ball at surface
       - `17` Feeding capelin ball at surface
-      - `18` Unknown
       - `20` Gurnard
       - `21` Herring or sprat
       - `22` Sandeel
@@ -335,8 +325,6 @@ fields:
       - `25` Regurgitated fish after aerial pursuit
       - `26` Salmonid
       - `27` Capelin
-      - `28` Unknown
-      - `29` Unknown
       - `30` Small particles, unidentified
       - `31` Large object, unidentified
       - `32` Jellyfish
@@ -344,16 +332,13 @@ fields:
       - `34` Worm (e.g. Nereis)
       - `35` Barnacles (Balanidae zeepokken)
       - `36` Oil from oil slick
-      - `39` Unknown
       - `40` Crustacean, unidentified
       - `41` Swimming crab
       - `42` Starfish
       - `43` Sea urchin
-      - `44` Unknown
       - `45` Bivalve, unidentified
       - `46` Mussel
       - `47` Whelk eggs capsule
-      - `49` Unknown
       - `50` Carrion or big unidentified corpse
       - `51` Seal carcass
       - `52` Whale carcass
@@ -371,27 +356,14 @@ fields:
       - `64` Discarded benthic invertebrate,unidentified
       - `65` Discarded starfish
       - `66` Discarded crustacean
-      - `68` Unknown
       - `70` Seaweed as nest material
-      - `71` Insects
-      - `72` Unknown
-      - `90` Unknown
-      - `92` Unknown
-      - `99` Unknown
     type: integer
     format: default
     constraints:
       required: false
       enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 8
+        # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 28, 29, 39, 44,
+        # 49, 68, 71, 72, 90, 92, 99
         - 9
         - 10
         - 11
@@ -401,7 +373,6 @@ fields:
         - 15
         - 16
         - 17
-        - 18
         - 20
         - 21
         - 22
@@ -410,8 +381,6 @@ fields:
         - 25
         - 26
         - 27
-        - 28
-        - 29
         - 30
         - 31
         - 32
@@ -419,16 +388,13 @@ fields:
         - 34
         - 35
         - 36
-        - 39
         - 40
         - 41
         - 42
         - 43
-        - 44
         - 45
         - 46
         - 47
-        - 49
         - 50
         - 51
         - 52
@@ -446,13 +412,7 @@ fields:
         - 64
         - 65
         - 66
-        - 68
         - 70
-        - 71
-        - 72
-        - 90
-        - 92
-        - 99
 
   - name: Association
     description: |
@@ -677,9 +637,9 @@ fields:
       - `113` Active migration
       - `114` Flying off (no specification)
       - `116` Distraction behaviour
-      - `121` Milling (ungerichtetes Verhalten mit Richtungswechsel)
-      - `122` Tauchend (marine Säuger)
-      - `123` Kopf aus dem Wasser steckend (Robben)
+      - `121` Milling / Non-directional behaviour
+      - `122` Diving (marine mammals)
+      - `123` Head out of water (seals)
     type: integer
     format: default
     constraints:
