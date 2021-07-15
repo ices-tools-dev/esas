@@ -19,7 +19,6 @@ fields:
       Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
-      - [`1103`](https://edmo.seadatanet.org/report/1103) Aarhus University, Department of Bioscience, Wildlife Ecology and Biodiversity
       - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
       - [`1416`](https://edmo.seadatanet.org/report/1416) Norwegian Institute for Nature Research (NINA)
       - [`1527`](https://edmo.seadatanet.org/report/1527) Rijkswaterstaat Central Information Services
@@ -46,7 +45,6 @@ fields:
       # Others where combinations that have been split.
         - 202 # 110
         - 630 # 20, 130, 150, 160, 170, 180
-        - 1103 # 90
         - 1375 # 10, 15
         - 1416 # 40
         - 1527 # 230 (split)
