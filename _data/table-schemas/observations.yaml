@@ -417,7 +417,8 @@ fields:
   - name: Association
     description: |
       Code for associations between observed birds/cetaceans and 
-      vessels/structures/floating matter:
+      vessels/structures/floating matter. `MSFA` stands for Multi-Species 
+      Feeding Association, see Camphuysen & Webb 1999 for `Type II/III`.
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
       - `12` Associated with front
@@ -438,9 +439,6 @@ fields:
       - `27` Associated with or on sea ice
       - `28` Associated with land (e.g. colony)
       - `29` Associated with sand banks
-      - `42` Unknown
-      - `45` Unknown
-      - `47` Unknown
       - `50` MSFA participant, no further details
       - `51` MSFA participant, joined by others
       - `52` MSFA participant, joining flock
@@ -450,20 +448,7 @@ fields:
       - `56` MSFA participant, social feeder
       - `57` Type II MSFA participant
       - `58` Type III MSFA participant
-      - `59` Unknown
-      - `60` Unknown
-      - `61` Unknown
-      - `63` Unknown
-      - `67` Unknown
-      - `68` Unknown
-      - `69` Unknown
-      - `71` Unknown
-      - `81` Unknown
-      - `90` Unknown
-      - `100` Unknown
-      - `101` Unknown
       - `102` On sandbank
-      - `103` Unknown
       - `110` Inside wind farm
       - `111` Inside wind farm, associated with floating litter
       - `112` Inside wind farm, associated with observation base
@@ -472,12 +457,14 @@ fields:
       - `115` Inside wind farm, associated with platform
       - `116` Sitting on wind turbine (foundation)
       - `117` Flying or swimming near wind turbine (foundation)
-      - `200` Zwischen fundamenten fliegend
+      - `200` Flying between (turbine) foundations
     type: integer
     format: default
     constraints:
       required: false
       enum:
+        # Old codes for unknown: 42, 45, 47, 59, 60, 61, 63, 67, 68, 69, 71, 
+        # 81, 90, 100, 101, 103
         - 10
         - 11
         - 12
@@ -498,9 +485,6 @@ fields:
         - 27
         - 28
         - 29
-        - 42
-        - 45
-        - 47
         - 50
         - 51
         - 52
@@ -510,20 +494,7 @@ fields:
         - 56
         - 57
         - 58
-        - 59
-        - 60
-        - 61
-        - 63
-        - 67
-        - 68
-        - 69
-        - 71
-        - 81
-        - 90
-        - 100
-        - 101
         - 102
-        - 103
         - 110
         - 111
         - 112
