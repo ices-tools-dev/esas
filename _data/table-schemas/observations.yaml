@@ -531,13 +531,6 @@ fields:
   - name: Behaviour
     description: |
       Indicates what the species was doing when observed:
-      - `0` Unknown
-      - `4` Unknown
-      - `8` Unknown
-      - `10` Unknown
-      - `15` Unknown
-      - `20` Unknown
-      - `29` Unknown
       - `30` Holding fish
       - `31` Without fish
       - `32` Feeding young at sea
@@ -557,8 +550,7 @@ fields:
       - `46` Shallow plunging
       - `47` Pursuit plunging
       - `48` Pursuit diving, or bottom feeding
-      - `49` Actively searching
-      - `55` Unknown
+      - `49` Actively searching      
       - `60` Resting or apparently asleep
       - `61` Courtship display
       - `62` Courtship feeding
@@ -616,13 +608,7 @@ fields:
     constraints:
       required: false
       enum:
-        - 0
-        - 4
-        - 8
-        - 10
-        - 15
-        - 20
-        - 29
+        # Old codes for unknown: 0, 4, 8, 10, 15, 20, 29, 55
         - 30
         - 31
         - 32
@@ -643,7 +629,6 @@ fields:
         - 47
         - 48
         - 49
-        - 55
         - 60
         - 61
         - 62
