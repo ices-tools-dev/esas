@@ -6,37 +6,42 @@ layout: base
   <div class="col">
 
     {{ content }}
-
     <table>
       <thead>
         <tr>
-          <th>Code</th>
-          <th>ESAS</th>
+          <th>Scientific name</th>
           <th>EURING</th>
-          <th>WoRMS</th>
+          <th>ERID (WoRMS)</th>
+          <th>NT</th>
         </tr>
       </thead>
       <tbody>
-        <col width="10%">
-        <col width="30%">
-        <col width="30%">
-        <col width="30%">
-        {% for species in site.data.vocabularies.euring_species_code %}
+        <col width="40%">
+        <col width="20%">
+        <col width="20%">
+        <col width="20%">
+        {% for species in site.data.vocabularies.species %}
           <tr>
-            <td id="{{ species.code }}">
-              <a href="#{{ species.code }}"><code>{{ species.code }}</code></a>
+            <td>
+              <a href="#{{ species.english_name | url_encode }}">{{ species.english_name }}</a>
+              <br><em>{{ species.scientific_name }}</em>
+              <small>{{ species.remarks | markdownify }}</small>
             </td>
             <td>
-              <em>{{ species.scientific_name }}</em>
-              <br>{{ species.english_name }}
-            </td>
-            <td>
-              <em>{{ species.euring_scientific_name }}</em>
-              <br>{{ species.euring_english_name }}
+              {% if species.euring_code %}
+              <code>{{ species.euring_code }}</code>
+              <br><em>{{ species.euring_scientific_name }}</em>
+              {% endif %}
             </td>
             <td>
               {% if species.aphia_id %}
-              <em><a href="https://www.marinespecies.org/aphia.php?p=taxdetails&id={{ species.aphia_id }}">{{ species.aphia_scientific_name }}</a></em>
+              <code>{{ species.aphia_id }}</code>
+              <br><em><a href="https://www.marinespecies.org/aphia.php?p=taxdetails&id={{ species.aphia_id }}">{{ species.aphia_scientific_name }}</a></em>
+              {% endif %}
+            </td>
+            <td>
+              {% if species.nt_code %}
+              <code>{{ species.nt_code }}</code> {{ species.nt_description }}
               {% endif %}
             </td>
           </tr>

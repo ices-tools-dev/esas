@@ -56,7 +56,7 @@ fields:
   - name: SpeciesCode
     description: >
       Code of the observed species, see the 
-      [lookup table](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/euring_species_code.tsv).
+      [lookup table](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/species.tsv).
     type: integer
     format: default
     constraints:
