@@ -25,7 +25,7 @@ layout: base
             <td>
               <a href="#{{ species.english_name | url_encode }}">{{ species.english_name }}</a>
               <br><em>{{ species.scientific_name }}</em>
-              <small>{{ species.remarks | markdownify }}</small>
+              <div class="small text-muted">{{ species.remarks }}</div>
             </td>
             <td>
               {% if species.euring_code %}
