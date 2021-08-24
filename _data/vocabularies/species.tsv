@@ -1,275 +1,275 @@
 esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_id	aphia_scientific_name	nt_code	nt_description	remarks
-20	Gavia stellata	Red-throated Diver	20	Gavia stellata	137188	Gavia stellata			
-30	Gavia arctica	Black-throated Diver	30	Gavia arctica	137186	Gavia arctica			
-40	Gavia immer	Great Northern Diver	40	Gavia immer	137187	Gavia immer			
+20	Gavia stellata	Red-throated Diver	00020	Gavia stellata	137188	Gavia stellata			
+30	Gavia arctica	Black-throated Diver	00030	Gavia arctica	137186	Gavia arctica			
+40	Gavia immer	Great Northern Diver	00040	Gavia immer	137187	Gavia immer			
 45	Gavia immer / adamsii	Great Northern / White-billed diver			137057	Gavia	TBD	Gavia immer / adamsii	45 (v6)
-50	Gavia adamsii	White-billed Diver	50	Gavia adamsii	137185	Gavia adamsii			
-59	Gavia sp.	unidentified diver	59	Gavia sp.	137057	Gavia			
-70	Tachybaptus ruficollis	Little Grebe	70	Tachybaptus ruficollis	148790	Tachybaptus ruficollis			
-90	Podiceps cristatus	Great Crested Grebe	90	Podiceps cristatus	137182	Podiceps cristatus			
-100	Podiceps grisegena	Red-necked Grebe	100	Podiceps grisegena	137183	Podiceps grisegena			
-110	Podiceps auritus	Slavonian Grebe	110	Podiceps auritus	137181	Podiceps auritus			
-120	Podiceps nigricollis	Black-necked Grebe	120	Podiceps nigricollis	137184	Podiceps nigricollis			
+50	Gavia adamsii	White-billed Diver	00050	Gavia adamsii	137185	Gavia adamsii			
+59	Gavia sp.	unidentified diver	00059	Gavia sp.	137057	Gavia			
+70	Tachybaptus ruficollis	Little Grebe	00070	Tachybaptus ruficollis	148790	Tachybaptus ruficollis			
+90	Podiceps cristatus	Great Crested Grebe	00090	Podiceps cristatus	137182	Podiceps cristatus			
+100	Podiceps grisegena	Red-necked Grebe	00100	Podiceps grisegena	137183	Podiceps grisegena			
+110	Podiceps auritus	Slavonian Grebe	00110	Podiceps auritus	137181	Podiceps auritus			
+120	Podiceps nigricollis	Black-necked Grebe	00120	Podiceps nigricollis	137184	Podiceps nigricollis			
 127	Podiceps grisegena / cristatus	Red-necked / Great Crested Grebe			137056	Podiceps	TBD	Podiceps grisegena / cristatus	127 (v6)
 128	Podiceps auritus / nigricollis	Slavonian / Black-necked Grebe			137056	Podiceps	TBD	Podiceps auritus / nigricollis	128 (v6)
-129	Podiceps sp.	unidentified grebe	129	Podiceps sp.	137056	Podiceps			
-140	Thalassarche melanophris	Black-browed Albatross	140	Diomedea melanophris	343995	Thalassarche melanophris			
-220	Fulmarus glacialis	Northern Fulmar	220	Fulmarus glacialis	137195	Fulmarus glacialis			
-262	Pterodroma feae	Fea's Petrel	262	Pterodroma feae	137197	Pterodroma feae			
-260	Pterodroma mollis / madeira / feae + deserta	Soft-plumaged Petrel spec.	260	Pterodroma mollis / madeira / feae	137064	Pterodroma			EURING 260 includes P. feae, which was later split in P. feae and deserta
-263	Pterodroma madeira	Zino's Petrel	263	Pterodroma madeira	137198	Pterodroma madeira			
+129	Podiceps sp.	unidentified grebe	00129	Podiceps sp.	137056	Podiceps			
+140	Thalassarche melanophris	Black-browed Albatross	00140	Diomedea melanophris	343995	Thalassarche melanophris			
+220	Fulmarus glacialis	Northern Fulmar	00220	Fulmarus glacialis	137195	Fulmarus glacialis			
+262	Pterodroma feae	Fea's Petrel	00262	Pterodroma feae	137197	Pterodroma feae			
+260	Pterodroma mollis / madeira / feae + deserta	Soft-plumaged Petrel spec.	00260	Pterodroma mollis / madeira / feae	137064	Pterodroma			EURING 260 includes P. feae, which was later split in P. feae and deserta
+263	Pterodroma madeira	Zino's Petrel	00263	Pterodroma madeira	137198	Pterodroma madeira			
 269	Pterodroma madeira / deserta	Zino's / Desertas Petrel			137064	Pterodroma			269 (v6)
 35990	Pterodroma deserta	Desertas Petrel	35990	Pterodroma deserta	759338	Pterodroma deserta			
-340	Bulweria bulwerii	Bulwer's Petrel	340	Bulweria bulwerii	137193	Bulweria bulwerii			
-350	Bulweria fallax	Jouanin's Petrel	350	Bulweria fallax	212650	Bulweria fallax			
+340	Bulweria bulwerii	Bulwer's Petrel	00340	Bulweria bulwerii	137193	Bulweria bulwerii			
+350	Bulweria fallax	Jouanin's Petrel	00350	Bulweria fallax	212650	Bulweria fallax			
 359		unidentified petrel			136998	Procellariidae			359 (v6)
-360	Calonectris diomedea	Scopoli's Shearwater	360	Calonectris diomedea	137194	Calonectris diomedea			
+360	Calonectris diomedea	Scopoli's Shearwater	00360	Calonectris diomedea	137194	Calonectris diomedea			
 361	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater			137062	Calonectris	TBD	Calonectris diomedea / borealis	361 (v6)
-362	Calonectris edwardsii	Cape Verde Shearwater	362	Calonectris edwardsii	759340	Calonectris edwardsii			
+362	Calonectris edwardsii	Cape Verde Shearwater	00362	Calonectris edwardsii	759340	Calonectris edwardsii			
 35970	Calonectris borealis	Cory's shearwater	35970	Calonectris borealis	1348497	Calonectris borealis			365 (v5)
-400	Puffinus gravis	Great Shearwater	400	Puffinus gravis	137201	Puffinus gravis			
+400	Puffinus gravis	Great Shearwater	00400	Puffinus gravis	137201	Puffinus gravis			
 409	Puffinus gravis / Calonectris sp.	Great / Calonectris Shearwater			136998	Procellariidae	TBD	Puffinus gravis / Calonectris sp.	409 (v6)
-410	Puffinus pacificus	Wedge-tailed Shearwater	410	Puffinus pacificus	212634	Puffinus pacificus			
-430	Puffinus griseus	Sooty Shearwater	430	Puffinus griseus	137202	Puffinus griseus			
-460	Puffinus puffinus	Manx Shearwater	460	Puffinus puffinus	137203	Puffinus puffinus			
-462	Puffinus yelkouan	Yelkouan Shearwater	462	Puffinus puffinus yelkouan	137204	Puffinus yelkouan			
-463	Puffinus mauretanicus	Balearic Shearwater	463	Puffinus puffinus mauretanicus	445503	Puffinus mauretanicus			462 (v5)
+410	Puffinus pacificus	Wedge-tailed Shearwater	00410	Puffinus pacificus	212634	Puffinus pacificus			
+430	Puffinus griseus	Sooty Shearwater	00430	Puffinus griseus	137202	Puffinus griseus			
+460	Puffinus puffinus	Manx Shearwater	00460	Puffinus puffinus	137203	Puffinus puffinus			
+462	Puffinus yelkouan	Yelkouan Shearwater	00462	Puffinus puffinus yelkouan	137204	Puffinus yelkouan			
+463	Puffinus mauretanicus	Balearic Shearwater	00463	Puffinus puffinus mauretanicus	445503	Puffinus mauretanicus			462 (v5)
 469	Calonectris / Puffinus sp.	unidentified shearwater			136998	Procellariidae			469 (v6)
 480	Puffinus baroli / boydi	Barolo / Boyd's Shearwater			137065	Puffinus			Not exactly the same as EURING 480
-482	Puffinus baroli	Barolo Shearwater	482	Puffinus assimilis baroli	514084	Puffinus baroli			
-483	Puffinus boydi	Boyd's Shearwater	483	Puffinus assimilis boydi	1484554	Puffinus boydi			
-499	Puffinus sp.		499	Puffinus sp.	137065	Puffinus			
-500	Oceanites oceanicus	Wilson's Storm Petrel	500	Oceanites oceanicus	137190	Oceanites oceanicus			
-510	Pelagodroma marina	White-faced Storm Petrel	510	Pelagodroma marina	212700	Pelagodroma marina			
-520	Hydrobates pelagicus	European Storm Petrel	520	Hydrobates pelagicus	137189	Hydrobates pelagicus			
-550	Oceanodroma leucorhoa	Leach's Storm Petrel	550	Oceanodroma leucorhoa	137192	Oceanodroma leucorhoa			
+482	Puffinus baroli	Barolo Shearwater	00482	Puffinus assimilis baroli	514084	Puffinus baroli			
+483	Puffinus boydi	Boyd's Shearwater	00483	Puffinus assimilis boydi	1484554	Puffinus boydi			
+499	Puffinus sp.		00499	Puffinus sp.	137065	Puffinus			
+500	Oceanites oceanicus	Wilson's Storm Petrel	00500	Oceanites oceanicus	137190	Oceanites oceanicus			
+510	Pelagodroma marina	White-faced Storm Petrel	00510	Pelagodroma marina	212700	Pelagodroma marina			
+520	Hydrobates pelagicus	European Storm Petrel	00520	Hydrobates pelagicus	137189	Hydrobates pelagicus			
+550	Oceanodroma leucorhoa	Leach's Storm Petrel	00550	Oceanodroma leucorhoa	137192	Oceanodroma leucorhoa			
 558	Oceanodroma leucorhoa / Hydrobates pelagicus	Leach’s / European Storm Petrel			148794	Hydrobatidae			558 (v6)
 559		unidentified Storm Petrel			148794	Hydrobatidae			559 (v6)
-560	Oceanodroma monorhis	Swinhoe's Storm Petrel	560	Oceanodroma monorhis	212699	Oceanodroma monorhis			
-580	Oceanodroma castro	Band-rumped Storm Petrel	580	Oceanodroma castro	137191	Oceanodroma castro			
-581	Oceanodroma monteiroi	Monteiro's Storm Petrel	581	Oceanodroma monteiroi	759342	Oceanodroma monteiroi			
-640	Phaethon aethereus	Red-billed Tropicbird	640	Phaethon aethereus	137177	Phaethon aethereus			
-660	Phaethon lepturus	White-tailed Tropicbird	660	Phaethon lepturus	212594	Phaethon lepturus			
-670	Sula sula	Red-footed Booby	670	Sula sula	212596	Sula sula			
-700	Sula leucogaster	Brown Booby	700	Sula leucogaster	212597	Sula leucogaster			
-710	Morus bassanus	Northern Gannet	710	Sula bassana	148776	Morus bassanus			
-720	Phalacrocorax carbo	Great Cormorant	720	Phalacrocorax carbo	137179	Phalacrocorax carbo			
-721	Phalacrocorax carbo carbo	Great Cormorant (carbo)	721	Phalacrocorax carbo carbo					
-800	Phalacrocorax aristotelis	European Shag	800	Phalacrocorax aristotelis	137178	Phalacrocorax aristotelis			
-849	Phalacrocorax sp.	unidentified cormorant	849	Phalacrocorax sp.	137054	Phalacrocorax			809 (v5)
-920	Fregata minor	Great Frigatebird	920	Fregata minor	212654	Fregata minor			
-930	Fregata magnificens	Magnificent Frigatebird	930	Fregata magnificens	343999	Fregata magnificens			
-1010	Ixobrychus cinnamomeus	Cinnamon Bittern	1010	Ixobrychus cinnamomeus	1034714	Ixobrychus cinnamomeus			
-1110	Bubulcus ibis	Western Cattle Egret	1110	Bubulcus ibis	159742	Bubulcus ibis			
-1190	Egretta garzetta	Little Egret	1190	Egretta garzetta	159115	Egretta garzetta			
-1210	Ardea alba	Great Egret	1210	Egretta alba	159381	Ardea alba			
-1220	Ardea cinerea	Grey Heron	1220	Ardea cinerea	212668	Ardea cinerea			
-1340	Ciconia ciconia	White Stork	1340	Ciconia ciconia	1037305	Ciconia ciconia			
-1360	Plegadis falcinellus	Glossy Ibis	1360	Plegadis falcinellus	158977	Plegadis falcinellus			
-1440	Platalea leucorodia	Eurasian Spoonbill	1440	Platalea leucorodia	416678	Platalea leucorodia			
-1520	Cygnus olor	Mute Swan	1520	Cygnus olor	159090	Cygnus olor			
-1530	Cygnus columbianus	Tundra Swan	1530	Cygnus columbianus	159088	Cygnus columbianus			
-1540	Cygnus cygnus	Whooper Swan	1540	Cygnus cygnus	159089	Cygnus cygnus			
-1559	Cygnus sp.	unidentified swan	1559	Cygnus sp.	159087	Cygnus			1549 (v5)
+560	Oceanodroma monorhis	Swinhoe's Storm Petrel	00560	Oceanodroma monorhis	212699	Oceanodroma monorhis			
+580	Oceanodroma castro	Band-rumped Storm Petrel	00580	Oceanodroma castro	137191	Oceanodroma castro			
+581	Oceanodroma monteiroi	Monteiro's Storm Petrel	00581	Oceanodroma monteiroi	759342	Oceanodroma monteiroi			
+640	Phaethon aethereus	Red-billed Tropicbird	00640	Phaethon aethereus	137177	Phaethon aethereus			
+660	Phaethon lepturus	White-tailed Tropicbird	00660	Phaethon lepturus	212594	Phaethon lepturus			
+670	Sula sula	Red-footed Booby	00670	Sula sula	212596	Sula sula			
+700	Sula leucogaster	Brown Booby	00700	Sula leucogaster	212597	Sula leucogaster			
+710	Morus bassanus	Northern Gannet	00710	Sula bassana	148776	Morus bassanus			
+720	Phalacrocorax carbo	Great Cormorant	00720	Phalacrocorax carbo	137179	Phalacrocorax carbo			
+721	Phalacrocorax carbo carbo	Great Cormorant (carbo)	00721	Phalacrocorax carbo carbo					
+800	Phalacrocorax aristotelis	European Shag	00800	Phalacrocorax aristotelis	137178	Phalacrocorax aristotelis			
+849	Phalacrocorax sp.	unidentified cormorant	00849	Phalacrocorax sp.	137054	Phalacrocorax			809 (v5)
+920	Fregata minor	Great Frigatebird	00920	Fregata minor	212654	Fregata minor			
+930	Fregata magnificens	Magnificent Frigatebird	00930	Fregata magnificens	343999	Fregata magnificens			
+1010	Ixobrychus cinnamomeus	Cinnamon Bittern	01010	Ixobrychus cinnamomeus	1034714	Ixobrychus cinnamomeus			
+1110	Bubulcus ibis	Western Cattle Egret	01110	Bubulcus ibis	159742	Bubulcus ibis			
+1190	Egretta garzetta	Little Egret	01190	Egretta garzetta	159115	Egretta garzetta			
+1210	Ardea alba	Great Egret	01210	Egretta alba	159381	Ardea alba			
+1220	Ardea cinerea	Grey Heron	01220	Ardea cinerea	212668	Ardea cinerea			
+1340	Ciconia ciconia	White Stork	01340	Ciconia ciconia	1037305	Ciconia ciconia			
+1360	Plegadis falcinellus	Glossy Ibis	01360	Plegadis falcinellus	158977	Plegadis falcinellus			
+1440	Platalea leucorodia	Eurasian Spoonbill	01440	Platalea leucorodia	416678	Platalea leucorodia			
+1520	Cygnus olor	Mute Swan	01520	Cygnus olor	159090	Cygnus olor			
+1530	Cygnus columbianus	Tundra Swan	01530	Cygnus columbianus	159088	Cygnus columbianus			
+1540	Cygnus cygnus	Whooper Swan	01540	Cygnus cygnus	159089	Cygnus cygnus			
+1559	Cygnus sp.	unidentified swan	01559	Cygnus sp.	159087	Cygnus			1549 (v5)
 20800	Cygnus atratus	Black Swan	20800	Cygnus atratus	225915	Cygnus atratus			1545 (v5)
-1569	Anser / Branta sp.	unidentified goose	1569	Anser spp / Branta spp.	136973	Anatidae			1699 (v5)
+1569	Anser / Branta sp.	unidentified goose	01569	Anser spp / Branta spp.	136973	Anatidae			1699 (v5)
 1570	Anser fabalis / serrirostris rossicus	Taiga / Tundra Bean Goose (rossicus)			159158	Anser			Not exactly the same as EURING 1570
-1571	Anser fabalis	Taiga Bean Goose	1571	Anser fabalis fabalis	416685	Anser fabalis			
-1574	Anser serrirostris rossicus	Tundra Bean Goose (rossicus)	1574	Anser fabalis rossicus	1488266	Anser serrirostris			
-1580	Anser brachyrhynchus	Pink-footed Goose	1580	Anser brachyrhynchus	416683	Anser brachyrhynchus			
-1590	Anser albifrons	Greater White-fronted Goose	1590	Anser albifrons	159159	Anser albifrons			
-1610	Anser anser	Greylag Goose	1610	Anser anser	416682	Anser anser			
-1620	Anser indicus	Bar-headed goose	1620	Anser indicus	1037301	Anser indicus			
-1659	Anser sp.	unidentified (Anser) goose	1659	Anser spp.	159158	Anser			1639 (v5)
-1660	Branta canadensis	Canada Goose	1660	Branta canadensis	159176	Branta canadensis			
-1670	Branta leucopsis	Barnacle Goose	1670	Branta leucopsis	159177	Branta leucopsis			
-1680	Branta bernicla	Brent Goose	1680	Branta bernicla	159175	Branta bernicla			
-1681	Branta bernicla bernicla	Dark-bellied Brent Goose	1681	Branta bernicla bernicla	159175	Branta bernicla			
-1682	Branta bernicla hrota	Pale-bellied Brent Goose	1682	Branta bernicla hrota	1488267	Branta hrota			
-1700	Alopochen aegyptiaca	Egyptian Goose	1700	Alopochen aegyptiacus	416680	Alopochen aegyptiaca			
-1730	Tadorna tadorna	Shelduck	1730	Tadorna tadorna	232042	Tadorna tadorna			
-1790	Mareca penelope	Eurasian Wigeon	1790	Anas penelope	1464521	Mareca penelope			
-1820	Anas strepera	Gadwall	1820	Anas strepera	159171	Anas strepera			
-1840	Anas crecca	Eurasian Teal	1840	Anas crecca	158943	Anas crecca			
+1571	Anser fabalis	Taiga Bean Goose	01571	Anser fabalis fabalis	416685	Anser fabalis			
+1574	Anser serrirostris rossicus	Tundra Bean Goose (rossicus)	01574	Anser fabalis rossicus	1488266	Anser serrirostris			
+1580	Anser brachyrhynchus	Pink-footed Goose	01580	Anser brachyrhynchus	416683	Anser brachyrhynchus			
+1590	Anser albifrons	Greater White-fronted Goose	01590	Anser albifrons	159159	Anser albifrons			
+1610	Anser anser	Greylag Goose	01610	Anser anser	416682	Anser anser			
+1620	Anser indicus	Bar-headed goose	01620	Anser indicus	1037301	Anser indicus			
+1659	Anser sp.	unidentified (Anser) goose	01659	Anser sp.	159158	Anser			1639 (v5)
+1660	Branta canadensis	Canada Goose	01660	Branta canadensis	159176	Branta canadensis			
+1670	Branta leucopsis	Barnacle Goose	01670	Branta leucopsis	159177	Branta leucopsis			
+1680	Branta bernicla	Brent Goose	01680	Branta bernicla	159175	Branta bernicla			
+1681	Branta bernicla bernicla	Dark-bellied Brent Goose	01681	Branta bernicla bernicla	159175	Branta bernicla			
+1682	Branta bernicla hrota	Pale-bellied Brent Goose	01682	Branta bernicla hrota	1488267	Branta hrota			
+1700	Alopochen aegyptiaca	Egyptian Goose	01700	Alopochen aegyptiacus	416680	Alopochen aegyptiaca			
+1730	Tadorna tadorna	Shelduck	01730	Tadorna tadorna	232042	Tadorna tadorna			
+1790	Mareca penelope	Eurasian Wigeon	01790	Anas penelope	1464521	Mareca penelope			
+1820	Anas strepera	Gadwall	01820	Anas strepera	159171	Anas strepera			
+1840	Anas crecca	Eurasian Teal	01840	Anas crecca	158943	Anas crecca			
 1845	Anas crecca / Spatula querquedula	Eurasian Teal / Garganey			136973	Anatidae			1845 (v6)
-1860	Anas platyrhynchos	Mallard	1860	Anas platyrhynchos	148791	Anas platyrhynchos			
-1863	Anas platyrhynchos domestica	Mallard (domestica)	1863	Anas platyrhynchos domestica					1865 (v5)
-1890	Anas acuta	Northern Pintail	1890	Anas acuta	158939	Anas acuta			
-1910	Spatula querquedula	Garganey	1910	Anas querquedula	1459928	Spatula querquedula			
-1940	Spatula clypeata	Northern Shoveler	1940	Anas clypeata	1461476	Spatula clypeata			
+1860	Anas platyrhynchos	Mallard	01860	Anas platyrhynchos	148791	Anas platyrhynchos			
+1863	Anas platyrhynchos domestica	Mallard (domestica)	01863	Anas platyrhynchos domestica					1865 (v5)
+1890	Anas acuta	Northern Pintail	01890	Anas acuta	158939	Anas acuta			
+1910	Spatula querquedula	Garganey	01910	Anas querquedula	1459928	Spatula querquedula			
+1940	Spatula clypeata	Northern Shoveler	01940	Anas clypeata	1461476	Spatula clypeata			
 1959		unidentified dabbling duck			136973	Anatidae			1959 (v6)
-1980	Aythya ferina	Common Pochard	1980	Aythya ferina	232037	Aythya ferina			
-2030	Aythya fuligula	Tufted Duck	2030	Aythya fuligula	159164	Aythya fuligula			
-2040	Aythya marila	Greater Scaup	2040	Aythya marila	159172	Aythya marila			
-2059	Aythya sp.	unidentified (Aythya) diving duck	2059	Aythya sp.	159160	Aythya			2189 (v5)
-2060	Somateria mollissima	Common Eider	2060	Somateria mollissima	137074	Somateria mollissima			
-2070	Somateria spectabilis	King Eider	2070	Somateria spectabilis	137075	Somateria spectabilis			
-2110	Histrionicus histrionicus	Harlequin Duck	2110	Histrionicus histrionicus	159092	Histrionicus histrionicus			
-2120	Clangula hyemalis	Long-tailed Duck	2120	Clangula hyemalis	137071	Clangula hyemalis			
-2130	Melanitta nigra	Common Scoter	2130	Melanitta nigra	137073	Melanitta nigra			
+1980	Aythya ferina	Common Pochard	01980	Aythya ferina	232037	Aythya ferina			
+2030	Aythya fuligula	Tufted Duck	02030	Aythya fuligula	159164	Aythya fuligula			
+2040	Aythya marila	Greater Scaup	02040	Aythya marila	159172	Aythya marila			
+2059	Aythya sp.	unidentified (Aythya) diving duck	02059	Aythya sp.	159160	Aythya			2189 (v5)
+2060	Somateria mollissima	Common Eider	02060	Somateria mollissima	137074	Somateria mollissima			
+2070	Somateria spectabilis	King Eider	02070	Somateria spectabilis	137075	Somateria spectabilis			
+2110	Histrionicus histrionicus	Harlequin Duck	02110	Histrionicus histrionicus	159092	Histrionicus histrionicus			
+2120	Clangula hyemalis	Long-tailed Duck	02120	Clangula hyemalis	137071	Clangula hyemalis			
+2130	Melanitta nigra	Common Scoter	02130	Melanitta nigra	137073	Melanitta nigra			
 2139	Melanitta sp.	unidentified scoter			137002	Melanitta			2139 (v6)
-2140	Melanitta perspicillata	Surf Scoter	2140	Melanitta perspicillata	159095	Melanitta perspicillata			
-2150	Melanitta fusca	Velvet Scoter	2150	Melanitta fusca	137072	Melanitta fusca			
-2160	Bucephala albeola	Bufflehead	2160	Bucephala albeola	159179	Bucephala albeola			
-2180	Bucephala clangula	Common Goldeneye	2180	Bucephala clangula	159197	Bucephala clangula			
-2200	Mergellus albellus	Smew	2200	Mergus albellus	232039	Mergellus albellus			
-2210	Mergus serrator	Red-breasted Merganser	2210	Mergus serrator	159098	Mergus serrator			
-2230	Mergus merganser	Common Merganser	2230	Mergus merganser	159097	Mergus merganser			
-2239	Mergus sp.	unidentified merganser	2239	Mergus sp.	159096	Mergus			
+2140	Melanitta perspicillata	Surf Scoter	02140	Melanitta perspicillata	159095	Melanitta perspicillata			
+2150	Melanitta fusca	Velvet Scoter	02150	Melanitta fusca	137072	Melanitta fusca			
+2160	Bucephala albeola	Bufflehead	02160	Bucephala albeola	159179	Bucephala albeola			
+2180	Bucephala clangula	Common Goldeneye	02180	Bucephala clangula	159197	Bucephala clangula			
+2200	Mergellus albellus	Smew	02200	Mergus albellus	232039	Mergellus albellus			
+2210	Mergus serrator	Red-breasted Merganser	02210	Mergus serrator	159098	Mergus serrator			
+2230	Mergus merganser	Common Merganser	02230	Mergus merganser	159097	Mergus merganser			
+2239	Mergus sp.	unidentified merganser	02239	Mergus sp.	159096	Mergus			
 2269		unidentified duck			136973	Anatidae			2269 (v6)
-2310	Pernis apivorus	European Honey Buzzard	2310	Pernis apivorus	558573	Pernis apivorus			
-2380	Milvus migrans	Black Kite	2380	Milvus migrans	212678	Milvus migrans			
-2430	Haliaeetus albicilla	White-tailed Eagle	2430	Haliaeetus albicilla	232053	Haliaeetus albicilla			
-2600	Circus aeruginosus	Western Marsh Harrier	2600	Circus aeruginosus	558541	Circus aeruginosus			
-2610	Circus cyaneus	Hen Harrier	2610	Circus cyaneus	159372	Circus cyaneus			
-2670	Accipiter gentilis	Northern Goshawk	2670	Accipiter gentilis	159104	Accipiter gentilis			
-2690	Accipiter nisus	Eurasian Sparrowhawk	2690	Accipiter nisus	558525	Accipiter nisus			
-2870	Buteo buteo	Common Buzzard	2870	Buteo buteo	558534	Buteo buteo			
-2900	Buteo lagopus	Rough-legged Buzzard	2900	Buteo lagopus	159110	Buteo lagopus			
-3009	Falconiformes sp.	unidentified raptor	3009	Falconiformes sp.	225849	Falconiformes			3219 (v5)
-3010	Pandion haliaetus	Western Osprey	3010	Pandion haliaetus	159377	Pandion haliaetus			
-3040	Falco tinnunculus	Common Kestrel	3040	Falco tinnunculus	345751	Falco tinnunculus			
-3070	Falco vespertinus	Red-footed Falcon	3070	Falco vespertinus	558554	Falco vespertinus			
-3090	Falco columbarius	Merlin	3090	Falco columbarius	159152	Falco columbarius			
-3100	Falco subbuteo	Eurasian Hobby	3100	Falco subbuteo	558553	Falco subbuteo			
-3110	Falco eleonorae	Eleonora's Falcon	3110	Falco eleonorae	212680	Falco eleonorae			
-3180	Falco rusticolus	Gyrfalcon	3180	Falco rusticolus	159154	Falco rusticolus			
-3200	Falco peregrinus	Pergrine Falcon	3200	Falco peregrinus	159153	Falco peregrinus			
-3219	Falco sp.	unidentified falcon	3219	Falco sp.	159071	Falco			3049 (v5)
-4070	Rallus aquaticus	Water Rail	4070	Rallus aquaticus	416695	Rallus aquaticus			
-4080	Porzana porzana	Spotted Crake	4080	Porzana porzana	416693	Porzana porzana			
-4240	Gallinula chloropus	Common Moorhen	4240	Gallinula chloropus	159009	Gallinula chloropus			
-4290	Fulica atra	Eurasian Coot	4290	Fulica atra	232054	Fulica atra			
-4330	Grus grus	Common Crane	4330	Grus grus	1037310	Grus grus			
-4500	Haematopus ostralegus	Eurasian Oystercatcher	4500	Haematopus ostralegus	147436	Haematopus ostralegus			
-4510	Haematopus palliatus	American Oystercatcher	4510	Haematopus palliatus	159128	Haematopus palliatus			
-4560	Recurvirostra avosetta	Pied Avocet	4560	Recurvirostra avosetta	212721	Recurvirostra avosetta			
-4690	Charadrius dubius	Little Ringed Plover	4690	Charadrius dubius	212617	Charadrius dubius			
-4700	Charadrius hiaticula	Common Ringed Plover	4700	Charadrius hiaticula	212619	Charadrius hiaticula			
-4710	Charadrius semipalmatus	Semipalmated plover	4710	Charadrius semipalmatus	159126	Charadrius semipalmatus			
-4770	Charadrius alexandrinus	Kentish Plover	4770	Charadrius alexandrinus	212611	Charadrius alexandrinus			
-4820	Charadrius morinellus	Eurasian Dotterel	4820	Charadrius morinellus	232043	Charadrius morinellus			
-4850	Pluvialis apricaria	European Golden Plover	4850	Pluvialis apricaria	159135	Pluvialis apricaria			
-4860	Pluvialis squatarola	Grey Plover	4860	Pluvialis squatarola	159137	Pluvialis squatarola			
-4930	Vanellus vanellus	Northern Lapwing	4930	Vanellus vanellus	159142	Vanellus vanellus			
-4960	Calidris canutus	Red Knot	4960	Calidris canutus	147433	Calidris canutus			
-4970	Calidris alba	Sanderling	4970	Calidris alba	159084	Calidris alba			
-5010	Calidris minuta	Little Stint	5010	Calidris minuta	212600	Calidris minuta			
-5090	Calidris ferruginea	Curlew Sandpiper	5090	Calidris ferruginea	159049	Calidris ferruginea			
-5100	Calidris maritima	Purple Sandpiper	5100	Calidris maritima	159052	Calidris maritima			
-5120	Calidris alpina	Dunlin	5120	Calidris alpina	159047	Calidris alpina			
-5129	Calidris sp.	unidentified (Calidris) sandpiper	5129	Calidris spp.	147432	Calidris			5149 (v5)
-5170	Philomachus pugnax	Ruff	5170	Philomachus pugnax	159046	Philomachus pugnax			
-5180	Lymnocryptes minimus	Jack Snipe	5180	Lymnocryptes minimus	558755	Lymnocryptes minimus			
-5190	Gallinago gallinago	Common Snipe	5190	Gallinago gallinago	158949	Gallinago gallinago			
-5290	Scolopax rusticola	Eurasian Woodcock	5290	Scolopax rusticola	159028	Scolopax rusticola			
-5320	Limosa limosa	Black-tailed Godwit	5320	Limosa limosa	159035	Limosa limosa			
-5340	Limosa lapponica	Bar-tailed Godwit	5340	Limosa lapponica	159034	Limosa lapponica			
-5380	Numenius phaeopus	Eurasian Whimbrel	5380	Numenius phaeopus	159040	Numenius phaeopus			
-5400	Numenius tenuirostris	Slender-billed Curlew	5400	Numenius tenuirostris	366864	Numenius tenuirostris			
-5410	Numenius arquata	Eurasian Curlew	5410	Numenius arquata	159037	Numenius arquata			
-5450	Tringa erythropus	Spotted Redshank	5450	Tringa erythropus	159029	Tringa erythropus			
-5460	Tringa totanus	Common Redshank	5460	Tringa totanus	158970	Tringa totanus			
-5480	Tringa nebularia	Common Greenshank	5480	Tringa nebularia	158968	Tringa nebularia			
-5530	Tringa ochropus	Green Sandpiper	5530	Tringa ochropus	212622	Tringa ochropus			
-5540	Tringa glareola	Wood Sandpiper	5540	Tringa glareola	225916	Tringa glareola			
-5560	Actitis hypoleucos	Common Sandpiper	5560	Actitis hypoleucos	212603	Actitis hypoleucos			
-5610	Arenaria interpres	Ruddy Turnstone	5610	Arenaria interpres	147431	Arenaria interpres			
-5640	Phalaropus lobatus	Red-necked Phalarope	5640	Phalaropus lobatus	137169	Phalaropus lobatus			
+2310	Pernis apivorus	European Honey Buzzard	02310	Pernis apivorus	558573	Pernis apivorus			
+2380	Milvus migrans	Black Kite	02380	Milvus migrans	212678	Milvus migrans			
+2430	Haliaeetus albicilla	White-tailed Eagle	02430	Haliaeetus albicilla	232053	Haliaeetus albicilla			
+2600	Circus aeruginosus	Western Marsh Harrier	02600	Circus aeruginosus	558541	Circus aeruginosus			
+2610	Circus cyaneus	Hen Harrier	02610	Circus cyaneus	159372	Circus cyaneus			
+2670	Accipiter gentilis	Northern Goshawk	02670	Accipiter gentilis	159104	Accipiter gentilis			
+2690	Accipiter nisus	Eurasian Sparrowhawk	02690	Accipiter nisus	558525	Accipiter nisus			
+2870	Buteo buteo	Common Buzzard	02870	Buteo buteo	558534	Buteo buteo			
+2900	Buteo lagopus	Rough-legged Buzzard	02900	Buteo lagopus	159110	Buteo lagopus			
+3009	Falconiformes sp.	unidentified raptor	03009	Falconiformes sp.	225849	Falconiformes			3219 (v5)
+3010	Pandion haliaetus	Western Osprey	03010	Pandion haliaetus	159377	Pandion haliaetus			
+3040	Falco tinnunculus	Common Kestrel	03040	Falco tinnunculus	345751	Falco tinnunculus			
+3070	Falco vespertinus	Red-footed Falcon	03070	Falco vespertinus	558554	Falco vespertinus			
+3090	Falco columbarius	Merlin	03090	Falco columbarius	159152	Falco columbarius			
+3100	Falco subbuteo	Eurasian Hobby	03100	Falco subbuteo	558553	Falco subbuteo			
+3110	Falco eleonorae	Eleonora's Falcon	03110	Falco eleonorae	212680	Falco eleonorae			
+3180	Falco rusticolus	Gyrfalcon	03180	Falco rusticolus	159154	Falco rusticolus			
+3200	Falco peregrinus	Pergrine Falcon	03200	Falco peregrinus	159153	Falco peregrinus			
+3219	Falco sp.	unidentified falcon	03219	Falco sp.	159071	Falco			3049 (v5)
+4070	Rallus aquaticus	Water Rail	04070	Rallus aquaticus	416695	Rallus aquaticus			
+4080	Porzana porzana	Spotted Crake	04080	Porzana porzana	416693	Porzana porzana			
+4240	Gallinula chloropus	Common Moorhen	04240	Gallinula chloropus	159009	Gallinula chloropus			
+4290	Fulica atra	Eurasian Coot	04290	Fulica atra	232054	Fulica atra			
+4330	Grus grus	Common Crane	04330	Grus grus	1037310	Grus grus			
+4500	Haematopus ostralegus	Eurasian Oystercatcher	04500	Haematopus ostralegus	147436	Haematopus ostralegus			
+4510	Haematopus palliatus	American Oystercatcher	04510	Haematopus palliatus	159128	Haematopus palliatus			
+4560	Recurvirostra avosetta	Pied Avocet	04560	Recurvirostra avosetta	212721	Recurvirostra avosetta			
+4690	Charadrius dubius	Little Ringed Plover	04690	Charadrius dubius	212617	Charadrius dubius			
+4700	Charadrius hiaticula	Common Ringed Plover	04700	Charadrius hiaticula	212619	Charadrius hiaticula			
+4710	Charadrius semipalmatus	Semipalmated plover	04710	Charadrius semipalmatus	159126	Charadrius semipalmatus			
+4770	Charadrius alexandrinus	Kentish Plover	04770	Charadrius alexandrinus	212611	Charadrius alexandrinus			
+4820	Charadrius morinellus	Eurasian Dotterel	04820	Charadrius morinellus	232043	Charadrius morinellus			
+4850	Pluvialis apricaria	European Golden Plover	04850	Pluvialis apricaria	159135	Pluvialis apricaria			
+4860	Pluvialis squatarola	Grey Plover	04860	Pluvialis squatarola	159137	Pluvialis squatarola			
+4930	Vanellus vanellus	Northern Lapwing	04930	Vanellus vanellus	159142	Vanellus vanellus			
+4960	Calidris canutus	Red Knot	04960	Calidris canutus	147433	Calidris canutus			
+4970	Calidris alba	Sanderling	04970	Calidris alba	159084	Calidris alba			
+5010	Calidris minuta	Little Stint	05010	Calidris minuta	212600	Calidris minuta			
+5090	Calidris ferruginea	Curlew Sandpiper	05090	Calidris ferruginea	159049	Calidris ferruginea			
+5100	Calidris maritima	Purple Sandpiper	05100	Calidris maritima	159052	Calidris maritima			
+5120	Calidris alpina	Dunlin	05120	Calidris alpina	159047	Calidris alpina			
+5129	Calidris sp.	unidentified (Calidris) sandpiper	05129	Calidris sp.	147432	Calidris			5149 (v5)
+5170	Philomachus pugnax	Ruff	05170	Philomachus pugnax	159046	Philomachus pugnax			
+5180	Lymnocryptes minimus	Jack Snipe	05180	Lymnocryptes minimus	558755	Lymnocryptes minimus			
+5190	Gallinago gallinago	Common Snipe	05190	Gallinago gallinago	158949	Gallinago gallinago			
+5290	Scolopax rusticola	Eurasian Woodcock	05290	Scolopax rusticola	159028	Scolopax rusticola			
+5320	Limosa limosa	Black-tailed Godwit	05320	Limosa limosa	159035	Limosa limosa			
+5340	Limosa lapponica	Bar-tailed Godwit	05340	Limosa lapponica	159034	Limosa lapponica			
+5380	Numenius phaeopus	Eurasian Whimbrel	05380	Numenius phaeopus	159040	Numenius phaeopus			
+5400	Numenius tenuirostris	Slender-billed Curlew	05400	Numenius tenuirostris	366864	Numenius tenuirostris			
+5410	Numenius arquata	Eurasian Curlew	05410	Numenius arquata	159037	Numenius arquata			
+5450	Tringa erythropus	Spotted Redshank	05450	Tringa erythropus	159029	Tringa erythropus			
+5460	Tringa totanus	Common Redshank	05460	Tringa totanus	158970	Tringa totanus			
+5480	Tringa nebularia	Common Greenshank	05480	Tringa nebularia	158968	Tringa nebularia			
+5530	Tringa ochropus	Green Sandpiper	05530	Tringa ochropus	212622	Tringa ochropus			
+5540	Tringa glareola	Wood Sandpiper	05540	Tringa glareola	225916	Tringa glareola			
+5560	Actitis hypoleucos	Common Sandpiper	05560	Actitis hypoleucos	212603	Actitis hypoleucos			
+5610	Arenaria interpres	Ruddy Turnstone	05610	Arenaria interpres	147431	Arenaria interpres			
+5640	Phalaropus lobatus	Red-necked Phalarope	05640	Phalaropus lobatus	137169	Phalaropus lobatus			
 5645	Phalaropus sp.	unidentified phalarope			137049	Phalaropus			5645 (v6)
-5650	Phalaropus fulicarius	Red Phalarope	5650	Phalaropus fulicaria	137168	Phalaropus fulicarius			
-5659		unidentified wader	5659	Limicolae	2682	Charadriiformes			
-5660	Stercorarius pomarinus	Pomarine Skua	5660	Stercorarius pomarinus	137173	Stercorarius pomarinus			
-5670	Stercorarius parasiticus	Arctic Skua	5670	Stercorarius parasiticus	137172	Stercorarius parasiticus			
-5680	Stercorarius longicaudus	Long-tailed Skua	5680	Stercorarius longicaudus	137171	Stercorarius longicaudus			
-5690	Stercorarius skua	Great Skua	5690	Stercorarius skua	137174	Stercorarius skua			
-5709	Stercorarius sp.	unidentified skua	5709	Stercorarius sp.	137051	Stercorarius			5699 (v5)
-5750	Larus melanocephalus	Mediterranean Gull	5750	Larus melanocephalus	137147	Larus melanocephalus			
-5780	Hydrocoloeus minutus	Little Gull	5780	Larus minutus	567449	Hydrocoloeus minutus			
-5790	Xema sabini	Sabine's Gull	5790	Larus sabini	137167	Xema sabini			
-5820	Larus ridibundus	Black-headed Gull	5820	Larus ridibundus	137149	Larus ridibundus			
-5880	Larus audouinii	Audouin's Gull	5880	Larus audouinii	137139	Larus audouinii			
-5890	Larus delawarensis	Ring-billed Gull	5890	Larus delawarensis	148797	Larus delawarensis			
-5900	Larus canus	Common Gull	5900	Larus canus	137141	Larus canus			
-5902	Larus canus heinei	Common Gull (henei)	5902	Larus canus heinei	416722	Larus canus heinei			
+5650	Phalaropus fulicarius	Red Phalarope	05650	Phalaropus fulicaria	137168	Phalaropus fulicarius			
+5659		unidentified wader	05659	Limicolae	2682	Charadriiformes			
+5660	Stercorarius pomarinus	Pomarine Skua	05660	Stercorarius pomarinus	137173	Stercorarius pomarinus			
+5670	Stercorarius parasiticus	Arctic Skua	05670	Stercorarius parasiticus	137172	Stercorarius parasiticus			
+5680	Stercorarius longicaudus	Long-tailed Skua	05680	Stercorarius longicaudus	137171	Stercorarius longicaudus			
+5690	Stercorarius skua	Great Skua	05690	Stercorarius skua	137174	Stercorarius skua			
+5709	Stercorarius sp.	unidentified skua	05709	Stercorarius sp.	137051	Stercorarius			5699 (v5)
+5750	Larus melanocephalus	Mediterranean Gull	05750	Larus melanocephalus	137147	Larus melanocephalus			
+5780	Hydrocoloeus minutus	Little Gull	05780	Larus minutus	567449	Hydrocoloeus minutus			
+5790	Xema sabini	Sabine's Gull	05790	Larus sabini	137167	Xema sabini			
+5820	Larus ridibundus	Black-headed Gull	05820	Larus ridibundus	137149	Larus ridibundus			
+5880	Larus audouinii	Audouin's Gull	05880	Larus audouinii	137139	Larus audouinii			
+5890	Larus delawarensis	Ring-billed Gull	05890	Larus delawarensis	148797	Larus delawarensis			
+5900	Larus canus	Common Gull	05900	Larus canus	137141	Larus canus			
+5902	Larus canus heinei	Common Gull (henei)	05902	Larus canus heinei	416722	Larus canus heinei			
 5909		unidentified small gull			136988	Laridae			5909 (v6)
-5910	Larus fuscus	Lesser Black-backed Gull	5910	Larus fuscus	137142	Larus fuscus			
-5911	Larus fuscus fuscus	Lesser Black-backed Gull (fuscus)	5911	Larus fuscus fuscus	148795	Larus fuscus fuscus			
-5912	Larus fuscus graellsii	Lesser Black-backed Gull (graelsii)	5912	Larus fuscus graellsii	148796	Larus fuscus graellsii			
+5910	Larus fuscus	Lesser Black-backed Gull	05910	Larus fuscus	137142	Larus fuscus			
+5911	Larus fuscus fuscus	Lesser Black-backed Gull (fuscus)	05911	Larus fuscus fuscus	148795	Larus fuscus fuscus			
+5912	Larus fuscus graellsii	Lesser Black-backed Gull (graelsii)	05912	Larus fuscus graellsii	148796	Larus fuscus graellsii			
 5919	Larus fuscus / argentatus	Lesser Black-backed / Herring Gull			137043	Larus			5919 (v6)
-5920	Larus argentatus	European Herring Gull	5920	Larus argentatus	137138	Larus argentatus			
-5921	Larus argentatus argentatus	European Herring Gull (argentatus)	5921	Larus argentatus argentatus	232047	Larus argentatus argentatus			
-5922	Larus fuscus heuglini	Siberian Gull	5922	Larus argentatus heuglini	567447	Larus fuscus heuglini			
-5926	Larus michahellis	Yellow-legged Gull	5926	Larus argentatus michahellis	232052	Larus michahellis			5928 (v5)
-5927	Larus cachinnans	Caspian Gull	5927	Larus argentatus cachinnans	137140	Larus cachinnans			
-5980	Larus glaucoides	Iceland Gull	5980	Larus glaucoides	137144	Larus glaucoides			
-5982	Larus glaucoides kumlieni	Iceland Gull (kumlieni)	5982	Larus glaucoides kumlieni	232051	Larus glaucoides kumlieni			
+5920	Larus argentatus	European Herring Gull	05920	Larus argentatus	137138	Larus argentatus			
+5921	Larus argentatus argentatus	European Herring Gull (argentatus)	05921	Larus argentatus argentatus	232047	Larus argentatus argentatus			
+5922	Larus fuscus heuglini	Siberian Gull	05922	Larus argentatus heuglini	567447	Larus fuscus heuglini			
+5926	Larus michahellis	Yellow-legged Gull	05926	Larus argentatus michahellis	232052	Larus michahellis			5928 (v5)
+5927	Larus cachinnans	Caspian Gull	05927	Larus argentatus cachinnans	137140	Larus cachinnans			
+5980	Larus glaucoides	Iceland Gull	05980	Larus glaucoides	137144	Larus glaucoides			
+5982	Larus glaucoides kumlieni	Iceland Gull (kumlieni)	05982	Larus glaucoides kumlieni	232051	Larus glaucoides kumlieni			
 5985	Larus hyperboreus / glaucoides	Glaucous / Iceland Gull			137043	Larus			5985 (v6)
-5990	Larus hyperboreus	Glaucous Gull	5990	Larus hyperboreus	137145	Larus hyperboreus			
+5990	Larus hyperboreus	Glaucous Gull	05990	Larus hyperboreus	137145	Larus hyperboreus			
 90080	Larus hyperboreus x argentatus	Glaucous x Herring Gull (hybrid)	90080	Larus argentatus x Larus hyperboreus					5991 (v6)
-6000	Larus marinus	Great Black-backed Gull	6000	Larus marinus	137146	Larus marinus			
-6009	Larus sp.	unidentified Larus gull	6009	Larus sp.	137043	Larus			5929 (v5), 6005 (v5), 6008 (v5), 6009 (v5)
-6010	Rhodostethia rosea	Ross's Gull	6010	Rhodostethia rosea	137155	Rhodostethia rosea			
-6020	Rissa tridactyla	Black-legged Kittiwake	6020	Rissa tridactyla	137156	Rissa tridactyla			
-6040	Pagophila eburnea	Ivory Gull	6040	Pagophila eburnea	137154	Pagophila eburnea			
+6000	Larus marinus	Great Black-backed Gull	06000	Larus marinus	137146	Larus marinus			
+6009	Larus sp.	unidentified Larus gull	06009	Larus sp.	137043	Larus			5929 (v5), 6005 (v5), 6008 (v5), 6009 (v5)
+6010	Rhodostethia rosea	Ross's Gull	06010	Rhodostethia rosea	137155	Rhodostethia rosea			
+6020	Rissa tridactyla	Black-legged Kittiwake	06020	Rissa tridactyla	137156	Rissa tridactyla			
+6040	Pagophila eburnea	Ivory Gull	06040	Pagophila eburnea	137154	Pagophila eburnea			
 6049		unidentified gull			136988	Laridae			6049 (v6)
-6050	Gelochelidon nilotica	Gull-billed Tern	6050	Gelochelidon nilotica	148798	Gelochelidon nilotica			
-6060	Hydroprogne caspia	Caspian Tern	6060	Sterna caspia	567825	Hydroprogne caspia			
-6070	Sterna maxima	Royal Tern	6070	Sterna maxima	137163	Sterna maxima			
-6090	Sterna bengalensis	Lesser Crested Tern	6090	Sterna bengalensis	137158	Sterna bengalensis			
-6110	Sterna sandvicensis	Sandwich Tern	6110	Sterna sandvicensis	137166	Sterna sandvicensis			
-6111	Sterna acuflavida	Cabot's Tern	6111	Sterna acuflavida	1348517	Thalasseus sandvicensis acuflavidus			
-6140	Sterna dougallii	Roseate Tern	6140	Sterna dougallii	137160	Sterna dougallii			
-6150	Sterna hirundo	Common Tern	6150	Sterna hirundo	137162	Sterna hirundo			
-6160	Sterna paradisaea	Arctic Tern	6160	Sterna paradisaea	137165	Sterna paradisaea			
+6050	Gelochelidon nilotica	Gull-billed Tern	06050	Gelochelidon nilotica	148798	Gelochelidon nilotica			
+6060	Hydroprogne caspia	Caspian Tern	06060	Sterna caspia	567825	Hydroprogne caspia			
+6070	Sterna maxima	Royal Tern	06070	Sterna maxima	137163	Sterna maxima			
+6090	Sterna bengalensis	Lesser Crested Tern	06090	Sterna bengalensis	137158	Sterna bengalensis			
+6110	Sterna sandvicensis	Sandwich Tern	06110	Sterna sandvicensis	137166	Sterna sandvicensis			
+6111	Sterna acuflavida	Cabot's Tern	06111	Sterna acuflavida	1348517	Thalasseus sandvicensis acuflavidus			
+6140	Sterna dougallii	Roseate Tern	06140	Sterna dougallii	137160	Sterna dougallii			
+6150	Sterna hirundo	Common Tern	06150	Sterna hirundo	137162	Sterna hirundo			
+6160	Sterna paradisaea	Arctic Tern	06160	Sterna paradisaea	137165	Sterna paradisaea			
 6169	Sterna hirundo / paradisaea	Common / Arctic Tern			137047	Sterna			6169 (v6)
-6230	Onychoprion fuscatus	Sooty Tern	6230	Sterna fuscata	567827	Onychoprion fuscatus			
-6240	Sternula albifrons	Little Tern	6240	Sterna albifrons	567480	Sternula albifrons			
-6250	Sternula saundersi	Saunders's Tern	6250	Sterna saundersi	567839	Sternula saundersi			
-6259	Sterna sp.	unidentified Sterna tern	6259	Sterna sp.	137047	Sterna			
-6260	Chlidonias hybrida	Whiskered Tern	6260	Chlidonias hybridus	137135	Chlidonias hybrida			
-6270	Chlidonias niger	Black Tern	6270	Chlidonias niger	137137	Chlidonias niger			
-6280	Chlidonias leucopterus	White-winged Tern	6280	Chlidonias leucopterus	137136	Chlidonias leucopterus			
+6230	Onychoprion fuscatus	Sooty Tern	06230	Sterna fuscata	567827	Onychoprion fuscatus			
+6240	Sternula albifrons	Little Tern	06240	Sterna albifrons	567480	Sternula albifrons			
+6250	Sternula saundersi	Saunders's Tern	06250	Sterna saundersi	567839	Sternula saundersi			
+6259	Sterna sp.	unidentified Sterna tern	06259	Sterna sp.	137047	Sterna			
+6260	Chlidonias hybrida	Whiskered Tern	06260	Chlidonias hybridus	137135	Chlidonias hybrida			
+6270	Chlidonias niger	Black Tern	06270	Chlidonias niger	137137	Chlidonias niger			
+6280	Chlidonias leucopterus	White-winged Tern	06280	Chlidonias leucopterus	137136	Chlidonias leucopterus			
 6285		unidentified tern			148764	Sternidae			6285 (v6), 6289 (v5), Aphia ID refers to unaccepted taxon
-6300	Anous stolidus	Brown Noddy	6300	Anous stolidus	212629	Anous stolidus			
-6340	Uria aalge	Common Guillemot	6340	Uria aalge	137133	Uria aalge			
+6300	Anous stolidus	Brown Noddy	06300	Anous stolidus	212629	Anous stolidus			
+6340	Uria aalge	Common Guillemot	06340	Uria aalge	137133	Uria aalge			
 6345	Uria aalge / Alca torda	Common Guillemot / Razorbill			136987	Alcidae			6345 (v6)
-6350	Uria lomvia	Thick-billed Guillemot	6350	Uria lomvia	137134	Uria lomvia			
-6360	Alca torda	Razorbill	6360	Alca torda	137128	Alca torda			
-6380	Cepphus grylle	Black Guillemot	6380	Cepphus grylle	137130	Cepphus grylle			
-6470	Alle alle	Little Auk	6470	Alle alle	137129	Alle alle			
-6540	Fratercula arctica	Atlantic Puffin	6540	Fratercula arctica	137131	Fratercula arctica			
+6350	Uria lomvia	Thick-billed Guillemot	06350	Uria lomvia	137134	Uria lomvia			
+6360	Alca torda	Razorbill	06360	Alca torda	137128	Alca torda			
+6380	Cepphus grylle	Black Guillemot	06380	Cepphus grylle	137130	Cepphus grylle			
+6470	Alle alle	Little Auk	06470	Alle alle	137129	Alle alle			
+6540	Fratercula arctica	Atlantic Puffin	06540	Fratercula arctica	137131	Fratercula arctica			
 6545	Alle alle / Fratercula arctica	unidentified small auk			136987	Alcidae			6545 (v6)
 6549	Alcidae	unidentified auk			136987	Alcidae			6549 (v6)
-6650	Columba livia	Rock Dove	6650	Columba livia	1464527	Columba livia			
-6657	Columba livia domestica	Feral Dove	6657	Columba livia domestica					6655 (v5)
-6680	Columba oenas	Stock Dove	6680	Columba oenas	558545	Columba oenas			
-6700	Columba palumbus	Common Wood Pigeon	6700	Columba palumbus	558546	Columba palumbus			
-6829	Columba sp.	unidentified (Columba) dove	6829	Columba sp.	558544	Columba			
-6840	Streptopelia decaocto	Eurasian Collared Dove	6840	Streptopelia decaocto	558586	Streptopelia decaocto			
-6870	Streptopelia turtur	European Turtle Dove	6870	Streptopelia turtur					
+6650	Columba livia	Rock Dove	06650	Columba livia	1464527	Columba livia			
+6657	Columba livia domestica	Feral Dove	06657	Columba livia domestica					6655 (v5)
+6680	Columba oenas	Stock Dove	06680	Columba oenas	558545	Columba oenas			
+6700	Columba palumbus	Common Wood Pigeon	06700	Columba palumbus	558546	Columba palumbus			
+6829	Columba sp.	unidentified (Columba) dove	06829	Columba sp.	558544	Columba			
+6840	Streptopelia decaocto	Eurasian Collared Dove	06840	Streptopelia decaocto	558586	Streptopelia decaocto			
+6870	Streptopelia turtur	European Turtle Dove	06870	Streptopelia turtur					
 6999	Columba / Streptopelia sp.	unidentified dove / pigeon			196065	Columbidae			6999 (v6)
-6919	Streptopelia sp.		6919	Streptopelia sp.	205651	Streptopelia			
-7240	Cuculus canorus	Common Cuckoo	7240	Cuculus canorus	212682	Cuculus canorus			
-7610	Strix aluco	Tawny Owl	7610	Strix aluco	558588	Strix aluco			
-7670	Asio otus	Long-eared Owl	7670	Asio otus	1476314	Asio otus			
-7680	Asio flammeus	Short-eared Owl	7680	Asio flammeus	212685	Asio flammeus			
-7780	Caprimulgus europaeus	European Nightjar	7780	Caprimulgus europaeus					
-7940	Apus unicolor	Plain swift	7940	Apus unicolor					
-7950	Apus apus	Common Swift	7950	Apus apus	212734	Apus apus			
-7980	Apus melba	Alpine Swift	7980	Apus melba					
-8060	Hylocharis leucotis	White-eared Hummingbird	8060	Hylocharis leucotis					
-8460	Upupa epops	Eurasian Hoopoe	8460	Upupa epops	1451644	Upupa epops			
-8480	Jynx torquilla	Eurasian Wryneck	8480	Jynx torquilla					
-8760	Dendrocopos major	Great Spotted Woodpecker	8760	Dendrocopos major	1459903	Dendrocopos major			
-9720	Galerida cristata	Crested Lark	9720	Galerida cristata	426235	Galerida cristata			
-9740	Lullula arborea	Woodlark	9740	Lullula arborea					
-9760	Alauda arvensis	Eurasian skylark	9760	Alauda arvensis	558531	Alauda arvensis			
-9780	Eremophila alpestris	Horned Lark	9780	Eremophila alpestris	232056	Eremophila alpestris			
+6919	Streptopelia sp.		06919	Streptopelia sp.	205651	Streptopelia			
+7240	Cuculus canorus	Common Cuckoo	07240	Cuculus canorus	212682	Cuculus canorus			
+7610	Strix aluco	Tawny Owl	07610	Strix aluco	558588	Strix aluco			
+7670	Asio otus	Long-eared Owl	07670	Asio otus	1476314	Asio otus			
+7680	Asio flammeus	Short-eared Owl	07680	Asio flammeus	212685	Asio flammeus			
+7780	Caprimulgus europaeus	European Nightjar	07780	Caprimulgus europaeus					
+7940	Apus unicolor	Plain swift	07940	Apus unicolor					
+7950	Apus apus	Common Swift	07950	Apus apus	212734	Apus apus			
+7980	Apus melba	Alpine Swift	07980	Apus melba					
+8060	Hylocharis leucotis	White-eared Hummingbird	08060	Hylocharis leucotis					
+8460	Upupa epops	Eurasian Hoopoe	08460	Upupa epops	1451644	Upupa epops			
+8480	Jynx torquilla	Eurasian Wryneck	08480	Jynx torquilla					
+8760	Dendrocopos major	Great Spotted Woodpecker	08760	Dendrocopos major	1459903	Dendrocopos major			
+9720	Galerida cristata	Crested Lark	09720	Galerida cristata	426235	Galerida cristata			
+9740	Lullula arborea	Woodlark	09740	Lullula arborea					
+9760	Alauda arvensis	Eurasian skylark	09760	Alauda arvensis	558531	Alauda arvensis			
+9780	Eremophila alpestris	Horned Lark	09780	Eremophila alpestris	232056	Eremophila alpestris			
 9789	Alaudidae	unidentified lark			196040	Alaudidae			9789 (v6)
-9810	Riparia riparia	Sand Martin	9810	Riparia riparia	225984	Riparia riparia			
-9910	Ptyonoprogne rupestris	Eurasian Crag Martin	9910	Ptyonoprogne rupestris					
-9920	Hirundo rustica	Barn Swallow	9920	Hirundo rustica	212750	Hirundo rustica			
+9810	Riparia riparia	Sand Martin	09810	Riparia riparia	225984	Riparia riparia			
+9910	Ptyonoprogne rupestris	Eurasian Crag Martin	09910	Ptyonoprogne rupestris					
+9920	Hirundo rustica	Barn Swallow	09920	Hirundo rustica	212750	Hirundo rustica			
 9995	Hirundinidae	unidentified swallow			196063	Hirundinidae			9995 (v6)
 10010	Delichon urbicum	Common House Martin	10010	Delichon urbica	212752	Delichon urbicum			
 10090	Anthus trivialis	Tree Pipit	10090	Anthus trivialis	558533	Anthus trivialis			
@@ -277,7 +277,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 10110	Anthus pratensis	Meadow Pipit	10110	Anthus pratensis	426233	Anthus pratensis			
 10140	Anthus petrosus / spinoletta	Rock Pipit / Water Pipit	10140	Anthus spinoletta	206833	Anthus			EURING 10140 not yet split in A. spinoletta / petrosus
 10142	Anthus petrosus petrosus	Rock Pipit (petrosus)	10142	Anthus spinoletta petrosus	232064	Anthus petrosus petrosus			
-10159	Anthus sp.	unidentified pipit	10159	Anthus spp.	206833	Anthus			10119 (v5)
+10159	Anthus sp.	unidentified pipit	10159	Anthus sp.	206833	Anthus			10119 (v5)
 10170	Motacilla flava	Western Yellow Wagtail	10170	Motacilla flava	212754	Motacilla flava			
 10171	Motacilla flava flava	Western Yellow Wagtail (flava)	10171	Motacilla flava flava					
 10180	Motacilla citreola	Citrine Wagtail	10180	Motacilla citreola					
