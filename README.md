@@ -1,8 +1,11 @@
-# European Seabirds at Sea (ESAS)
+# European Seabirds at Sea (ESAS) data model
 
-<!-- Note this README is also used as homepage for https://ices-tools-dev.github.io/esas/ -->
+Development area for the ESAS data (exchange) model.
 
-Development area for ESAS, including the ESAS data (exchange) model.
+## Use
 
-- [ESAS table schemas](https://ices-tools-dev.github.io/esas/tables/)
-- [ESAS species codes](https://ices-tools-dev.github.io/esas/species/)
+See the [documentation website](https://ices-tools-dev.github.io/).
+
+## Contribute
+
+Watch this repository to get notifications and participate in [issue discussions](https://github.com/ices-tools-dev/esas/issues).
