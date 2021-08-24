@@ -9,29 +9,33 @@ layout: base
     <table>
       <thead>
         <tr>
+          <th>ESAS code</th>
           <th>Scientific name</th>
+          <th>English name</th>
+          <th>WoRMS (ERID/Aphia ID)</th>
           <th>EURING</th>
-          <th>ERID (WoRMS)</th>
-          <th>NT</th>
         </tr>
       </thead>
       <tbody>
-        <col width="40%">
-        <col width="20%">
+        <col width="10%">
+        <col width="25%">
+        <col width="25%">
         <col width="20%">
         <col width="20%">
         {% for species in site.data.vocabularies.species %}
           <tr>
             <td>
-              <a href="#{{ species.english_name | url_encode }}">{{ species.english_name }}</a>
-              <br><em>{{ species.scientific_name }}</em>
+              <a href="#{{ species.esas_code }}"><code>{{ species.esas_code }}</code></a>
+              {% if species.remarks contains "v6" %}
+              {% else %}
               <div class="small text-muted">{{ species.remarks }}</div>
+              {% endif %}
             </td>
             <td>
-              {% if species.euring_code %}
-              <code>{{ species.euring_code }}</code>
-              <br><em>{{ species.euring_scientific_name }}</em>
-              {% endif %}
+              <em>{{ species.scientific_name }}</em>
+            </td>
+            <td>
+              {{ species.english_name }}
             </td>
             <td>
               {% if species.aphia_id %}
@@ -40,8 +44,9 @@ layout: base
               {% endif %}
             </td>
             <td>
-              {% if species.nt_code %}
-              <code>{{ species.nt_code }}</code> {{ species.nt_description }}
+              {% if species.euring_code %}
+              <code>{{ species.euring_code }}</code>
+              <br><em>{{ species.euring_scientific_name }}</em>
               {% endif %}
             </td>
           </tr>
