@@ -505,7 +505,7 @@ fields:
         - 117
         - 200
 
-  - name: Activity
+  - name: Behaviour
     description: |
       Indicates what the species was doing when observed:
       - `1` On water/swimming
@@ -515,22 +515,6 @@ fields:
       - `5` Completely submerged (marine mammals)
       - `6` Breaking surface (marine mammals)
       - `7` On artificial piece of something (platform, pole…)
-    type: integer
-    format: default
-    constraints:
-      required: false
-      enum:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-
-  - name: Behaviour
-    description: |
-      Indicates what the species was doing when observed:
       - `30` Holding fish
       - `31` Without fish
       - `32` Feeding young at sea
@@ -608,6 +592,15 @@ fields:
     constraints:
       required: false
       enum:
+        # Activity
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        # Behaviour
         # Old codes for unknown: 0, 4, 8, 10, 15, 20, 29, 55
         - 30
         - 31
