@@ -144,14 +144,14 @@ fields:
 
   - name: LifeStage
     description: |
-      Age class:
+      Life stage based on plumage:
       - `A` Adult
       - `I` Immature (not specified)
-      - `1` 1st calendar year
-      - `2` 2nd calendar year
-      - `3` 3rd calendar year
-      - `4` 4th calendar year
-      - `5` 5th calendar year
+        - `1` 1st calendar year (juvenile)
+        - `2` 2nd calendar year
+        - `3` 3rd calendar year
+        - `4` 4th calendar year
+        - `5` 5th calendar year
     type: string
     format: default
     constraints:
