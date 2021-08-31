@@ -417,8 +417,9 @@ fields:
   - name: Association
     description: |
       Code for associations between observed birds/cetaceans and 
-      vessels/structures/floating matter. `MSFA` stands for Multi-Species 
-      Feeding Association, see Camphuysen & Webb (1999) for `Type II/III`.
+      vessels/structures/floating matter. Combine multiple with `~`. `MSFA` 
+      stands for Multi-Species Feeding Association, see Camphuysen & Webb 
+      (1999) for `Type II/III`.
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
       - `12` Associated with front
@@ -507,7 +508,8 @@ fields:
 
   - name: Behaviour
     description: |
-      Indicates what the species was doing when observed:
+      Indicates what the species was doing when observed. Combine multiple 
+      with `~`.
       - `1` On water/swimming
       - `2` Diving
       - `3` Flushing
