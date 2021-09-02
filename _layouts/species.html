@@ -26,10 +26,7 @@ layout: base
           <tr>
             <td>
               <a href="#{{ species.esas_code }}"><code>{{ species.esas_code }}</code></a>
-              {% if species.remarks contains "v6" %}
-              {% else %}
               <div class="small text-muted">{{ species.remarks }}</div>
-              {% endif %}
             </td>
             <td>
               <em>{{ species.scientific_name }}</em>
