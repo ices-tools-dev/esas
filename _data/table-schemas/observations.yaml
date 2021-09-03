@@ -418,8 +418,8 @@ fields:
     description: |
       Code for associations between observed birds/cetaceans and 
       vessels/structures/floating matter. Combine multiple with `~`. `MSFA` 
-      stands for Multi-Species Feeding Association, see Camphuysen & Webb 
-      (1999) for `Type II/III`.
+      stands for Multi-Species Feeding Association, see [Camphuysen & Webb 
+      (1999)](http://www.vliz.be/nl/imis?module=ref&refid=247203).
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
       - `12` Associated with front
@@ -430,7 +430,7 @@ fields:
       - `17` Associated with floating seaweed
       - `18` Associated with observation base
       - `19` Sitting on observation base
-      - `20` Deliberately approaching observ. base
+      - `20` Deliberately approaching observation base
       - `21` Associated with other vessel
       - `22` Associated with or on buoy
       - `23` Associated with offshore platform
@@ -447,8 +447,11 @@ fields:
       - `54` MSFA participant, solitary diver
       - `55` MSFA participant, beater
       - `56` MSFA participant, social feeder
-      - `57` Type II MSFA participant
-      - `58` Type III MSFA participant
+      - `57` Type II MSFA participant. Type II: larger and longer-lasting 
+        flocks formed over prey that apparently do not act as cohesive units.
+      - `58` Type III MSFA participant. Type III: very large flocks formed 
+        where local water-mass discontinuities involved downwelling, 
+        concentrating zooplankton and small fish.
       - `102` On sandbank
       - `110` Inside wind farm
       - `111` Inside wind farm, associated with floating litter
