@@ -4,8 +4,8 @@ description: >
 fields:
   - name: CampaignID
     description: >
-      Unique identifier for the campaign. Should be a globally unique and 
-      permanent identifier to allow re-uploads.
+      Unique identifier for the campaign. Should be a globally unique and permanent identifier to 
+      allow re-uploads.
     type: string
     format: default
     constraints:
@@ -14,9 +14,8 @@ fields:
 
   - name: ResponsibleOrganisation
     description: |
-      Organization managing the data for this campaign. In case multiple 
-      organizations are responsible, combine with tilde (`code~code`).
-      Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
+      Organization managing the data for this campaign. Combine multiple values with `~`. Uses the 
+      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
       - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
@@ -40,9 +39,8 @@ fields:
     constraints:
       required: true
       enum:
-      # Old ESAS codes provided in comments.
-      # When multiple, than these organizations have been lumped.
-      # Others where combinations that have been split.
+      # Old ESAS codes provided in comments. When multiple, than these organizations have been 
+      # lumped. Others where combinations that have been split.
         - 202 # 110
         - 630 # 20, 130, 150, 160, 170, 180
         - 1375 # 10, 15
@@ -64,8 +62,8 @@ fields:
 
   - name: Country
     description: >
-      Country that is associated with the responsible organization.
-      Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+      Country that is associated with the responsible organization. Uses the 
+      [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
     format: default
     constraints:
@@ -73,9 +71,8 @@ fields:
 
   - name: DataAccess
     description: |
-      Whether data for the campaign can be made publicly accessible under the 
-      conditions of the ICES data policy. Uses the 
-      [Data_access](https://vocab.ices.dk/?ref=1435) vocabulary:
+      Whether data for the campaign can be made publicly accessible under the conditions of the 
+      ICES data policy. Uses the [Data_access](https://vocab.ices.dk/?ref=1435) vocabulary:
       - `public`
       - `restricted`
     type: string
@@ -104,8 +101,8 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the campaign, such as research purpose, 
-      area covered or route followed.
+      Additional details related to the campaign, such as research purpose, area covered or route 
+      followed.
     type: string
     format: default
     constraints:

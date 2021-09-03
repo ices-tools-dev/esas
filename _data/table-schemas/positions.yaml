@@ -1,9 +1,8 @@
 title: Positions
 description: >
-  Positions during sampling. Since the platform moves during sampling, these 
-  positions often represent the calculated middle point of a trajectory. These 
-  trajectories (called "observation bins") typically have predefined durations 
-  (e.g. 2 minutes).
+  Positions during sampling. Since the platform moves during sampling, these positions often 
+  represent the calculated middle point of a trajectory. These trajectories (called "observation 
+  bins") typically have predefined durations (e.g. 2 minutes).
 fields:
   - name: SampleID
     description: >
@@ -24,8 +23,8 @@ fields:
 
   - name: Time
     description: >
-      UTC time of the observation bin, defined as the start time of the 
-      trajectory. Format: `hh:mm:ss`.
+      UTC time of the observation bin, defined as the start time of the trajectory. Format: 
+      `hh:mm:ss`.
     type: time
     format: default
     constraints:
@@ -53,8 +52,7 @@ fields:
 
   - name: Distance
     description: >
-      Distance travelled during the observation bin in km. Can only remain 
-      empty if `Area` is used.
+      Distance travelled during the observation bin in km. Can only remain empty if `Area` is used.
     type: number
     format: default
     constraints:
@@ -62,8 +60,8 @@ fields:
 
   - name: Area
     description: >
-      Area of sea surveyed during the observation bin in km². Can only remain 
-      empty if `Distance` is used.
+      Area of sea surveyed during the observation bin in km². Can only remain empty if `Distance` 
+      is used.
     type: number
     format: default
     constraints:

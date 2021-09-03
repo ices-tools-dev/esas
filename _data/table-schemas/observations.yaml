@@ -1,7 +1,7 @@
 title: Observations
 description: >
-  Observation of a group of birds or marine mammals of a certain species. Use 
-  separate observations to distinguish between species, ages, etc.
+  Observation of a group of birds or marine mammals of a certain species. Use separate observations 
+  to distinguish between species, ages, etc.
 fields:
   - name: PositionID
     description: >
@@ -22,8 +22,8 @@ fields:
 
   - name: Group
     description: >
-      Identifier of aggregations of individuals of one or several species. 
-      Should be unique among all observations from the same `SampleID`.
+      Identifier of aggregations of individuals of one or several species. Should be unique among 
+      all observations from the same `SampleID`.
     type: string
     format: default
     constraints:
@@ -39,8 +39,8 @@ fields:
 
   - name: SpeciesCodeType
     description: |
-      Reference list for the `SpeciesCode`.
-      Uses the [RLIST](https://vocab.ices.dk/?ref=337) vocabulary:
+      Reference list for the `SpeciesCode`. Uses the [RLIST](https://vocab.ices.dk/?ref=337) 
+      vocabulary:
       - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia IDs
       - `EURING`: [EURING](https://euring.org/) species codes
       - `NT`: Non-taxonomic based ID 
@@ -55,64 +55,51 @@ fields:
 
   - name: SpeciesCode
     description: >
-      Code of the observed species, see the 
-      [lookup table](https://ices-tools-dev.github.io/esas/species/).
+      Code of the observed species, see the [lookup 
+      table](https://ices-tools-dev.github.io/esas/species/).
     type: integer
     format: default
     constraints:
       required: true
       enum: [
-        20, 30, 40, 45, 50, 59, 70, 90, 100, 110, 120, 127, 128, 129, 140, 220, 
-        260, 263, 269, 340, 350, 359, 360, 365, 400, 409, 410, 430, 460, 463, 
-        469, 480, 482, 500, 510, 520, 550, 558, 559, 580, 640, 660, 700, 710, 
-        720, 721, 800, 849, 920, 930, 1010, 1110, 1190, 1210, 1220, 1340, 1360, 
-        1440, 1520, 1530, 1540, 1559, 1569, 1570, 1574, 1580, 1590, 1610, 1620, 
-        1659, 1660, 1670, 1680, 1681, 1682, 1700, 1730, 1790, 1820, 1840, 1845, 
-        1860, 1863, 1890, 1910, 1940, 1959, 1980, 2030, 2040, 2059, 2060, 2070, 
-        2110, 2120, 2130, 2139, 2140, 2150, 2160, 2180, 2200, 2210, 2230, 2239, 
-        2269, 2310, 2380, 2430, 2600, 2610, 2670, 2690, 2870, 2900, 3009, 3010, 
-        3040, 3070, 3090, 3100, 3110, 3180, 3200, 3219, 4070, 4080, 4240, 4290, 
-        4330, 4500, 4510, 4560, 4690, 4700, 4710, 4770, 4820, 4850, 4860, 4930, 
-        4960, 4970, 5010, 5090, 5100, 5120, 5129, 5170, 5180, 5190, 5290, 5320, 
-        5340, 5380, 5400, 5410, 5450, 5460, 5480, 5530, 5540, 5560, 5610, 5640, 
-        5645, 5650, 5659, 5660, 5670, 5680, 5690, 5709, 5750, 5780, 5790, 5820, 
-        5880, 5890, 5900, 5902, 5909, 5910, 5911, 5912, 5919, 5920, 5921, 5922, 
-        5926, 5927, 5980, 5982, 5985, 5990, 5991, 6000, 6009, 6010, 6020, 6040, 
-        6049, 6050, 6060, 6070, 6090, 6110, 6111, 6140, 6150, 6160, 6169, 6240, 
-        6250, 6259, 6260, 6270, 6280, 6285, 6300, 6340, 6345, 6350, 6360, 6380, 
-        6470, 6540, 6545, 6549, 6650, 6657, 6680, 6700, 6829, 6840, 6870, 6999, 
-        7240, 7610, 7670, 7680, 7780, 7940, 7950, 7980, 8060, 8460, 8480, 8760, 
-        9720, 9740, 9760, 9780, 9789, 9810, 9910, 9920, 9995, 10010, 10090, 
-        10100, 10110, 10140, 10142, 10159, 10170, 10171, 10180, 10190, 10200, 
-        10201, 10202, 10239, 10480, 10490, 10660, 10840, 10990, 11040, 11060, 
-        11061, 11210, 11220, 11370, 11390, 11460, 11770, 11860, 11870, 11890, 
-        11980, 12000, 12005, 12010, 12020, 12069, 12200, 12360, 12430, 12500, 
-        12510, 12549, 12590, 12600, 12730, 12740, 12750, 12760, 12770, 12930, 
-        12970, 13000, 13080, 13110, 13120, 13129, 13140, 13150, 13350, 13430, 
-        13490, 14610, 14620, 14640, 15150, 15280, 15600, 15630, 15670, 15671, 
-        15673, 15720, 15749, 15820, 15910, 15980, 16350, 16360, 16380, 16389, 
-        16400, 16490, 16520, 16530, 16540, 16600, 16620, 16630, 16660, 16790, 
-        17100, 17170, 17450, 18470, 18500, 18570, 18770, 18810, 18820, 18829, 
-        19998, 19999, 20800, 29999, 51000, 60000, 61000, 61010, 61020, 61040, 
-        61050, 61060, 61070, 62040, 62210, 62220, 62230, 62240, 62250, 62260, 
-        62270, 62520, 62620, 62740, 62750, 62770, 62800, 62880, 62890, 63010, 
-        63020, 63030, 63040, 63070, 63080, 63089, 63110, 63120, 63130, 63150, 
-        63190, 63200, 63240, 63250, 63255, 63260, 63270, 63280, 63400, 63510, 
-        64210, 64310, 64320, 64330, 64350, 64380, 64400, 64410, 64420, 65000, 
-        65010, 65020, 65050, 66000, 66010, 66020, 66030, 66050, 66065, 67000, 
-        67600, 67810, 67815, 67820, 67900, 67902, 67905, 67906, 67907, 68000, 
-        68001, 68002, 68100, 68500, 69000, 70024, 70025, 71000, 99999,
-
-        # Codes currently not included in the coding table
-        5419, 5905, 6002, 6019, 6105, 6167, 6349, 11019, 11215, 12505, 23410, 
-        23420, 31100, 31200, 31300, 61005, 95005, 95010, 95020, 95043, 95045, 
-        95051, 95060, 95070, 95075, 95086, 95090, 95094, 95096, 95099
+        20, 30, 40, 45, 50, 59, 70, 90, 100, 110, 120, 127, 128, 129, 140, 220, 262, 260, 263, 269, 
+        35990, 340, 350, 359, 360, 361, 362, 35970, 400, 409, 410, 430, 460, 462, 463, 469, 480, 
+        482, 483, 499, 500, 510, 520, 550, 558, 559, 560, 580, 581, 640, 660, 670, 700, 710, 720, 
+        721, 800, 849, 920, 930, 1010, 1110, 1190, 1210, 1220, 1340, 1360, 1440, 1520, 1530, 1540, 
+        1559, 20800, 1569, 1570, 1571, 1574, 1580, 1590, 1610, 1620, 1659, 1660, 1670, 1680, 1681, 
+        1682, 1700, 1730, 1790, 1820, 1840, 1845, 1860, 1863, 1890, 1910, 1940, 1959, 1980, 2030, 
+        2040, 2059, 2060, 2070, 2110, 2120, 2130, 2139, 2140, 2150, 2160, 2180, 2200, 2210, 2230, 
+        2239, 2269, 2310, 2380, 2430, 2600, 2610, 2670, 2690, 2870, 2900, 3009, 3010, 3040, 3070, 
+        3090, 3100, 3110, 3180, 3200, 3219, 4070, 4080, 4240, 4290, 4330, 4500, 4510, 4560, 4690, 
+        4700, 4710, 4770, 4820, 4850, 4860, 4930, 4960, 4970, 5010, 5090, 5100, 5120, 5129, 5170, 
+        5180, 5190, 5290, 5320, 5340, 5380, 5400, 5410, 5450, 5460, 5480, 5530, 5540, 5560, 5610, 
+        5640, 5645, 5650, 5659, 5660, 5670, 5680, 5690, 5709, 5750, 5780, 5790, 5820, 5880, 5890, 
+        5900, 5902, 5909, 5910, 5911, 5912, 5919, 5920, 5921, 5922, 5926, 5927, 5980, 5982, 5985, 
+        5990, 90080, 6000, 6009, 6010, 6020, 6040, 6049, 6050, 6060, 6070, 6090, 6110, 6111, 6140, 
+        6150, 6160, 6169, 6230, 6240, 6250, 6259, 6260, 6270, 6280, 6285, 6300, 6340, 6345, 6350, 
+        6360, 6380, 6470, 6540, 6545, 6549, 6650, 6657, 6680, 6700, 6829, 6840, 6870, 6999, 6919, 
+        7240, 7610, 7670, 7680, 7780, 7940, 7950, 7980, 8060, 8460, 8480, 8760, 9720, 9740, 9760, 
+        9780, 9789, 9810, 9910, 9920, 9995, 10010, 10090, 10100, 10110, 10140, 10142, 10159, 10170, 
+        10171, 10180, 10190, 10200, 10201, 10202, 10239, 10480, 10490, 10660, 10840, 10990, 11040, 
+        11060, 11061, 11210, 11220, 11370, 11390, 11460, 11770, 11860, 11870, 11890, 11980, 12000, 
+        12005, 12010, 12020, 12069, 12200, 12360, 12430, 12500, 12510, 12549, 12590, 12600, 12730, 
+        12740, 12750, 12760, 12770, 12930, 12970, 13000, 13080, 13110, 13120, 13129, 13140, 13150, 
+        13350, 13430, 13490, 14610, 14620, 14640, 15150, 15280, 15600, 15630, 15670, 15671, 15673, 
+        15720, 15749, 15820, 15910, 15980, 16350, 16360, 16380, 16389, 16400, 16490, 16520, 16530, 
+        16540, 16600, 16620, 16630, 16660, 16790, 17100, 17170, 17450, 18470, 18500, 18570, 18770, 
+        18810, 18820, 18829, 19998, 19999, 51000, 60000, 61000, 61010, 61020, 61040, 61050, 61060, 
+        61070, 62040, 62210, 62220, 62230, 62240, 62250, 62260, 62270, 62520, 62620, 62740, 62750, 
+        62770, 62800, 62880, 62890, 63010, 63020, 63030, 63040, 63070, 63080, 63089, 63110, 63120, 
+        63130, 63150, 63190, 63200, 63240, 63250, 63255, 63260, 63270, 63280, 63400, 63510, 64210, 
+        64310, 64320, 64330, 64350, 64380, 64400, 64410, 64420, 65000, 65010, 65020, 65050, 66000, 
+        66010, 66020, 66030, 66050, 66065, 67000, 67600, 67810, 67815, 67820, 67900, 67902, 67905, 
+        67906, 67907, 68000, 68001, 68002, 68100, 68500
       ]
 
   - name: Count
     description: >
-      Number of birds or marine mammals counted or estimated. This should 
-      equal the number without distance correction.
+      Number of birds or marine mammals counted or estimated. This should equal the number without 
+      distance correction.
     type: integer
     format: default
     constraints:
@@ -122,8 +109,8 @@ fields:
     description: |
       Distance at which the birds or marine mammals were observed.
 
-      In case of the standard 300 m transect used for ship-based sampling of 
-      marine mammals and birds in contact with the water:
+      In case of the standard 300 m transect used for ship-based sampling of marine mammals and 
+      birds in contact with the water:
       - `A` In contact with the water, 0 - 50 m
       - `B` In contact with the water, 50 - 100 m
       - `C` In contact with the water, 100 - 200 m
@@ -132,10 +119,9 @@ fields:
       - `F` Flying, no contact with water
       - `W` In contact with the water, but distance not recorded
 
-      For any other type of distance bin classification, the distance is an 
-      integer indicating the distance (m) to middle point of one the distance 
-      bins specified in the `DistanceBins`. Observations outside this transect 
-      are indicated by a `>` sign (e.g. `>1000`).
+      For any other type of distance bin classification, the distance is an integer indicating the 
+      distance (m) to middle point of one the distance bins specified in the `DistanceBins`. 
+      Observations outside this transect are indicated by a `>` sign (e.g. `>1000`).
     type: string
     format: default
     constraints:
@@ -167,7 +153,7 @@ fields:
 
   - name: Moult
     description: |
-      Primary moult information, only used for fulmar, auks, divers and seaduck:
+      Primary moult information, only used for fulmar, auks, divers and seaducks:
       - `X` Active primary moult
       - `Y` No active primary moult
     type: string
@@ -190,12 +176,12 @@ fields:
       - `D` Dark morph (skuas)
       - `P` Pullus
 
-      For immature auks (Guillemot & Razorbill):
+      For immature auks (guillemot and razorbill):
       - `A1` ½ or less than adult size
       - `A2` Over ½ adult size
       - `A3` About same size as adult
 
-      For immature Northern Gannets:
+      For immature northern gannets:
       - `G1` Plumage 1
       - `G2` Plumage 2
       - `G3` Plumage 3
@@ -251,8 +237,7 @@ fields:
       - `NW` Heading NW
       - `U` Flying, no apparent direction
 
-      Or relative to the direction of the platform, indicated in degrees with 
-      10° increments.
+      Or relative to the direction of the platform, indicated in degrees with 10° increments.
     type: string
     format: default
     constraints:
@@ -330,7 +315,7 @@ fields:
       - `32` Jellyfish
       - `33` Squid
       - `34` Worm (e.g. Nereis)
-      - `35` Barnacles (Balanidae zeepokken)
+      - `35` Barnacles (Balanidae)
       - `36` Oil from oil slick
       - `40` Crustacean, unidentified
       - `41` Swimming crab
@@ -362,8 +347,7 @@ fields:
     constraints:
       required: false
       enum:
-        # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 28, 29, 39, 44,
-        # 49, 68, 71, 72, 90, 92, 99
+        # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 28, 29, 39, 44, 49, 68, 71, 72, 90, 92, 99
         - 9
         - 10
         - 11
@@ -416,12 +400,10 @@ fields:
 
   - name: Association
     description: |
-      Associations between the observed birds/cetaceans and 
-      vessels/structures/floating matter. Combine multiple with `~`. 
-      Originally described in [Camphuysen & Garthe 
-      (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 1.
-       `MSFA` stands for Multi-Species Feeding 
-      Association ([Camphuysen & Webb, 
+      Associations between the observed birds/cetaceans and vessels/structures/floating matter. 
+      Combine multiple values with `~`. Originally described in [Camphuysen & Garthe 
+      (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 1. `MSFA` stands for 
+      Multi-Species Feeding Association ([Camphuysen & Webb, 
       1999](http://www.vliz.be/nl/imis?module=ref&refid=247203)).
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
@@ -467,8 +449,7 @@ fields:
     constraints:
       required: false
       enum:
-        # Old codes for unknown: 42, 45, 47, 59, 60, 61, 63, 67, 68, 69, 71, 
-        # 81, 90, 100, 101, 103
+        # Old codes for unknown: 42, 45, 47, 59, 60, 61, 63, 67, 68, 69, 71, 81, 90, 100, 101, 103
         - 10
         - 11
         - 12
@@ -511,8 +492,8 @@ fields:
 
   - name: Behaviour
     description: |
-      Indicates what the species was doing when observed. Combine multiple 
-      with `~`. Originally described in [Camphuysen & Garthe 
+      Indicates what the species was doing when observed. Combine multiple values with `~`. 
+      Originally described in [Camphuysen & Garthe 
       (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 2.
       - `1` On water/swimming
       - `2` Diving
