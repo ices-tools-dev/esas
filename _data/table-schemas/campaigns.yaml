@@ -23,7 +23,7 @@ fields:
       - [`1527`](https://edmo.seadatanet.org/report/1527) Rijkswaterstaat Central Information Services
       - [`2125`](https://edmo.seadatanet.org/report/2125) University College Cork (UCC)
       - [`2299`](https://edmo.seadatanet.org/report/2299) Research and Technology Centre, Buesum (FTZ)
-      - [`2589`](https://edmo.seadatanet.org/report/2589) Wageningen Environmental Research (WEnR)
+      - [`2422`](https://edmo.seadatanet.org/report/2422) Wageningen Marine Research (Den Helder) (WMR)
       - [`2827`](https://edmo.seadatanet.org/report/2827) Royal Society for the Protection of Birds (HQ) (RSPB)
       - [`3393`](https://edmo.seadatanet.org/report/3393) SOVON Dutch Centre for Field Ornithology (SOVON)
       - [`3269`](https://edmo.seadatanet.org/report/3269) Federal Agency for Nature Conservation (BfN)
@@ -48,7 +48,7 @@ fields:
         - 1527 # 230 (split)
         - 2125 # 200
         - 2299 # 50 (split), 55 (split)
-        - 2589 # 120
+        - 2422 # 120
         - 2827 # 11
         - 3393 # 230 (split)
         - 3269 # 55 (split)
