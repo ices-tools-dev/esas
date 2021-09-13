@@ -206,23 +206,6 @@ fields:
         - 2
         - 3
 
-  - name: BehaviourRecording
-    description: |
-      Whether and how behaviour was recorded:
-      - `0` Behaviour not recorded
-      - `1` Typical detailed ship-based behaviour recording (see `behaviour` field)
-      - `2` Typical aeroplane-based activity recording (see `activity` field)
-      - `3` Other (only selected types of behaviour recorded, include more details in `Notes`)
-    type: integer
-    format: default
-    constraints:
-      required: false
-      enum:
-        - 0
-        - 1
-        - 2
-        - 3
-
   - name: NumberOfObservers
     description: >
       Number of observers that contributed to the sample.
