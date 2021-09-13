@@ -41,17 +41,15 @@ fields:
     description: |
       Reference list for the `SpeciesCode`. Uses the [RLIST](https://vocab.ices.dk/?ref=337) 
       vocabulary:
+      - `ESAS`: [European Seabirds at Sea](../species/) species codes
       - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia IDs
-      - `EURING`: [EURING](https://euring.org/) species codes
-      - `NT`: Non-taxonomic based ID 
     type: string
     format: default
     constraints:
       required: true
       enum:
+        - ESAS
         - ERID
-        - EURING
-        - NT
 
   - name: SpeciesCode
     description: >
