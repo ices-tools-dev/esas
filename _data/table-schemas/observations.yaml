@@ -39,7 +39,7 @@ fields:
 
   - name: SpeciesCodeType
     description: |
-      Reference list for the `SpeciesCode`. Uses the [RLIST](https://vocab.ices.dk/?ref=337) 
+      Reference list for the `SpeciesCode`. Uses the [RLIST](https://vocab.ices.dk/?ref=44) 
       vocabulary:
       - `ESAS`: [European Seabirds at Sea](../species/) species codes
       - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia IDs
