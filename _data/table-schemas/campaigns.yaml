@@ -34,7 +34,7 @@ fields:
       - [`5442`](https://edmo.seadatanet.org/report/5442) Dutch Seabird Group (NZG)
       - [`5443`](https://edmo.seadatanet.org/report/5443) Portuguese Society for the Study of Birds (SPEA)
       - [`5444`](https://edmo.seadatanet.org/report/5444) Cork Ecology
-    type: integer
+    type: string
     format: default
     constraints:
       required: true

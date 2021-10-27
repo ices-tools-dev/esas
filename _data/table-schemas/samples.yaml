@@ -28,7 +28,7 @@ fields:
     constraints:
       required: true
 
-  - name: Platform
+  - name: PlatformCode
     description: >
       Platform used for sampling. Uses the [SHIPC](https://vocab.ices.dk/?ref=315) vocabulary.
     type: string
@@ -36,7 +36,7 @@ fields:
     constraints:
       required: true
 
-  - name: PlatformType
+  - name: PlatformClass
     description: |
       Type of the platform used for sampling. Uses the 
       [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
@@ -78,7 +78,7 @@ fields:
   - name: PlatformHeight
     description: >
       Height (m) of the platform during sampling, e.g. average flying height of aeroplane.
-    type: integer
+    type: number
     format: default
     constraints:
       required: false
@@ -93,7 +93,8 @@ fields:
  
   - name: SamplingMethod
     description: |
-      Sampling method:
+      Sampling method. Uses the 
+      [BD CountMethod](https://vocab.ices.dk/?CodeTypeRelID=1440&CodeID=235388) vocabulary:
       - `1` Full ship-based transect method with snapshot for flying birds
       - `2` Full ship-based transect method, no snapshot for flying birds
       - `3` All observations, but no transect operated
@@ -106,7 +107,7 @@ fields:
       - `10` Visual aerial total counts
       - `11` Digital aerial – video
       - `12` Digital aerial – stills
-    type: integer
+    type: string
     format: default
     constraints:
       required: true
@@ -133,7 +134,7 @@ fields:
     constraints:
       required: false
 
-  - name: SpeciesCounted
+  - name: TargetTaxa
     description: |
       Species (groups) that were counted during sampling:
       - `1` All species recorded (standard)
@@ -155,7 +156,7 @@ fields:
       - `17` Auks, divers, grebes and seaduck only
       - `18` Cetaceans and rare birds only
       - `99` Other
-    type: integer
+    type: string
     format: default
     constraints:
       required: true
@@ -197,7 +198,7 @@ fields:
       - `1` No binoculars used
       - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
-    type: integer
+    type: string
     format: default
     constraints:
       required: false
