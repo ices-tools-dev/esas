@@ -20,7 +20,7 @@ fields:
       required: true
       unique: true
 
-  - name: Group
+  - name: GroupID
     description: >
       Identifier of aggregations of individuals of one or several species. Should be unique among 
       all observations from the same `SampleID`.
