@@ -401,7 +401,7 @@ fields:
       Associations between the observed birds/cetaceans and vessels/structures/floating matter. 
       Combine multiple values with `~`. Originally described in [Camphuysen & Garthe 
       (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 1. `MSFA` stands for 
-      Multi-Species Feeding Association ([Camphuysen & Webb, 
+      multi-species feeding association ([Camphuysen & Webb, 
       1999](http://www.vliz.be/nl/imis?module=ref&refid=247203)).
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
@@ -432,6 +432,7 @@ fields:
       - `56` MSFA participant, social feeder
       - `57` Type II MSFA participant
       - `58` Type III MSFA participant
+      - `59` Drive hunt MSFA participant
       - `102` On sandbank
       - `110` Inside wind farm
       - `111` Inside wind farm, associated with floating litter
@@ -477,6 +478,7 @@ fields:
         - 56
         - 57
         - 58
+        - 59
         - 102
         - 110
         - 111
