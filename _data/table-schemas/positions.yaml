@@ -218,7 +218,7 @@ fields:
         - snow
         - fog
 
-  - name: Ice
+  - name: IceCover
     description: >
       Ice coverage within the transect % (`0` – `100`).
     type: integer
