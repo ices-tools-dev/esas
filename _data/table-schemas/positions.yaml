@@ -230,18 +230,19 @@ fields:
 
   - name: ObservationConditions
     description: |
-      General impression of the observation conditions:
-      - `good`
-      - `moderate`
-      - `bad`
+      General impression of the observation conditions. Uses the 
+      [Sightability](https://vocab.ices.dk/?ref=1704) vocabulary:
+      - `G` Good
+      - `M` Moderate
+      - `P` Poor
     type: string
     format: default
     constraints:
       required: false
       enum:
-        - good
-        - moderate
-        - bad
+        - G
+        - M
+        - P
 
 missingValues:
   - ''
