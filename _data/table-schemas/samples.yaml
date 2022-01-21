@@ -112,18 +112,18 @@ fields:
     constraints:
       required: true
       enum:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 8
-        - 9
-        - 10
-        - 11
-        - 12
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
 
   - name: PrimarySampling
     description: >
@@ -161,25 +161,25 @@ fields:
     constraints:
       required: true
       enum:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 8
-        - 9
-        - 10
-        - 11
-        - 12
-        - 13
-        - 14
-        - 15
-        - 16
-        - 17
-        - 18
-        - 99
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '99'
 
   - name: DistanceBins
     description: >
@@ -203,9 +203,9 @@ fields:
     constraints:
       required: false
       enum:
-        - 1
-        - 2
-        - 3
+        - '1'
+        - '2'
+        - '3'
 
   - name: NumberOfObservers
     description: >
