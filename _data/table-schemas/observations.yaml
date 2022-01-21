@@ -159,8 +159,8 @@ fields:
     constraints:
       required: false
       enum:
-        - X
-        - Y
+        - 'X'
+        - 'Y'
 
   - name: Plumage
     description: |
