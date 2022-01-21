@@ -48,9 +48,9 @@ fields:
     constraints:
       required: true
       enum:
-        - ship        # Previously: 1
-        - aeroplane   # Previously: 3 and 4
-        - helicopter  # Previously: 2
+        - '30' # Previously: 1
+        - '62' # Previously: 3 and 4
+        - '67' # Previously: 2
 
   - name: PlatformSide
     description: |
