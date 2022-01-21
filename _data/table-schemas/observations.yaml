@@ -241,15 +241,15 @@ fields:
     constraints:
       required: false
       enum:
-        - N
-        - NE
-        - E
-        - SE
-        - S
-        - SW
-        - W
-        - NW
-        - U
+        - 'N'
+        - 'NE'
+        - 'E'
+        - 'SE'
+        - 'S'
+        - 'SW'
+        - 'W'
+        - 'NW'
+        - 'U'
         - '0'
         - '10'
         - '20'
