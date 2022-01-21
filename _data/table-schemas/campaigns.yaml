@@ -73,15 +73,15 @@ fields:
     description: |
       Whether data for the campaign can be made publicly accessible under the conditions of the 
       ICES data policy. Uses the [Data_access](https://vocab.ices.dk/?ref=1435) vocabulary:
-      - `public`
-      - `restricted`
+      - `Public`
+      - `Restricted`
     type: string
     format: default
     constraints:
       required: true
       enum:
-        - public
-        - restricted
+        - Public
+        - Restricted
 
   - name: StartDate
     description: >
