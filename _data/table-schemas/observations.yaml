@@ -673,7 +673,7 @@ fields:
 missingValues:
   - ''
   - NA
-primaryKey: ObsID
+primaryKey: ObservationID
 foreignKeys:
   - fields: PositionID
     reference:
