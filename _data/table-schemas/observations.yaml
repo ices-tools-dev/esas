@@ -54,7 +54,7 @@ fields:
   - name: SpeciesCode
     description: >
       Code of the observed species, see the [lookup 
-      table](https://ices-tools-dev.github.io/esas/species/).
+      table](https://esas-docs.ices.dk/species/).
     type: integer
     format: default
     constraints:

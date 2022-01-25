@@ -4,7 +4,7 @@ Development area for the ESAS data (exchange) model.
 
 ## Use
 
-See the [documentation website](https://ices-tools-dev.github.io/esas/).
+See the [documentation website](https://esas-docs.ices.dk/).
 
 ## Contribute
 
