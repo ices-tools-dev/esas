@@ -22,8 +22,7 @@
 title: ESAS
 description: European Seabird At Sea (ESAS)
 author: ESAS
-url: "https://ices-tools-dev.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/esas" # the subpath of your site, e.g. /blog
+baseurl: "" # Otherwise GitHub Pages will set this to "/esas"
 
 # SOCIAL PROFILES
 email: 
