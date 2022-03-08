@@ -11,6 +11,7 @@ fields:
     constraints:
       required: true
       unique: true
+      maxLength: 50
 
   - name: ResponsibleOrganisation
     description: |
