@@ -1,0 +1,102 @@
+title: File Information
+description: >
+  Campaigns that generated the data.
+fields:
+  - name: DataCustodian
+    description: >
+      Organization that uploaded and ensures appropriate maintenance of the resource. Uses the 
+      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary.
+      - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
+      - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
+      - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
+      - [`1416`](https://edmo.seadatanet.org/report/1416) Norwegian Institute for Nature Research (NINA)
+      - [`1527`](https://edmo.seadatanet.org/report/1527) Rijkswaterstaat Central Information Services
+      - [`2125`](https://edmo.seadatanet.org/report/2125) University College Cork (UCC)
+      - [`2299`](https://edmo.seadatanet.org/report/2299) Research and Technology Centre, Buesum (FTZ)
+      - [`2422`](https://edmo.seadatanet.org/report/2422) Wageningen Marine Research (Den Helder) (WMR)
+      - [`2827`](https://edmo.seadatanet.org/report/2827) Royal Society for the Protection of Birds (HQ) (RSPB)
+      - [`3393`](https://edmo.seadatanet.org/report/3393) SOVON Dutch Centre for Field Ornithology (SOVON)
+      - [`3269`](https://edmo.seadatanet.org/report/3269) Federal Agency for Nature Conservation (BfN)
+      - [`5045`](https://edmo.seadatanet.org/report/5045) Bureau Waardenburg BV (BUWA)
+      - [`5123`](https://edmo.seadatanet.org/report/5123) Aarhus University, Department of Bioscience (BIOS)
+      - [`5440`](https://edmo.seadatanet.org/report/5440) Ornis Consult A/S
+      - [`5441`](https://edmo.seadatanet.org/report/5441) Institute of Avian Research
+      - [`5442`](https://edmo.seadatanet.org/report/5442) Dutch Seabird Group (NZG)
+      - [`5443`](https://edmo.seadatanet.org/report/5443) Portuguese Society for the Study of Birds (SPEA)
+      - [`5444`](https://edmo.seadatanet.org/report/5444) Cork Ecology
+    type: integer
+    format: default
+    constraints:
+      required: true
+      enum:
+      # Old ESAS codes provided in comments. When multiple, than these organizations have been 
+      # lumped. Others where combinations that have been split.
+        - 202 # 110
+        - 630 # 20, 130, 150, 160, 170, 180
+        - 1375 # 10, 15
+        - 1416 # 40
+        - 1527 # 230 (split)
+        - 2125 # 200
+        - 2299 # 50 (split), 55 (split)
+        - 2422 # 120
+        - 2827 # 11
+        - 3393 # 230 (split)
+        - 3269 # 55 (split)
+        - 5045 # 140
+        - 5123 # 90
+        - 5440 # 30
+        - 5441 # 50 (split)
+        - 5442 # 100
+        - 5443 # 210
+        - 5444 # 220
+
+  - name: DataCustodianContact
+    description: >
+      Email address of the Data Custodian.
+    type: string
+    format: default
+    constraints:
+      required: true
+      maxLength: 50
+
+  - name: DataRightsHolder
+    description: |
+      Organisation who has ownership of the legal rights to the resource. Uses the 
+      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary.
+    type: integer
+    format: default
+    constraints:
+      required: true
+      enum:
+        - 202
+        - 630
+        - 1375
+        - 1416
+        - 1527
+        - 2125
+        - 2299
+        - 2422
+        - 2827
+        - 3393
+        - 3269
+        - 5045
+        - 5123
+        - 5440
+        - 5441
+        - 5442
+        - 5443
+        - 5444
+
+  - name: Country
+    description: >
+      Country that is associated with the responsible organization. Uses the 
+      [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+    type: string
+    format: default
+    constraints:
+      required: true
+      maxLength: 20
+
+missingValues:
+  - ''
+  - NA

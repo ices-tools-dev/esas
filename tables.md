@@ -2,6 +2,7 @@
 layout: tables
 title: Tables
 description: >
+  [File Information](#file information){: .btn .btn-primary }
   [Campaigns](#campaigns){: .btn .btn-primary }
   [Samples](#samples){: .btn .btn-primary }
   [Positions](#positions){: .btn .btn-primary }
