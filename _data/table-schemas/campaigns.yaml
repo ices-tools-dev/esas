@@ -71,6 +71,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 50
 
   - name: DataAccess
     description: |
@@ -82,6 +83,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 15
       enum:
         - Public
         - Restricted
@@ -110,6 +112,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 300
 
 missingValues:
   - ''

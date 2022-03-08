@@ -10,6 +10,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 50
 
   - name: SampleID
     description: >
@@ -19,6 +20,7 @@ fields:
     constraints:
       required: true
       unique: true
+      maxLength: 50
 
   - name: Date
     description: >
@@ -35,6 +37,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 6
 
   - name: PlatformClass
     description: |
@@ -47,6 +50,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 2
       enum:
         - '30' # Previously: 1
         - '62' # Previously: 3 and 4
@@ -54,18 +58,20 @@ fields:
 
   - name: PlatformSide
     description: |
-      Side of the platform used for sampling:
+      Side of the platform used for sampling. Uses the
+      [PlatformSide](http://vocab.ices.dk/?ref=1688) vocabulary:
       - `right` Starboard
       - `right front`
       - `right back`
       - `left` Port
       - `left front`
       - `left back`
-      - `both sides` Observers on both sides producing one collective data stream
+      - `both` Observers on both sides producing one collective data stream
     type: string
     format: default
     constraints:
       required: false
+      maxLength: 15
       enum:
         - right       # Previously: 6
         - right front # Previously: 1
@@ -73,7 +79,7 @@ fields:
         - left        # Previously: 5
         - left front  # Previously: 4
         - left back   # Previously: 2
-        - both sides  # Previously: 9
+        - both        # Previously: 9
 
   - name: PlatformHeight
     description: >
@@ -94,7 +100,7 @@ fields:
   - name: SamplingMethod
     description: |
       Sampling method. Uses the 
-      [BD CountMethod](https://vocab.ices.dk/?CodeTypeRelID=1440&CodeID=235388) vocabulary:
+      [BD_CountMethod](https://vocab.ices.dk/?CodeTypeRelID=1440&CodeID=235388) vocabulary:
       - `1` Full ship-based transect method with snapshot for flying birds
       - `2` Full ship-based transect method, no snapshot for flying birds
       - `3` All observations, but no transect operated
@@ -111,6 +117,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 10
       enum:
         - '1'
         - '2'
@@ -127,7 +134,7 @@ fields:
 
   - name: PrimarySampling
     description: >
-      Whether the sample should be considered primary (`true`) or anxillary (`false`) in case of 
+      Whether the sample should be considered primary (`true`) or ancillary (`false`) in case of 
       double or triple observer sampling.
     type: boolean
     format: default
@@ -136,7 +143,8 @@ fields:
 
   - name: TargetTaxa
     description: |
-      Species (groups) that were counted during sampling:
+      Species (groups) that were counted during sampling. Uses the 
+      [TargetTaxa](http://vocab.ices.dk/?ref=1713) vocabulary.
       - `1` All species recorded (standard)
       - `2` All species except Larus gulls
       - `3` All species except fulmars
@@ -160,6 +168,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 3
       enum:
         - '1'
         - '2'
@@ -190,11 +199,13 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 100
       pattern: '(\d+\|)+\d+'
 
   - name: UseOfBinoculars
     description: |
-      Extent to which binoculars were used during sampling:
+      Extent to which binoculars were used during sampling. Uses the 
+      [UseOfBinoculars](http://vocab.ices.dk/?ref=1719) vocabulary.
       - `1` No binoculars used
       - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
@@ -202,6 +213,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 2
       enum:
         - '1'
         - '2'
@@ -223,6 +235,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 300
 
 missingValues:
   - ''

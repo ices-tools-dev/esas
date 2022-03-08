@@ -11,6 +11,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 50
 
   - name: PositionID
     description: >
@@ -20,6 +21,7 @@ fields:
     constraints:
       required: true
       unique: true
+      maxLength: 50
 
   - name: Time
     description: >
@@ -69,42 +71,43 @@ fields:
 
   - name: Beaufort
     description: |
-      Sea state according to the Beaufort scale:
-      - `0` Sea like mirror
-      - `1` Ripples with appearance of scales, no foam crests
-      - `2` Small wavelets, crests of glassy appearance, not breaking
-      - `3` Large wavelets, crests begin to break, scattered whitecaps
-      - `4` Small waves becoming longer, numerous whitecaps
-      - `5` Moderate waves, many whitecaps, some spray
-      - `6` Larger waves, whitecaps everywhere, more spray
-      - `7` Sea heaps up and white foam from breaking waves begins to be blown in streaks along the direction of the wind
-      - `8` Moderately high waves; edges of crests begin to break into the spindrift; foam is blown in well-marked streaks along the direction of the wind
-      - `9` High waves; dense streaks of foam along wind; crests begin to topple, tumble and roll over; spray may affect visibility
-      - `10` Very high waves with long overhanging crests; foam in great patches blown in dense white streaks along wind; sea surface takes a white appearance; tumbling becomes heavy and shock-like; visibility affected
-      - `11` Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
-      - `12` Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
-    type: integer
+      Sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary.
+      - `0` Calm - Sea like mirror
+      - `1` Light air - Ripples with appearance of scales, no foam crests
+      - `2` Light breeze - Small wavelets, crests of glassy appearance, not breaking
+      - `3` Gentle breeze - Large wavelets, crests begin to break, scattered whitecaps
+      - `4` Moderate breeze - Small waves becoming longer, numerous whitecaps
+      - `5` Fresh breeze - Moderate waves, many whitecaps, some spray
+      - `6` Strong breeze - Larger waves, whitecaps everywhere, more spray
+      - `7` High wind, moderate gale, near gale - Sea heaps up and white foam from breaking waves begins to be blown in streaks along the direction of the wind
+      - `8` Gale, fresh gale - Moderately high waves; edges of crests begin to break into the spindrift; foam is blown in well-marked streaks along the direction of the wind
+      - `9` Strong/severe gale - High waves; dense streaks of foam along wind; crests begin to topple, tumble and roll over; spray may affect visibility
+      - `10` Storm, whole gale - Very high waves with long overhanging crests; foam in great patches blown in dense white streaks along wind; sea surface takes a white appearance; tumbling becomes heavy and shock-like; visibility affected
+      - `11` Violent storm - Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
+      - `12` Hurricane force - Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
+    type: string
     format: default
     constraints:
       required: false
+      maxLength: 2
       enum:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
-        - 7
-        - 8
-        - 9
-        - 10
-        - 11
-        - 12
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
 
   - name: Visibility
     description: |
-      Visibility in kilometer:
+      Visibility in kilometer, uses the [Visibility](http://vocab.ices.dk/?ref=1708) vocabulary.
       - `0.1`
       - `0.2`
       - `0.3`
@@ -137,6 +140,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 3
       enum:
         - '0.1'
         - '0.2'
@@ -167,7 +171,8 @@ fields:
 
   - name: Glare
     description: |
-      Glare that could be affecting the observation quality: 
+      Glare that could be affecting the observation quality. Uses the
+      [Glare](http://vocab.ices.dk/?ref=1717) vocabulary.
       - `none` No glare
       - `weak` Weak glare (no major effect on the counting)
       - `medium` Medium glare (a part of the viewing area is affected by glare)
@@ -176,6 +181,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 25
       enum:
         - none
         - weak
@@ -194,29 +200,41 @@ fields:
 
   - name: CloudCover
     description: >
-      Cloud cover expressed as x/8 (octas) (`0` – `8`).
-    type: integer
-    format: default
-    constraints:
-      required: false
-      minimum: 0
-      maximum: 8
-
-  - name: Precipitation
-    description: |
-      - `none`
-      - `rain`
-      - `snow`
-      - `fog`
+      Cloud cover expressed as x/8 (octas). Uses the 
+      [CloudCover](http://vocab.ices.dk/?ref=1706) vocabulary.
     type: string
     format: default
     constraints:
       required: false
+      maxLength: 2
       enum:
-        - none
-        - rain
-        - snow
-        - fog
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+
+  - name: Precipitation
+    description: |
+      Uses the [Precipitation vocabulary](http://vocab.ices.dk/?ref=1707).
+      - `N` None
+      - `R` Rain
+      - `S` Snow
+      - `F` Fog
+    type: string
+    format: default
+    constraints:
+      required: false
+      maxLength: 2 
+      enum:
+        - 'N'
+        - 'R'
+        - 'S'
+        - 'F'
 
   - name: IceCover
     description: >
@@ -239,6 +257,7 @@ fields:
     format: default
     constraints:
       required: false
+      maxLength: 3
       enum:
         - G
         - M
