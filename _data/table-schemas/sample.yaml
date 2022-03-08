@@ -144,7 +144,7 @@ fields:
   - name: TargetTaxa
     description: |
       Species (groups) that were counted during sampling. Uses the 
-      [TargetTaxa](http://vocab.ices.dk/?ref=1713) vocabulary.
+      [TargetTaxa](http://vocab.ices.dk/?ref=1713) vocabulary:
       - `1` All species recorded (standard)
       - `2` All species except Larus gulls
       - `3` All species except fulmars
@@ -205,7 +205,7 @@ fields:
   - name: UseOfBinoculars
     description: |
       Extent to which binoculars were used during sampling. Uses the 
-      [UseOfBinoculars](http://vocab.ices.dk/?ref=1719) vocabulary.
+      [UseOfBinoculars](http://vocab.ices.dk/?ref=1719) vocabulary:
       - `1` No binoculars used
       - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)

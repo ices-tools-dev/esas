@@ -71,7 +71,7 @@ fields:
 
   - name: Beaufort
     description: |
-      Sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary.
+      Sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary:
       - `0` Calm - Sea like mirror
       - `1` Light air - Ripples with appearance of scales, no foam crests
       - `2` Light breeze - Small wavelets, crests of glassy appearance, not breaking
@@ -107,7 +107,7 @@ fields:
 
   - name: Visibility
     description: |
-      Visibility in kilometer, uses the [Visibility](http://vocab.ices.dk/?ref=1708) vocabulary.
+      Visibility in kilometer, uses the [Visibility](http://vocab.ices.dk/?ref=1708) vocabulary:
       - `0.1`
       - `0.2`
       - `0.3`
@@ -172,7 +172,7 @@ fields:
   - name: Glare
     description: |
       Glare that could be affecting the observation quality. Uses the
-      [Glare](http://vocab.ices.dk/?ref=1717) vocabulary.
+      [Glare](http://vocab.ices.dk/?ref=1717) vocabulary:
       - `none` No glare
       - `weak` Weak glare (no major effect on the counting)
       - `medium` Medium glare (a part of the viewing area is affected by glare)
@@ -220,7 +220,7 @@ fields:
 
   - name: Precipitation
     description: |
-      Uses the [Precipitation vocabulary](http://vocab.ices.dk/?ref=1707).
+      Uses the [Precipitation vocabulary](http://vocab.ices.dk/?ref=1707):
       - `N` None
       - `R` Rain
       - `S` Snow

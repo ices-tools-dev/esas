@@ -145,7 +145,7 @@ fields:
 
   - name: LifeStage
     description: |
-      Life stage based on plumage. Uses the [LifeStage](http://vocab.ices.dk/?ref=1715) vocabulary.
+      Life stage based on plumage. Uses the [LifeStage](http://vocab.ices.dk/?ref=1715) vocabulary:
       - `A` Adult
       - `I` Immature (not specified)
         - `1` 1st calendar year (juvenile)
@@ -170,7 +170,7 @@ fields:
   - name: Moult
     description: |
       Primary moult information, only used for fulmar, auks, divers and seaducks. Uses the
-      [Moult](http://vocab.ices.dk/?ref=1720) vocabulary.
+      [Moult](http://vocab.ices.dk/?ref=1720) vocabulary:
       - `X` Active primary moult
       - `Y` No active primary moult
     type: string
@@ -184,7 +184,7 @@ fields:
 
   - name: Plumage
     description: |
-      Plumage types. Uses the [Plumage](http://vocab.ices.dk/?ref=1716) vocabulary.
+      Plumage types. Uses the [Plumage](http://vocab.ices.dk/?ref=1716) vocabulary:
       - `B` Breeding (summer) plumage
       - `T` Transient plumage (moulting between winter & summer plumage or vice-versa)
       - `W` Non-breeding (winter) plumage
@@ -315,7 +315,7 @@ fields:
   - name: Prey
     description: |
       Observed prey (type) caught or carried by the bird/cetacean. Uses the
-      [PreyType](http://vocab.ices.dk/?ref=1687) vocabulary.
+      [PreyType](http://vocab.ices.dk/?ref=1687) vocabulary:
       - `9` Other item
       - `10` Fish, no further details
       - `11` Small fish, unidentified (ca. bill length)

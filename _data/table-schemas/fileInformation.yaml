@@ -3,9 +3,9 @@ description: >
   Campaigns that generated the data.
 fields:
   - name: DataCustodian
-    description: >
+    description: |
       Organization that uploaded and ensures appropriate maintenance of the resource. Uses the 
-      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary.
+      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
       - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
