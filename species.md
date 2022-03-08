@@ -1,13 +1,15 @@
 ---
 layout: species
 title: Species
-description: 
+description: Codes for taxa in ESAS.
 permalink: /species/
 ---
 
-The source file for the table below can be found in [`_data/vocabularies/species.tsv`](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/species.tsv). Data providers should upload data with:
+The source file for the table below can be found in [`_data/vocabularies/species.tsv`](https://github.com/ices-tools-dev/esas/blob/main/_data/vocabularies/species.tsv).
 
-- `SpeciesCodeType`: `ESAS` and an ESAS code for `SpeciesCode`
-- `SpeciesCodeType`: `ERID` and a WoRMS Aphia ID for `SpeciesCode`
+Data providers can express species data in `observations` in two ways:
 
-Downloads will include a link to WoRMS.
+- Using an ESAS code in `SpeciesCode`. Set `SpeciesCodeType` to `"ESAS"` for that record.
+- Using a WoRMS Aphia ID in `SpeciesCode`. Set `SpeciesCodeType` to `"ERID"` for that record.
+
+Downloads will always include a link to WoRMS.
