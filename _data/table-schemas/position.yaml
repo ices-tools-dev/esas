@@ -69,9 +69,9 @@ fields:
     constraints:
       required: false
 
-  - name: Beaufort
+  - name: WindForce
     description: |
-      Sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary:
+      Wind force and sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary:
       - `0` Calm - Sea like mirror
       - `1` Light air - Ripples with appearance of scales, no foam crests
       - `2` Light breeze - Small wavelets, crests of glassy appearance, not breaking
