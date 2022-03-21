@@ -484,13 +484,6 @@ fields:
       [Behaviour](http://vocab.ices.dk/?ref=1709) vocabulary. Combine multiple values with `~`.
       Originally described in [Camphuysen & Garthe 
       (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 2.
-      - `1` On water/swimming
-      - `2` Diving
-      - `3` Flushing
-      - `4` Flying
-      - `5` Completely submerged (marine mammals)
-      - `6` Breaking surface (marine mammals)
-      - `7` On artificial piece of something (platform, pole…)
       - `30` Holding fish
       - `31` Without fish
       - `32` Feeding young at sea
@@ -510,7 +503,7 @@ fields:
       - `46` Shallow plunging
       - `47` Pursuit plunging
       - `48` Pursuit diving, or bottom feeding
-      - `49` Actively searching      
+      - `49` Actively searching
       - `60` Resting or apparently asleep
       - `61` Courtship display
       - `62` Courtship feeding
@@ -559,24 +552,22 @@ fields:
       - `112` Diving (no specification)
       - `113` Active migration
       - `114` Flying off (no specification)
+      - `115` On water/swimming
       - `116` Distraction behaviour
+      - `117` Flying (no specification)
+      - `118` Submerged
+      - `119` Surfacing
+      - `120` On artificial piece of something (platform, pole)
       - `121` Milling / Non-directional behaviour
       - `122` Diving (marine mammals)
       - `123` Head out of water (seals)
+      - `135` Flushing
     type: string
     format: default
     constraints:
       required: false
       maxLength: 5
       enum:
-        # Activity
-        - '1'
-        - '2'
-        - '3'
-        - '4'
-        - '5'
-        - '6'
-        - '7'
         # Behaviour
         # Old codes for unknown: 0, 4, 8, 10, 15, 20, 29, 55
         - '30'
@@ -644,13 +635,19 @@ fields:
         - '102'
         - '103'
         - '111'
-        - '112'
+        - '112' # 2
         - '113'
         - '114'
+        - '115' # 1
         - '116'
+        - '117' # 4
+        - '118' # 5
+        - '119' # 6
+        - '120' # 7
         - '121'
         - '122'
         - '123'
+        - '135' # 3
 
   - name: Notes
     description: >
