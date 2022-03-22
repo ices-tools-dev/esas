@@ -561,7 +561,6 @@ fields:
       - `121` Milling / Non-directional behaviour
       - `122` Diving (marine mammals)
       - `123` Head out of water (seals)
-      - `135` Flushing
     type: string
     format: default
     constraints:
@@ -637,7 +636,7 @@ fields:
         - '111'
         - '112' # 2
         - '113'
-        - '114'
+        - '114' # 3
         - '115' # 1
         - '116'
         - '117' # 4
@@ -647,7 +646,6 @@ fields:
         - '121'
         - '122'
         - '123'
-        - '135' # 3
 
   - name: Notes
     description: >
