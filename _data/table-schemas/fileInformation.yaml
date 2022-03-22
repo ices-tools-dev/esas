@@ -2,9 +2,9 @@ title: File Information
 description: >
   Campaigns that generated the data.
 fields:
-  - name: DataCustodian
+  - name: DataRightsHolder
     description: |
-      Organization that uploaded and ensures appropriate maintenance of the resource. Uses the 
+      Organisation who has ownership of the legal rights to the resource. Uses the 
       [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
@@ -50,18 +50,19 @@ fields:
         - 5443 # 210
         - 5444 # 220
 
-  - name: DataCustodianContact
+  - name: Country
     description: >
-      Email address of the Data Custodian.
+      Country that is associated with the responsible organization. Uses the 
+      [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
     format: default
     constraints:
       required: true
-      maxLength: 50
+      maxLength: 20
 
-  - name: DataRightsHolder
+  - name: DataCustodian
     description: |
-      Organisation who has ownership of the legal rights to the resource. Uses the 
+      Organization that uploaded and ensures appropriate maintenance of the resource. Uses the 
       [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary.
     type: integer
     format: default
@@ -87,15 +88,14 @@ fields:
         - 5443
         - 5444
 
-  - name: Country
+  - name: DataCustodianContact
     description: >
-      Country that is associated with the responsible organization. Uses the 
-      [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+      Email address of the Data Custodian.
     type: string
     format: default
     constraints:
       required: true
-      maxLength: 20
+      maxLength: 50
 
 missingValues:
   - ''
