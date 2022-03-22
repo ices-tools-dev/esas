@@ -4,8 +4,8 @@ description: >
 fields:
   - name: DataRightsHolder
     description: |
-      Organisation who has ownership of the legal rights to the resource. Uses the 
-      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
+      Organisation who has ownership of the legal rights to the resource. Combine multiple values 
+      with `~`. Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
       - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
@@ -28,6 +28,7 @@ fields:
     format: default
     constraints:
       required: true
+      maxLength: 6
       enum:
       # Old ESAS codes provided in comments. When multiple, than these organizations have been 
       # lumped. Others where combinations that have been split.
@@ -52,8 +53,8 @@ fields:
 
   - name: Country
     description: >
-      Country that is associated with the responsible organization. Uses the 
-      [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+      Country that is associated with the DataRightsHolder. Combine multiple values with `~`. 
+      Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
     format: default
     constraints:
