@@ -43,9 +43,9 @@ fields:
     description: |
       Type of the platform used for sampling. Uses the 
       [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
-      - `ship` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
-      - `aeroplane` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
-      - `helicopter` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
+      - `30` [30: Ship](https://vocab.ices.dk/?CodeID=120897)
+      - `62` [62: Aeroplane](https://vocab.ices.dk/?CodeID=137773)
+      - `62` [67: Helicopter](https://vocab.ices.dk/?CodeID=120899)
     type: string
     format: default
     constraints:
