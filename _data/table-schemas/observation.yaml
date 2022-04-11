@@ -466,7 +466,10 @@ fields:
       - `57` Type II MSFA participant
       - `58` Type III MSFA participant
       - `59` Drive hunt MSFA participant
+      - `100` Associated with set net
+      - `101` Associated with fish trap
       - `102` On sandbank
+      - `103` Next to sandbank
       - `110` Inside wind farm
       - `111` Inside wind farm, associated with floating litter
       - `112` Inside wind farm, associated with observation base
@@ -481,8 +484,8 @@ fields:
     constraints:
       required: false
       maxLength: 30
-      pattern: '(200|117|116|115|114|113|112|110|102|59|58|57|56|55|54|53|52|51|50|29|28|27|26|25|24|23|22|21|20|19|18|17|16|15|14|13|12|11|10|~)+'
-        # Old codes for unknown: 42, 45, 47, 59, 60, 61, 63, 67, 68, 69, 71, 81, 90, 100, 101, 103
+      pattern: '(200|117|116|115|114|113|112|110|103|102|101|100|59|58|57|56|55|54|53|52|51|50|29|28|27|26|25|24|23|22|21|20|19|18|17|16|15|14|13|12|11|10|~)+'
+        # Old codes for unknown: 42, 45, 47, 59, 60, 61, 63, 67, 68, 69, 71, 81, 90
 
   - name: Behaviour
     description: |
