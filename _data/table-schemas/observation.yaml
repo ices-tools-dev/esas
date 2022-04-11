@@ -333,6 +333,8 @@ fields:
       - `25` Regurgitated fish after aerial pursuit
       - `26` Salmonid
       - `27` Capelin
+      - `28` Eel
+      - `29` Pipefish
       - `30` Small particles, unidentified
       - `31` Large object, unidentified
       - `32` Jellyfish
@@ -344,6 +346,7 @@ fields:
       - `41` Swimming crab
       - `42` Starfish
       - `43` Sea urchin
+      - `44` Shore crab (Carcinus maenas)
       - `45` Bivalve, unidentified
       - `46` Mussel
       - `47` Whelk eggs capsule
@@ -371,7 +374,7 @@ fields:
       required: false
       maxLength: 4
       enum:
-        # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 28, 29, 39, 44, 49, 68, 71, 72, 90, 92, 99
+        # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 39, 49, 68, 71, 72, 90, 92, 99
         - '9'
         - '10'
         - '11'
@@ -389,6 +392,8 @@ fields:
         - '25'
         - '26'
         - '27'
+        - '28'
+        - '29'
         - '30'
         - '31'
         - '32'
@@ -400,6 +405,7 @@ fields:
         - '41'
         - '42'
         - '43'
+        - '44'
         - '45'
         - '46'
         - '47'
