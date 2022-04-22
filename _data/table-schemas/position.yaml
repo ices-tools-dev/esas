@@ -200,7 +200,7 @@ fields:
 
   - name: CloudCover
     description: >
-      Cloud cover expressed as x/8 (octas). Uses the 
+      Cloud cover expressed as x/8 (okta). Uses the 
       [CloudCover](http://vocab.ices.dk/?ref=1706) vocabulary.
     type: string
     format: default
