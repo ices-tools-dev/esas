@@ -31,7 +31,7 @@ github_username: ices-tools-dev/esas
 
 # THEME SETTINGS
 theme: minima
-remote_theme: peterdesmet/petridish@1.1 
+remote_theme: peterdesmet/petridish@2.0 
 colors:
   links: "#2b95a0"  # ICES blue
   banner: "#f15d2a" # ICES banner orange
