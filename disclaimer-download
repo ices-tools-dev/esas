@@ -1,0 +1,64 @@
+DATA DISCLAIMER
+1. IMPORTANT
+Thank you for downloading data from the International Council for the Exploration of the Sea (ICES). 
+By downloading data from the ICES website and sub-domains [ices.dk] you are agreeing to the terms and conditions of use as described in this document and any documents referred to in this text.
+Please read this before using the downloaded data, as this file contains specific information about the use of the data provided, limitations, and known issues. This file contains contact information regarding the origins of the data (where supplied) as well as how to cite these data in a publication or a data product. 
+This file is the counterpart to the data download with the code: 
+LAYERNAMEXXX, requested from https://esas.ices.dk on DATETIMEXXX. 
+
+2. CONTACT INFORMATION
+For feedback or queries about this data download, contact ICES at:
+Email: accessions@ices.dk
+Tel.:	+45 3338 6700
+Find more information at:
+Web:	https://www.ices.dk/data/Pages/default.aspx
+
+
+3. DATA SPECIFIC INFORMATION
+Information about the ESAS data and formats can be found in the links in section 7. 
+ 
+The Download ZIP bundle includes the requested data file in the CSV format (description on this link) 
+ http://datsu.ices.dk/web/selRep.aspx?Dataset=148, and the data disclaimer.  
+ 
+Note that additional data, such as methods and quality assurance may be available. Please consult the ESAS landing page for further information:
+ https://esas.ices.dk
+
+4. TERMS OF USE: DATA 
+By maximizing the availability of data to the community at large, ICES promotes the use of these data, thereby ensuring that their maximum value can be realized and thus contribute to an increased understanding of the marine environment.
+
+The full ICES data policy and terms of use can be viewed at:
+ https://ices.dk/data/guidelines-and-policy/Pages/ICES-data-policy.aspx.
+
+Data provided from the website are classified as either 'Public' or 'Restricted: 
+ Public data are covered by the CC BY 4.0 open access data license.
+   https://creativecommons.org/licenses/by/4.0
+ Restricted data are available only on the high metadata level, with special Terms of Use defined in the biodiversity license.
+   https://doi.org/10.17895/ices.pub.9302 
+   
+Data held at ICES are used for various assessments and working group purposes. The data guidelines and procedures for these can be viewed at: 
+ https://ices.dk/data/guidelines-and-policy/Pages/default.aspx
+Data obtained from web services are covered by the same Terms of Use.
+ 
+
+5. TERMS OF USE: SOFTWARE 
+Software is available for use from the ICES website that is provided as an aid for data users to work with, analyse and convert data: 
+https://ices.dk/data/tools/Pages/Software.aspx
+The downloading and use of any software from https://www.ices.dk/ grants you only a limited, nonexclusive license for use solely by you for your own personal use and not for republication, distribution, assignment, sublicense, sale or other use. No part of any content, coding or documentation may be reproduced in any form or incorporated into any information retrieval system without the express permission of ICES or the third party that provided the software on https://www.ices.dk/
+The downloading and installation of software from https://www.ices.dk/ is at your own risk. ICES undertakes every effort to ensure software is compatible with the latest windows operating system, or other systems as defined in specific readme or a software documentation file. ICES accepts no responsibility for the correct functioning and operation of software downloaded from https://www.ices.dk/, nor any incidental, special or consequential damages associated with downloading and installing software provided by ICES.
+
+
+6. DATA CITATION
+Data sources should be acknowledged by a citation. Detailed information and examples of citations can be found in the ICES Data Policy: 
+ https://ices.dk/data/guidelines-and-policy/Pages/ICES-data-policy.aspx.
+A minimum requirement citation would include the following:
+ European Seabirds at Seas (ESAS) (https://esas.ices.dk), 2022. ICES, Copenhagen
+
+Additionally, if the download is predominantly from one or two data providers, please directly acknowledge the data source(s) when using the data:
+XXXXXXXXXXXXXXXXXXXX
+
+
+7. METADATA
+Further details about the dataset and related services can be found at the metadata catalogue.
+ Documentation can be found at https://esas-docs.ices.dk/
+ Citeable metadata record: https://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/XXXXXXXXXXXXXXXXXXXXXX
+ Services (API): https://esas.ices.dk/webservices
