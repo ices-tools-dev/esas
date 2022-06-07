@@ -61,43 +61,6 @@ fields:
       required: true
       maxLength: 20
 
-  - name: DataCustodian
-    description: |
-      Organization that uploaded and ensures appropriate maintenance of the resource. Uses the 
-      [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary.
-    type: integer
-    format: default
-    constraints:
-      required: true
-      enum:
-        - 202
-        - 630
-        - 1375
-        - 1416
-        - 1527
-        - 2125
-        - 2299
-        - 2422
-        - 2827
-        - 3393
-        - 3269
-        - 5045
-        - 5123
-        - 5440
-        - 5441
-        - 5442
-        - 5443
-        - 5444
-
-  - name: DataCustodianContact
-    description: >
-      Email address of the Data Custodian.
-    type: string
-    format: default
-    constraints:
-      required: true
-      maxLength: 50
-
 missingValues:
   - ''
   - NA
