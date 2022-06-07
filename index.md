@@ -3,7 +3,7 @@ title: ESAS data model
 permalink: /
 ---
 
-The [**European Seabirds At Sea (ESAS)**](http://esas.ices.dk/) database assembles monitoring data on offshore seabirds and marine mammals, collected and/or managed by 18 European organizations. This international database mostly includes data from the North Sea (dating back to 1979), but large parts of the northeastern Atlantic Ocean are covered as well. ESAS data are collected during at-sea surveys from a moving ship or aeroplane and according to a methodology that allows to calculate seabird densities. Standard practice further implies collecting as much information as possible on observation conditions, distance to the counted bird(s), age, plumage, behaviour and association with other marine wildlife and/or anthropogenic objects. 
+[**European Seabirds At Sea (ESAS)**](http://esas.ices.dk/) assembles offshore monitoring data on seabirds and marine mammals. This international database mostly includes data from the North Sea, yet large parts of the northeastern Atlantic Ocean are covered as well. It finds its origin in the 'Seabirds At Sea' project, which was initiated in 1979 following the discovery of major oil potential in the North Sea and an urgent need to gain more knowledge on the occurrence and distribution of seabirds in their offshore habitat. This led to the execution of large-scale ship-based surveys across the North Sea using a standardized data collection method and a first European-wide data assembly in 1991.
 
 This website describes the ESAS data model ("format"), which consists of 5 tables ("records") containing a number of fields.
 
