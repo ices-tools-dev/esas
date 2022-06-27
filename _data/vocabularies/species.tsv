@@ -223,7 +223,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6140	Sterna dougallii	Roseate Tern	06140	Sterna dougallii	137160	Sterna dougallii	
 6150	Sterna hirundo	Common Tern	06150	Sterna hirundo	137162	Sterna hirundo	
 6160	Sterna paradisaea	Arctic Tern	06160	Sterna paradisaea	137165	Sterna paradisaea	
-6169	Sterna hirundo / paradisaea	Common / Arctic Tern			137047	Sterna	
+6159	Sterna hirundo / paradisaea	Common / Arctic Tern	06159	Sterna hirundo/paradisaea			137047	Sterna	
 6230	Onychoprion fuscatus	Sooty Tern	06230	Sterna fuscata	567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	06240	Sterna albifrons	567480	Sternula albifrons	
 6250	Sternula saundersi	Saunders's Tern	06250	Sterna saundersi	567839	Sternula saundersi	
