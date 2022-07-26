@@ -1,13 +1,13 @@
 ---
 layout: tables
-title: Data model
+title: Tables
 description: >
   [File Information](#file+information){: .btn .btn-primary }
   [Campaign](#campaign){: .btn .btn-primary }
   [Sample](#sample){: .btn .btn-primary }
   [Position](#position){: .btn .btn-primary }
   [Observation](#observation){: .btn .btn-primary }
-permalink: /data-model/
+permalink: /tables/
 ---
 
 The ESAS data model consists of four hierarchical tables (Campaigns, Samples, Positions, Observations) and one metadata table (File Information) containing information about the submitted data. The tables are described below.
