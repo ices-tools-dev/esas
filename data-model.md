@@ -3,10 +3,10 @@ layout: tables
 title: Data model
 description: >
   [File Information](#file+information){: .btn .btn-primary }
-  [Campaigns](#campaigns){: .btn .btn-primary }
-  [Samples](#samples){: .btn .btn-primary }
-  [Positions](#positions){: .btn .btn-primary }
-  [Observations](#observations){: .btn .btn-primary }
+  [Campaign](#campaign){: .btn .btn-primary }
+  [Sample](#sample){: .btn .btn-primary }
+  [Position](#position){: .btn .btn-primary }
+  [Observation](#observation){: .btn .btn-primary }
 permalink: /data-model/
 ---
 

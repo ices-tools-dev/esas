@@ -1,4 +1,4 @@
-title: Positions
+title: Position
 description: >
   Positions during sampling. Since the platform moves during sampling, these positions often 
   represent the calculated middle point of a trajectory. These trajectories (called "observation 
