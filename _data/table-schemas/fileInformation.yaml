@@ -35,28 +35,29 @@ fields:
     type: integer
     constraints:
       required: true
-      maxLength: 6
-      enum:
-      # Old ESAS codes provided in comments. When multiple, than these organizations have been 
-      # lumped. Others where combinations that have been split.
-        - 202 # 110
-        - 630 # 20, 130, 150, 160, 170, 180
-        - 1375 # 10, 15
-        - 1416 # 40
-        - 1527 # 230 (split)
-        - 2125 # 200
-        - 2299 # 50 (split), 55 (split)
-        - 2422 # 120
-        - 2827 # 11
-        - 3393 # 230 (split)
-        - 3269 # 55 (split)
-        - 5045 # 140
-        - 5123 # 90
-        - 5440 # 30
-        - 5441 # 50 (split)
-        - 5442 # 100
-        - 5443 # 210
-        - 5444 # 220
+      maxLength: 20
+      pattern: '(\d+|~)+' # Does not check for valid codes
+      # Mapping of old codes to EDMO codes:
+      # EDMO | old code
+      # ---- | --------
+      # 202  | 110
+      # 630  | 20, 130, 150, 160, 170, 180
+      # 1375 | 10, 15
+      # 1416 | 40
+      # 1527 | 230 (split)
+      # 2125 | 200
+      # 2299 | 50 (split), 55 (split)
+      # 2422 | 120
+      # 2827 | 11
+      # 3393 | 230 (split)
+      # 3269 | 55 (split)
+      # 5045 | 140
+      # 5123 | 90
+      # 5440 | 30
+      # 5441 | 50 (split)
+      # 5442 | 100
+      # 5443 | 210
+      # 5444 | 220
 
   - name: Country
     description: >
@@ -65,6 +66,7 @@ fields:
     constraints:
       required: true
       maxLength: 20
+      pattern: '([A-Z]{2}|~)+' # Does not check for valid codes
 
 missingValues:
   - ''
