@@ -6,6 +6,7 @@ fields:
   - name: RecordType
     description: >
       Record type. Use `ES` for Sample records.
+      Use `ES` for Sample records.
     type: string
     constraints:
       required: true
@@ -30,26 +31,32 @@ fields:
 
   - name: Date
     description: >
-      Sampling date. Format: `yyyy-mm-dd`.
+      Sampling date, formatted as `YYYY-MM-DD`.
     type: date
     constraints:
       required: true
 
   - name: PlatformCode
     description: >
-      Platform used for sampling. Uses the [SHIPC](https://vocab.ices.dk/?ref=315) vocabulary.
+      Platform from which sampling took place.
     type: string
+    vocabulary:
+      text: SHIPC
+      href: https://vocab.ices.dk/?ref=315
     constraints:
       required: true
 
   - name: PlatformClass
     description: |
-      Type of the platform used for sampling. Uses the 
-      [Platform Class](https://vocab.ices.dk/?ref=311) vocabulary:
+      Type of the platform.
+
       - `30` [Ship](https://vocab.ices.dk/?CodeID=120897)
       - `62` [Aeroplane](https://vocab.ices.dk/?CodeID=137773)
       - `62` [Helicopter](https://vocab.ices.dk/?CodeID=120899)
     type: string
+    vocabulary:
+      text: Platform Class
+      href: https://vocab.ices.dk/?ref=311
     constraints:
       required: true
       enum:
@@ -59,8 +66,8 @@ fields:
 
   - name: PlatformSide
     description: |
-      Side of the platform used for sampling. Uses the
-      [PlatformSide](http://vocab.ices.dk/?ref=1688) vocabulary:
+      Side of the platform from which sampling took place.
+
       - `right` Starboard
       - `right front`
       - `right back`
@@ -69,6 +76,9 @@ fields:
       - `left back`
       - `both` Observers on both sides producing one collective data stream
     type: string
+    vocabulary:
+      text: PlatformSide
+      href: http://vocab.ices.dk/?ref=1688
     constraints:
       required: false
       enum:
@@ -82,26 +92,26 @@ fields:
 
   - name: PlatformHeight
     description: >
-      Height (m) of the platform during sampling, e.g. average flying height of aeroplane.
+      Height (in m) of the platform during sampling, e.g. average flying height of airplane.
     type: number
     constraints:
       required: false
 
   - name: TransectWidth
     description: >
-      Width of the sampling transect (m).
+      Width (in m) of the sampling transect.
     type: integer
     constraints:
       required: true
  
   - name: SamplingMethod
     description: |
-      Sampling method. Uses the 
-      [BD_CountMethod](https://vocab.ices.dk/?CodeTypeRelID=1440&CodeID=235388) vocabulary:
+      Sampling method.
+
       - `1` Full ship-based transect method with snapshot for flying birds
       - `2` Full ship-based transect method, no snapshot for flying birds
       - `3` All observations, but no transect operated
-      - `4` Presence/absence data
+      - `4` Presence/absence data only
       - `5` Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
       - `6` Ship-based strip transect, no snapshot, no distance estimation
       - `7` Ship-based strip transect, with snapshot, no distance estimation
@@ -111,6 +121,9 @@ fields:
       - `11` Digital aerial – video
       - `12` Digital aerial – stills
     type: string
+    vocabulary:
+      text: BD_CountMethod
+      href: http://vocab.ices.dk/?ref=1440
     constraints:
       required: true
       enum:
@@ -129,16 +142,19 @@ fields:
 
   - name: PrimarySampling
     description: >
-      Whether the sample should be considered primary (`true`) or ancillary (`false`) in case of 
-      double or triple observer sampling.
+      Whether the sample should be considered primary (`True`) or ancillary (`False`) in the case 
+      of observers recording concurrent but independent data streams.
     type: boolean
+    vocabulary:
+      text: Boolean
+      href: http://vocab.ices.dk/?ref=1690
     constraints:
       required: false
 
   - name: TargetTaxa
     description: |
-      Species (groups) that were counted during sampling. Uses the 
-      [TargetTaxa](http://vocab.ices.dk/?ref=1713) vocabulary:
+      Species (groups) that were counted during sampling.
+
       - `1` All species recorded (standard)
       - `2` All species except Larus gulls
       - `3` All species except fulmars
@@ -159,6 +175,9 @@ fields:
       - `18` Cetaceans and rare birds only
       - `99` Other
     type: string
+    vocabulary:
+      text: TargetTaxa
+      href: http://vocab.ices.dk/?ref=1713
     constraints:
       required: true
       enum:
@@ -184,9 +203,9 @@ fields:
 
   - name: DistanceBins
     description: >
-      List of distance bin boundaries applied during sampling and to be used for distance analyses. 
-      Format: `x|x|...|x`. For typical ship-based sampling using a 300 m wide transect this would 
-      be `0|50|100|200|300`.
+      List of distance bin boundaries applied during sampling and to be used for distance analyses, 
+      formatted as `x|x|...|x`.
+      For a typical ship-based sample using a 300 m wide transect this would be `0|50|100|200|300`.
     type: string
     constraints:
       required: false
@@ -195,12 +214,15 @@ fields:
 
   - name: UseOfBinoculars
     description: |
-      Extent to which binoculars were used during sampling. Uses the 
-      [UseOfBinoculars](http://vocab.ices.dk/?ref=1719) vocabulary:
+      Extent to which binoculars were used during sampling.
+      
       - `1` No binoculars used
       - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
     type: string
+    vocabulary:
+      text: UseOfBinoculars
+      href: http://vocab.ices.dk/?ref=1719
     constraints:
       required: false
       enum:
@@ -217,8 +239,8 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the sample, such as the name of the ship if no `SHIPC` code 
-      exists.
+      Additional details about the sample, such as the name of the ship in case it has no `SHIPC` 
+      code.
     type: string
     constraints:
       required: false

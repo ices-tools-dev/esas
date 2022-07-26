@@ -6,7 +6,8 @@ description: >
 fields:
   - name: RecordType
     description: >
-      Record type. Use `EP` for Position records.
+      Record type.
+      Use `EP` for Position records.
     type: string
     constraints:
       required: true
@@ -31,8 +32,7 @@ fields:
 
   - name: Time
     description: >
-      UTC time of the observation bin, defined as the start time of the trajectory. Format: 
-      `hh:mm:ss`.
+      UTC time at the start of the trajectory/observation bin of this position, formatted as `hh:mm:ss`.
     type: time
     constraints:
       required: true
@@ -40,6 +40,7 @@ fields:
   - name: Latitude
     description: >
       Latitude of the position in decimal degrees, using the WGS84 datum.
+      Often the calculated midpoint of a trajectory.
     type: number
     constraints:
       required: true
@@ -49,6 +50,7 @@ fields:
   - name: Longitude
     description: >
       Longitude of the position in decimal degrees, using the WGS84 datum.
+      Often the calculated midpoint of a trajectory.
     type: number
     constraints:
       required: true
@@ -57,23 +59,24 @@ fields:
 
   - name: Distance
     description: >
-      Distance travelled during the observation bin in km. Can only remain empty if `Area` is used.
+      Distance (in km) traveled during the observation bin.
+      Can only remain empty if `Area` is used.
     type: number
     constraints:
       required: false
 
   - name: Area
     description: >
-      Area of sea surveyed during the observation bin in km². Can only remain empty if `Distance` 
-      is used.
+      Area (in km²) of sea surveyed during the observation bin.
+      Can only remain empty if `Distance` is used.
     type: number
-    format: default
     constraints:
       required: false
 
   - name: WindForce
     description: |
-      Wind force and sea state according to the Beaufort scale. Uses the [Beaufort](http://vocab.ices.dk/?ref=1705) vocabulary:
+      Wind force and sea state according to the Beaufort scale.
+
       - `0` Calm - Sea like mirror
       - `1` Light air - Ripples with appearance of scales, no foam crests
       - `2` Light breeze - Small wavelets, crests of glassy appearance, not breaking
@@ -88,6 +91,9 @@ fields:
       - `11` Violent storm - Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
       - `12` Hurricane force - Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
     type: string
+    vocabulary:
+      text: Beaufort
+      href: http://vocab.ices.dk/?ref=1705
     constraints:
       required: false
       enum:
@@ -107,37 +113,17 @@ fields:
 
   - name: Visibility
     description: |
-      Visibility in kilometer, uses the [Visibility](http://vocab.ices.dk/?ref=1708) vocabulary:
-      - `0.1`
-      - `0.2`
-      - `0.3`
-      - `0.4`
-      - `0.5`
-      - `0.6`
-      - `0.7`
-      - `0.8`
-      - `0.9`
-      - `1`
-      - `1.5`
-      - `2`
-      - `2.5`
-      - `3`
-      - `3.5`
-      - `4`
-      - `5`
-      - `6`
-      - `7`
-      - `8`
-      - `9`
-      - `10` Visibility of >= 10 km
+      Visibility (in km).
+      Use a range code (`A`-`D`) for historical data.
 
-      Or as a range (historical codes, avoid use):
-      - `A` Poor (< 1 km)
-      - `B` Fair/moderate (1 – 5 km)
-      - `C` Good/very good (5 – 10 km)
-      - `D` Excellent/infinity (> 10 km)
+      - `A` Poor (< 1 km) or express as `0.1`, `0.2`, `0.3`, ...
+      - `B` Fair/moderate (1 – 5 km) or express as `1`, `1.5`, ...
+      - `C` Good/very good (5 – 10 km) or express as `5`, `6`, ...
       - `D` Excellent/infinity (> 10 km) or express as `10`
     type: string
+    vocabulary:
+      text: Visibility
+      href: http://vocab.ices.dk/?ref=1708
     constraints:
       required: false
       enum:
@@ -170,13 +156,16 @@ fields:
 
   - name: Glare
     description: |
-      Glare that could be affecting the observation quality. Uses the
-      [Glare](http://vocab.ices.dk/?ref=1717) vocabulary:
+      Glare that could be affecting observation quality.
+
       - `none` No glare
       - `weak` Weak glare (no major effect on the counting)
       - `medium` Medium glare (a part of the viewing area is affected by glare)
       - `strong` Strong glare (the whole viewing area is affected)
     type: string
+    vocabulary:
+      text: Glare
+      href: http://vocab.ices.dk/?ref=1717
     constraints:
       required: false
       enum:
@@ -187,7 +176,7 @@ fields:
 
   - name: SunAngle
     description: >
-      Angle of the sun in relation to the observer (`0` – `359`).
+      Angle of the sun in relation to the observer (`0`–`359`), with `0` being straight ahead.
     type: integer
     constraints:
       required: false
@@ -196,10 +185,11 @@ fields:
 
   - name: CloudCover
     description: >
-      Cloud cover expressed as x/8 (okta). Uses the 
-      [CloudCover](http://vocab.ices.dk/?ref=1706) vocabulary.
       Cloud cover (in oktas).
     type: string
+    vocabulary:
+      text: CloudCover
+      href: http://vocab.ices.dk/?ref=1706
     constraints:
       required: false
       enum:
@@ -215,12 +205,16 @@ fields:
 
   - name: Precipitation
     description: |
-      Uses the [Precipitation vocabulary](http://vocab.ices.dk/?ref=1707):
+      Precipitation.
+
       - `N` None
       - `R` Rain
       - `S` Snow
       - `F` Fog
     type: string
+    vocabulary:
+      text: Precipitation
+      href: http://vocab.ices.dk/?ref=1707
     constraints:
       required: false
       enum:
@@ -231,7 +225,7 @@ fields:
 
   - name: IceCover
     description: >
-      Ice coverage within the transect % (`0` – `100`).
+      Ice cover percentage within the transect.
     type: integer
     constraints:
       required: false
@@ -240,12 +234,15 @@ fields:
 
   - name: ObservationConditions
     description: |
-      General impression of the observation conditions. Uses the 
-      [Sightability](https://vocab.ices.dk/?ref=1704) vocabulary:
+      General impression of the observation conditions.
+      
       - `G` Good
       - `M` Moderate
       - `P` Poor
     type: string
+    vocabulary:
+      text: Sightability
+      href: https://vocab.ices.dk/?ref=1704
     constraints:
       required: false
       enum:

@@ -4,7 +4,8 @@ description: >
 fields:
   - name: RecordType
     description: >
-      Record type. Use `FI` for Information records.
+      Record type.
+      Use `FI` for Information records.
     type: string
     constraints:
       required: true
@@ -12,8 +13,9 @@ fields:
 
   - name: DataRightsHolder
     description: |
-      Organisation who has ownership of the legal rights to the resource. Combine multiple values 
-      with `~`. Uses the [EDMO](https://vocab.ices.dk/?ref=1398) vocabulary:
+      Organization owning the legal rights over the resource.
+      Combine multiple values with `~`.
+      
       - [`202`](https://edmo.seadatanet.org/report/202) Research Institute for Nature and Forest (INBO)
       - [`630`](https://edmo.seadatanet.org/report/630) NIOZ Royal Netherlands Institute for Sea Research (NIOZ)
       - [`1375`](https://edmo.seadatanet.org/report/1375) Joint Nature Conservation Committee, Aberdeen Office (JNCC)
@@ -33,6 +35,9 @@ fields:
       - [`5443`](https://edmo.seadatanet.org/report/5443) Portuguese Society for the Study of Birds (SPEA)
       - [`5444`](https://edmo.seadatanet.org/report/5444) Cork Ecology
     type: integer
+    vocabulary:
+      text: EDMO
+      href: https://vocab.ices.dk/?ref=1398
     constraints:
       required: true
       maxLength: 20
@@ -61,8 +66,12 @@ fields:
 
   - name: Country
     description: >
-      Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
+      Country associated with the `DataRightsHolder`.
+      Combine multiple values with `~` in the same order as `DataRightsHolder`.
     type: string
+    vocabulary:
+      text: ISO_3166
+      href: http://vocab.ices.dk/?ref=337
     constraints:
       required: true
       maxLength: 20

@@ -18,14 +18,16 @@ layout: base
         <thead>
           <tr>
             <th>Name</th>
-            <th>Definition</th>
+            <th>Description</th>
             <th>Type</th>
+            <th>Vocabulary</th>
           </tr>
         </thead>
         <tbody>
           <col width="20%">
           <col width="60%">
-          <col width="20%">
+          <col width="10%">
+          <col width="10%">
           {% for field in table_schema.fields %}
             <tr>
               <td id="{{ field.name | downcase | url_encode }}">
@@ -35,16 +37,22 @@ layout: base
               <td>
                 {{ field.description | markdownify }}
                 {% if field.constraints %}
+                  <strong>Constraints</strong>
                   <ul>
                     {% for constraint in field.constraints %}
-                      {% if constraint[0] != 'required' and constraint[0] != 'enum' %}
-                        <li>{{ constraint[0] }}: <code>{{ constraint[1] }}</code></li>
+                      {% if constraint[0] != 'enum' %}
+                      <li>{{ constraint[0] }}: <code>{{ constraint[1] | join: ", " }}</code></li>
                       {% endif %}
                     {% endfor %}
                   </ul>
                 {% endif %}
               </td>
               <td>{{ field.type }}</td>
+              <td>
+                {% if field.vocabulary %}
+                  <a href="{{ field.vocabulary.href }}">{{ field.vocabulary.text }}</a>
+                {% endif %}
+              </td>
             </tr>
           {% endfor %}
         </tbody>

@@ -5,7 +5,8 @@ description: >
 fields:
   - name: RecordType
     description: >
-      Record type. Use `EO` for Observation records.
+      Record type.
+      Use `EO` for Observation records.
     type: string
     constraints:
       required: true
@@ -30,8 +31,9 @@ fields:
 
   - name: GroupID
     description: >
-      Identifier of aggregations of individuals of one or several species. Should be unique among 
-      all observations from the same `SampleID`.
+      Unique identifier for an aggregation of individuals.
+      Observations in a Sample with the same `GroupID` are thus indicated as being observed as 
+      part of the same group.
     type: string
     constraints:
       required: false
@@ -39,18 +41,23 @@ fields:
 
   - name: Transect
     description: >
-      Whether the observation was in (`TRUE`) or out (`FALSE`) of the transect.
+      Whether the observation was in (`True`) or out (`False`) of the transect.
     type: boolean
+    vocabulary:
+      text: Boolean
+      href: http://vocab.ices.dk/?ref=1690
     constraints:
       required: true
 
   - name: SpeciesCodeType
     description: |
-      Reference list for the `SpeciesCode`. Uses the [RLIST](https://vocab.ices.dk/?ref=44) 
-      vocabulary:
-      - `ESAS`: [European Seabirds at Sea](../species/) species codes
-      - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia IDs
+      Type of `SpeciesCode`.
+      - `ESAS`: [European Seabirds at Sea](../species/) species code
+      - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia ID
     type: string
+    vocabulary:
+      text: RLIST
+      href: https://vocab.ices.dk/?ref=44
     constraints:
       required: true
       enum:
@@ -59,8 +66,8 @@ fields:
 
   - name: SpeciesCode
     description: >
-      Code of the observed species, see the [lookup 
-      table](https://esas-docs.ices.dk/species/).
+      Code of the observed species.
+      See the [species lookup table](https://esas-docs.ices.dk/species/).
     type: string
     constraints:
       required: true
@@ -112,19 +119,21 @@ fields:
 
   - name: Count
     description: >
-      Number of birds or marine mammals counted or estimated. This should equal the number without 
-      distance correction.
+      Number of animals counted or estimated.
+      This should equal the number without distance correction.
     type: integer
     constraints:
       required: true
 
   - name: ObservationDistance
     description: |
-      Distance at which the birds or marine mammals were observed.
+      Distance (in m) at which the animal(s) was observed.
+      Use the optional [ObservationDistance](https://vocab.ices.dk/?ref=1714) vocabulary or an 
+      integer.
 
       In case of the standard 300 m transect used for ship-based sampling of marine mammals and 
-      birds in contact with the water, the 
-      [ObservationDistance](https://vocab.ices.dk/?ref=1714) vocabulary is used:
+      birds in contact with the water, use the 
+      [ObservationDistance](https://vocab.ices.dk/?ref=1714) vocabulary:
       - `A` In contact with the water, 0 - 50 m
       - `B` In contact with the water, 50 - 100 m
       - `C` In contact with the water, 100 - 200 m
@@ -133,10 +142,13 @@ fields:
       - `F` Flying, no contact with water
       - `W` In contact with the water, but distance not recorded
 
-      For any other type of distance bin classification, the distance is an integer indicating the 
-      distance (m) to middle point of one the distance bins specified in the `DistanceBins`. 
+      For any other type of distance bin classification, use an integer indicating the distance 
+      (in m) to the midpoint of one the distance bins specified in the `DistanceBins`.
       Observations outside this transect are indicated by a `>` sign (e.g. `>1000`).
     type: string
+    vocabulary:
+      text: ObservationDistance
+      href: https://vocab.ices.dk/?ref=1714
     constraints:
       required: false
       maxLength: 8
@@ -144,7 +156,7 @@ fields:
 
   - name: LifeStage
     description: |
-      Life stage based on plumage. Uses the [LifeStage](http://vocab.ices.dk/?ref=1715) vocabulary:
+      Life stage of the animal(s), based on plumage.
       - `A` Adult
       - `I` Immature (not specified)
         - `1` 1st calendar year (juvenile)
@@ -153,6 +165,9 @@ fields:
         - `4` 4th calendar year
         - `5` 5th calendar year
     type: string
+    vocabulary:
+      text: LifeStage
+      href: http://vocab.ices.dk/?ref=1715
     constraints:
       required: false
       enum:
@@ -166,11 +181,15 @@ fields:
 
   - name: Moult
     description: |
-      Primary moult information, only used for fulmar, auks, divers and seaducks. Uses the
-      [Moult](http://vocab.ices.dk/?ref=1720) vocabulary:
+      Primary moult of the animal(s).
+      Only used for fulmar, auks, divers and seaduck.
+
       - `X` Active primary moult
       - `Y` No active primary moult
     type: string
+    vocabulary:
+      text: Moult
+      href: http://vocab.ices.dk/?ref=1720
     constraints:
       required: false
       enum:
@@ -179,7 +198,8 @@ fields:
 
   - name: Plumage
     description: |
-      Plumage types. Uses the [Plumage](http://vocab.ices.dk/?ref=1716) vocabulary:
+      Plumage type of the animal(s).
+
       - `B` Breeding (summer) plumage
       - `T` Transient plumage (moulting between winter & summer plumage or vice-versa)
       - `W` Non-breeding (winter) plumage
@@ -201,6 +221,9 @@ fields:
       - `G4` Plumage 4
       - `G5` Plumage 5
     type: string
+    vocabulary:
+      text: Plumage
+      href: http://vocab.ices.dk/?ref=1716
     constraints:
       required: false
       enum:
@@ -223,7 +246,8 @@ fields:
 
   - name: Sex
     description: |
-      Sex. Uses the [SEXCO](https://vocab.ices.dk/?CodeID=54287) vocabulary:
+      Sex of the animal(s).
+
       - `F` Female
       - `M` Male 
     type: string
@@ -238,22 +262,13 @@ fields:
 
   - name: TravelDirection
     description: |
-      Direction in which the bird/cetacean is travelling. Uses the
-      [TravelDirection](http://vocab.ices.dk/?ref=1689) vocabulary.
-      
-      Either absolute, indicated as (inter)cardinal directions:
-      - `N` Heading N
-      - `NE` Heading NE
-      - `E` Heading E
-      - `SE` Heading SE
-      - `S` Heading S
-      - `SW` Heading SW
-      - `W` Heading W
-      - `NW` Heading NW
-      - `U` Flying, no apparent direction
-
-      Or relative to the direction of the platform, indicated in degrees with 10° increments.
+      Direction in which the animal(s) is traveling.
+      Use degrees (10° increments) to indicate directions relative to the direction of the platform 
+      and (inter)cardinal directions (e.g. `NE` for heading Northwest) for absolute directions.
     type: string
+    vocabulary:
+      text: TravelDirection
+      href: http://vocab.ices.dk/?ref=1689
     constraints:
       required: false
       enum:
@@ -306,8 +321,8 @@ fields:
 
   - name: Prey
     description: |
-      Observed prey (type) caught or carried by the bird/cetacean. Uses the
-      [PreyType](http://vocab.ices.dk/?ref=1687) vocabulary:
+      Observed prey (type) caught or carried by the animal(s).
+
       - `9` Other item
       - `10` Fish, no further details
       - `11` Small fish, unidentified (ca. bill length)
@@ -361,6 +376,9 @@ fields:
       - `66` Discarded crustacean
       - `70` Seaweed as nest material
     type: string
+    vocabulary:
+      text: PreyType
+      href: http://vocab.ices.dk/?ref=1687
     constraints:
       required: false
       enum:
@@ -420,12 +438,11 @@ fields:
 
   - name: Association
     description: |
-      Associations between the observed birds/cetaceans and vessels/structures/floating matter.
-      Uses the [Association](http://vocab.ices.dk/?ref=1718) vocabulary.
-      Combine multiple values with `~`. Originally described in [Camphuysen & Garthe 
-      (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 1. `MSFA` stands for 
-      multi-species feeding association ([Camphuysen & Webb, 
-      1999](http://www.vliz.be/nl/imis?module=ref&refid=247203)).
+      Associations between the animal(s) and vessels/structures/floating matter.
+      Combine multiple values with `~`.
+      Originally described in
+      [Camphuysen & Garthe (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 1.
+
       - `10` Associated with fish shoal
       - `11` Associated with cetaceans
       - `12` Associated with front
@@ -469,7 +486,13 @@ fields:
       - `116` Sitting on wind turbine (foundation)
       - `117` Flying or swimming near wind turbine (foundation)
       - `200` Flying between (turbine) foundations
+
+      `MSFA` stands for multi-species feeding association 
+      ([Camphuysen & Webb, 1999](http://www.vliz.be/nl/imis?module=ref&refid=247203)).
     type: string
+    vocabulary:
+      text: Association
+      href: http://vocab.ices.dk/?ref=1718
     constraints:
       required: false
       maxLength: 30
@@ -478,10 +501,11 @@ fields:
 
   - name: Behaviour
     description: |
-      Indicates what the species was doing when observed. Uses the 
-      [Behaviour](http://vocab.ices.dk/?ref=1709) vocabulary. Combine multiple values with `~`.
-      Originally described in [Camphuysen & Garthe 
-      (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 2.
+      Observed behaviour of the animal(s).
+      Combine multiple values with `~`.
+      Originally described in
+      [Camphuysen & Garthe (2004)](http://www.vliz.be/nl/imis?module=ref&refid=69244) Appendix 2.
+      
       - `30` Holding fish
       - `31` Without fish
       - `32` Feeding young at sea
@@ -560,6 +584,9 @@ fields:
       - `122` Diving (marine mammals)
       - `123` Head out of water (seals)
     type: string
+    vocabulary:
+      text: Behaviour
+      href: http://vocab.ices.dk/?ref=1709
     constraints:
       required: false
       maxLength: 5
@@ -578,9 +605,8 @@ fields:
 
   - name: Notes
     description: >
-      Additional details related to the observation.
+      Additional details about to the observation.
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 300

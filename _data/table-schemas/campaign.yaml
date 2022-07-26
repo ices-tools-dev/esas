@@ -12,8 +12,9 @@ fields:
 
   - name: CampaignID
     description: >
-      Unique identifier for the campaign. Should be a globally unique and permanent identifier to 
-      allow re-uploads.
+      Unique identifier for the campaign.
+      Choose a stable identifier, as it is used in combination with `DataRightsHolder` to detect 
+      resubmissions of data.
     type: string
     constraints:
       required: true
@@ -21,12 +22,14 @@ fields:
       maxLength: 50
 
   - name: DataAccess
-    description: |
-      Whether data for the campaign can be made publicly accessible under the conditions of the 
-      ICES data policy. Uses the [Data_access](https://vocab.ices.dk/?ref=1435) vocabulary:
-      - `Public`
-      - `Restricted`
+    description: >
+      Access to the data (`Public` or `Restricted`).
+      See the [ICES Data Policy](https://www.ices.dk/data/guidelines-and-policy/Pages/ICES-data-policy.aspx) 
+      for conditions.
     type: string
+    vocabulary:
+      text: Data_access
+      href: https://vocab.ices.dk/?ref=1435
     constraints:
       required: true
       enum:
@@ -35,22 +38,21 @@ fields:
 
   - name: StartDate
     description: >
-      Start date of the campaign. Format: `yyyy-mm-dd`.
+      Start date of the campaign, formatted as `YYYY-MM-DD`.
     type: date
     constraints:
       required: false
 
   - name: EndDate
     description: >
-      End date of the campaign. Format: `yyyy-mm-dd`.
+      End date of the campaign, formatted as `YYYY-MM-DD`.
     type: date
     constraints:
       required: false
 
   - name: Notes
     description: >
-      Additional details related to the campaign, such as research purpose, area covered or route 
-      followed.
+      Additional details about the campaign, such as research purpose, area covered or route.
     type: string
     constraints:
       required: false
