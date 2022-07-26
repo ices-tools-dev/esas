@@ -1,11 +1,12 @@
 title: Sample
 description: >
-  Sampling events during a campaign, with a specific methodology. Use separate sample records when 
-  multiple observers are producing independent data streams.
+  Information about a sampling event during a campaign.
+  Use separate sample records for different dates, platform sides, methodologies, or observers 
+  recording concurrent but independent data streams.
 fields:
   - name: RecordType
     description: >
-      Record type. Use `ES` for Sample records.
+      Record type.
       Use `ES` for Sample records.
     type: string
     constraints:

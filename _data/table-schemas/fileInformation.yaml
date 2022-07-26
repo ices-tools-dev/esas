@@ -1,6 +1,8 @@
 title: File Information
 description: >
-  Campaigns that generated the data.
+  Metadata about the submitted data.
+  A file can contain data about multiple campaigns, as long as they are associated with the same 
+  data rights holder(s).
 fields:
   - name: RecordType
     description: >

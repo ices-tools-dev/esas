@@ -1,6 +1,6 @@
 title: Campaign
 description: >
-  Campaigns that generated the data.
+  Information about the campaign on which data were collected.
 fields:
   - name: RecordType
     description: >

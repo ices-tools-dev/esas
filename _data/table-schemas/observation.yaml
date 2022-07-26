@@ -1,7 +1,7 @@
 title: Observation
 description: >
-  Observation of a group of birds or marine mammals of a certain species. Use separate observations 
-  to distinguish between species, ages, etc.
+  Information about an observation of a group of birds or marine mammals.
+  Use separate observation records to distinguish between species, age, etc.
 fields:
   - name: RecordType
     description: >
