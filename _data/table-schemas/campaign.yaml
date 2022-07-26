@@ -15,7 +15,6 @@ fields:
       Unique identifier for the campaign. Should be a globally unique and permanent identifier to 
       allow re-uploads.
     type: string
-    format: default
     constraints:
       required: true
       unique: true
@@ -28,10 +27,8 @@ fields:
       - `Public`
       - `Restricted`
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 15
       enum:
         - Public
         - Restricted
@@ -40,7 +37,6 @@ fields:
     description: >
       Start date of the campaign. Format: `yyyy-mm-dd`.
     type: date
-    format: default
     constraints:
       required: false
 
@@ -48,7 +44,6 @@ fields:
     description: >
       End date of the campaign. Format: `yyyy-mm-dd`.
     type: date
-    format: default
     constraints:
       required: false
 
@@ -57,7 +52,6 @@ fields:
       Additional details related to the campaign, such as research purpose, area covered or route 
       followed.
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 300

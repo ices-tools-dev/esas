@@ -15,7 +15,6 @@ fields:
     description: >
       Unique identifier of the position this observation belongs to.
     type: string
-    format: default
     constraints:
       required: true
       maxLength: 50
@@ -24,7 +23,6 @@ fields:
     description: >
       Unique identifier for the observation.
     type: string
-    format: default
     constraints:
       required: true
       unique: true
@@ -35,7 +33,6 @@ fields:
       Identifier of aggregations of individuals of one or several species. Should be unique among 
       all observations from the same `SampleID`.
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 3
@@ -44,7 +41,6 @@ fields:
     description: >
       Whether the observation was in (`TRUE`) or out (`FALSE`) of the transect.
     type: boolean
-    format: default
     constraints:
       required: true
 
@@ -55,10 +51,8 @@ fields:
       - `ESAS`: [European Seabirds at Sea](../species/) species codes
       - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia IDs
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 10
       enum:
         - ESAS
         - ERID
@@ -68,10 +62,8 @@ fields:
       Code of the observed species, see the [lookup 
       table](https://esas-docs.ices.dk/species/).
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 10
       enum: [
         '20', '30', '40', '45', '50', '59', '70', '90', '100', '110', '120', '127', '128', '129',
         '140', '220', '262', '260', '263', '269', '35990', '340', '350', '359', '360', '361',
@@ -123,7 +115,6 @@ fields:
       Number of birds or marine mammals counted or estimated. This should equal the number without 
       distance correction.
     type: integer
-    format: default
     constraints:
       required: true
 
@@ -146,7 +137,6 @@ fields:
       distance (m) to middle point of one the distance bins specified in the `DistanceBins`. 
       Observations outside this transect are indicated by a `>` sign (e.g. `>1000`).
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 8
@@ -163,10 +153,8 @@ fields:
         - `4` 4th calendar year
         - `5` 5th calendar year
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2
       enum:
         - A
         - I
@@ -183,10 +171,8 @@ fields:
       - `X` Active primary moult
       - `Y` No active primary moult
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2
       enum:
         - 'X'
         - 'Y'
@@ -215,10 +201,8 @@ fields:
       - `G4` Plumage 4
       - `G5` Plumage 5
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 3
       enum:
         - B
         - T
@@ -243,10 +227,11 @@ fields:
       - `F` Female
       - `M` Male 
     type: string
-    format: default
+    vocabulary:
+      text: SEXCO
+      href: https://vocab.ices.dk/?CodeID=54287
     constraints:
       required: false
-      maxLength: 2
       enum:
         - F
         - M
@@ -269,10 +254,8 @@ fields:
 
       Or relative to the direction of the platform, indicated in degrees with 10° increments.
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 3
       enum:
         - 'N'
         - 'NE'
@@ -378,10 +361,8 @@ fields:
       - `66` Discarded crustacean
       - `70` Seaweed as nest material
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 4
       enum:
         # Old codes for unknown: 0, 1, 2, 3, 4, 5, 6, 7, 8, 18, 39, 49, 68, 71, 72, 90, 92, 99
         - '9'
@@ -489,7 +470,6 @@ fields:
       - `117` Flying or swimming near wind turbine (foundation)
       - `200` Flying between (turbine) foundations
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 30
@@ -580,7 +560,6 @@ fields:
       - `122` Diving (marine mammals)
       - `123` Head out of water (seals)
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 5

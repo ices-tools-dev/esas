@@ -16,7 +16,6 @@ fields:
     description: >
       Unique identifier of the sample this position belongs to.
     type: string
-    format: default
     constraints:
       required: true
       maxLength: 50
@@ -25,7 +24,6 @@ fields:
     description: >
       Unique identifier for the position.
     type: string
-    format: default
     constraints:
       required: true
       unique: true
@@ -36,7 +34,6 @@ fields:
       UTC time of the observation bin, defined as the start time of the trajectory. Format: 
       `hh:mm:ss`.
     type: time
-    format: default
     constraints:
       required: true
 
@@ -44,7 +41,6 @@ fields:
     description: >
       Latitude of the position in decimal degrees, using the WGS84 datum.
     type: number
-    format: default
     constraints:
       required: true
       minimum: -90
@@ -54,7 +50,6 @@ fields:
     description: >
       Longitude of the position in decimal degrees, using the WGS84 datum.
     type: number
-    format: default
     constraints:
       required: true
       minimum: -180
@@ -64,7 +59,6 @@ fields:
     description: >
       Distance travelled during the observation bin in km. Can only remain empty if `Area` is used.
     type: number
-    format: default
     constraints:
       required: false
 
@@ -94,10 +88,8 @@ fields:
       - `11` Violent storm - Exceptionally high waves (medium sized ships may be lost to view behind waves); sea covered with long white patches of foam lying along the wind; everywhere edges of crests are blown into froth; visibility affected
       - `12` Hurricane force - Air is filled with foam and spray; sea completely white with driving spray; visibility seriously affected
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2
       enum:
         - '0'
         - '1'
@@ -144,11 +136,10 @@ fields:
       - `B` Fair/moderate (1 – 5 km)
       - `C` Good/very good (5 – 10 km)
       - `D` Excellent/infinity (> 10 km)
+      - `D` Excellent/infinity (> 10 km) or express as `10`
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 3
       enum:
         - '0.1'
         - '0.2'
@@ -186,10 +177,8 @@ fields:
       - `medium` Medium glare (a part of the viewing area is affected by glare)
       - `strong` Strong glare (the whole viewing area is affected)
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 25
       enum:
         - none
         - weak
@@ -200,7 +189,6 @@ fields:
     description: >
       Angle of the sun in relation to the observer (`0` – `359`).
     type: integer
-    format: default
     constraints:
       required: false
       minimum: 0
@@ -210,11 +198,10 @@ fields:
     description: >
       Cloud cover expressed as x/8 (okta). Uses the 
       [CloudCover](http://vocab.ices.dk/?ref=1706) vocabulary.
+      Cloud cover (in oktas).
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2
       enum:
         - '0'
         - '1'
@@ -234,10 +221,8 @@ fields:
       - `S` Snow
       - `F` Fog
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2 
       enum:
         - 'N'
         - 'R'
@@ -248,7 +233,6 @@ fields:
     description: >
       Ice coverage within the transect % (`0` – `100`).
     type: integer
-    format: default
     constraints:
       required: false
       minimum: 0
@@ -262,10 +246,8 @@ fields:
       - `M` Moderate
       - `P` Poor
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 3
       enum:
         - G
         - M

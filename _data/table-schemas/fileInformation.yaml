@@ -33,7 +33,6 @@ fields:
       - [`5443`](https://edmo.seadatanet.org/report/5443) Portuguese Society for the Study of Birds (SPEA)
       - [`5444`](https://edmo.seadatanet.org/report/5444) Cork Ecology
     type: integer
-    format: default
     constraints:
       required: true
       maxLength: 6
@@ -61,10 +60,8 @@ fields:
 
   - name: Country
     description: >
-      Country that is associated with the DataRightsHolder. Combine multiple values with `~`. 
       Uses the [ISO-3166](https://vocab.ices.dk/?ref=337) vocabulary.
     type: string
-    format: default
     constraints:
       required: true
       maxLength: 20

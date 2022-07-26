@@ -15,7 +15,6 @@ fields:
     description: >
       Unique identifier of the campaign this sample belongs to.
     type: string
-    format: default
     constraints:
       required: true
       maxLength: 50
@@ -24,7 +23,6 @@ fields:
     description: >
       Unique identifier for the sample.
     type: string
-    format: default
     constraints:
       required: true
       unique: true
@@ -34,7 +32,6 @@ fields:
     description: >
       Sampling date. Format: `yyyy-mm-dd`.
     type: date
-    format: default
     constraints:
       required: true
 
@@ -42,10 +39,8 @@ fields:
     description: >
       Platform used for sampling. Uses the [SHIPC](https://vocab.ices.dk/?ref=315) vocabulary.
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 6
 
   - name: PlatformClass
     description: |
@@ -55,10 +50,8 @@ fields:
       - `62` [Aeroplane](https://vocab.ices.dk/?CodeID=137773)
       - `62` [Helicopter](https://vocab.ices.dk/?CodeID=120899)
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 2
       enum:
         - '30' # Previously: 1
         - '62' # Previously: 3 and 4
@@ -76,10 +69,8 @@ fields:
       - `left back`
       - `both` Observers on both sides producing one collective data stream
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 15
       enum:
         - right       # Previously: 6
         - right front # Previously: 1
@@ -93,7 +84,6 @@ fields:
     description: >
       Height (m) of the platform during sampling, e.g. average flying height of aeroplane.
     type: number
-    format: default
     constraints:
       required: false
 
@@ -101,7 +91,6 @@ fields:
     description: >
       Width of the sampling transect (m).
     type: integer
-    format: default
     constraints:
       required: true
  
@@ -122,10 +111,8 @@ fields:
       - `11` Digital aerial – video
       - `12` Digital aerial – stills
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 10
       enum:
         - '1'
         - '2'
@@ -145,7 +132,6 @@ fields:
       Whether the sample should be considered primary (`true`) or ancillary (`false`) in case of 
       double or triple observer sampling.
     type: boolean
-    format: default
     constraints:
       required: false
 
@@ -173,10 +159,8 @@ fields:
       - `18` Cetaceans and rare birds only
       - `99` Other
     type: string
-    format: default
     constraints:
       required: true
-      maxLength: 3
       enum:
         - '1'
         - '2'
@@ -204,7 +188,6 @@ fields:
       Format: `x|x|...|x`. For typical ship-based sampling using a 300 m wide transect this would 
       be `0|50|100|200|300`.
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 100
@@ -218,10 +201,8 @@ fields:
       - `2` Binoculars used for scanning far ahead of the platform (e.g. for seaduck and diver monitoring)
       - `3` Binoculars used extensively for scanning ahead and to the side, naked eye used for close observations (e.g. for cetacean monitoring)
     type: string
-    format: default
     constraints:
       required: false
-      maxLength: 2
       enum:
         - '1'
         - '2'
@@ -231,7 +212,6 @@ fields:
     description: >
       Number of observers that contributed to the sample.
     type: integer
-    format: default
     constraints:
       required: false
 
@@ -240,7 +220,6 @@ fields:
       Additional details related to the sample, such as the name of the ship if no `SHIPC` code 
       exists.
     type: string
-    format: default
     constraints:
       required: false
       maxLength: 300
@@ -254,4 +233,3 @@ foreignKeys:
     reference:
       resource: campaigns
       fields: CampaignID
-
