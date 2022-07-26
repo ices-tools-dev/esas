@@ -36,6 +36,7 @@ colors:
   links: "#2b95a0"  # ICES blue
   banner: "#f15d2a" # ICES banner orange
   footer: "#e0e0e0" # ICES footer gray
+font_serif: false
 
 # BUILD SETTINGS
 markdown: kramdown
