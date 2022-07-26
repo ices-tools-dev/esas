@@ -61,7 +61,7 @@ fields:
 
   - name: Distance
     description: >
-      Distance (in km) traveled during the observation bin.
+      Distance (in km) travelled during the observation bin.
       Can only remain empty if `Area` is used.
     type: number
     constraints:

@@ -52,6 +52,7 @@ fields:
   - name: SpeciesCodeType
     description: |
       Type of `SpeciesCode`.
+
       - `ESAS`: [European Seabirds at Sea](../species/) species code
       - `ERID`: [World Register of Marine Species](https://www.marinespecies.org/) Aphia ID
     type: string
@@ -157,6 +158,7 @@ fields:
   - name: LifeStage
     description: |
       Life stage of the animal(s), based on plumage.
+
       - `A` Adult
       - `I` Immature (not specified)
         - `1` 1st calendar year (juvenile)
@@ -182,7 +184,7 @@ fields:
   - name: Moult
     description: |
       Primary moult of the animal(s).
-      Only used for fulmar, auks, divers and seaduck.
+      Use only for fulmar, auks, divers and seaduck.
 
       - `X` Active primary moult
       - `Y` No active primary moult
@@ -262,7 +264,7 @@ fields:
 
   - name: TravelDirection
     description: |
-      Direction in which the animal(s) is traveling.
+      Direction in which the animal(s) is travelling.
       Use degrees (10° increments) to indicate directions relative to the direction of the platform 
       and (inter)cardinal directions (e.g. `NE` for heading Northwest) for absolute directions.
     type: string
