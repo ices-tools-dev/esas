@@ -2,6 +2,14 @@ title: Campaign
 description: >
   Campaigns that generated the data.
 fields:
+  - name: RecordType
+    description: >
+      Record type. Use `EC` for Campaign records.
+    type: string
+    constraints:
+      required: true
+      pattern: 'EC'
+
   - name: CampaignID
     description: >
       Unique identifier for the campaign. Should be a globally unique and permanent identifier to 

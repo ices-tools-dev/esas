@@ -4,6 +4,14 @@ description: >
   represent the calculated middle point of a trajectory. These trajectories (called "observation 
   bins") typically have predefined durations (e.g. 2 minutes).
 fields:
+  - name: RecordType
+    description: >
+      Record type. Use `EP` for Position records.
+    type: string
+    constraints:
+      required: true
+      pattern: 'EP'
+
   - name: SampleID
     description: >
       Unique identifier of the sample this position belongs to.

@@ -2,6 +2,14 @@ title: File Information
 description: >
   Campaigns that generated the data.
 fields:
+  - name: RecordType
+    description: >
+      Record type. Use `FI` for Information records.
+    type: string
+    constraints:
+      required: true
+      pattern: 'FI'
+
   - name: DataRightsHolder
     description: |
       Organisation who has ownership of the legal rights to the resource. Combine multiple values 
