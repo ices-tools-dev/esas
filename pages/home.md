@@ -10,6 +10,7 @@ This website describes the ESAS data model.
 ## Links
 
 - [Tables]({{ '/tables/' | relative_url }}): description of the 5 tables and their fields (also described in [DATSU](http://datsu.ices.dk/web/selRep.aspx?Dataset=148)).
+- [Format]({{ '/format/' | relative_url }}): description of the file format to submit data.
 - [Species]({{ '/species/' | relative_url }}): Codes for taxa in ESAS.
 
 ## Contribute
