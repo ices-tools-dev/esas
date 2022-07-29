@@ -109,11 +109,11 @@ fields:
     description: |
       Sampling method.
 
-      - `1` Full ship-based transect method with snapshot for flying birds
-      - `2` Full ship-based transect method, no snapshot for flying birds
+      - `1` Ship-based transect method with distance estimation and snapshot for flying birds
+      - `2` Ship-based transect method with distance estimation, no snapshot for flying birds
       - `3` All observations, but no transect operated
       - `4` Presence/absence data only
-      - `5` Full ship-based transect method with snapshot for flying birds, but no scan data for outside the transect
+      - `5` Ship-based transect method with distance estimation and snapshot for flying birds, but no scan data for outside the transect
       - `6` Ship-based strip transect, no snapshot, no distance estimation
       - `7` Ship-based strip transect, with snapshot, no distance estimation
       - `8` Visual aerial line transect method with distance sampling
