@@ -120,8 +120,7 @@ fields:
 
   - name: Count
     description: >
-      Number of animals counted or estimated.
-      This should equal the number without distance correction.
+      Number of animals counted or estimated (not corrected for distance).
     type: integer
     constraints:
       required: true
