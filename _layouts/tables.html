@@ -19,8 +19,8 @@ layout: base
           <tr>
             <th>Name</th>
             <th>Description</th>
-            <th>Type</th>
             <th>Vocabulary</th>
+            <th>Type</th>
           </tr>
         </thead>
         <tbody>
@@ -47,12 +47,12 @@ layout: base
                   </ul>
                 {% endif %}
               </td>
-              <td>{{ field.type }}</td>
               <td>
                 {% if field.vocabulary %}
                   <a href="{{ field.vocabulary.href }}">{{ field.vocabulary.text }}</a>
                 {% endif %}
               </td>
+              <td>{{ field.type }}</td>
             </tr>
           {% endfor %}
         </tbody>
