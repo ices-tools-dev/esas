@@ -128,12 +128,13 @@ fields:
   - name: ObservationDistance
     description: |
       Distance (in m) at which the animal(s) was observed.
-      Use the optional [ObservationDistance](https://vocab.ices.dk/?ref=1714) vocabulary or an 
-      integer.
+      Values should be the midpoint of the distance bins defined in `DistanceBins` or use `>` to 
+      indicate distances outside the transect (e.g. `25`, `75`, `150`, `250` and `>300` would be 
+      the only valid values for `distanceBins = 0|50|100|200|300`).
+      For ship-based sampling of birds and marine mammals in contact with water using a standard 
+      300 m transect, one can use the [ObservationDistance](https://vocab.ices.dk/?ref=1714) 
+      vocabulary.
 
-      In case of the standard 300 m transect used for ship-based sampling of marine mammals and 
-      birds in contact with the water, use the 
-      [ObservationDistance](https://vocab.ices.dk/?ref=1714) vocabulary:
       - `A` In contact with the water, 0 - 50 m
       - `B` In contact with the water, 50 - 100 m
       - `C` In contact with the water, 100 - 200 m
@@ -141,10 +142,6 @@ fields:
       - `E` In contact with the water, >300 m, beyond transect
       - `F` Flying, no contact with water
       - `W` In contact with the water, but distance not recorded
-
-      For any other type of distance bin classification, use an integer indicating the distance 
-      (in m) to the midpoint of one the distance bins specified in the `DistanceBins`.
-      Observations outside this transect are indicated by a `>` sign (e.g. `>1000`).
     type: string
     vocabulary:
       text: ObservationDistance
