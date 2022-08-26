@@ -53,7 +53,7 @@ fields:
 
       - `30` [Ship](https://vocab.ices.dk/?CodeID=120897)
       - `62` [Aeroplane](https://vocab.ices.dk/?CodeID=137773)
-      - `62` [Helicopter](https://vocab.ices.dk/?CodeID=120899)
+      - `67` [Helicopter](https://vocab.ices.dk/?CodeID=120899)
     type: string
     vocabulary:
       text: Platform Class
