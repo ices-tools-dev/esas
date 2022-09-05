@@ -325,7 +325,7 @@ fields:
       - `10` Fish, no further details
       - `11` Small fish, unidentified (ca. bill length)
       - `12` Medium fish, unidentified (ca. 2-5x bill length)
-      - `13` Marge fish, unidentified (difficult to handle)
+      - `13` Large fish, unidentified (difficult to handle)
       - `14` Feeding sandeel ball at surface
       - `15` Feeding clupeoid ball at surface
       - `16` Feeding unidentified fish ball at surface
@@ -351,7 +351,7 @@ fields:
       - `41` Swimming crab
       - `42` Starfish
       - `43` Sea urchin
-      - `44` Shore crab (Carcinus maenas)
+      - `44` Shore crab
       - `45` Bivalve, unidentified
       - `46` Mussel
       - `47` Whelk eggs capsule
@@ -369,7 +369,7 @@ fields:
       - `61` Discarded roundfish
       - `62` Discarded flatfish
       - `63` Discarded offal
-      - `64` Discarded benthic invertebrate,unidentified
+      - `64` Discarded benthic invertebrate, unidentified
       - `65` Discarded starfish
       - `66` Discarded crustacean
       - `70` Seaweed as nest material
