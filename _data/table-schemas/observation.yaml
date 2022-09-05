@@ -37,7 +37,7 @@ fields:
     type: string
     constraints:
       required: false
-      maxLength: 3
+      maxLength: 5
 
   - name: Transect
     description: >
@@ -587,7 +587,7 @@ fields:
       href: http://vocab.ices.dk/?ref=1709
     constraints:
       required: false
-      maxLength: 5
+      maxLength: 30
       pattern: '(\d{2,3}|~)+' # Does not check for valid codes 
       # Old codes for unknown: 0, 4, 8, 10, 15, 20, 29, 55
       # Mapping of old codes to Behaviour codes:
