@@ -15,10 +15,12 @@ Web:	https://www.ices.dk/data/Pages/default.aspx
 
 
 3. DATA SPECIFIC INFORMATION
-Information about the ESAS data and formats can be found in the links in section 7. 
+Documentation of the data model can be found at https://esas-docs.ices.dk/
+
+Information about the metadata and services (API) can be found in the links in section 7. 
  
-The Download ZIP bundle includes the requested data file in the CSV format (description on this link) 
- http://datsu.ices.dk/web/selRep.aspx?Dataset=148, and the data disclaimer.  
+The Download ZIP bundle includes the requested data file in the CSV format (description on this link: http://datsu.ices.dk/web/selRep.aspx?Dataset=148), 
+ and the data disclaimer.  
  
 Note that additional data, such as methods and quality assurance may be available. Please consult the ESAS landing page for further information:
  https://esas.ices.dk
@@ -59,6 +61,5 @@ XXXXXXXXXXXXXXXXXXXX
 
 7. METADATA
 Further details about the dataset and related services can be found at the metadata catalogue.
- Documentation can be found at https://esas-docs.ices.dk/
  Citeable metadata record: http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/7a6151e4-812b-4455-97a2-74c5102d418f
  Services (API): https://esas.ices.dk/webservices
