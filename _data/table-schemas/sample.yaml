@@ -120,8 +120,8 @@ fields:
       - `8` Visual aerial line transect method with distance sampling
       - `9` Visual aerial strip transect, no distance estimation
       - `10` Visual aerial total counts
-      - `11` Digital aerial – video
-      - `12` Digital aerial – stills
+      - `11` Digital aerial - video
+      - `12` Digital aerial - stills
     type: string
     vocabulary:
       text: BD_CountMethod

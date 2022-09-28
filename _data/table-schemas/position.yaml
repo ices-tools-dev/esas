@@ -119,8 +119,8 @@ fields:
       Use a range code (`A`-`D`) for historical data.
 
       - `A` Poor (< 1 km) or express as `0.1`, `0.2`, `0.3`, ...
-      - `B` Fair/moderate (1 – 5 km) or express as `1`, `1.5`, ...
-      - `C` Good/very good (5 – 10 km) or express as `5`, `6`, ...
+      - `B` Fair/moderate (1 - 5 km) or express as `1`, `1.5`, ...
+      - `C` Good/very good (5 - 10 km) or express as `5`, `6`, ...
       - `D` Excellent/infinity (> 10 km) or express as `10`
     type: string
     vocabulary:
@@ -178,7 +178,7 @@ fields:
 
   - name: SunAngle
     description: >
-      Angle of the sun in relation to the observer (`0`–`359`), with `0` being straight ahead.
+      Angle of the sun in relation to the observer (`0`-`359`), with `0` being straight ahead.
     type: integer
     constraints:
       required: false
