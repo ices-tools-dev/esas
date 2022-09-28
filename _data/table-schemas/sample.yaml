@@ -40,6 +40,7 @@ fields:
   - name: PlatformCode
     description: >
       Platform from which sampling took place.
+      Use `ZZ99` for unknown.
     type: string
     vocabulary:
       text: SHIPC
