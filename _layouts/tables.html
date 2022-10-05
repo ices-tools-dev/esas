@@ -15,6 +15,12 @@ layout: base
       {{ table_schema.description | markdownify }}
       
       <table>
+        <colgroup>
+          <col width="20%">
+          <col width="60%">
+          <col width="10%">
+          <col width="10%">
+        </colgroup>
         <thead>
           <tr>
             <th>Name</th>
@@ -24,10 +30,6 @@ layout: base
           </tr>
         </thead>
         <tbody>
-          <col width="20%">
-          <col width="60%">
-          <col width="10%">
-          <col width="10%">
           {% for field in table_schema.fields %}
             <tr>
               <td id="{{ field.name | downcase | url_encode }}">

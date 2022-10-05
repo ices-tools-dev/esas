@@ -7,6 +7,13 @@ layout: base
 
     {{ content }}
     <table>
+      <colgroup>
+        <col width="10%">
+        <col width="25%">
+        <col width="25%">
+        <col width="20%">
+        <col width="20%">
+      </colgroup>
       <thead>
         <tr>
           <th>ESAS code</th>
@@ -17,11 +24,6 @@ layout: base
         </tr>
       </thead>
       <tbody>
-        <col width="10%">
-        <col width="25%">
-        <col width="25%">
-        <col width="20%">
-        <col width="20%">
         {% for species in site.data.vocabularies.species %}
           <tr>
             <td id="{{ species.esas_code | downcase | url_encode }}">
