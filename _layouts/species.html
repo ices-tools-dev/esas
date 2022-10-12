@@ -25,7 +25,7 @@ layout: base
       </thead>
       <tbody>
         {% for species in site.data.vocabularies.species %}
-          <tr>
+          <tr class="text-break">
             <td id="{{ species.esas_code | downcase | url_encode }}">
               <a href="#{{ species.esas_code | downcase | url_encode }}"><code>{{ species.esas_code }}</code></a>
               <div class="small text-muted">{{ species.remarks }}</div>
