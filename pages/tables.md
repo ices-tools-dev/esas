@@ -14,4 +14,3 @@ The ESAS data model consists of four hierarchical tables (Campaigns, Samples, Po
 
 - The tables are also described in [DATSU](http://datsu.ices.dk/web/selRep.aspx?Dataset=148).
 - Fields indicated with `*` are required (i.e. cannot be empty).
-- The source files for the tables below can be found in [`_data/table-schemas`](https://github.com/ices-tools-dev/esas/blob/main/_data/table-schemas).

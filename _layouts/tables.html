@@ -13,6 +13,8 @@ layout: base
 
       <h2 id="{{ table_schema_id }}">{{ table_schema.title }}</h2>
 
+      <p class="small">Source: <a href="https://github.com/{{ site.github_username }}/blob/main/_data/table-schemas/{{ table_schema_file }}.yaml"><code>{{ table_schema_file }}.yaml</code></a></p>
+
       {{ table_schema.description | markdownify }}
       
       <table>
