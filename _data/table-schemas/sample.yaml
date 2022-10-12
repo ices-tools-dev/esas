@@ -71,11 +71,11 @@ fields:
       Side of the platform from which sampling took place.
 
       - `right` Starboard
-      - `right front`
-      - `right back`
+      - `right_front`
+      - `right_back`
       - `left` Port
-      - `left front`
-      - `left back`
+      - `left_front`
+      - `left_back`
       - `both` Observers on both sides producing one collective data stream
     type: string
     vocabulary:
@@ -85,11 +85,11 @@ fields:
       required: false
       enum:
         - right       # Previously: 6
-        - right front # Previously: 1
-        - right back  # Previously: 3
+        - right_front # Previously: 1
+        - right_back  # Previously: 3
         - left        # Previously: 5
-        - left front  # Previously: 4
-        - left back   # Previously: 2
+        - left_front  # Previously: 4
+        - left_back   # Previously: 2
         - both        # Previously: 9
 
   - name: PlatformHeight
