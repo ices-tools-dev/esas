@@ -40,8 +40,6 @@ font_serif: false
 
 # BUILD SETTINGS
 markdown: kramdown
-plugins:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
