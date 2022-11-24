@@ -6,7 +6,7 @@ fields:
   - name: RecordType
     description: >
       Record type.
-      Use `EO` for Observation records.
+      Use `EO` for observation records.
     type: string
     constraints:
       required: true
@@ -14,7 +14,7 @@ fields:
 
   - name: PositionID
     description: >
-      Unique identifier of the position this observation belongs to.
+      Identifier of the position the observation belongs to.
     type: string
     constraints:
       required: true
@@ -22,7 +22,8 @@ fields:
 
   - name: ObservationID
     description: >
-      Unique identifier for the observation.
+      Identifier of the observation.
+      Must be unique within the campaign.
     type: string
     constraints:
       required: true
@@ -31,8 +32,9 @@ fields:
 
   - name: GroupID
     description: >
-      Unique identifier for an aggregation of individuals.
-      Observations in a Sample with the same `GroupID` are thus indicated as being observed as 
+      Identifier of an aggregation of individuals.
+      Must be unique within the campaign.
+      Observations in a sample with the same `GroupID` are thus indicated as being observed as 
       part of the same group.
     type: string
     constraints:

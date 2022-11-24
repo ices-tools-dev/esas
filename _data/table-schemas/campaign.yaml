@@ -4,7 +4,7 @@ description: >
 fields:
   - name: RecordType
     description: >
-      Record type. Use `EC` for Campaign records.
+      Record type. Use `EC` for campaign records.
     type: string
     constraints:
       required: true
@@ -12,8 +12,10 @@ fields:
 
   - name: CampaignID
     description: >
-      Unique identifier for the campaign.
-      Choose a stable identifier, as it is used in combination with `DataRightsHolder` to detect 
+      Identifier of the campaign.
+      Must be unique across the entire ESAS database (e.g. by prepending the identifier with the 
+      `DataRightsHolder` such as `inbo:12345`).
+      Must be stable, as it is used in combination with `DataRightsHolder` to detect 
       resubmissions of data.
     type: string
     constraints:

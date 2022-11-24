@@ -9,7 +9,7 @@ fields:
   - name: RecordType
     description: >
       Record type.
-      Use `EP` for Position records.
+      Use `EP` for position records.
     type: string
     constraints:
       required: true
@@ -17,7 +17,7 @@ fields:
 
   - name: SampleID
     description: >
-      Unique identifier of the sample this position belongs to.
+      Identifier of the sample the position belongs to.
     type: string
     constraints:
       required: true
@@ -25,7 +25,8 @@ fields:
 
   - name: PositionID
     description: >
-      Unique identifier for the position.
+      Identifier of the position.
+      Must be unique within the campaign.
     type: string
     constraints:
       required: true

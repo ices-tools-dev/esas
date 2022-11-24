@@ -7,7 +7,7 @@ fields:
   - name: RecordType
     description: >
       Record type.
-      Use `ES` for Sample records.
+      Use `ES` for sample records.
     type: string
     constraints:
       required: true
@@ -15,7 +15,7 @@ fields:
 
   - name: CampaignID
     description: >
-      Unique identifier of the campaign this sample belongs to.
+      Identifier of the campaign the sample belongs to.
     type: string
     constraints:
       required: true
@@ -23,7 +23,8 @@ fields:
 
   - name: SampleID
     description: >
-      Unique identifier for the sample.
+      Identifier of the sample.
+      Must be unique within the campaign.
     type: string
     constraints:
       required: true
@@ -94,7 +95,7 @@ fields:
 
   - name: PlatformHeight
     description: >
-      Height (in m) of the platform during sampling, e.g. average flying height of airplane.
+      Height (in m) of the platform during sampling (e.g. average flying height of airplane).
     type: number
     constraints:
       required: false
