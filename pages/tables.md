@@ -2,11 +2,11 @@
 layout: tables
 title: Tables
 description: >
-  [File Information](#file+information){: .btn .btn-primary }
-  [Campaign](#campaign){: .btn .btn-primary }
-  [Sample](#sample){: .btn .btn-primary }
-  [Position](#position){: .btn .btn-primary }
-  [Observation](#observation){: .btn .btn-primary }
+  [File Information](#file+information){:.btn .btn-primary .text-light}
+  [Campaign](#campaign){:.btn .btn-primary .text-light}
+  [Sample](#sample){:.btn .btn-primary .text-light}
+  [Position](#position){:.btn .btn-primary .text-light}
+  [Observation](#observation){:.btn .btn-primary .text-light}
 permalink: /tables/
 ---
 
