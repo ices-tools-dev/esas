@@ -1,37 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 # SITE SETTINGS
 title: ESAS
-description: European Seabird At Sea (ESAS)
 author: ESAS
 baseurl: "" # Otherwise GitHub Pages will set this to "/esas"
 
 # SOCIAL PROFILES
-email: 
-twitter_username: 
-github_username: ices-tools-dev/esas
+social:
+  github: ices-tools-dev/esas
 
 # THEME SETTINGS
 theme: minima
-remote_theme: peterdesmet/petridish@2.0 
+remote_theme: peterdesmet/petridish@3.0
 colors:
   links: "#2b95a0"  # ICES blue
   banner: "#f15d2a" # ICES banner orange
