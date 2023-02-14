@@ -57,7 +57,7 @@ layout: base
                   <a href="{{ field.vocabulary.href }}">{{ field.vocabulary.text }}</a>
                 {% endif %}
               </td>
-              <td>{{ field.type }}</td>
+              <td><span class="badge bg-secondary">{{ field.type }}</span></td>
             </tr>
           {% endfor %}
         </tbody>
