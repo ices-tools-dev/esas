@@ -154,7 +154,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 4710	Charadrius semipalmatus	Semipalmated plover	04710	Charadrius semipalmatus	159126	Charadrius semipalmatus	
 4770	Charadrius alexandrinus	Kentish Plover	04770	Charadrius alexandrinus	212611	Charadrius alexandrinus	
 4820	Charadrius morinellus	Eurasian Dotterel	04820	Charadrius morinellus	232043	Charadrius morinellus	
-4839	Charadrius sp.	unidentified (Charadrius) plover	04839	Charadrius sp.	159124	Charadrius sp.	
+4839	Charadrius sp.	unidentified (Charadrius) plover	04839	Charadrius sp.	159124	Charadrius	
 4850	Pluvialis apricaria	European Golden Plover	04850	Pluvialis apricaria	159135	Pluvialis apricaria	
 4860	Pluvialis squatarola	Grey Plover	04860	Pluvialis squatarola	159137	Pluvialis squatarola	
 4930	Vanellus vanellus	Northern Lapwing	04930	Vanellus vanellus	159142	Vanellus vanellus	
@@ -363,7 +363,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 15910	Passer domesticus	House Sparrow	15910	Passer domesticus	1451658	Passer domesticus	
 15980	Passer montanus	Eurasian Tree Sparrow	15980	Passer montanus	558571	Passer montanus	
 16350	Vireo gilvus	Eastern Warbling Vireo	16350	Vireo gilvus	1484998	Vireo gilvus	
-16360	Fringilla coelebs	Common chaffinch	16360	Fringilla coelebs	558558	Fringilla coelebs	
+16360	Fringilla coelebs	Common Chaffinch	16360	Fringilla coelebs	558558	Fringilla coelebs	
 16380	Fringilla montifringilla	Brambling	16380	Fringilla montifringilla	558559	Fringilla montifringilla	
 16389	Fringilla sp.	unidentified finch	16389	Fringilla sp.	558557	Fringilla	16365 (v5)
 16400	Serinus serinus	European Serin	16400	Serinus serinus	1534879	Serinus serinus	
