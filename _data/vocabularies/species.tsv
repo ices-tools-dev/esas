@@ -265,7 +265,10 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 7780	Caprimulgus europaeus	European Nightjar	07780	Caprimulgus europaeus	1534762	Caprimulgus europaeus	
 7940	Apus unicolor	Plain swift	07940	Apus unicolor	1534760	Apus unicolor	
 7950	Apus apus	Common Swift	07950	Apus apus	212734	Apus apus	
+7960	Apus pallidus	Pallid Swift	07960	Apus pallidus	196041	Apodiformes	
 7980	Apus melba	Alpine Swift	07980	Apus melba	1534756	Apus melba	unaccepted taxon in WoRMS
+8000	Apus affinis	Little Swift	08000	Apus affinis	196041	Apodiformes	
+8009	Apus sp.	unidentified (Apus) swift	08009	Apus sp.	196041	Apodiformes	
 8060	Hylocharis leucotis	White-eared Hummingbird	08060	Hylocharis leucotis	1534806	Hylocharis leucotis	unaccepted taxon in WoRMS
 8460	Upupa epops	Eurasian Hoopoe	08460	Upupa epops	1451644	Upupa epops	
 8480	Jynx torquilla	Eurasian Wryneck	08480	Jynx torquilla	1534814	Jynx torquilla	
@@ -278,6 +281,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 9810	Riparia riparia	Sand Martin	09810	Riparia riparia	225984	Riparia riparia	
 9910	Ptyonoprogne rupestris	Eurasian Crag Martin	09910	Ptyonoprogne rupestris	1534870	Ptyonoprogne rupestris	
 9920	Hirundo rustica	Barn Swallow	09920	Hirundo rustica	212750	Hirundo rustica	
+9950	Cecropis daurica	Red-rumped Swallow	09950	Cecropis daurica	567869	Cecropis daurica	
 9995	Hirundinidae	unidentified swallow			196063	Hirundinidae	
 10010	Delichon urbicum	Common House Martin	10010	Delichon urbica	212752	Delichon urbicum	
 10090	Anthus trivialis	Tree Pipit	10090	Anthus trivialis	558533	Anthus trivialis	
@@ -325,6 +329,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 12549	Acrocephalus sp.	unidentified (Acrocephalus) warbler	12549	Acrocephalus sp.	205016	Acrocephalus	
 12590	Hippolais icterina	Icterine Warbler	12590	Hippolais icterina	1459896	Hippolais icterina	
 12600	Hippolais polyglotta	Melodious Warbler	12600	Hippolais polyglotta	1534797	Hippolais polyglotta	
+12650	Curruca cantillans / iberiae / subalpina	Eastern Subalpine / Western Subalpine / Moltoni's Warbler	12650	Curruca cantillans / iberiae / subalpina	159384	Passeriformes	
 12730	Sylvia nisoria	Barred Warbler	12730	Sylvia nisoria	558596	Sylvia nisoria	
 12740	Sylvia curruca	Lesser Whitethroat	12740	Sylvia curruca	1534886	Sylvia curruca	
 12750	Sylvia communis	Common Whitethroat	12750	Sylvia communis	558595	Sylvia communis	
@@ -401,6 +406,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 62260	Balaenoptera acutorostrata	Minke Whale	62260	Balaenoptera acutorostrata	137087	Balaenoptera acutorostrata	
 62270	Megaptera novaeangliae	Humpback Whale	62270	Megaptera novaeangliae	137092	Megaptera novaeangliae	
 62520	Physeter macrocephalus	Sperm Whale	62520	Physeter macrocephalus	137119	Physeter macrocephalus	
+62540	Kogia sima	Dwarf Sperm Whale	62540	Kogia simus	159025	Kogia sima	
 62620	Delphinapterus leucas	Beluga	62620	Delphinapterus leucas	137115	Delphinapterus leucas	
 62740	Ziphius cavirostris	Cuvier's Beaked Whale	62740	Ziphius cavirostris	137127	Ziphius cavirostris	
 62750	Hyperoodon ampullatus	Northern Bottlenose Whale	62750	Hyperoodon ampullatus	343899	Hyperoodon ampullatus	
@@ -441,6 +447,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 65000		unidentified sea turtle			987094	Chelonioidea	
 65010	Dermochelys coriacea	Leathery Turtle			137209	Dermochelys coriacea	
 65020	Caretta caretta	Loggerhead Turtle			137205	Caretta caretta	
+65040	Eretmochelys imbricata	Hawksbill Turtle			137207	Eretmochelys imbricata	
 65050	Chelonia mydas	Green Turtle			137206	Chelonia mydas	
 66000		unidentified shark			368408	Selachii	
 66010	Lamna nasus	Porbeagle			105841	Lamna nasus	
@@ -455,6 +462,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 67820	Mobula mobular	Devil Ray			105858	Mobula mobular	27820 (v5)
 67900	Mola mola	Sun-fish			127405	Mola mola	
 67902	Loligo sp.	unidentified myopsid squid			138139	Loligo	
+67904	Coryphaena hippurus	Common Dolphinfish			126846	Coryphaena hippurus	
 67905		unidentified fish			11676	Pisces	unaccepted taxon in WoRMS
 67906	Ballistes carolinensis	Common trigger fish			154721	Balistes capriscus	
 67907	Physalia physalis	Portuguese Man of War			135479	Physalia physalis	
