@@ -190,7 +190,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 5680	Stercorarius longicaudus	Long-tailed Skua	05680	Stercorarius longicaudus	137171	Stercorarius longicaudus	
 5690	Stercorarius skua	Great Skua	05690	Stercorarius skua	137174	Stercorarius skua	
 5709	Stercorarius sp.	unidentified skua	05709	Stercorarius sp.	137051	Stercorarius	5699 (v5)
-5750	Larus melanocephalus	Mediterranean Gull	05750	Larus melanocephalus	137147	Larus melanocephalus	
+5750	Ichthyaetus melanocephalus	Mediterranean Gull	05750	Ichthyaetus melanocephalus	1584284	Ichthyaetus melanocephalus	
 5780	Hydrocoloeus minutus	Little Gull	05780	Larus minutus	567449	Hydrocoloeus minutus	
 5790	Xema sabini	Sabine's Gull	05790	Larus sabini	137167	Xema sabini	
 5820	Larus ridibundus	Black-headed Gull	05820	Larus ridibundus	137149	Larus ridibundus	
@@ -237,7 +237,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6260	Chlidonias hybrida	Whiskered Tern	06260	Chlidonias hybridus	137135	Chlidonias hybrida	
 6270	Chlidonias niger	Black Tern	06270	Chlidonias niger	137137	Chlidonias niger	
 6280	Chlidonias leucopterus	White-winged Tern	06280	Chlidonias leucopterus	137136	Chlidonias leucopterus	
-6285		unidentified tern			148764	Sternidae	6289 (v5), unaccepted taxon in WoRMS
+6285		unidentified tern			136988	Laridae	6289 (v5)
 6300	Anous stolidus	Brown Noddy	06300	Anous stolidus	212629	Anous stolidus	
 6310	Gygis alba	White Tern	06310	Gygis alba	344045	Gygis alba	
 6340	Uria aalge	Common Guillemot	06340	Uria aalge	137133	Uria aalge	
@@ -266,10 +266,10 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 7940	Apus unicolor	Plain swift	07940	Apus unicolor	1534760	Apus unicolor	
 7950	Apus apus	Common Swift	07950	Apus apus	212734	Apus apus	
 7960	Apus pallidus	Pallid Swift	07960	Apus pallidus					
-7980	Apus melba	Alpine Swift	07980	Apus melba	1534756	Apus melba	unaccepted taxon in WoRMS
+7980	Tachymarptis melba	Alpine Swift	07980	Tachymarptis melba	1534755	Tachymarptis melba	
 8000	Apus affinis	Little Swift	08000	Apus affinis					
 8009	Apus sp.	unidentified (Apus) swift	08009	Apus sp.					
-8060	Hylocharis leucotis	White-eared Hummingbird	08060	Hylocharis leucotis	1534806	Hylocharis leucotis	unaccepted taxon in WoRMS
+8060	Basilinna leucotis	White-eared Hummingbird	08060	Basilinna leucotis	1534805	Basilinna leucotis	
 8460	Upupa epops	Eurasian Hoopoe	08460	Upupa epops	1451644	Upupa epops	
 8480	Jynx torquilla	Eurasian Wryneck	08480	Jynx torquilla	1534814	Jynx torquilla	
 8760	Dendrocopos major	Great Spotted Woodpecker	08760	Dendrocopos major	1459903	Dendrocopos major	
@@ -305,7 +305,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 10990	Erithacus rubecula	European Robin	10990	Erithacus rubecula	558552	Erithacus rubecula	
 11040	Luscinia megarhynchos	Common Nightingale	11040	Luscinia megarhynchos	1534833	Luscinia megarhynchos	
 11060	Luscinia svecica	Bluethroat	11060	Luscinia svecica	1037315	Luscinia svecica	
-11061	Luscinia svecica svecica	Bluethroat (svecica)	11061	Luscinia svecica svecica	1534834	Luscinia svecica svecica	unaccepted taxon in WoRMS
+11061	Luscinia svecica svecica	Bluethroat (svecica)	11061	Luscinia svecica svecica	1037315	Luscinia svecica	
 11210	Phoenicurus ochruros	Black Redstart	11210	Phoenicurus ochruros	558575	Phoenicurus ochruros	
 11220	Phoenicurus phoenicurus	Common Redstart	11220	Phoenicurus phoenicurus	558576	Phoenicurus phoenicurus	
 11370	Saxicola rubetra	Whinchat	11370	Saxicola rubetra	558585	Saxicola rubetra	
@@ -368,7 +368,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 16389	Fringilla sp.	unidentified finch	16389	Fringilla sp.	558557	Fringilla	16365 (v5)
 16400	Serinus serinus	European Serin	16400	Serinus serinus	1534879	Serinus serinus	
 16490	Carduelis chloris	European Greenfinch	16490	Carduelis chloris	1534764	Carduelis chloris	unaccepted taxon in WoRMS
-16520	Carduelis spinoides	Yellow-breasted Greenfinch	16520	Carduelis spinoides	1534769	Carduelis spinoides	unaccepted taxon in WoRMS
+16520	Chloris spinoides	Yellow-breasted Greenfinch	16520	Chloris spinoides	1534773	Chloris spinoides	
 16530	Carduelis carduelis	European Goldfinch	16530	Carduelis carduelis	558536	Carduelis carduelis	
 16540	Carduelis spinus	Eurasian Siskin	16540	Carduelis spinus	558538	Carduelis spinus	
 16600	Carduelis cannabina	Common Linnet	16600	Carduelis cannabina	558535	Carduelis cannabina	
@@ -432,7 +432,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 63255	Delphinus delphis / Stenella coeruleoalba	Common / Striped Dolphin			136980	Delphinidae	
 63260	Lagenorhynchus sp.		63260	Lagenorhynchus sp.	137020	Lagenorhynchus	
 63270	Lagenorhynchus albirostris	White-beaked Dolphin	63270	Lagenorhynchus albirostris	137101	Lagenorhynchus albirostris	
-63280	Lagenorhynchus acutus	Atlantic White-sided Dolphin	63280	Lagenorhynchus acutus	137100	Lagenorhynchus acutus	
+63280	Leucopleurus acutus	Atlantic White-sided Dolphin	63280	Lagenorhynchus acutus	1571853	Leucopleurus acutus	
 63400	Grampus griseus	Risso's Dolphin	63400	Grampus griseus	137098	Grampus griseus	
 63510	Phocoena phocoena	Harbour Porpoise	63510	Phocoena phocoena	137117	Phocoena phocoena	
 64210	Odobenus rosmarus	Walrus	64210	Odobenus rosmarus	137077	Odobenus rosmarus	
