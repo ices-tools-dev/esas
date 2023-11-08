@@ -131,7 +131,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 2870	Buteo buteo	Common Buzzard	02870	Buteo buteo	558534	Buteo buteo	
 2900	Buteo lagopus	Rough-legged Buzzard	02900	Buteo lagopus	159110	Buteo lagopus	
 2980	Hieraaetus pennatus	Booted Eagle	02980	Hieraaetus pennatus					
-3009	Falconiformes sp.	unidentified raptor	03009	Falconiformes sp.	225849	Falconiformes	3219 (v5)
+3009	Falconiformes	unidentified raptor	03009	Falconiformes sp.	225849	Falconiformes	3219 (v5)
 3010	Pandion haliaetus	Western Osprey	03010	Pandion haliaetus	159377	Pandion haliaetus	
 3040	Falco tinnunculus	Common Kestrel	03040	Falco tinnunculus	345751	Falco tinnunculus	
 3070	Falco vespertinus	Red-footed Falcon	03070	Falco vespertinus	558554	Falco vespertinus	
@@ -214,7 +214,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 5990	Larus hyperboreus	Glaucous Gull	05990	Larus hyperboreus	137145	Larus hyperboreus	
 90080	Larus hyperboreus x argentatus	Glaucous x Herring Gull (hybrid)	90080	Larus argentatus x Larus hyperboreus	137043	Larus	5991 (v6)
 6000	Larus marinus	Great Black-backed Gull	06000	Larus marinus	137146	Larus marinus	
-6009	Larus sp.	unidentified Larus gull	06009	Larus sp.	137043	Larus	5929 (v5), 6005 (v5), 6008 (v5), 6009 (v5)
+6009	Larus sp.	unidentified (Larus) gull	06009	Larus sp.	137043	Larus	5929 (v5), 6005 (v5), 6008 (v5), 6009 (v5)
 6010	Rhodostethia rosea	Ross's Gull	06010	Rhodostethia rosea	137155	Rhodostethia rosea	
 6020	Rissa tridactyla	Black-legged Kittiwake	06020	Rissa tridactyla	137156	Rissa tridactyla	
 6040	Pagophila eburnea	Ivory Gull	06040	Pagophila eburnea	137154	Pagophila eburnea	
@@ -233,7 +233,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6230	Onychoprion fuscatus	Sooty Tern	06230	Sterna fuscata	567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	06240	Sterna albifrons	567480	Sternula albifrons	
 6250	Sternula saundersi	Saunders's Tern	06250	Sterna saundersi	567839	Sternula saundersi	
-6259	Sterna sp.	unidentified Sterna tern	06259	Sterna sp.	137047	Sterna	
+6259	Sterna sp.	unidentified (Sterna) tern	06259	Sterna sp.	137047	Sterna	
 6260	Chlidonias hybrida	Whiskered Tern	06260	Chlidonias hybridus	137135	Chlidonias hybrida	
 6270	Chlidonias niger	Black Tern	06270	Chlidonias niger	137137	Chlidonias niger	
 6280	Chlidonias leucopterus	White-winged Tern	06280	Chlidonias leucopterus	137136	Chlidonias leucopterus	
