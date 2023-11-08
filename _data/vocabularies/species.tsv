@@ -65,9 +65,11 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 1190	Egretta garzetta	Little Egret	01190	Egretta garzetta	159115	Egretta garzetta	
 1210	Ardea alba	Great Egret	01210	Egretta alba	159381	Ardea alba	
 1220	Ardea cinerea	Grey Heron	01220	Ardea cinerea	212668	Ardea cinerea	
+1240	Ardea purpurea	Purple Heron	01240	Ardea purpurea	212669	Ardea purpurea	
 1340	Ciconia ciconia	White Stork	01340	Ciconia ciconia	1037305	Ciconia ciconia	
 1360	Plegadis falcinellus	Glossy Ibis	01360	Plegadis falcinellus	158977	Plegadis falcinellus	
 1440	Platalea leucorodia	Eurasian Spoonbill	01440	Platalea leucorodia	416678	Platalea leucorodia	
+1470	Phoenicopterus ruber	American Flamingo	01470	Phoenicopterus ruber	212708	Phoenicopterus ruber	
 1520	Cygnus olor	Mute Swan	01520	Cygnus olor	159090	Cygnus olor	
 1530	Cygnus columbianus	Tundra Swan	01530	Cygnus columbianus	159088	Cygnus columbianus	
 1540	Cygnus cygnus	Whooper Swan	01540	Cygnus cygnus	159089	Cygnus cygnus	
@@ -119,6 +121,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 2239	Mergus sp.	unidentified merganser	02239	Mergus sp.	159096	Mergus	
 2269		unidentified duck			136973	Anatidae	
 2310	Pernis apivorus	European Honey Buzzard	02310	Pernis apivorus	558573	Pernis apivorus	
+2350	Elanus caeruleus	Black-winged Kite	02350	Elanus caeruleus	570728	Accipitriformes	
 2380	Milvus migrans	Black Kite	02380	Milvus migrans	212678	Milvus migrans	
 2430	Haliaeetus albicilla	White-tailed Eagle	02430	Haliaeetus albicilla	232053	Haliaeetus albicilla	
 2600	Circus aeruginosus	Western Marsh Harrier	02600	Circus aeruginosus	558541	Circus aeruginosus	
@@ -127,6 +130,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 2690	Accipiter nisus	Eurasian Sparrowhawk	02690	Accipiter nisus	558525	Accipiter nisus	
 2870	Buteo buteo	Common Buzzard	02870	Buteo buteo	558534	Buteo buteo	
 2900	Buteo lagopus	Rough-legged Buzzard	02900	Buteo lagopus	159110	Buteo lagopus	
+2980	Hieraaetus pennatus	Booted Eagle	02980	Hieraaetus pennatus	570728	Accipitriformes	
 3009	Falconiformes sp.	unidentified raptor	03009	Falconiformes sp.	225849	Falconiformes	3219 (v5)
 3010	Pandion haliaetus	Western Osprey	03010	Pandion haliaetus	159377	Pandion haliaetus	
 3040	Falco tinnunculus	Common Kestrel	03040	Falco tinnunculus	345751	Falco tinnunculus	
@@ -150,6 +154,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 4710	Charadrius semipalmatus	Semipalmated plover	04710	Charadrius semipalmatus	159126	Charadrius semipalmatus	
 4770	Charadrius alexandrinus	Kentish Plover	04770	Charadrius alexandrinus	212611	Charadrius alexandrinus	
 4820	Charadrius morinellus	Eurasian Dotterel	04820	Charadrius morinellus	232043	Charadrius morinellus	
+4839	Charadrius sp.	unidentified (Charadrius) plover	04839	Charadrius sp.	159124	Charadrius sp.	
 4850	Pluvialis apricaria	European Golden Plover	04850	Pluvialis apricaria	159135	Pluvialis apricaria	
 4860	Pluvialis squatarola	Grey Plover	04860	Pluvialis squatarola	159137	Pluvialis squatarola	
 4930	Vanellus vanellus	Northern Lapwing	04930	Vanellus vanellus	159142	Vanellus vanellus	
@@ -224,6 +229,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6150	Sterna hirundo	Common Tern	06150	Sterna hirundo	137162	Sterna hirundo	
 6160	Sterna paradisaea	Arctic Tern	06160	Sterna paradisaea	137165	Sterna paradisaea	
 6159	Sterna hirundo / paradisaea	Common / Arctic Tern	06159	Sterna hirundo/paradisaea	137047	Sterna	
+6220	Onychoprion anaethetus	Bridled Tern	06220	Onychoprion anaethetus	567792	Onychoprion anaethetus	
 6230	Onychoprion fuscatus	Sooty Tern	06230	Sterna fuscata	567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	06240	Sterna albifrons	567480	Sternula albifrons	
 6250	Sternula saundersi	Saunders's Tern	06250	Sterna saundersi	567839	Sternula saundersi	
@@ -233,6 +239,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6280	Chlidonias leucopterus	White-winged Tern	06280	Chlidonias leucopterus	137136	Chlidonias leucopterus	
 6285		unidentified tern			148764	Sternidae	6289 (v5), unaccepted taxon in WoRMS
 6300	Anous stolidus	Brown Noddy	06300	Anous stolidus	212629	Anous stolidus	
+6310	Gygis alba	White Tern	06310	Gygis alba	344045	Gygis alba	
 6340	Uria aalge	Common Guillemot	06340	Uria aalge	137133	Uria aalge	
 6345	Uria aalge / Alca torda	Common Guillemot / Razorbill			136987	Alcidae	
 6350	Uria lomvia	Thick-billed Guillemot	06350	Uria lomvia	137134	Uria lomvia	
