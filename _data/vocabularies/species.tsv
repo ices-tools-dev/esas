@@ -268,7 +268,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 7960	Apus pallidus	Pallid Swift	07960	Apus pallidus					
 7980	Tachymarptis melba	Alpine Swift	07980	Tachymarptis melba	1534755	Tachymarptis melba	
 8000	Apus affinis	Little Swift	08000	Apus affinis					
-8009	Apus sp.	unidentified (Apus) swift	08009	Apus sp.					
+8009	Apus sp.	unidentified (Apus) swift	08009	Apus sp.	206119	Apus	
 8060	Basilinna leucotis	White-eared Hummingbird	08060	Basilinna leucotis	1534805	Basilinna leucotis	
 8460	Upupa epops	Eurasian Hoopoe	08460	Upupa epops	1451644	Upupa epops	
 8480	Jynx torquilla	Eurasian Wryneck	08480	Jynx torquilla	1534814	Jynx torquilla	
@@ -305,7 +305,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 10990	Erithacus rubecula	European Robin	10990	Erithacus rubecula	558552	Erithacus rubecula	
 11040	Luscinia megarhynchos	Common Nightingale	11040	Luscinia megarhynchos	1534833	Luscinia megarhynchos	
 11060	Luscinia svecica	Bluethroat	11060	Luscinia svecica	1037315	Luscinia svecica	
-11061	Luscinia svecica svecica	Bluethroat (svecica)	11061	Luscinia svecica svecica	1037315	Luscinia svecica	
+11061	Luscinia svecica svecica	Bluethroat (svecica)	11061	Luscinia svecica svecica	1534834	Luscinia svecica svecica	
 11210	Phoenicurus ochruros	Black Redstart	11210	Phoenicurus ochruros	558575	Phoenicurus ochruros	
 11220	Phoenicurus phoenicurus	Common Redstart	11220	Phoenicurus phoenicurus	558576	Phoenicurus phoenicurus	
 11370	Saxicola rubetra	Whinchat	11370	Saxicola rubetra	558585	Saxicola rubetra	
