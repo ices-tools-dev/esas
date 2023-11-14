@@ -121,7 +121,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 2239	Mergus sp.	unidentified merganser	02239	Mergus sp.	159096	Mergus	
 2269		unidentified duck			136973	Anatidae	
 2310	Pernis apivorus	European Honey Buzzard	02310	Pernis apivorus	558573	Pernis apivorus	
-2350	Elanus caeruleus	Black-winged Kite	02350	Elanus caeruleus					
+2350	Elanus caeruleus	Black-winged Kite	02350	Elanus caeruleus	1718415	Elanus caeruleus	
 2380	Milvus migrans	Black Kite	02380	Milvus migrans	212678	Milvus migrans	
 2430	Haliaeetus albicilla	White-tailed Eagle	02430	Haliaeetus albicilla	232053	Haliaeetus albicilla	
 2600	Circus aeruginosus	Western Marsh Harrier	02600	Circus aeruginosus	558541	Circus aeruginosus	
@@ -130,7 +130,7 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 2690	Accipiter nisus	Eurasian Sparrowhawk	02690	Accipiter nisus	558525	Accipiter nisus	
 2870	Buteo buteo	Common Buzzard	02870	Buteo buteo	558534	Buteo buteo	
 2900	Buteo lagopus	Rough-legged Buzzard	02900	Buteo lagopus	159110	Buteo lagopus	
-2980	Hieraaetus pennatus	Booted Eagle	02980	Hieraaetus pennatus					
+2980	Hieraaetus pennatus	Booted Eagle	02980	Hieraaetus pennatus	1484453	Hieraaetus pennatus	
 3009	Falconiformes	unidentified raptor	03009	Falconiformes sp.	225849	Falconiformes	3219 (v5)
 3010	Pandion haliaetus	Western Osprey	03010	Pandion haliaetus	159377	Pandion haliaetus	
 3040	Falco tinnunculus	Common Kestrel	03040	Falco tinnunculus	345751	Falco tinnunculus	
@@ -265,9 +265,9 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 7780	Caprimulgus europaeus	European Nightjar	07780	Caprimulgus europaeus	1534762	Caprimulgus europaeus	
 7940	Apus unicolor	Plain swift	07940	Apus unicolor	1534760	Apus unicolor	
 7950	Apus apus	Common Swift	07950	Apus apus	212734	Apus apus	
-7960	Apus pallidus	Pallid Swift	07960	Apus pallidus					
+7960	Apus pallidus	Pallid Swift	07960	Apus pallidus	1718417	Apus pallidus	
 7980	Tachymarptis melba	Alpine Swift	07980	Tachymarptis melba	1534755	Tachymarptis melba	
-8000	Apus affinis	Little Swift	08000	Apus affinis					
+8000	Apus affinis	Little Swift	08000	Apus affinis	1718419	Apus affinis	
 8009	Apus sp.	unidentified (Apus) swift	08009	Apus sp.	206119	Apus	
 8060	Basilinna leucotis	White-eared Hummingbird	08060	Basilinna leucotis	1534805	Basilinna leucotis	
 8460	Upupa epops	Eurasian Hoopoe	08460	Upupa epops	1451644	Upupa epops	
