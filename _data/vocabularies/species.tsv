@@ -16,18 +16,16 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 129	Podiceps sp.	unidentified grebe	00129	Podiceps sp.	137056	Podiceps	
 140	Thalassarche melanophris	Black-browed Albatross	00140	Diomedea melanophris	343995	Thalassarche melanophris	
 220	Fulmarus glacialis	Northern Fulmar	00220	Fulmarus glacialis	137195	Fulmarus glacialis	
-262	Pterodroma feae	Fea's Petrel	00262	Pterodroma feae	137197	Pterodroma feae	
 260	Pterodroma mollis / madeira / feae + deserta	Soft-plumaged Petrel spec.	00260	Pterodroma mollis / madeira / feae	137064	Pterodroma	261 (v5), EURING 260 includes P. feae, which was later split in P. feae and deserta
+262	Pterodroma feae	Fea's Petrel	00262	Pterodroma feae	137197	Pterodroma feae	
 263	Pterodroma madeira	Zino's Petrel	00263	Pterodroma madeira	137198	Pterodroma madeira	
 269	Pterodroma madeira / deserta	Zino's / Desertas Petrel			137064	Pterodroma	
-35990	Pterodroma deserta	Desertas Petrel	35990	Pterodroma deserta	759338	Pterodroma deserta	
 340	Bulweria bulwerii	Bulwer's Petrel	00340	Bulweria bulwerii	137193	Bulweria bulwerii	
 350	Bulweria fallax	Jouanin's Petrel	00350	Bulweria fallax	212650	Bulweria fallax	
 359		unidentified petrel			136998	Procellariidae	
 360	Calonectris diomedea	Scopoli's Shearwater	00360	Calonectris diomedea	137194	Calonectris diomedea	
 361	Calonectris diomedea / borealis	Scopoli's / Cory's Shearwater			137062	Calonectris	360 (v5)
 362	Calonectris edwardsii	Cape Verde Shearwater	00362	Calonectris edwardsii	759340	Calonectris edwardsii	
-35970	Calonectris borealis	Cory's shearwater	35970	Calonectris borealis	1348497	Calonectris borealis	
 400	Puffinus gravis	Great Shearwater	00400	Puffinus gravis	137201	Puffinus gravis	
 409	Puffinus gravis / Calonectris sp.	Great / Calonectris Shearwater			136998	Procellariidae	
 410	Puffinus pacificus	Wedge-tailed Shearwater	00410	Puffinus pacificus	212634	Puffinus pacificus	
@@ -74,7 +72,6 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 1530	Cygnus columbianus	Tundra Swan	01530	Cygnus columbianus	159088	Cygnus columbianus	
 1540	Cygnus cygnus	Whooper Swan	01540	Cygnus cygnus	159089	Cygnus cygnus	
 1559	Cygnus sp.	unidentified swan	01559	Cygnus sp.	159087	Cygnus	1549 (v5)
-20800	Cygnus atratus	Black Swan	20800	Cygnus atratus	225915	Cygnus atratus	1545 (v5)
 1569	Anser / Branta sp.	unidentified goose	01569	Anser spp / Branta spp.	136973	Anatidae	1699 (v5)
 1570	Anser fabalis / serrirostris rossicus	Taiga / Tundra Bean Goose (rossicus)			159158	Anser	Not exactly the same as EURING 1570
 1571	Anser fabalis	Taiga Bean Goose	01571	Anser fabalis fabalis	416685	Anser fabalis	
@@ -212,7 +209,6 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 5982	Larus glaucoides kumlieni	Iceland Gull (kumlieni)	05982	Larus glaucoides kumlieni	232051	Larus glaucoides kumlieni	
 5985	Larus hyperboreus / glaucoides	Glaucous / Iceland Gull			137043	Larus	
 5990	Larus hyperboreus	Glaucous Gull	05990	Larus hyperboreus	137145	Larus hyperboreus	
-90080	Larus hyperboreus x argentatus	Glaucous x Herring Gull (hybrid)	90080	Larus argentatus x Larus hyperboreus	137043	Larus	5991 (v6)
 6000	Larus marinus	Great Black-backed Gull	06000	Larus marinus	137146	Larus marinus	
 6009	Larus sp.	unidentified (Larus) gull	06009	Larus sp.	137043	Larus	5929 (v5), 6005 (v5), 6008 (v5), 6009 (v5)
 6010	Rhodostethia rosea	Ross's Gull	06010	Rhodostethia rosea	137155	Rhodostethia rosea	
@@ -227,8 +223,8 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6111	Sterna acuflavida	Cabot's Tern	06111	Sterna acuflavida	1348517	Thalasseus sandvicensis acuflavidus	
 6140	Sterna dougallii	Roseate Tern	06140	Sterna dougallii	137160	Sterna dougallii	
 6150	Sterna hirundo	Common Tern	06150	Sterna hirundo	137162	Sterna hirundo	
-6160	Sterna paradisaea	Arctic Tern	06160	Sterna paradisaea	137165	Sterna paradisaea	
 6159	Sterna hirundo / paradisaea	Common / Arctic Tern	06159	Sterna hirundo/paradisaea	137047	Sterna	
+6160	Sterna paradisaea	Arctic Tern	06160	Sterna paradisaea	137165	Sterna paradisaea	
 6220	Onychoprion anaethetus	Bridled Tern	06220	Onychoprion anaethetus	567792	Onychoprion anaethetus	
 6230	Onychoprion fuscatus	Sooty Tern	06230	Sterna fuscata	567827	Onychoprion fuscatus	
 6240	Sternula albifrons	Little Tern	06240	Sterna albifrons	567480	Sternula albifrons	
@@ -256,8 +252,8 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 6829	Columba sp.	unidentified (Columba) dove	06829	Columba sp.	558544	Columba	
 6840	Streptopelia decaocto	Eurasian Collared Dove	06840	Streptopelia decaocto	558586	Streptopelia decaocto	
 6870	Streptopelia turtur	European Turtle Dove	06870	Streptopelia turtur	1534881	Streptopelia turtur	
-6999	Columba / Streptopelia sp.	unidentified dove / pigeon			196065	Columbidae	
 6919	Streptopelia sp.		06919	Streptopelia sp.	205651	Streptopelia	
+6999	Columba / Streptopelia sp.	unidentified dove / pigeon			196065	Columbidae	
 7240	Cuculus canorus	Common Cuckoo	07240	Cuculus canorus	212682	Cuculus canorus	
 7610	Strix aluco	Tawny Owl	07610	Strix aluco	558588	Strix aluco	
 7670	Asio otus	Long-eared Owl	07670	Asio otus	1476314	Asio otus	
@@ -388,6 +384,9 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 18829		unidentified bunting			159384	Passeriformes	
 19998	Aves	unidentified bird			1836	Aves	
 19999	Passeriformes	unidentified passerine			159384	Passeriformes	
+20800	Cygnus atratus	Black Swan	20800	Cygnus atratus	225915	Cygnus atratus	1545 (v5)
+35970	Calonectris borealis	Cory's shearwater	35970	Calonectris borealis	1348497	Calonectris borealis	
+35990	Pterodroma deserta	Desertas Petrel	35990	Pterodroma deserta	759338	Pterodroma deserta	
 51000		unidentified bat	51000		1037271	Chiroptera	
 60000		unidentified marine mammal			1837	Mammalia	
 61000		unidentified whale or dolphin	61000		2688	Cetacea	
@@ -471,3 +470,4 @@ esas_code	scientific_name	english_name	euring_code	euring_scientific_name	aphia_
 68002		unidentified fish school			10194	Actinopterygii	
 68100		unidentified fish ball			10194	Actinopterygii	28100 (v5)
 68500	Velella velella	Velella			117832	Velella velella	28500 (v5)
+90080	Larus hyperboreus x argentatus	Glaucous x Herring Gull (hybrid)	90080	Larus argentatus x Larus hyperboreus	137043	Larus	5991 (v6)
